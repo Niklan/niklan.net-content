@@ -1,0 +1,17 @@
+{ "rules_ticket_block_view" : {
+    "LABEL" : "\u0422\u0438\u043a\u0435\u0442: \u0411\u043b\u043e\u043a\u0438\u0440\u043e\u0432\u043a\u0430 \u043e\u0442 \u043f\u0440\u043e\u0441\u043c\u043e\u0440\u0442\u0440\u0430",
+    "PLUGIN" : "reaction rule",
+    "REQUIRES" : [ "rules" ],
+    "ON" : [ "node_view" ],
+    "IF" : [
+      { "NOT user_has_role" : {
+          "account" : [ "site:current-user" ],
+          "roles" : { "value" : { "3" : "3" } }
+        }
+      },
+      { "NOT data_is" : { "data" : [ "node:author" ], "value" : [ "site:current-user" ] } },
+      { "node_is_of_type" : { "node" : [ "node" ], "type" : { "value" : { "ticket" : "ticket" } } } }
+    ],
+    "DO" : [ { "redirect" : { "url" : "user\/login" } } ]
+  }
+}
