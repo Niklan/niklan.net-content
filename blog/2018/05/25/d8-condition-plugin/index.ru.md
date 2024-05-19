@@ -4,7 +4,6 @@ language: ru
 title: 'Drupal 8: Condition Plugin'
 created: '2018-05-25T16:45:28'
 updated: '2023-10-16T18:21:20'
-needs_manual_review: true
 description: 'Изучаем из чего состоят и как писать свои собственные Condition Plugin.'
 attachments:
   -
@@ -17,9 +16,10 @@ tags:
   - 'Plugin API'
 ---
 
-> [!NOTE]
-> ## Материал обновлен для соответствия Drupal 8.7.0+
-> В 8.7.0 аннотации "context" для ConditionPlugin теперь должны называться "context_definitions". Смотрите соответствующее [изменение](https://www.drupal.org/node/3016699).
+::: note [Материал обновлен для соответствия Drupal 8.7.0+]
+В 8.7.0 аннотации "context" для ConditionPlugin теперь должны называться "context_definitions". Смотрите соответствующее 
+[изменение](https://www.drupal.org/node/3016699).
+:::
 
 Текст материала и примерны обновлены соответствующе.
 
