@@ -338,7 +338,7 @@ technical_support)», снимаем галочку «Create a page» и жме�
 **Шаг 9.** Добавляем новое поле «Content: Comment count», в «Label» пишем
 «Ответов». Затем открываем «Rewrite results» и ставим галочку «Rewrite the
 output of this field». Далее в текстовое поле
-вставляем «[comment_count] [new_comments]» и сохраняем.
+вставляем «`[comment_count] [new_comments]`» и сохраняем.
 
 **Шаг 10.** В «Filter criteria» добавляем правило «Content: Type»,
 выбираем «Тикет», сохраняем.

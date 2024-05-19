@@ -1730,18 +1730,18 @@ process:
 process:
   id:
     plugin: static_map
-      source:
-        - module
-        - delta
-      map:
-        filter:
-          0: filter_html_escape
-          1: filter_autop
-          2: filter_url
-          3: filter_htmlcorrector
-          4: filter_html_escape
-        php:
-          0: php_code
+    source:
+      - module
+      - delta
+    map:
+      filter:
+        0: filter_html_escape
+        1: filter_autop
+        2: filter_url
+        3: filter_htmlcorrector
+        4: filter_html_escape
+      php:
+        0: php_code
 ```
 
 Я думаю вы уже уловили что к чему. На этот раз в качестве источника у нас
@@ -1770,8 +1770,8 @@ process:
   new_text_field:
     plugin: substr
     source: some_text_field
-      start: 6
-      length: 10
+    start: 6
+    length: 10
 ```
 
 #### url_encode

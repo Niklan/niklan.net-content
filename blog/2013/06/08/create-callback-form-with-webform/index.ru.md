@@ -42,22 +42,12 @@ tags:
     $("#call-me").live("click", function (event) {
       // Добавлям только один раз.
       if ($("#call-me-form").length == 0) {
-        $("body").append("<div id="
-        call - me - form
-        "></div>"
-      )
-        ;
+        $("body").append('<div id="call-me-form"></div>');
       }
 
       // Добавляем закрытие окна.
       $('#call-me-form').load('/node/' + nodeId + ' ' + formSelector, function () {
-        $("#call-me-form").append("<a href="
-      #
-        " id="
-        call - me - close
-        ">Закрыть</a>"
-      )
-        ;
+        $("#call-me-form").append('<a href="#" id="call-me-close">Закрыть</a>');
       });
     });
 

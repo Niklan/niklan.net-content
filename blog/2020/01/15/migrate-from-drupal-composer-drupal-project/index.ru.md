@@ -165,13 +165,11 @@ tags:
 По умолчанию в **drupal/recommended-project** они имеют вид:
 
 ```json
-        …
 "drupal-scaffold": {
-"locations": {
-"web-root": "web/"
-}
+  "locations": {
+    "web-root": "web/"
+  }
 },
-…
 ```
 
 Затем перенесите все старые настройки в новый раздел. Только не забывайте, что у
@@ -184,17 +182,15 @@ tags:
 Пример моей новой настройки:
 
 ```json
-        …
-        "drupal-scaffold": {
-            "locations": {
-                "web-root": "web/"
-            },
-            "file-mapping": {
-                "[web-root]/sites/development.services.yml": false,
-                "[web-root]/robots.txt": false
-            }
-        },
-        …
+"drupal-scaffold": {
+    "locations": {
+        "web-root": "web/"
+    },
+    "file-mapping": {
+        "[web-root]/sites/development.services.yml": false,
+        "[web-root]/robots.txt": false
+    }
+},
 ```
 
 ### webmozart/path-util
@@ -224,12 +220,9 @@ tags:
 - Загрузку данного файла в composer.json файле по пути `autoload.files`.
 
 ```json
-    …
 "autoload": {
-…
-"files": ["load.environment.php"]
+  "files": ["load.environment.php"]
 },
-…
 ```
 
 ### drupal/console
@@ -268,17 +261,15 @@ composer.json файлов из других директорий внутри �
 **Ранее** вы могли иметь следующие настройки:
 
 ```json
-        …
-        "merge-plugin": {
-            "include": [
-                "web/modules/custom/*/composer.json",
-                "web/themes/custom/*/composer.json"
-            ],
-            "recurse": true,
-            "replace": false,
-            "merge-extra": false
-        },
-        …
+"merge-plugin": {
+    "include": [
+        "web/modules/custom/*/composer.json",
+        "web/themes/custom/*/composer.json"
+    ],
+    "recurse": true,
+    "replace": false,
+    "merge-extra": false
+},
 ```
 
 Теперь это делается иначе, при помощи раздела `repositories` composer.json
@@ -287,33 +278,28 @@ composer.json файлов из других директорий внутри �
 Вы можете указать конкретный путь до папки с composer.json файлом.
 
 ```json
+"repositories": [
     …
-    "repositories": [
-        …
-        {
-            "type": "path",
-            "url": "web/modules/custom/example"
-        }
-    ],
-    …
+    {
+        "type": "path",
+        "url": "web/modules/custom/example"
+    }
+],
 ```
 
 Либо вы можете указать все папки внутри определенной:
 
 ```json
-    …
-    "repositories": [
-        …
-        {
-            "type": "path",
-            "url": "web/modules/custom/*"
-        },
-        {
-            "type": "path",
-            "url": "web/themes/custom/*"
-        }
-    ],
-    …
+"repositories": [
+    {
+        "type": "path",
+        "url": "web/modules/custom/*"
+    },
+    {
+        "type": "path",
+        "url": "web/themes/custom/*"
+    }
+],
 ```
 
 Вы можете использовать любой из способов, или оба сразу. Как удобнее вам и лучше
@@ -429,18 +415,16 @@ drupal-composer/drupal-project._
 ваши значения сходятся с новыми официальными и все на местах:
 
 ```json
-        …
-        "installer-paths": {
-            "web/core": ["type:drupal-core"],
-            "web/libraries/{$name}": ["type:drupal-library"],
-            "web/modules/contrib/{$name}": ["type:drupal-module"],
-            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
-            "web/themes/contrib/{$name}": ["type:drupal-theme"],
-            "drush/Commands/contrib/{$name}": ["type:drupal-drush"],
-            "web/modules/custom/{$name}": ["type:drupal-custom-module"],
-            "web/themes/custom/{$name}": ["type:drupal-custom-theme"]
-        },
-        …
+"installer-paths": {
+    "web/core": ["type:drupal-core"],
+    "web/libraries/{$name}": ["type:drupal-library"],
+    "web/modules/contrib/{$name}": ["type:drupal-module"],
+    "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+    "web/themes/contrib/{$name}": ["type:drupal-theme"],
+    "drush/Commands/contrib/{$name}": ["type:drupal-drush"],
+    "web/modules/custom/{$name}": ["type:drupal-custom-module"],
+    "web/themes/custom/{$name}": ["type:drupal-custom-theme"]
+},
 ```
 
 **Не удаляйте** то что вы добавили туда сами, например там могут

@@ -577,7 +577,6 @@ class {{ class_name }} extends DeriverBase{% if dependency_injection %} implemen
 
 ```yaml {"header":"drush.services.yml"}
 services:
-  ...
   dummy.deriver_generator:
     class: Drupal\dummy\Generators\DeriverGenerator
     tags:

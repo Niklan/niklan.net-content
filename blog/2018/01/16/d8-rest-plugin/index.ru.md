@@ -756,43 +756,37 @@ $.ajax({
 });
 ```
 
-```js {"header":"Пример ответа"}
+```json {"header":"Пример ответа"}
 {
-  "items"
-:
-  [
-    {
-      "label": "Created via REST",
-      "id": "57",
-      "created": "1515932692"
-    },
-    {
-      "label": "test",
-      "id": "38",
-      "created": "1506701746"
-    },
-    {
-      "label": "test",
-      "id": "54",
-      "created": "1506701746"
-    },
-    {
-      "label": "test",
-      "id": "39",
-      "created": "1506701746"
-    },
-    {
-      "label": "test",
-      "id": "55",
-      "created": "1506701746"
-    }
-  ],
-      "next_page"
-:
-  "\/api\/v1\/list-articles?_format=json\u0026limit=5\u0026page=1",
-      "prev_page"
-:
-  false
+   "items":[
+      {
+         "label":"Created via REST",
+         "id":"57",
+         "created":"1515932692"
+      },
+      {
+         "label":"test",
+         "id":"38",
+         "created":"1506701746"
+      },
+      {
+         "label":"test",
+         "id":"54",
+         "created":"1506701746"
+      },
+      {
+         "label":"test",
+         "id":"39",
+         "created":"1506701746"
+      },
+      {
+         "label":"test",
+         "id":"55",
+         "created":"1506701746"
+      }
+   ],
+   "next_page":"\/api\/v1\/list-articles?_format=json\u0026limit=5\u0026page=1",
+   "prev_page":false
 }
 ```
 
@@ -1248,6 +1242,7 @@ let sessionToken = new Promise((resolve, reject) => {
         });
       },
   );
+});
 ```
 
 ## Включение REST ресурса

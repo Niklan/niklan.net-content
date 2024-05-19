@@ -355,7 +355,6 @@ merge-plugin -> include.
 
 ```json {"header":"composer.json проекта"}
 {
-    ...
     "extra": {
         "merge-plugin": {
             "include": [

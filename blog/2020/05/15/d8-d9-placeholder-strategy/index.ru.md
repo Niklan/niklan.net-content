@@ -1063,13 +1063,12 @@ function example_page_attachments(array &$attachments) {
 #### Конвертация HTML строки в DOM
 
 ```javascript
-    htmlStringToElement: function (htmlString) {
+htmlStringToElement: function (htmlString) {
   htmlString = htmlString.trim();
   const template = document.createElement('template');
   template.innerHTML = htmlString;
   return template.content.firstChild;
-}
-,
+},
 ```
 
 Наш маршрут будет отвечать HTML разметкой в виде строки, просто так мы её не
@@ -1079,7 +1078,7 @@ function example_page_attachments(array &$attachments) {
 #### AJAX запрос
 
 ```javascript
-    load: function (placeholderElement) {
+load: function (placeholderElement) {
   const ajax = new Drupal.ajax({
     url: '/ajax-placeholder-processor',
     progress: false,
@@ -1100,8 +1099,7 @@ function example_page_attachments(array &$attachments) {
   };
 
   ajax.execute();
-}
-,
+},
 ```
 
 Данная функция будет производить загрузку при помощи Drupal AJAX запросов.
@@ -1117,7 +1115,7 @@ Drupal.
 #### Наблюдаем и загружаем
 
 ```javascript
-    attach: function (context, settings) {
+attach: function (context, settings) {
   const intersectionObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -1131,8 +1129,7 @@ Drupal.
   $('[data-ajax-placeholder]', context).once('ajax-placeholder').each(function (placeholderElement) {
     intersectionObserver.observe(this);
   })
-}
-,
+},
 ```
 
 `attach` — стандартная функция вызываемая для всех бихейворов. В ней мы находим

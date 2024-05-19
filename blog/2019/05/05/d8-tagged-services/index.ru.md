@@ -536,7 +536,6 @@ class MessageServiceFirst extends MessageServiceBase {
 
 ```yaml {"header":"dummy.services.yml"}
 services:
-  ...
   dummy.message_service_first:
     class: 'Drupal\dummy\Service\MessageServiceFirst'
     tags:
@@ -576,7 +575,6 @@ class MessageServiceSecond extends MessageServiceBase {
 
 ```yaml {"header":"dummy.services.yml"}
 services:
-  ...
   dummy.message_service_second:
     class: 'Drupal\dummy\Service\MessageServiceSecond'
     tags:
