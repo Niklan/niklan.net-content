@@ -235,7 +235,7 @@ foreach из-за того что данные идут в несколько с
 
 Готовый модуль можете скачать, как всегда, в прикрепленных файлах.
 
-<iframe allowfullscreen="" frameborder="0" height="600" src="https://www.youtube.com/embed/gRHZfvjvGF8" width="100%"></iframe>
+:: youtube {vid=gRHZfvjvGF8}
 
 P.s. В Drupal 7 всё работает аналогично.
 

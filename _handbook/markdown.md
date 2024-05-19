@@ -111,8 +111,8 @@ content.
 ### Alerts
 
 Alerts can be used to highlight specific information in content. Alerts can be
-added using these container directive names: note, tip, important, warning,
-caution.
+added using these container directive names: **note**, **tip**, **important**,
+**warning**, **caution**.
 
 ```markdown
 ::: important
