@@ -129,8 +129,8 @@ MYMODULE (главная папка модуля)
 type: settings
 name: My module settings
 descrption: Import settings on installation.
-variable: value
-variable:
+variable_a: value
+variable_b:
   subvariable: true
 ```
 
@@ -199,8 +199,8 @@ $config->save();
 ```yml
 mymodule.somelib:
   version: VERSION
-    js:
-      js/myscript.js: { }
+  js:
+    js/myscript.js: { }
   dependencies:
     - core/jquery
     - core/drupal
