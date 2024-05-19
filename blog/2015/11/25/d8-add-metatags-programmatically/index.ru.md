@@ -24,13 +24,13 @@ tags:
 
 Например, добавляем метатег title с содержимым Hello World.
 
-~~~html
+```html
 <meta name="title" content="Hello World!">
-~~~
+```
 
 В своём модуле пишем:
 
-~~~php
+```php
 /**
  * Implements hook_preprocess_html().
  */
@@ -44,7 +44,7 @@ function MYMODULE_preprocess_html(&$variables) {
   ];
   $variables['#attached']['html_head'][] = [$title, 'title'];
 }
-~~~
+```
 
 ![Результат](image/1%20(36).png)
 
@@ -53,7 +53,7 @@ function MYMODULE_preprocess_html(&$variables) {
 
 Пример выше добавит метатег вообще на все страницы сайта. Но что делать если надо только для определенной сущности?
 
-~~~php
+```php
 /**
  * Implements hook_entity_view().
  */
@@ -71,19 +71,19 @@ function MYMODULE_entity_view(array &$build, \Drupal\Core\Entity\EntityInterface
     $build['#attached']['html_head'][] = [$title, 'title'];
   }
 }
-~~~
+```
 
 Также полезным может оказаться получение ID сущности, чтобы добавить метатег на странице только определенной сущности.
 
-~~~php
+```php
 $entity->id();
-~~~
+```
 
 И получение подтипа сущности (bundle):
 
-~~~php
+```php
 $entity->bundle();
-~~~
+```
 
 Вот и всё, а как удалять и изменять их - ссылка выше. Разница от добавления практически минимальная и в названии хука.
 

@@ -39,7 +39,7 @@ tags:
 
 Самый простой шаг, мы должны сообщить Drupal о нашем модуле, поэтому объявляем простенький **my_color_field**.info.yml в соответствующей папке.
 
-~~~yml {"header":"my_color_field.info.yml"}
+```yml {"header":"my_color_field.info.yml"}
 name: 'My color field'
 description: 'Custom colorpicker field.'
 type: module
@@ -48,14 +48,14 @@ version: 1.x
 package: Field types
 dependencies:
   - field
-~~~
+```
 
 ## Field Type
 
 
 Теперь нам необходимо объявить непосредственно тип нашего поля. На данном шаге мы сообщаем Drupal что модуль добавляет такой-то тип поля, имеет такие поля в базе данных для хранения данных и такого типа. В аннотации мы также указываем какой формат вывода и виджет будет использовать по-умолчанию для данного типа поля. Они обязаны быть, так как будут использоваться также в ситуациях, когда был удален дополнительный формат вывода и\или виджет для поля.
 
-~~~php {"header":"Листинг src/Plugin/Field/FIeldType/MyColorFieldItem.php"}
+```php {"header":"Листинг src/Plugin/Field/FIeldType/MyColorFieldItem.php"}
 <?php
 
 /**
@@ -115,14 +115,14 @@ class MyColorFieldItem extends FieldItemBase {
     return $properties;
   }
 }
-~~~
+```
 
 ## Field Widget
 
 
 Данный класс отвечает за то, как будет выглядеть форма ввода и редактирования поля - грубо говоря input. Это лишь административный элемент. Для виджета можно объявлять настройки, по принципу как они объявляются в Field Formatter (см. ниже).
 
-~~~php {"header":"Листинг src/Plugin/Field/FieldWidget/MyColorFieldHTML5InputWidget.php"}
+```php {"header":"Листинг src/Plugin/Field/FieldWidget/MyColorFieldHTML5InputWidget.php"}
 <?php
 
 /**
@@ -185,7 +185,7 @@ class MyColorFieldHTML5InputWidget extends WidgetBase {
   }
 
 }
-~~~
+```
 
 ## Field Formatter
 
@@ -197,7 +197,7 @@ class MyColorFieldHTML5InputWidget extends WidgetBase {
 - Первый будет выводить HEX цвет выбранный в поле. Он также будет использоваться как формат вывода по умолчанию;
 - Второй будет выводить div выбранного цвета. Размеры данного элемента будут задаваться в настройках формата поля.
 
-~~~php {"header":"Листинг src/Plugin/Field/FieldFormatter/MyColorFieldDefaultFormatter.php"}
+```php {"header":"Листинг src/Plugin/Field/FieldFormatter/MyColorFieldDefaultFormatter.php"}
 <?php
 
 /**
@@ -239,9 +239,9 @@ class MyColorFieldDefaultFormatter extends FormatterBase {
   }
 
 }
-~~~
+```
 
-~~~php {"header":"Листинг src/Plugin/Field/FieldFormatter/MyColorFieldDivFormatter.php"}
+```php {"header":"Листинг src/Plugin/Field/FieldFormatter/MyColorFieldDivFormatter.php"}
 <?php
 
 /**
@@ -348,7 +348,7 @@ class MyColorFieldDivFormatter extends FormatterBase {
   }
 
 }
-~~~
+```
 
 ## Проверка нашего поля
 

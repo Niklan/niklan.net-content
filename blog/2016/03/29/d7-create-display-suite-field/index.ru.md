@@ -37,7 +37,7 @@ tags:
 
 Всё это реализуется при помощи одного хука `hook_ds_fields_info()`. Полный список того что может хук, можете посмотреть в ds.api.php, который находится в папке модуля. По сути отличий мало, я просто копирнул его сюда и пишу свои комментарии. Только типы полей я рассмотрю два, так как остальные я не использую вообще, и даже не совсем понимаю зачем они там вообще, я банально не нашел им применения за год-полтора активного использования.
 
-~~~php {"header":"hook_ds_fields_info()"}
+```php {"header":"hook_ds_fields_info()"}
 function hook_ds_fields_info($entity_type) {
   $fields = array();
 
@@ -107,7 +107,7 @@ function hook_ds_fields_info($entity_type) {
   return array('node' => $fields);
 
 }
-~~~
+```
 
 На самом деле ничего страшного нет, и пишется в разы меньше, так как не все возможности нужны и они варьируются от выбранного вами типа поля.
 
@@ -119,7 +119,7 @@ function hook_ds_fields_info($entity_type) {
 
 Допустим, нам нужно вывести количество слов из поля body для материала article, а наш модуль называется dummy.
 
-~~~php {"header":"Листинг файла dummy.module"}
+```php {"header":"Листинг файла dummy.module"}
 <?php
 
 /**
@@ -176,7 +176,7 @@ function dummy_ds_field_word_count($field) {
     );
   }
 }
-~~~
+```
 
 И всё! Теперь заходим на страницу "Управление отображением" для материала article, переходим в формат "Полный материал" (включите его в default если он отключен). Затем выберите снизу любой DS Layout (**это обязательно**), а затем сохраните. Вы увидите как наше поле появилось в разделе отключенных. Перетаскиваем его в нужное место и сохраняем.
 
@@ -196,7 +196,7 @@ function dummy_ds_field_word_count($field) {
 
 В этот раз, давайте выводить список слов, которые упоминаются в тексте более 1 раза. Хоть список всё же можно и сгенерировать по примеру выше и код будет читабельные, но всё же давайте отделим в tpl.php файл.
 
-~~~php {"header":"Листинг файла dummy.module"}
+```php {"header":"Листинг файла dummy.module"}
 <?php
 
 /**
@@ -307,14 +307,14 @@ function dummy_ds_field_settings_form($field) {
 function dummy_ds_field_format_summary($field) {
   return ds_ds_field_format_summary($field);
 }
-~~~
+```
 
 ### Листинг theme/word-frequency-list.tpl.php
 
 
 Так как мы объявили данный темплейт, то необходимо его и наполнить :)
 
-~~~php
+```php
 <?php if (isset($results)): ?>
   <<?php print $list_format; ?>>
     <?php foreach ($results as $k => $v): ?>
@@ -324,7 +324,7 @@ function dummy_ds_field_format_summary($field) {
 
   <strong>Количество повторяющихся слов:</strong> <?php print count($results); ?>
 <?php endif; ?>
-~~~
+```
 
 Теперь опять, заходим в управление отображением материала article и перетаскиваем поле. Теперь вы можете заметить что появился формат вывода поля на выбор с одним значением "Список повторяющихся слов", добавив новые, они автоматически появятся в данном списке. А также, если всё сделали верно, должна появиться шестеренка, которая позволит выбирать формат вывода списка `<ul>` или `<ol>`. А на странице должен быть результат:
 
@@ -350,7 +350,7 @@ function dummy_ds_field_format_summary($field) {
 
 Особое внимание обратите на объявление поля `word_count`.
 
-~~~php
+```php
 <?php
 
 /**
@@ -409,9 +409,9 @@ function dummy_ds_fields_info($entity_type) {
 
   return;
 }
-~~~
+```
 
-~~~php {"header":"Листинг /includes/ds.field_callbacks.inc"}
+```php {"header":"Листинг /includes/ds.field_callbacks.inc"}
 <?php
 
 /**
@@ -444,14 +444,14 @@ function dummy_ds_field_word_count($field) {
     );
   }
 }
-~~~
+```
 
 #### Листинг dummy.module
 
 
 Итоговый листинг dummy.module после изменений и перенесенного кода.
 
-~~~php
+```php
 <?php
 
 /**
@@ -523,6 +523,6 @@ function dummy_ds_field_settings_form($field) {
 function dummy_ds_field_format_summary($field) {
   return ds_ds_field_format_summary($field);
 }
-~~~
+```
 
 На этом всё ;) Готовый модуль с изменениями прилагаю.

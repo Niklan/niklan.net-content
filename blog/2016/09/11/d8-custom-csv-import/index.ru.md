@@ -43,12 +43,12 @@ tags:
 
 Всё что нам нужно для создания модуля, это создать соответствующую папку в корневой папке modules, а затем, создать файлик `custom_csv_import.info.yml` в котором мы и укажем что это модуль.
 
-~~~yaml {"header":"Листинг custom_csv_import.info.yml"}
+```yaml {"header":"Листинг custom_csv_import.info.yml"}
 name: 'Custom CSV import'
 type: module
 core: 8.x
 version: 1.x
-~~~
+```
 
 ## Создание класса для работы с CSV
 
@@ -57,7 +57,7 @@ version: 1.x
 
 Давайте назовем его CSVBatchImport и закиним в папку /src.
 
-~~~php {"header":"Листинг src/CSVBatchImport"}
+```php {"header":"Листинг src/CSVBatchImport"}
 <?php
 
 namespace Drupal\custom_csv_import;
@@ -71,11 +71,11 @@ class CSVBatchImport {
 
 }
 
-~~~
+```
 
 Для начала мы добавим конструктор нашему классу и парочку свойств (переменных).
 
-~~~php {"header":"CSVBatchImport: конструктор и свойства"}
+```php {"header":"CSVBatchImport: конструктор и свойства"}
 # Нам необходимо также импортировать объект File для работы с CSV файлом.
 use Drupal\file\Entity\File;
 
@@ -116,14 +116,14 @@ public function __construct($fid, $skip_first_line = FALSE, $delimiter = ';', $e
     'file' => drupal_get_path('module', 'custom_csv_import') . '/src/CSVBatchImport.php',
   ];
 }
-~~~
+```
 
 Наш объект будет обязательно принимать `$fid` csv файла, и несколько необязательных параметров. Внутри конструктора мы записываем все необходимые для нас данные в свойства чтобы  в дальнейшем было проще обращаться к ним. Мы также затем добавим вызов ещё одного метода, но об этом попозже, мы ведь его ещё не создали ;)
 
 Сразу добавим все необходимые для работы с batch методы, а точнее, мы создадим методы которые нам помогут сформировать batch операцию и запустить её.
 
 
-~~~php {"header":"CSVBatchImport: методы для batch операций"}
+```php {"header":"CSVBatchImport: методы для batch операций"}
 /**
  * {@inheritdoc}
  *
@@ -172,7 +172,7 @@ public function finished($success, $results, $operations) {
   }
   drupal_set_message($message);
 }
-~~~
+```
 
 Если вы ранее работали с batch операциями, то вы должны заметить то что в Drupal 7 они делаются абсолютно точно также, в Drupal 8 для них нет никакой ООП обвязки, мы написали её сами для себя. А если не знакомы и хотите поподробнее, то рекомендую [почитать статью у xandeadx](http://xandeadx.ru/blog/drupal/395).
 
@@ -180,7 +180,7 @@ public function finished($success, $results, $operations) {
 
 Теперь же мы напишем метод для парсинга CSV файла. Мы будем считывать файл построчно и каждую строку, а точнее данные её столбцов мы будем добавлять в операции batch при помощи только что написанным методом `setOperation()`.
 
-~~~php {"header":"CSVBatchImport: метод для парсинга CSV"}
+```php {"header":"CSVBatchImport: метод для парсинга CSV"}
 /**
  * {@inheritdoc}
  *
@@ -204,20 +204,20 @@ public function parseCSV() {
     fclose($handle);
   }
 }
-~~~
+```
 
 Так как данный метод фактически обязательный для использования и без него все остальное просто не имеет никакого смысла, то давайте добавим вызов данного метода прямо в конструктор класса, чтобы при создании объекта файл сразу парсился.
 
-~~~php
+```php
 public function __construct($fid, $skip_first_line = FALSE, $batch_name = 'Custom CSV import') {
   ...
   $this->parseCSV();
 }
-~~~
+```
 
 Ну и наконец добавим последний метод в наш класс, который и будет импортировать данные. Мы будем писать метод `processItem()`, который мы и указывали в качестве callback у операций. Этот метод самый важный и потому он будет самый востребованный во всем модуле, так как его нужно менять и править под себя в соответствии с необходимым импортом и CSV файлом. Грубо говоря чтобы модифицировать весь модуль импорта под задачу, правиться CSV файл и данный метод, остальные нет никакой необходимости менять. Потому он самый большой и самый важный для понимания.
 
-~~~php {"header":"CSVBatchImport: метод processItem()"}
+```php {"header":"CSVBatchImport: метод processItem()"}
 use Drupal\node\Entity\Node;
 use Drupal\taxonomy\Entity\Term;
 
@@ -285,11 +285,11 @@ public function processItem($id, $title, $body, $tags, &$context) {
   $context['results'][] = $node->id() . ' : ' . $node->label();
   $context['message'] = $node->label();
 }
-~~~
+```
 
 Если все сделали правильно, итоговый файл должен получиться следующим. Не такой то он и большой без комментариев ;)
 
-~~~php {"header":"Листинг src/CSVBatchImport.php"}
+```php {"header":"Листинг src/CSVBatchImport.php"}
 <?php
 
 namespace Drupal\custom_csv_import;
@@ -433,7 +433,7 @@ class CSVBatchImport {
   }
 
 }
-~~~
+```
 
 Считаю нужным разжевать входящие аргументы метода. `$id`, `$title`, `$body`, `$tags` и `&$context`. Все аргументы, кроме последнего - это тот самый массив `$data` из метода `setOperation()`. Т.е. мы распарсили строку CSV файла, у которого столбцы id, заголовок, содержимое материала,теги. `parseCSV()`, поместил их в соответствующий массив, в том же порядке, затем этот массив мы добавили в операцию, затем операция во время выполнения отдала его нам, но не также в массиве, а каждый элемент массива передает нам в качестве аргумента в том же самом порядке что и в массиве - следовательно, как и в csv файле столбцы, а также добавляет последний аргумент с информацией о ходе batch операции. Ну а дальше мы эти данные используем для создания или изменения материала.
 
@@ -447,7 +447,7 @@ class CSVBatchImport {
 
 Напоминаю что формы хранятся в папке /src/Form, следовательно там мы и создаем наш файл с формой настроек. Я назвал его **ImportForm**.
 
-~~~php {"header":"Листинг src/Form/ImportForm.php"}
+```php {"header":"Листинг src/Form/ImportForm.php"}
 <?php
 
 namespace Drupal\custom_csv_import\Form;
@@ -499,13 +499,13 @@ class ImportForm extends ConfigFormBase {
   }
 
 }
-~~~
+```
 
 С этим каркасом мы и продолжим работать. Тут не должно быть ничего сложного, так как мы  всего лишь объявляем форму для редактирования конфигураций и загрузки файлов, сохраняем всё по субмиту и запускаем импорт при нажатии соответствующей кнопки.
 
 Начнем с объявления непосредственно нашей формы.
 
-~~~php {"header":"ImportForm: метод buildForm()"}
+```php {"header":"ImportForm: метод buildForm()"}
 use Drupal\file\Entity\File;
 
 ...
@@ -575,11 +575,11 @@ public function buildForm(array $form, FormStateInterface $form_state) {
 
   return parent::buildForm($form, $form_state);
 }
-~~~
+```
 
 Ничего сложного, ведь так? Мы всего то объявили формочку с парочкой настроек. Теперь нам нужно поработать с отправкой данных формы, сохранять изменения и записывать файл, ведь сам он не запишется.
 
-~~~php {"header":"ImportForm: метод submitForm()"}
+```php {"header":"ImportForm: метод submitForm()"}
 /**
  * {@inheritdoc}
  */
@@ -620,11 +620,11 @@ public function submitForm(array &$form, FormStateInterface $form_state) {
     ->set('enclosure', $form_state->getValue('enclosure'))
     ->save();
 }
-~~~
+```
 
 Если вы вчитывались в код самой формы, то должны были заметить что нам не хватает одного метода - `startImport()`, который вызывается по нажатию на кнопку начала импорта файла. Его мы сейчас и добавим.
 
-~~~php {"header":"ImportForm: метод startImport()"}
+```php {"header":"ImportForm: метод startImport()"}
 use Drupal\custom_csv_import\CSVBatchImport;
 
 ...
@@ -643,14 +643,14 @@ public function startImport(array &$form, FormStateInterface $form_state) {
   $import = new CSVBatchImport($fid, $skip_first_line, $delimiter, $enclosure);
   $import->setBatch();
 }
-~~~
+```
 
 Как я написал выше - он вызывается при нажатии на кнопку импорта, а всё что он делает, создает наш объект для импорта, передает туда id файла и наши настройки, после чего и создает batch операцию, но не запускает, так как запустит её сама форма.
 
 Итоговый листинг файла с формой:
 
 
-~~~php {"header":"Листинг src/Form/ImportForm.php"}
+```php {"header":"Листинг src/Form/ImportForm.php"}
 <?php
 
 namespace Drupal\custom_csv_import\Form;
@@ -793,7 +793,7 @@ class ImportForm extends ConfigFormBase {
     $import->setBatch();
   }
 }
-~~~
+```
 
 ## Добавление настроек по умолчанию
 
@@ -802,18 +802,18 @@ class ImportForm extends ConfigFormBase {
 
 Настройки по умолчанию добавляются через yml файл, так как это ConfigFormBase. Мы должны создать одноименный конфигурациям файл `custom_csv_import.import.yml` в папке `config/install`. Это значит, что данные конфигурации будут импортированы при активации модуля.
 
-~~~yaml {"header":"Листинг config/install/custom_csv_import.import.yml"}
+```yaml {"header":"Листинг config/install/custom_csv_import.import.yml"}
 skip_first_line: 1
 delimiter: ';'
 enclosure: ','
-~~~
+```
 
 ## Добавление страницы для формы
 
 
 Импорт сделали, форму сделали, осталось всё это где-то выводить. Я решил что форма будет доступна по адресу `/admin/config/development/csv_import` - т.е. я хочу далее добавить ссылку на страницу в раздел Development административной страницы с конфигурациями. Первым делом мы конечно же делаем роутинг для нашей формы с соответствующим адресом.
 
-~~~yaml {"header":"Листинг custom_csv_import.routing.yml"}
+```yaml {"header":"Листинг custom_csv_import.routing.yml"}
 custom_csv_import.admin_settings:
   path: '/admin/config/development/csv_import'
   defaults:
@@ -823,17 +823,17 @@ custom_csv_import.admin_settings:
     _permission: 'access administration pages'
   options:
     _admin_route: TRUE
-~~~
+```
 
 Но ссылка не добавится в раздел Development просто потому что мы сохранили иерархию пути как это было в Drupal 7. Нам нужно дополнительно указать ссылку на наш адрес в соответствующем разделе. Для этого нам необходимо создать mymodule.links.menu.yml.
 
-~~~yaml {"header":"Листинг custom_csv_import.links.menu.yml"}
+```yaml {"header":"Листинг custom_csv_import.links.menu.yml"}
 custom_csv_import.admin_settings:
   title: 'CSV import'
   description: 'Import content on site using CSV file.'
   route_name: custom_csv_import.admin_settings
   parent: 'system.admin_config_development'
-~~~
+```
 
 Как видите, ничего сложного. Указываешь роут который отвечает за адрес ссылки и родительский роут в котором необходимо добавить нашу ссылку.
 

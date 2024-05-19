@@ -230,8 +230,8 @@ class DummyPageProcessor implements InboundPathProcessorInterface, OutboundPathP
    * {@inheritdoc}
    */
   public function processInbound($path, Request $request) {
-    if (preg_match('/.*\\/page\\/([0-9]+)$/', $request->getRequestUri(), $matches)) {
-      $path = preg_replace('/(.*)\\/page\\/[0-9]+/', '${1}', $path);
+    if (preg_match('/.*//page//([0-9]+)$/', $request->getRequestUri(), $matches)) {
+      $path = preg_replace('/(.*)//page//[0-9]+/', '${1}', $path);
       if ($path == '') {
         $path = '/';
       }

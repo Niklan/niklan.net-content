@@ -25,16 +25,16 @@ tags:
 
 
 
-~~~php {"header":"Объявляем сервис dummy.service.yml"}
+```php {"header":"Объявляем сервис dummy.service.yml"}
 services:
   dummy.article_breadcrumb:
     class: Drupal\dummy\ArticleBreadcrumbBuilder
     arguments: []
     tags:
       - { name: breadcrumb_builder, priority: 10 }
-~~~
+```
 
-~~~php {"header":"Листинг /src/ArticleBreadcrumbBuilder.php"}
+```php {"header":"Листинг /src/ArticleBreadcrumbBuilder.php"}
 <?php
 
 /**
@@ -89,7 +89,7 @@ class ArticleBreadcrumbBuilder implements BreadcrumbBuilderInterface {
     return $breadcrumb->setLinks($links);
   }
 }
-~~~
+```
 
 ![Результат данных хлебных крошек.](image/Screenshot_20160902_202843.png)
 

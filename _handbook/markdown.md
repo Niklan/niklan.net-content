@@ -18,6 +18,14 @@ Currently supported additional information:
 - `header`: A header for a code block, mainly intended to be used as the name of
   the file from which a code example is taken.
 
+````markdown
+```php {"header":"hello-world.php","highlighted_lines":"3"}
+<?php
+
+echo "Hello, World!";
+```
+````
+
 ## Generic directives
 
 This syntax is heavily inspired by [this discussion][generic-directives]. 
@@ -38,7 +46,7 @@ nested and do not have child elements. The closest HTML example is `<iframe>`
 tag.
 
 - Spaces are optional between different parts. `::name[foo]{bar=baz}` is the
-  same as `:: name[foo] {bar = baz}`.
+  same as `:: name [foo] {bar=baz}`.
 - By default, only a name is required, but different use cases may have their
   own specific requirements and limitations.
 - It always starts with a double colon.
@@ -91,13 +99,13 @@ content.
   colon.
 
 ```markdown
-::::: first
-  ::: second
+:::::: first
+  :::: second
     This is a fun video!
 
     :: youtube {vid=123}
-  :::
-:::::
+  ::::
+::::::
 ```
 
 ### Alerts

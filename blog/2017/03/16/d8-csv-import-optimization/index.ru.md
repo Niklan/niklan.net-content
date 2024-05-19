@@ -43,7 +43,7 @@ tags:
 Первым делом, нам нужно добавить в форму импорта новое поле, в котором юзер сможет выбирать, на какое кол-во чанков разбивать данные.
 
 
-~~~php {"header":"/src/Form/ImportForm.php"}
+```php {"header":"/src/Form/ImportForm.php"}
 # Добавляем после элемента enclosure, перед return. Можете добавить куда вам удобно, на самом деле, это не так важно.
 $form['additional_settings']['chunk_size'] = [
   '#type' => 'number',
@@ -52,11 +52,11 @@ $form['additional_settings']['chunk_size'] = [
   '#required' => TRUE,
   '#min' => 1,
 ];
-~~~
+```
 
 Далее нам надо немного переписать метод валидации формы. Раньше там было одно условие, теперь нам там потребуется новое. Мы хоть и ограничили элементу number минимальное значение в единицу, на старых браузерах это может не работать и нам надо лишнийраз подстраховаться и запрещать выбор менее единицы.
 
-~~~php {"header":"/src/Form/ImportForm.php"}
+```php {"header":"/src/Form/ImportForm.php"}
 public function validateForm(array &$form, FormStateInterface $form_state) {
   parent::validateForm($form, $form_state);
   if ($form_state->getTriggeringElement()['#name'] == 'start_import') {
@@ -71,21 +71,21 @@ public function validateForm(array &$form, FormStateInterface $form_state) {
     }
   }
 }
-~~~
+```
 
 В субмит хэндлере нам нужно добавить наше значение для сохранения в конфигурацию.
 
-~~~php {"header":"/src/Form/ImportForm.php"}
+```php {"header":"/src/Form/ImportForm.php"}
 $config->set('skip_first_line', $form_state->getValue('skip_first_line'))
   ->set('delimiter', $form_state->getValue('delimiter'))
   ->set('enclosure', $form_state->getValue('enclosure'))
   ->set('chunk_size', $form_state->getValue('chunk_size'))  # Новое значение
   ->save();
-~~~
+```
 
 В последнем методе класса startImport нам необходимо передавать новый параметр на дальнеушую обработку импорта.
 
-~~~php {"header":"/src/Form/ImportForm.php"}
+```php {"header":"/src/Form/ImportForm.php"}
 public function startImport(array &$form, FormStateInterface $form_state) {
   $config = $this->config('custom_csv_import.import');
   $fid = $config->get('fid');
@@ -98,24 +98,24 @@ public function startImport(array &$form, FormStateInterface $form_state) {
   $import = new CSVBatchImport($plugin_id, $fid, $skip_first_line, $delimiter, $enclosure, $chunk_size);
   $import->setBatch();
 }
-~~~
+```
 
 Раз мы уже затронули конфиги, давайте попутно добавим данному конфигу значение по умолчанию при установке.
 
 
-~~~yaml {"header":"/config/install/custom_csv_import.import.yml"}
+```yaml {"header":"/config/install/custom_csv_import.import.yml"}
 skip_first_line: 1
 delimiter: ';'
 enclosure: ','
 # new
 chunk_size: 20
-~~~
+```
 
 С формой импорта всё. Теперь нам необходимо внести корректировки в CSVBatchImport в котором происходит парсиснг файла. Здесь и будет происходить разбиение на чанки.
 
 Первым делом надо добавить новую приватную переменную `$chunk_size`, а в конструкторе принимать новый параметр и записывать его в эту самую переменную.
 
-~~~php {"header":"/src/CSVBatchImport.php"}
+```php {"header":"/src/CSVBatchImport.php"}
 # Добавляем переменную для хранение размера чанка
 # к остальным.
 private $chunk_size;
@@ -127,11 +127,11 @@ public function __construct($plugin_id, $fid, $skip_first_line = FALSE, $delimit
   $this->chunk_size = $chunk_size;
   # …
 }
-~~~
+```
 
 Теперь перейдем к методу `parseCSV`, в котором находится логика парссинга файла, где нам и необходимо дробить данные на чанки.
 
-~~~php {"header":"/src/CSVBatchImport.php"}
+```php {"header":"/src/CSVBatchImport.php"}
 public function parseCSV() {
   # Создаем массив для данных csv.
   $items = [];
@@ -154,13 +154,13 @@ public function parseCSV() {
     $this->setOperation($chunk);
   }
 }
-~~~
+```
 
 В плане функционала всё готово. Но в прошлый раз мы подключили систему плагинов и добавили два для примера. Их тоже необходимо поправить, и если вы пользовались модулем как заготовкой и написали свои плагины, вам также придется внести во всех плагины изменения. Они очень мелкие.
 
 Суть в том, что раньшме мы на операцию отправляли масив данных, например (id, title, body), теперь мы отправляем массив из этих данных (чанки), например ((id, title, body), (id, title, body), …) и соответственно нам надо учитывать что теперь там многомерный массив, а не одномерный.
 
-~~~php {"header":"/src/Plugin/CustomCSVImport/Article.php и Page.php"}
+```php {"header":"/src/Plugin/CustomCSVImport/Article.php и Page.php"}
 public function processItem($data, &$context) {
   # Прокручиваем $data, каждый элемент которого
   # является массивом с данными из CSV.
@@ -172,7 +172,7 @@ public function processItem($data, &$context) {
     # Только проверьте чтобы он был в цикле, а не за пределами.
   }
 }
-~~~
+```
 
 Данные изменения в плагинах абсолютно идентичны. Мы лишь сделали обертку в foreach из-за того что данные идут в несколько слоев а не напрямую, всё. Во всех плагинах будут аналогичные изменения, ничего больше менять не потребуется.
 

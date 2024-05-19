@@ -101,7 +101,7 @@ Commerce License использует систему плагинов Ctools, п
 
 Первым делом, объявляем `hook_ctools_plugin_directory()` и указываем где лежат плагина для commerce_license.
 
-~~~php {"header":"paid_advertisement_license.module"}
+```php {"header":"paid_advertisement_license.module"}
 /**
  * Implements hook_ctools_plugin_directory().
  */
@@ -110,7 +110,7 @@ function paid_advertisement_license_ctools_plugin_directory($owner, $plugin_type
     return "plugins/$plugin_type";
   }
 }
-~~~
+```
 
 Теперь в корне модуля создаем папку `plugins`, а в ней ещё одну папку `license_type`. В данной папке мы должны добавить файл плагина. Называться он может как угодно и иметь расширение **.inc**. Я назвал, опять же, очевидно **paid_advertisement_license.inc**. 
 
@@ -121,7 +121,7 @@ function paid_advertisement_license_ctools_plugin_directory($owner, $plugin_type
 * weight — вес плагина, по всей видимости влияет лишь на то, какой по счету в списке в админке данный плагин будет выводиться. Вообще не важная штука, я ставлю 1.
 
 
-~~~php {"header":"plugins/license_type/paid_advertisement_license.inc"}
+```php {"header":"plugins/license_type/paid_advertisement_license.inc"}
 <?php
 
 /**
@@ -134,13 +134,13 @@ $plugin = array(
   'class' => 'PaidAdvertisementLicense',
   'weight' => 1,
 );
-~~~
+```
 
 Теперь нам необходимо создать соответствующий класс. Данный класс должен наследоваться от `CommerceLicenseBase` или `CommerceLicenseRemoteBase` в зависимости от того, какого типа лицензия. В нашем случае, выходить за пределы сайта не нужно, поэтому нам нужен первый.
 
 Для начала я сделаю просто каркас и файл, а наполнять будем по ходу.
 
-~~~php {"header":"plugins/license_type/PaidAdvertisementLicense.class.php"}
+```php {"header":"plugins/license_type/PaidAdvertisementLicense.class.php"}
 <?php
 
 /**
@@ -149,7 +149,7 @@ $plugin = array(
 class PaidAdvertisementLicense extends CommerceLicenseBase  {
     
 }
-~~~
+```
 
 Настало время описать методы, которые мы можем здесь объявить. Их не так много, а важных и вовсе парочка.
 
@@ -184,7 +184,7 @@ class PaidAdvertisementLicense extends CommerceLicenseBase  {
 
 
 
-~~~php
+```php
 $fields['FIELD_NAME'] = array(
   'field' => array(
     // Объявление поля
@@ -193,7 +193,7 @@ $fields['FIELD_NAME'] = array(
     // Объявление инстанца поля.
   ),
 );
-~~~
+```
 
 Если проводить аналогию с интерфейсом и функцями то данный массив можно объяснить так:
 
@@ -205,13 +205,13 @@ $fields['FIELD_NAME'] = array(
 
 Если вы не знаете как объявить поле, и никогда это не делали, хотите определенный тип поля, но не знаете, что же делать? Как же эти массивы заполнять? Здесь можно воспользоваться очень простым способом. В любом типе материала создаете нужное вам поле со всеми значениями, и затем, например на странице `/devel/php` (должен быть включен модуль Devel) выводите инфу о данном поле и он вам вернет все эти массивы. Например, я по материалу создал поле "Количество публикаций" (field_pap_number_of_publications), оно типа Integer, обязательное, имеет минимальное значение -1 и создано у товара commerce типа paid_ad_publishing. Чтобы получить информацию о том как объявлено это поле, я перехожу на страницу девела и ввожу:
 
-~~~php {"header":"url: /devel/php"}
+```php {"header":"url: /devel/php"}
 $field = field_info_field('field_pap_number_of_publications');
 // Entity Type, Field Name, Entity Bundle - бандл где используется интересующие конфиги поля.
 $instance = field_info_instance('commerce_product', 'field_pap_number_of_publications', 'paid_ad_publishing');
 dpm($field, 'field');
 dpm($instance, 'instance');
-~~~
+```
 
 ![Результат информации о поле](image/devel-field-info.jpeg)
 
@@ -222,7 +222,7 @@ dpm($instance, 'instance');
 Создаем два поля для нашей лицензии.
 
 
-~~~php {"header":"Метод fields() в классе PaidAdvertisementLicense"}
+```php {"header":"Метод fields() в классе PaidAdvertisementLicense"}
 /**
  * Implements EntityBundlePluginProvideFieldsInterface::fields().
  */
@@ -255,7 +255,7 @@ static function fields() {
 
   return $fields;
 }
-~~~
+```
 
 Минимальное значение для оставшихся публикаций я лишь добавил как пример, по факту, и его не нужно заполнять. Так как вся работа с полем будет исключительно программно, и у нас будет железная логика для работы с полями, то там ничего иного и не появится.
 
@@ -265,14 +265,14 @@ static function fields() {
 
 Данный метод отвечает за то, будет ли у лицензии собственная форма во время покупки. У нас не будет, по умолчанию она включена, нам необходимо её отключить.
 
-~~~php
+```php
 /**
  * Implements CommerceLicenseInterface::isConfigurable().
  */
 public function isConfigurable() {
   return FALSE;
 }
-~~~
+```
 
 ### accessDetails()
 
@@ -283,7 +283,7 @@ public function isConfigurable() {
 
 Возвращаясь к нашему методу, давайте отдадим текст с информацией об остатках на лицензии:
 
-~~~php
+```php
 /**
  * Implements CommerceLicenseInterface::accessDetails().
  */
@@ -295,7 +295,7 @@ public function accessDetails() {
     '@promotions' => $promotions_left,
   ));
 }
-~~~
+```
 
 ### save()
 
@@ -305,7 +305,7 @@ public function accessDetails() {
 Здесь у нас будет логика деактивации лицензии по истечению лимитов. Если количество доступных пубилкаций и закреплений опустилось до 0, в момент сохранения, мы деактивируем лицензию. В случае с бесконечными лицензиями, у нас будет ограничение в 7 дней и лицензия будет деактивироваться автоматически через данный срок, следовательно, все непотраченные закрепления сгорят, даже если будет больше 0. Следовательно, данный код будет игнорироваться так как не пройдет условия.
 
 
-~~~php
+```php
 /**
  * Overrides Entity::save().
  */
@@ -320,7 +320,7 @@ public function save() {
 
   parent::save();
 }
-~~~
+```
 
 ### activate()
 
@@ -329,7 +329,7 @@ public function save() {
 
 Обратите внимание что я проверяю на статус "создан". Данный статус присваивается лицензии когда в корзину добавлен товар, который связан с текущим типом лицензии. Т.е. это указывает на факт что лицензия создана и находится где-то на этапах покупки, т.е. заказ ещё не оплачен. Почему я делаю данную проверку? Так как лицензия имеет и другие статусы, которые не дактивируют её по факту, но позволяют её в дальнейшем сделать активной. Например `suspend()` позволяет временно "заморозить" лицензию, чтобы разморозить её придется активировать, но если мы не сделаем эту проверку, то после `suspend()` лицензия уйдет на активацию и опять получит обновленные лимиты на публикации, т.е. сделает всё тоже что и делает `renew()`. А это косяк, поэтому и проверяем, что лимиты записываются только когда лицензия активируется из статуса `CREATED`. У удаленных лицензий есть ещё статус `COMMERCE_LICENSE_PENDING`, и если вы решите делать удаленную лицензию, то не забывайте проверять и на него, так как он означет что лицензия нуждается в синхронизации но ещё не активна.
 
-~~~php
+```php
 /**
  * Implements CommerceLicenseInterface::activate().
  */
@@ -344,7 +344,7 @@ public function activate() {
 
   parent::activate();
 }
-~~~
+```
 
 ### renew()
 
@@ -352,7 +352,7 @@ public function activate() {
 Данный метод нам тоже пригодится для примера. Мы добавим сюда логику обновления лицензии. Так как данный метод можно вызывать из администритивного интерфейса, это очень полезно, чтобы администратор мог в любой момент обновить лицензию и начислить все лимиты заного в соответствии с товаром.
 
 
-~~~php
+```php
 /**
  * Implements CommerceLicenseInterface::renew().
  */
@@ -361,7 +361,7 @@ public function renew($expires) {
   $this->wrapper->pap_promotions_left = $this->wrapper->product->field_pap_number_of_promotions->value();
   parent::renew($expires);
 }
-~~~
+```
 
 ## Подключаем нашу лицензию к товарам
 
@@ -415,7 +415,7 @@ public function renew($expires) {
 
 Данная функция будет возвращать список активных лицензий для указанного пользователя.
 
-~~~php
+```php
 /**
  * Returns array of objects with active Paid Advertisements Licenses for user.
  */
@@ -444,14 +444,14 @@ function paid_advertisement_license_get_user_active_licenses($uid = NULL) {
 
   return $result;
 }
-~~~
+```
 
 ### Получение остатка по лицензиям
 
 
 В данной функции мы получаем массив с остатком возможных публикаций и закреплений материала.
 
-~~~php
+```php
 /**
  * Returns how much publication and promotions left in total.
  */
@@ -474,14 +474,14 @@ function paid_advertisement_license_get_user_balance($uid = NULL) {
   }
   return $result;
 }
-~~~
+```
 
 ### Списание с баланса
 
 
 При помощи данной функции мы сможем списывать с баланса лицензии(ий) определенные остатки. Например списывать пубилкаци или закрепления по отдельности, или оба вместе. Приоритет отдается самой старой лицензии, когда лимит списываемого баланса достигает 0, мы переходим к следующей лицензии и списываем у неё. Мы можем либо списать 1 остаток, либо не списать ничего. Вызов данной функции подразумевает что списывается там где есть баланс, т.е. мы не будем вызывать эту функцию там где баланса будет не достаточно. Также мы игнорируем списание публикаций если хотябы одна из лицензий активна и имеет неограниченное кол-во публикаций. Допустим, юзер имеет 2 лицензии, первая имеет 5 публикаций, а вторая неограниченная но действует 7 дней. Первая была куплена раньше чем вторая, но при списании баланса мы будем игнорировать это, так как имеется активная лицензия с неограниченным количеством, и списываться начнет только после её окончания.
 
-~~~php
+```php
 /**
  * Subtracts from balance publication and promotions. Priority is given to
  * oldest licenses.
@@ -517,14 +517,14 @@ function paid_advertisement_license_subtract_from_balance($publications = 0, $pr
     $wrapper->save();
   }
 }
-~~~
+```
 
 ### Отключение закрепления у материалов спустя час
 
 
 Данная функция будет находить все материалы типа объявления у которых истекло время заркепления и снимать его с него.
 
-~~~php
+```php
 /**
  * Find all advertisement
  */
@@ -546,7 +546,7 @@ function paid_advertisement_license_disable_expired_promotions() {
     }
   }
 }
-~~~
+```
 
 ## Пишем остальные хуки и логику
 
@@ -563,7 +563,7 @@ function paid_advertisement_license_disable_expired_promotions() {
 2. Право редактировать дату окончания закрепления. По-умолчанию это поле будет скрыто от всех, а время высчитываться и выстанавливаться автоматически, но мы оставим возможность ролям, у которых будет данное разрешение, самостоятельно устанавливать время окончания закрепления.
 
 
-~~~php
+```php
 /**
  * Implements hook_permission().
  */
@@ -577,7 +577,7 @@ function paid_advertisement_license_permission() {
     ),
   );
 }
-~~~
+```
 
 ### Крон на снятие закрепленных материалов
 
@@ -587,7 +587,7 @@ function paid_advertisement_license_permission() {
 Первый, конкретно для случая из статьи не подходит. Минимальное время для крона которое можно устновить в ядре — 1 час. У нас, по дефолту, 1 закрепление делается на 1 час, и получается что если закрепить материал через секунду после крона, то материал провесит закрепленным не час, а 1 час 59 минут и 59 секунд. Т.е. большинство материалов будет весить строго больше 1 часа, вплодь до почти двух часов. Я, например, хочу чтобы данная операция производилась каждые 5 минут, поэтому тут очень поможет Elysia Cron, поэтому код будет для него.
 
 
-~~~php
+```php
 /**
  * Implements hook_cronapi().
  */
@@ -600,7 +600,7 @@ function paid_advertisement_license_cronapi($op, $job = NULL) {
 
   return $items;
 }
-~~~
+```
 
 ### Модифицируем форму добавления и редактирования объявления
 
@@ -613,7 +613,7 @@ function paid_advertisement_license_cronapi($op, $job = NULL) {
 
 В конце мы добавляем свой собственный callback для субмита формы в самое начало.
 
-~~~php
+```php
 /**
  * Implements hook_form_FORM_ID_alter().
  */
@@ -648,13 +648,13 @@ function paid_advertisement_license_form_advertisement_node_form_alter(&$form, &
   // Add custom submit callback.
   array_unshift($form['actions']['submit']['#submit'], 'paid_advertisement_license_form_advertisement_node_form_submit');
 }
-~~~
+```
 
 Далее описываем свой собственный submit callback, в котором мы, определяем новая ли нода. Если новая, мы проверяем баланс и права, если у юзера нет прав на пропуск проверки баланса, и баланс на публикации не бескоенчный, мы вычитаем с баланса 1 публикацию.
 
 В случае ещё юзера поставил галочку для закрепления материала, мы также, вычитаем с баланса одно закрепление. Если это было редактировании, и материал уже закреплен, а пользователь снова нажал на галочку и сохранил, ещё 1 час закрепления добавится к текущему остатку.
 
-~~~php
+```php
 /**
  * Custom submit handler for Advertisement node.
  */
@@ -684,7 +684,7 @@ function paid_advertisement_license_form_advertisement_node_form_submit($form, &
     }
   }
 }
-~~~
+```
 
 ## Проверка №2
 

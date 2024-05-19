@@ -186,7 +186,7 @@ Quasar Burst — это дополнение которое распростра
 
 
 
-~~~python {"header":"overrides.py"}
+```python {"header":"overrides.py"}
 overrides = {
     #
     # Mirrors for Russian trackers.
@@ -211,7 +211,7 @@ overrides = {
     },
 
 } 
-~~~
+```
 
 Данный файл просто меняет значения в конфигах для трекеров где используется URL на их зеркала. Вот и всё. В случе чего можете сами поправить.
 

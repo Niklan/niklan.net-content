@@ -33,7 +33,7 @@ tags:
 
 Первым делом пишется функция. Я, для примера, привожу код, который возвращает список доступных форм от модуля Contact. В качестве ключа используется машинное имя контактной формы (из-за их особенности вызова), а значением является просто название формы. Данная функция должна принимать 3 аргумента: `FieldStorageConfig $definition`, `ContentEntityInterface $entity = NULL` и `$cacheable`. В нашем случае они не нужны вообще. Но если потребуется, то можете пользоваться. 
 
-~~~php
+```php
 /**
  * Custom option list for field node.field_example_dynamic_select
  */
@@ -48,7 +48,7 @@ function dummy_node_field_example_dynamic_select_options_list(FieldStorageConfig
   unset($options['personal']);
   return $options;
 }
-~~~
+```
 
 Теперь, для нужного поля, нужно указать данную функцию в параметре `allowed_values_function`, просто как строку. Для этого:
 
@@ -78,7 +78,7 @@ function dummy_node_field_example_dynamic_select_options_list(FieldStorageConfig
 
 
 
-~~~php {"header":"dummy.module"}
+```php {"header":"dummy.module"}
 /**
  * Custom option list for field field_example_dynamic_select.
  * 
@@ -92,7 +92,7 @@ function dummy_node_field_example_dynamic_select_options_list() {
   }
   return $allowed_values;
 }
-~~~
+```
 
 Так как я выше написал, в 7-ке нет конфигураций, нам нужно изменить конфигурацию поля. Делается это исключительно кодом. Код, конечно, можно дернуть в каком-нибудь `/devel/php` — но это будет крайне опасно на будущее, так как тут хотябы будет след от этих действий. Ведь в 7-ке с этим не так прозрачно как в 8-ке, там в конфиге можно посмотреть что и как, а тут это заморчоеннее, надо либо в базу лезть либо код по памяти писать. И вообще это не очень хорошо так поля менять.
 
@@ -100,7 +100,7 @@ function dummy_node_field_example_dynamic_select_options_list() {
 
 Собственно нам нужен `.install` файл где пишутся данные хуки. Если нету, то создаем и объявляем наш хук.
 
-~~~php {"header":"dummy.install"}
+```php {"header":"dummy.install"}
 <?php
 
 /**
@@ -121,7 +121,7 @@ function dummy_update_7101(&$sandbox) {
   // Сохраняем изменения поля.
   field_update_field($field_info);
 }
-~~~
+```
 
 После этого нужно зайти на страницу `/update.php` и запустить обновление. Данные настройки применятся и вы увидите результат.
 

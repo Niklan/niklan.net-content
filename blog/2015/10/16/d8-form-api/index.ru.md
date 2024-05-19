@@ -78,18 +78,18 @@ tags:
 
 Данный метод возвращает (string) название формы.
 
-~~~php
+```php
 public function getFormId() {
 	return 'my_custom_form';
 }
-~~~
+```
 
 ### buildForm()
 
 
 Данный метод отвечает за саму форму, то что в ней будет.  Как и в Drupal 7, возвращает массив с render arrays.
 
-~~~php
+```php
 public function buildForm(array $form, FormStateInterface $form_state) {
   $form['name'] = array(
     '#type' => 'textfield',
@@ -97,7 +97,7 @@ public function buildForm(array $form, FormStateInterface $form_state) {
   );
   return $form;
 }
-~~~
+```
 
 Напоминаю, эти два метода, **обязательны**.
 
@@ -112,22 +112,22 @@ public function buildForm(array $form, FormStateInterface $form_state) {
 Все данные которые ввел пользователь в процессе заполнения формы, будут находиться в переменной `$form_state`.  Только получение данных в Drupal 8 изменилось в лучшую сторону, и для того чтобы получить нужные значения поля, используется следующий код:
 
 
-~~~php
+```php
 // field_id - название элемента формы (ключ).
 $form_state->getValue('field_id');
-~~~
+```
 
 Для получения всех значений используется следующий метод:
 
-~~~php
+```php
 // Получаем все значения формы.
 $values = $form_state->getValues();
-~~~
+```
 
 Имея значения формы, мы можем проверять их на соответствия нашим требования, и "пропускать" или "блокировать" данные, отправляя пользователю информацию с ошибкой. В данном случае вы можете использовать все что душе угодно, и если вашу проверку не проходит какое-то поле, то нужно использовать метод `setErrorByName()`:
 
 
-~~~php
+```php
 public function validateForm(array &$form, FormStateInterface $form_state) {
   // Допустим, у нас в форме есть textfield с названием name,
   // нам необходимо чтобы пользователь ввел минимум 5 символов
@@ -139,7 +139,7 @@ public function validateForm(array &$form, FormStateInterface $form_state) {
     $form_state->setErrorByName('name', 'Поле "Имя" не может быть короче 5 символов');
   }
 }
-~~~
+```
 
 Получается, если в ходе данного метода не было установлено ни одной ошибки, форма уходит на отправку.
 
@@ -151,12 +151,12 @@ public function validateForm(array &$form, FormStateInterface $form_state) {
 
 Для этого используется метод:
 
-~~~php
+```php
 public function submitForm(array &$form, FormStateInterface $form_state) {
   // Выводим имя введенное в форме.
   drupal_set_message($this->t('Your name is @name', array('@name' => $form_state->getValue('name'))));
 }
-~~~
+```
 
 Вот и всё, три простых этапа, из которых лишь два по сути являются самыми важными, реализуются очень просто. Теперь время применять знания на практике.
 
@@ -179,7 +179,7 @@ public function submitForm(array &$form, FormStateInterface $form_state) {
 Первым делом создаем класс формы `/src/Form/CollectPhone.php`, а в нём объявляем форму. Дальнейшие инструкции в комментариях.
 
 
-~~~php
+```php
 <?php
 /**
  * @file
@@ -274,11 +274,11 @@ class CollectPhone extends FormBase {
   }
 
 }
-~~~
+```
 
 Хорошо, форму мы объявили. Но что с ней делать? Куда она будет выводиться? Давайте создадим ей свою страницу `/collect-phone`, для этого создадим в корне модуля `helloworld.routing.yml` файл и вызовем нашу форму:
 
-~~~yml
+```yml
 collect_phone.form:
   path: '/collect-phone'
   defaults:
@@ -287,7 +287,7 @@ collect_phone.form:
     _form: '\Drupal\helloworld\Form\CollectPhone'
   requirements:
     _permission: 'access content'
-~~~
+```
 
 Теперь, если еще не включили модуль, то уже пора, и затем переходим на страницу `/collect-phone`:
 
@@ -309,7 +309,7 @@ collect_phone.form:
 
 Создание форм на основе данного класса подразумевают что данная форма будет использоваться для редактирования каких-либо настроек. По сути они ничем не отличаются от создания форм используя `FormBase`. Давайте объявим вторую форму и назовем её `CollectPhoneSettings`, это значит, что нам надо создать файл `/src/Form/CollectPhoneSettings.php`.
 
-~~~php
+```php
 <?php
 
 /**
@@ -374,11 +374,11 @@ class CollectPhoneSettings extends ConfigFormBase {
       ->save();
   }
 }
-~~~
+```
 
 Опять же, наша форма нигде не вызывается, давайте установим ей адрес. В существующий `helloworld.routing.yml` давайте добавим следующие строки:
 
-~~~yml
+```yml
 collect_phone.admin_settings:
   path: '/admin/config/helloworld'
   defaults:
@@ -386,13 +386,13 @@ collect_phone.admin_settings:
     _title: 'Settings for CollectPhone form.'
   requirements:
     _permission: 'administer site configuration'
-~~~
+```
 
 Адрес мы зарегистрировали, но так как, с вероятностью 90% вы будите использовать данную форму для настроек своего модуля, давайте также добавим кнопку в список модулей, которая будет вести на модуль. Для этого в `helloworld.info.yml` файл добавим ссылку на страницу с настройками:
 
-~~~yml
+```yml
 configure: collect_phone.admin_settings
-~~~
+```
 
 Сбросим кэш и проверим что у нас получилось. Последнее действие должно было добавить кнопку в раздел модуля:
 
@@ -405,7 +405,7 @@ configure: collect_phone.admin_settings
 
 Напишите любой номер телефона и сохраните настройки. Допустим, напишем номер `+7 (342) 2-12-34-56`. Если вы всё сделали верно, то после сохранения поле уже будет заполнено нашими настройками. Теперь вернемся к форму `CollectPhone` и установим значение из данных настроек в качестве значения для телефона по умолчанию. Вот листинг части метода `buildForm()` со строкой загрузки данных и  установкой их в `#default_value`:
 
-~~~php
+```php
 // Загружаем настройки модули из формы CollectPhoneSettings.
 $config = \Drupal::config('helloworld.collect_phone.settings');
 // Объявляем телефон.
@@ -417,7 +417,7 @@ $form['phone_number'] = array(
   '#title' => $this->t('Your phone number'),
   '#default_value' => $config->get('phone_number')
 );
-~~~
+```
 
 Опять же, если вы всё сделали правильно, то при открытии формы на странице `/collect-phone` вы увидите это значение установленное по умолчанию для телефона:
 
@@ -428,19 +428,19 @@ $form['phone_number'] = array(
 
 Если вы имели дело с формами в 7-ке, то помните функцию `drupal_get_form()`, которая благополучно была удалена из ядра. Теперь форму вы можете вызывать следующим способом:
 
-~~~php
+```php
 $form = \Drupal::formBuilder()->getForm('Drupal\helloworld\Form\CollectPhone');
-~~~
+```
 
 Вы также можете передать дополнительные значения в форму:
 
-~~~php
+```php
 $form = \Drupal::formBuilder()->getForm('Drupal\helloworld\Form\CollectPhone', '+7 (800) 123-45-67');
-~~~
+```
 
 Но и не забудьте принять данное значение чтобы использовать в методе `buildForm()`:
 
-~~~php
+```php
 public function buildForm(array $form, FormStateInterface $form_state, $phone = NULL) {
   $form['phone_number'] = array(
     '#type' => 'tel',
@@ -450,14 +450,14 @@ public function buildForm(array $form, FormStateInterface $form_state, $phone = 
     '#default_value' => $phone ? $phone : '',
   );
 }
-~~~
+```
 
 ### Альтерим форму
 
 
 Альтер, кстати, перешел к нам из Drupal 7, `hook_form_FORM_ID_alter()` по прежнему работает, поэтому кто имел с ним опыт,  ничего нового не откроет, а кто нет, вот пример использования:
 
-~~~php
+```php
 /**
  * Implements hook_form_FORM_ID_alter().
  * Form ID: collect_phone
@@ -465,7 +465,7 @@ public function buildForm(array $form, FormStateInterface $form_state, $phone = 
 function helloworld_form_collect_phone_alter(&$form, &$form_state) {
   $form['phone_number']['#description'] = t('Start with + and your country code.');
 }
-~~~
+```
 
 Вот и всё. Так мы будем работать с формами в Drupal 8. Как по мне, так намного удобнее и приятнее работать с такими формами.
 

@@ -69,7 +69,7 @@ DisplaySuite делает почти всю работу и гибкость, а
 
 Вроде ничего сложного, и действительно. Всё это накликано в админке, кроме кнопки "Читать далее". Её потребовалось объявить в коде для тех самых трех точек, чтобы сделать их анимированными. И на это ушло минуты 2. А код его такой:
 
-~~~php
+```php
 $entity_wrapper = entity_metadata_wrapper('node', $field['entity']);
 return format_string(
   '<a href="@link">Читать далее <span class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></span></a>',
@@ -77,7 +77,7 @@ return format_string(
     '@link' => url('/node/' . $entity_wrapper->getIdentifier()),
   )
 );
-~~~
+```
 
 Так это выглядит в админке:
 
@@ -105,7 +105,7 @@ return format_string(
 
 Например, вот темплейт для планировок этажей, которые ничто иное как field_collection.
 
-~~~html
+```html
 <div class="item">
   <h3 class="title"><?php print $layout_title; ?></h3>
   <div class="content">
@@ -134,7 +134,7 @@ return format_string(
     </div>
   </div>
 </div>
-~~~
+```
 
 А вот что получается на выходе в HTML:
 
@@ -187,7 +187,7 @@ return format_string(
 
 Но конечно тут Bootsrap может добавить сложностей. Это хорошо если нужно просто всем элементам сделать один размер колонки, а если где-то нужен иной, например через `:nth-child()`, то тут уже препроцесс, или кастом DS поле. А Susy позволяет эту проблему обходить. Я задаю просто обычные классы и уже в суси разруливаю разметку. Например, для "Пример №1" сетка сделана вот так:
 
-~~~scss
+```scss
 .blog-teaser {
   @include susy-clearfix;
   
@@ -199,7 +199,7 @@ return format_string(
     @include span(9 last);
   }
 }
-~~~
+```
 
 Но Susy это вообще другая тема :)
 

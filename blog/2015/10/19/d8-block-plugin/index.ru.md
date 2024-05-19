@@ -56,7 +56,7 @@ tags:
 
 Данный метод является единственным **обязательным** методом, который вы должны определить в классе для своего блока. Он должен **всегда** возвращать render array. 
 
-~~~php
+```php
 public function build() {
   $block = [
     '#type' => 'markup',
@@ -64,14 +64,14 @@ public function build() {
   ];
   return $block;
 }
-~~~
+```
 
 ### blockAccess()
 
 
 Данный метод отвечает за права доступа. Возвращает TRUE/FALSE. Если TRUE, то блок будет доступен для просмотра, во всех остальных случаях не будет отображаться. Здесь вы можете описать любую нужную вам логику.
 
-~~~php
+```php
 use Drupal\Core\Access\AccessResult;
 use Drupal\Core\Session\AccountInterface;
 ...
@@ -80,14 +80,14 @@ protected function blockAccess(AccountInterface $account) {
   // право доступа 'administer blocks'.
   return AccessResult::allowedIfHasPermission($account, 'administer blocks');
 }
-~~~
+```
 
 ### defaultConfiguration()
 
 
 Если вы хотите добавить свой блок форму с настройками, то в данном методе вы можете предоставить значения по умолчанию для блока.
 
-~~~php
+```php
 public function defaultConfiguration() {
   // Если, допустим, ваш блок выводит последних зарегистрированных
   // пользователей и вы хотите дать возможность выбирать сколько
@@ -97,7 +97,7 @@ public function defaultConfiguration() {
     'users_count' => 10,
   );
 }
-~~~
+```
 
 ### blockForm()
 
@@ -105,7 +105,7 @@ public function defaultConfiguration() {
 При помощи данного метода вы сможете объявить форму с настройками для данного блока используя [Form API](/blog/73).
 
 
-~~~php
+```php
 use Drupal\Core\Form\FormStateInterface;
 ...
 public function blockForm($form, FormStateInterface $form_state) {
@@ -124,14 +124,14 @@ public function blockForm($form, FormStateInterface $form_state) {
   );
   return $form;
 }
-~~~
+```
 
 ### blockValidate()
 
 
 Как и в Form API, здесь вы можете провести валидацию введенных данных в форме. В данном случае, есть форма по умолчанию, следовательно, даже не объявляя `buildForm()` вы можете объявлять данный метод и проводить валидацию.
 
-~~~php
+```php
 use Drupal\Core\Form\FormStateInterface;
 ...
 public function blockValidate($form, FormStateInterface $form_state) {
@@ -141,20 +141,20 @@ public function blockValidate($form, FormStateInterface $form_state) {
   $form_state->setErrorByName('ages', t('Needs to be an interger'));
  }
 }
-~~~
+```
 
 ### blockSubmit()
 
 
 В случае с данным методом, всё точно также как и с `blockValidate()`, вы можете определять его не имея собственной формы, тем самым внедряясь в процесс отправки данных формы с настройками для блока и внедрения собственной логики.
 
-~~~php
+```php
 use Drupal\Core\Form\FormStateInterface;
 ...
 public function blockSubmit($form, FormStateInterface $form_state) {
   $this->configuration['email_to_send'] = $form_state->getValue('email_to_send');
 }
-~~~
+```
 
 Этих методов должно хватить на большинство потребностей.
 
@@ -168,7 +168,7 @@ public function blockSubmit($form, FormStateInterface $form_state) {
 
 А внутри пишем:
 
-~~~php
+```php
 <?php
 
 /**
@@ -205,7 +205,7 @@ class SimpleBlockExample extends BlockBase {
   }
 
 }
-~~~
+```
 
 Всё, после этого наш блок уже будет доступен в административном интерфейсе для добавления.
 
@@ -224,7 +224,7 @@ class SimpleBlockExample extends BlockBase {
 
 Пусть наш блок называется `PrintMyMessages`, следовательно, нам нужно создать файл `/src/Plugin/Block/PrintMyMessages.php`. И следующего содержания:
 
-~~~php
+```php
 <?php
 
 /**
@@ -340,7 +340,7 @@ class PrintMyMessages extends BlockBase {
   }
 
 }
-~~~
+```
 
 Уже при добавлении у нас появятся настройки, которые мы можем указать:
 

@@ -37,9 +37,9 @@ tags:
 
 А теперь вернемся непосредственно к письмам. Для дальнейшей работы нам понадобятся следующие модули [Mail System](https://www.drupal.org/project/mailsystem), [Swift Mailer](https://www.drupal.org/project/swiftmailer) и Contact Storage. **Обращаю внимание** сразу на то, что Swift Mailer нужно (!) [ставить через composer](/node/130) иначе он просто не будет работать.
 
-~~~php
+```php
 composer require drupal/swiftmailer:~1.0
-~~~
+```
 
 ## Настройка Swift Mailer
 
@@ -78,7 +78,7 @@ composer require drupal/swiftmailer:~1.0
 
 Следовательно, вы можете здесь настраивать как и что будет формировать тело письма. Вы можете использовать  различные layouts и темплейты для того чтобы сформировать содержимое письма. Но что если вы хотите сделать общий каркас оформления отправляемых писем от модуля Contact? Тут нам и поможет Siwft Mailer. Он добавляет свой собственный шаблон swiftmailer.html.twig со следующим содержанием по умолчанию:
 
-~~~twig {"header":"swiftmailer.html.twig"}
+```twig {"header":"swiftmailer.html.twig"}
 <html>
 <head>
 <style type="text/css">
@@ -102,7 +102,7 @@ table tr td {
 </div>
 </body>
 </html>
-~~~
+```
 
 Как вы могли понять, всё что вы настроите на вывод в управлении отображением Mail будет вставлено в body переменную данного темплейта.
 
@@ -120,7 +120,7 @@ table tr td {
 
 Я решил что хочу переопределить вообще все исходящие contact письма и сделать им единый стиль оформления. Для этого в теме вашего сайта находится папа templates, в неё мы и помещаем нужный нам темплейт swiftmailer--contact.html.twig
 
-~~~twig {"header":"swiftmailer--contact.html.twig"}
+```twig {"header":"swiftmailer--contact.html.twig"}
 <html>
 <head>
   <style type="text/css">
@@ -159,7 +159,7 @@ table tr td {
 </div>
 </body>
 </html>
-~~~
+```
 
 ![Письмо по шаблону.](image/Screenshot_20160904_132146.png)
 

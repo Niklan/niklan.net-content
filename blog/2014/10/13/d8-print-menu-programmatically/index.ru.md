@@ -14,7 +14,7 @@ tags:
 
 Если вам понадобится вывести меню программно, на странице или еще где, да даже просто получить пункты меню, то так просто [как в Drupal 7](http://niklan.net/blog/30) уже не выйдет. Вот два варианта вывода меню.
 
-~~~php {"header":"Стандартный"}
+```php {"header":"Стандартный"}
 // ЗАМЕТКА: Получить список всех меню: menu_ui_get_menus();
 // Импортируем необходимый класс.
 use Drupal\Core\Menu\MenuTreeParameters;
@@ -31,14 +31,14 @@ $tree_array = \Drupal::menuTree()->build($tree);
 // использованием шаблона по умолчанию для Drupal 8.
 $menu = drupal_render($tree_array);
 echo $menu; // вывод.
-~~~
+```
 
 Продвинутый способ
 ------------------
 
 Данный способ я назвал продвинутым, так как в нем я покажу пример, как можно определить свой шаблон для меню. Этот раздел больше пригодиться тем кто понимает что и куда отсюда вставлять.
 
-~~~php {"header":"Регистрируем шаблон"}
+```php {"header":"Регистрируем шаблон"}
 /**
  * Implements hook_theme().
  *
@@ -60,7 +60,7 @@ function MYTHEME_theme() {
     ),
   );
 }
-~~~
+```
 
 ### Создаем шаблон
 
@@ -68,7 +68,7 @@ function MYTHEME_theme() {
 Теперь нам надо в папке templates создать шаблон **my-custom-menu-template.html.twig** с следующим содержимым.
 
 
-~~~twig
+```twig
 {% import _self as menus %}
 
 {{ menus.menu_links(items, attributes, 0) }}
@@ -92,7 +92,7 @@ function MYTHEME_theme() {
   {% endif %}
 {% endmacro %}
 </ul>{{>
-~~~
+```
 
 Это слегка модифицированный пример оригинального темплейта, который вы можете найти в **/core/modules/system/templates/menu.html.twig**. Тут для вложенного меню добавлен класс submenu.
 
@@ -102,7 +102,7 @@ function MYTHEME_theme() {
 
 Вывод от стандартного будет отличаться лишь тем, что мы изменим шаблон.
 
-~~~php
+```php
 use Drupal\Core\Menu\MenuTreeParameters;
 
 $menu_tree_parameters = new MenuTreeParameters();
@@ -112,6 +112,6 @@ $tree_array = \Drupal::menuTree()->build($tree);
 $tree_array['#theme'] = 'my_custom_menu_template';
 $menu = drupal_render($tree_array);
 echo $menu; // вывод.
-~~~
+```
 
 Теперь меню будет прогоняться через наш темплейт и мы можем контролировать классы и разметку.

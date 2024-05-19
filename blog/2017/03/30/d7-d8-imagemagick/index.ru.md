@@ -25,12 +25,12 @@ tags:
 Если вы пользуетесь Linux и ваш сервер на Linux, то можно даже особо не париться, эта либа поставляется в виде пакета `convert`. Если интересно, установлено ли, можно проверить командой `convert -version`
 
 
-~~~bash
+```bash
 Version: ImageMagick 6.8.9-9 Q16 x86_64 2017-03-14 http://www.imagemagick.org
 Copyright: Copyright (C) 1999-2014 ImageMagick Studio LLC
 Features: DPC Modules OpenMP
 Delegates: bzlib cairo djvu fftw fontconfig freetype jbig jng jpeg lcms lqr ltdl lzma openexr pangocairo png rsvg tiff wmf x xml zlib
-~~~
+```
 
 У меня вывел следующий результат. Это значит что всё стоит и работает. Это можно сделать и дальше, точнее, это сделает за вас модуль.
 
@@ -74,7 +74,7 @@ Delegates: bzlib cairo djvu fftw fontconfig freetype jbig jng jpeg lcms lqr ltdl
 Делается это очень просто, как на 7-ке, так и на 8-ке, но немного отличается код. Модуль ImageMagick предоставляет парочку хуков, которые позволяют нам внедряться на различных этапах сжатия картинки, и мы этим воспользуемся. Нас интересует `hook_imagemagick_arguments_alter()`, который позволяет добавлять и менять аргументы, которые уйдут команде convert. Основываясь на рекомендациях гугла, нам необходимо использовать `-sampling-factor 4:2:0` для более качественного сжатия с меньшими потерями. И для progression изображений мы должны использовать `-interlace Plane`.
 
 
-~~~php {"header":"MYMODULE.module"}
+```php {"header":"MYMODULE.module"}
 /**
  * Implements hook_imagemagick_arguments_alter().
  */
@@ -86,7 +86,7 @@ function MYMODULE_imagemagick_arguments_alter(&$args, $context = array()) {
   # Clean image for all unused data. EXIF etcetera.
   $args['strip'] = '-strip';
 }
-~~~
+```
 
 После этого сбрасываем кэш, чтобы хук подцепился.
 
@@ -100,7 +100,7 @@ function MYMODULE_imagemagick_arguments_alter(&$args, $context = array()) {
 
 Аналогично как и в Drupal 7, только слегка другой код.
 
-~~~php {"header":"MYMODULE.module"}
+```php {"header":"MYMODULE.module"}
 /**
  * Implements hook_imagemagick_arguments_alter().
  */
@@ -112,7 +112,7 @@ function MYMODULE_imagemagick_arguments_alter(\Drupal\imagemagick\ImagemagickExe
   // Clean image for all unused data. EXIF etcetera.
   $arguments->add('-strip');
 }
-~~~
+```
 
 Сброс кэша, `drush image-flush` и вы готовы!
 

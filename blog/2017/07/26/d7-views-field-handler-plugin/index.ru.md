@@ -124,7 +124,7 @@ $this->query->addWhere(0, $or)
 $this->query->addWhere(0, 'node__field_example_first.field_example_first_value', 2);
 // WHERE (node__field_example_first.field_example_first_value IN ('1', '2', '3'))
 $this->query->addWhere(0, 'node__field_example_first.field_example_first_value', ['1', '2', '3'], 'IN');
-// WHERE ((node__field_first_number.field_first_number_value IN ('1', '2', '3')) AND (node__field_first_number.field_first_number_value LIKE 'test' ESCAPE '\\')) … else
+// WHERE ((node__field_first_number.field_first_number_value IN ('1', '2', '3')) AND (node__field_first_number.field_first_number_value LIKE 'test' ESCAPE '/')) … else
 $this->query->addWhere('my_group', 'node__field_first_number.field_first_number_value', ['1', '2', '3'], 'IN');
 $this->query->addWhere('my_group', 'node__field_first_number.field_first_number_value', 'test', 'LIKE');
 ```

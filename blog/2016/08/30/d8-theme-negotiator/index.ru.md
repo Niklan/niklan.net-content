@@ -27,7 +27,7 @@ tags:
 Теперь нужно объявить наш класс. Он должен располагаться в `/src/Theme`. Назовем его `StarkForFront` и заполним следующим кодом.
 
 
-~~~php {"header":"Листинг /src/Theme/StarkForFront.php"}
+```php {"header":"Листинг /src/Theme/StarkForFront.php"}
 <?php
 
 namespace Drupal\dummy\Theme;
@@ -69,18 +69,18 @@ class StarkForFront implements ThemeNegotiatorInterface {
     return 'stark';
   }
 }
-~~~
+```
 
 И последним, вторым, шагом станет то, что мы данный класс добавим в сервисы. Для этого нужно добавить в корень модуля файл `MYMODULE.services.yml` и объявить свой сервис.
 
-~~~yml
+```yml
 services:
   theme.negotiator.stark_for_front:
     class: Drupal\dummy\Theme\StarkForFront
     arguments: ['@path.matcher']
     tags:
       - { name: theme_negotiator, priority: -40 }
-~~~
+```
 
 Как вы можете заметить, мы также можем указывать приоритет. Если сработают сразу два theme negotiator на одной странице, то приоритет отдастся тому, у которого будет больший приоритет. У theme negotiator из ядра приоритет -100, так что имейте это ввиду.
 
@@ -94,7 +94,7 @@ services:
 
 Ну и небольшая подсказка на последок.
 
-~~~php {"header":"Включение темы для определенного типа содержимого."}
+```php {"header":"Включение темы для определенного типа содержимого."}
 public function applies(RouteMatchInterface $route_match) {
   if ($route_match->getRouteName() == 'entity.node.canonical') {
     $node = $route_match->getParameter('node');
@@ -104,6 +104,6 @@ public function applies(RouteMatchInterface $route_match) {
   }
   return FALSE;
 }
-~~~
+```
 
 P.s. Спасибо [drupby](http://drup.by/) за подсказку, как оптимизировать то что было, код в статье чутка исправлен.

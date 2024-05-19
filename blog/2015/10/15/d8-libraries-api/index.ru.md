@@ -49,7 +49,7 @@ tags:
 
 Для начала давайте разберемся с синтаксисом файла, для этого я приведу простой пример и всё что нужно опишу в комментариях:
 
-~~~yml
+```yml
 # Название библиотеки.
 my-library:
   # Версия библиотеки. Надо заметить что на данный момент не ясно как
@@ -80,22 +80,22 @@ my-library:
   # загрузить jquery на страницу. (опционально)
   dependencies:
     - core/jquery
-~~~
+```
 
 Затем данная библиотека подключается средствами **#attached** в нужном месте. Почти всё теперь сведено к Render Arrays, следовательно, цепляется примерно так:
 
-~~~php
+```php
 // Подключение библиотеки. Состоит из двух частей. 
 // Первое - название модуля/темы, второе - название библиотеки.
 $page['#attached']['library'][] = 'MODULENAME/LIBRARYNAME';
-~~~
+```
 
 ### Пример использования
 
 
 Для начала давайте создадим JavaScript файлик в нашем модуле, который мы будем подключать **js/script.js**, и пусть он также выводить hello world:
 
-~~~js
+```js
 /**
  * @file
  * Simple JavaScript hello world file.
@@ -112,11 +112,11 @@ $page['#attached']['library'][] = 'MODULENAME/LIBRARYNAME';
   }
 
 })(jQuery, Drupal, drupalSettings);
-~~~
+```
 
 Далее, как я уже рассказал выше, нам надо создать файл с названием *helloworld.libraries.yml* в корневой папке нашего модуля. 
 
-~~~yml
+```yml
 helloworld:
   version: 1.x
   js:
@@ -124,11 +124,11 @@ helloworld:
   # Так как наш скрипт использует jQuery, мы устанавливаем зависимость/
   dependencies:
     - core/jquery
-~~~
+```
 
 Теперь нам необходимо подцепить нашу библиотеку на нужную страницу/страницы. Тут уже зависит от задачи. В конкретно данном случае, я покажу как подключить данный скрипт *на всех* страницах. В *helloworld.module* пишем:
 
-~~~php
+```php
 <?php
 
 /**
@@ -146,7 +146,7 @@ function helloworld_page_attachments(array &$attachments) {
   // Первый helloworld - название модуля, а второй - название либы из yml файла.
   $attachments['#attached']['library'][] = 'helloworld/helloworld';
 }
-~~~
+```
 
 Если всё сделали верно, то при загрузке каждой страницы вы должны видеть alert с *Hello World!*.
 
@@ -162,7 +162,7 @@ function helloworld_page_attachments(array &$attachments) {
 Далее открываем файл контроллера для страницы */hello*: */src/Controller/HelloWorldController.php*. В нём нас интересует функция *helloWorld()*, которая отвечает за вывод содержимого на данной странице. Так как переменная `$output` является render array, то подключается всё очень просто (привожу полный листинг функции, чтобы вы заметили изменения):
 
 
-~~~php
+```php
 public function helloWorld() {
    $output = array();
 
@@ -172,7 +172,7 @@ public function helloWorld() {
 
    return $output;
 }
-~~~
+```
 
 Исходя из новой логики Drupal 8, наш *js/script.js* теперь будет загружаться только на странице */hello*.
 
@@ -183,16 +183,16 @@ public function helloWorld() {
 Тут мы не будем сильно задерживаться, но может случиться такой случай, когда библиотеку нужно подключить прямо в шаблоне. И для того чтобы не прописывать по старинке вставку скриптов/стилей, есть специальный вариант:
 
 
-~~~twig
+```twig
 {{ attach_library('MYMODULE/MYLIBRARY') }}
-~~~
+```
 
 ## Подключение внешних библиотек
 
 
 Пока всё идёт как по маслу. Но в примерах выше, мы подключали свою простую библиотеку. А что делать если нам нужно подключить JS/CSS находящиеся на удаленном сервере (cdn)? Тут такой способ поставит в тупик, но и для этого есть решение. Вот листинг подключения внешних библиотек:
 
-~~~yaml
+```yaml
 # Например подключим Angular.js
 # Название библиотеки.
 angularjs:
@@ -218,20 +218,20 @@ angularjs:
 	# Прямая ссылка на файл. В {} указываются дополнительные данные. В данном случае
 	# что это внешняя библиотека и она сжатая.
     https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js: { type: external, minified: true }
-~~~
+```
 
 А подключается она точно также:
 
-~~~php
+```php
 $page['#attached']['library'][] = 'helloworld/angularjs';
-~~~
+```
 
 ### Пример подключения внешней библиотеки
 
 
 Как подключать внешнюю библиотеку мы поняли. Давайте рассмотрим это на практике. В качестве примера будем подключать библиотеку [VexJS](http://github.hubspot.com/vex/docs/welcome/) к нашему *script.js* файлу. Можете попробовать это сделать сами, и догадаться как объявляются несколько библиотек в файле, а затем сравнить с результатом ниже:
 
-~~~yaml
+```yaml
 helloworld:
   version: 1.x
   js:
@@ -256,11 +256,11 @@ vexjs:
     https://cdn.rawgit.com/HubSpot/vex/master/js/vex.combined.min.js: { type: external, minified: true }
   dependencies:
     - core/jquery
-~~~
+```
 
 Теперь нам надо подключить данный скрипт только на странице */hello*:
 
-~~~php
+```php
 public function helloWorld() {
   $output = array();
 
@@ -273,11 +273,11 @@ public function helloWorld() {
 
   return $output;
 }
-~~~
+```
 
 И немного поправим наш *script.js* для того чтобы он вызывал функции VexJS:
 
-~~~js
+```js
 /**
  * @file
  * Simple JavaScript hello world file.
@@ -300,7 +300,7 @@ public function helloWorld() {
   }
 
 })(jQuery, Drupal, drupalSettings);
-~~~
+```
 
 Если вы всё сделали правильно, то при заходе на страницу */hello* вы увидите следующее окно:
 

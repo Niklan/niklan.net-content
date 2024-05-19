@@ -22,7 +22,7 @@ tags:
 
 Что же, приступим. Для начала нам нужна какая-то форма. Как делать формы я уже писал, и приводил не один пример, поэтому я сразу приведу листинг формы над которой мы будем шаманить.
 
-~~~yml {"header":"dummy.routing.yml"}
+```yml {"header":"dummy.routing.yml"}
 dummy.ajax_form_submit_example:
   path: '/dummy/ajax-form-submit-example'
   defaults:
@@ -30,9 +30,9 @@ dummy.ajax_form_submit_example:
     _title: 'Form with AJAX submit'
   requirements:
     _permission: 'access content'
-~~~
+```
 
-~~~php {"header":"/src/Form/AjaxFormSubmitExample.php"}
+```php {"header":"/src/Form/AjaxFormSubmitExample.php"}
 <?php
 /**
  * @file
@@ -95,7 +95,7 @@ class AjaxFormSubmitExample extends FormBase {
   }
 
 }
-~~~
+```
 
 ## Валидация
 
@@ -107,7 +107,7 @@ class AjaxFormSubmitExample extends FormBase {
 Сначала разберемся с полем для email, будем проверять, если почта на `example.com` домене, то будем писать что письмо может не дойти. Для начала давайте добавить к элементу формы email `#ajax` параметр со всеми настройками.
 
 
-~~~php
+```php
 
 $form['email'] = [
   '#title' => 'Email',
@@ -128,9 +128,9 @@ $form['email'] = [
   # Элемент, в который мы будем писать результат в случае необходимости.
   '#suffix' => '<div class="email-validation-message"></div>'
 ];
-~~~
+```
 
-~~~php
+```php
 /**
  * {@inheritdoc}
  */
@@ -145,13 +145,13 @@ public function validateEmailAjax(array &$form, FormStateInterface $form_state) 
   }
   return $response;
 }
-~~~
+```
 
 ![При попытке указать почту в домене @example.com выводится наше предупреждение.](image/Screenshot_20160830_223005.png)
 
 А теперь давайте разберемся с селектором фруктов. С ним мы тоже побалуемся, сделаем небольшую "валидацию", которая будет реагировать на выбор на выбор фрукта и добавлять рамку вокруг селекта соответствующего цвета.
 
-~~~php
+```php
 $form['select'] = [
   '#title' => 'Select some fruit',
   '#type' => 'select',
@@ -169,9 +169,9 @@ $form['select'] = [
   '#prefix' => '<div id="fruit-selector">',
   '#suffix' => '</div>',
 ];
-~~~
+```
 
-~~~php
+```php
 /**
  * {@inheritdoc}
  */
@@ -196,7 +196,7 @@ public function validateFruitAjax(array &$form, FormStateInterface $form_state) 
   $response->addCommand(new CssCommand('#fruit-selector select', $style));
   return $response;
 }
-~~~
+```
 
 ![Выбранный фрукт теперь влияет на цвет рамки селекта.](image/Screenshot_20160831_104617.png)
 
@@ -210,15 +210,15 @@ public function validateFruitAjax(array &$form, FormStateInterface $form_state) 
 
 Всё что нам необходимо сделать для AJAX отправки формы, это добавить точно такой же метод к кнопке отправки, который будет лишь получать системные сообщения, в которых выводятся сообщения об ошибках в форме или успешном отправлении и выводить их в форме. Приступим.
 
-~~~php {"header":"Добавляем новый элемент формы"}
+```php {"header":"Добавляем новый элемент формы"}
 # Добавляем в форму новый элемент где будем выводить системные сообщения.
 $form['system_messages'] = [
   '#markup' => '<div id="form-system-messages"></div>',
   '#weight' => -100,
 ];
-~~~
+```
 
-~~~php {"header":"Добавляем AJAX субмит к форме"}
+```php {"header":"Добавляем AJAX субмит к форме"}
 $form['submit'] = [
   '#type' => 'submit',
   '#name' => 'submit',
@@ -231,9 +231,9 @@ $form['submit'] = [
     ],
   ],
 ];
-~~~
+```
 
-~~~php {"header":"AJAX callback"}
+```php {"header":"AJAX callback"}
 /**
  * {@inheritdoc}
  */
@@ -252,7 +252,7 @@ public function ajaxSubmitCallback(array &$form, FormStateInterface $form_state)
   $ajax_response->addCommand(new HtmlCommand('#form-system-messages', $messages));
   return $ajax_response;
 }
-~~~
+```
 
 ![Вывод ошибки о не успешной отправке формы.](image/Screenshot_20160831_110949.png)
 
@@ -268,7 +268,7 @@ public function ajaxSubmitCallback(array &$form, FormStateInterface $form_state)
 
 Первым делом нам нужно объявить объект, который и будет заниматься нашим AJAX субмитом нужны форм и объявить метод который мы будем дергать при AJAX.
 
-~~~php {"header":"Листинг /src/AjaxContactSubmit.php"}
+```php {"header":"Листинг /src/AjaxContactSubmit.php"}
 <?php
 
 /**
@@ -313,9 +313,9 @@ class AjaxContactSubmit {
   }
 
 }
-~~~
+```
 
-~~~php {"header":"Добавляем hook_form_BASE_FORM_ID_alter()."}
+```php {"header":"Добавляем hook_form_BASE_FORM_ID_alter()."}
 use Drupal\Component\Utility\Html;
 
 ...
@@ -342,7 +342,7 @@ function dummy_form_contact_message_form_alter(&$form, \Drupal\Core\Form\FormSta
   ];
 }
 
-~~~
+```
 
 ![Теперь Contact формы будут отправляться при помощи AJAX.](image/Screenshot_20160831_115856.png)
 

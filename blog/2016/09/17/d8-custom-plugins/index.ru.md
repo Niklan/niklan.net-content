@@ -62,7 +62,7 @@ tags:
 
 Далее нужно объявить аннотации для нашего плагина. Аннотации находятся в `src/Annotation`. Называть свой плагин мы будем в честь нашего же модуля PluginMessages. Хоть это и добавит тавтологии в название некоторых файлов, ничего страшного. Соответственно мы будем стараться именовать все файлы плагинов схоже. Следовательно наш файл аннотаций мы назовем PluginMessages как и сам плагин в дальнейшем.
 
-~~~php {"header":"Листинг src/Annotation/PluginMessages.php"}
+```php {"header":"Листинг src/Annotation/PluginMessages.php"}
 <?php
 
 namespace Drupal\plugin_messages\Annotation;
@@ -82,7 +82,7 @@ class PluginMessages extends Plugin {
   public $id;
 
 }
-~~~
+```
 
 Всего мы объявили 1 параметр в аннотации - id, он **обязателен** для всех типов плагинов. Это будет машинное имя плагина, чтобы мы могли их идентифицировать как-то. На каждый нужный параметр в аннотациях вы объявляете одноименные переменные внутри класса. 
 
@@ -92,7 +92,7 @@ class PluginMessages extends Plugin {
 
 Итак, объявляем наш интерфейс для плагина.
 
-~~~php {"header":"Листинг src/PluginMessagesPluginInterface.php"}
+```php {"header":"Листинг src/PluginMessagesPluginInterface.php"}
 <?php
 
 namespace Drupal\plugin_messages;
@@ -123,13 +123,13 @@ interface PluginMessagesPluginInterface extends PluginInspectionInterface {
   public function getPages();
 
 }
-~~~
+```
 
 Как я и писал выше, у нас будет небольшая тавтология в названии файла, чтобы не путаться, первая часть - PluginMessages - название нашего плагина, а вот PluginInterface как бы метка что это интерфейс для плагина. По факту этот файл может называться как угодно, но мы все же будем следовать ядру и здравому смыслу.
 
 По методам всё ясно и из комментариев к ним, тут не должно быть никаких проблем. Теперь мы объявим базу для плагинов, от которой будут наследоваться все будущие плагины. Обратите внимание что данный класс должен быть абстрактным.
 
-~~~php {"header":"Листинг src/PluginMessagesPluginBase.php"}
+```php {"header":"Листинг src/PluginMessagesPluginBase.php"}
 <?php
 
 namespace Drupal\plugin_messages;
@@ -177,12 +177,12 @@ abstract class PluginMessagesPluginBase extends PluginBase implements PluginMess
   }
 
 }
-~~~
+```
 
 Теперь нам осталось объявить менеджер нашего плагина.
 
 
-~~~php {"header":"Листинг src/PluginMessagesManager.php"}
+```php {"header":"Листинг src/PluginMessagesManager.php"}
 <?php
 
 namespace Drupal\plugin_messages;
@@ -218,7 +218,7 @@ class PluginMessagesManager extends DefaultPluginManager {
   }
 
 }
-~~~
+```
 
 Тут, как видите, тоже ничего сложного, менеджеры у 99% модулей будут идентичны, лишь подставляются свои названия. Но давайте разъясню за `prent::_construct`. На самом деле тут вдаваться и нет смысла, нас интересуют 1, 4 и 5 параметры. Там всё очень очевидно:
 
@@ -235,12 +235,12 @@ class PluginMessagesManager extends DefaultPluginManager {
 
 Остался последний штрих, надо указать Drupal что мы объявили свой тип плагинов, а плагины - это сервисы. Соответственно мы должны создать plugin_messages.services.yml где окончательно объявим свой плагин и укажем путь до его менеджера.
 
-~~~yaml {"header":"Листинг plugin_messages.services.yml"}
+```yaml {"header":"Листинг plugin_messages.services.yml"}
 services:
   plugin.manager.plugin_messages:
     class: Drupal\plugin_messages\PluginMessagesManager
     parent: default_plugin_manager
-~~~
+```
 
 Вот и всё! Да-да, так просто в пару шагов объявляется свой тип плагинов, ничего сложного, а какая гибкость!
 
@@ -256,7 +256,7 @@ services:
 
 
 
-~~~php {"header":"Листинг src/Plugin/PluginMessages/DefaultPluginExample1.php"}
+```php {"header":"Листинг src/Plugin/PluginMessages/DefaultPluginExample1.php"}
 <?php
 
 /**
@@ -283,13 +283,13 @@ class DefaultPluginExample1 extends PluginMessagesPluginBase {
   }
 
 }
-~~~
+```
 
 Вот так простенько объявляется созданный нами плагин. Мы должны указать его ID и сообщение, остальные данные подтянутся у нас из PluginMessagesPluginBase.
 
 Теперь объявим второй плагин, в нем мы заполним все возможные метода.
 
-~~~php {"header":"Листинг src/Plugin/PluginMessages/DefaultPluginExample2.php"}
+```php {"header":"Листинг src/Plugin/PluginMessages/DefaultPluginExample2.php"}
 <?php
 
 /**
@@ -335,7 +335,7 @@ class DefaultPluginExample2 extends PluginMessagesPluginBase {
 
 }
 
-~~~
+```
 
 Во втором примере у нас появилось два дополнительных метода. Мы изменили тип системного сообщения на "ошибку" и указали на каких страницах показывать данное сообщение.
 
@@ -343,7 +343,7 @@ class DefaultPluginExample2 extends PluginMessagesPluginBase {
 
 Хуки по прежнему объявляются в MODULENAME.module, там и будем писать наш хук. Но прежде чем мы его напишем, я сразу сделаю памятку на будущее по всем полезным методам для работы с плагинами в целом.
 
-~~~php {"header":"Полезные методы для работы с плагинами"}
+```php {"header":"Полезные методы для работы с плагинами"}
 # Доступ к сервису наших плагинов.
 $plugin_service = \Drupal::service('plugin.manager.plugin_messages');
 # Получение информации о всех объявленных плагинах. (массив)
@@ -359,11 +359,11 @@ $has_plugin_definition = $plugin_service->hasDefinition('default_plugin_example_
 # если этот плагин как-то взаимодействует с сущностью. Таким образом авторам
 # кастомных плагинов не придется искать конкретную сущность и загружать её.
 $plugin_instance = $plugin_service->createInstance('default_plugin_example_1');
-~~~
+```
 
 И наконец-то последний кусок кода который и будет работать с нашими плагинами. Напоминаю, пишем его в `hook_preprocess_page()`.
 
-~~~php {"header":"plugin_messages_preprocess_page()"}
+```php {"header":"plugin_messages_preprocess_page()"}
 /**
  * Implements hook_preprocess_page().
  */
@@ -388,7 +388,7 @@ function plugin_messages_preprocess_page(&$variables) {
   }
 }
 
-~~~
+```
 
 Теперь можно включать модуль и проверять! Если все сделали правильно, то на главной вы должны увидеть два сообщения, а например, на /user - всего одну, так как второй плагин не проходит условия, ведь в списке доступных путей отсутствует соответствующий паттерн, а первый проходит, так как у него нет никаких требований к пути.
 
@@ -411,7 +411,7 @@ function plugin_messages_preprocess_page(&$variables) {
 Начнем с аннотаций.
 
 
-~~~php {"header":"Листинг src/Annotation/CustomCSVImport.php"}
+```php {"header":"Листинг src/Annotation/CustomCSVImport.php"}
 <?php
 
 namespace Drupal\custom_csv_import\Annotation;
@@ -436,11 +436,11 @@ class CustomCSVImport extends Plugin {
   public $label;
 
 }
-~~~
+```
 
 Теперь объявляем интерфейс для плагина.
 
-~~~php {"header":"Листинг src/CustomCSVImportPluginInterface.php"}
+```php {"header":"Листинг src/CustomCSVImportPluginInterface.php"}
 <?php
 
 namespace Drupal\custom_csv_import;
@@ -465,7 +465,7 @@ interface CustomCSVImportPluginInterface extends PluginInspectionInterface {
   public function processItem($data, &$context);
 
 }
-~~~
+```
 
 Заметьте, мы также сразу в интерфейсе указали что будем передавать два аргумента в метод `processItem()`.
 
@@ -476,7 +476,7 @@ interface CustomCSVImportPluginInterface extends PluginInspectionInterface {
 
 Теперь объявим базу для плагинов.
 
-~~~php {"header":"Листинг src/CustomCSVImportPluginBase.php"}
+```php {"header":"Листинг src/CustomCSVImportPluginBase.php"}
 <?php
 
 namespace Drupal\custom_csv_import;
@@ -515,11 +515,11 @@ abstract class CustomCSVImportPluginBase extends PluginBase implements CustomCSV
   }
 
 }
-~~~
+```
 
 Создаем менеджер плагина.
 
-~~~php {"header":"Листинг src/CustomCSVImportManager.php"}
+```php {"header":"Листинг src/CustomCSVImportManager.php"}
 <?php
 
 namespace Drupal\custom_csv_import;
@@ -552,21 +552,21 @@ class CustomCSVImportManager extends DefaultPluginManager {
   }
 
 }
-~~~
+```
 
 Осталось зарегистрировать наш плагин в сервисах.
 
-~~~yaml {"header":"Листинг custom_csv_import.services.yml"}
+```yaml {"header":"Листинг custom_csv_import.services.yml"}
 services:
   plugin.manager.custom_csv_import:
     class: Drupal\custom_csv_import\CustomCSVImportManager
     parent: default_plugin_manager
-~~~
+```
 
 И вот наш плагин уже готов. Сразу давайте перенесем наш старый код для импорта Article из csv в плагин, а также добавим плагин для Page. Пока что копипастом выносим код импорта из старого метода, внутренности мы заменим после этого.
 
 
-~~~php {"header":"Листинг src/Plugin/CustomCSVImport/Article.php"}
+```php {"header":"Листинг src/Plugin/CustomCSVImport/Article.php"}
 <?php
 
 namespace Drupal\custom_csv_import\Plugin\CustomCSVImport;
@@ -642,9 +642,9 @@ class Article extends CustomCSVImportPluginBase {
   }
 
 }
-~~~
+```
 
-~~~php {"header":"Листинг src/Plugin/CustomCSVImport/Page.php"}
+```php {"header":"Листинг src/Plugin/CustomCSVImport/Page.php"}
 <?php
 
 namespace Drupal\custom_csv_import\Plugin\CustomCSVImport;
@@ -696,7 +696,7 @@ class Page extends CustomCSVImportPluginBase {
   }
 
 }
-~~~
+```
 
 И вот у нас уже два плагина, для статей и страниц (новый, его не было ранее в модуле).
 
@@ -704,7 +704,7 @@ class Page extends CustomCSVImportPluginBase {
 
 Для начала давайте переделаем CSVBatchImport.php.
 
-~~~php {"header":"src/CSVBatchImport.php"}
+```php {"header":"src/CSVBatchImport.php"}
 # Первым делом добавляем два новых свойства.
 # Будем хранить id плагина и его объект.
 private $importPluginId;
@@ -729,11 +729,11 @@ public function setOperation($data) {
 
 # Также нужно удалить processItem() метод, просто за ненадобностью, больше
 # он нам не нужен, его код мы перенесли в плагин Article.
-~~~
+```
 
 Учитывая данные правки вносим соответствующие правки в форму.
 
-~~~php {"header":"src/Form/ImportForm.php"}
+```php {"header":"src/Form/ImportForm.php"}
 # Добавляем метод который будет формировать список плагинов для селекта.
 protected function getPluginList() {
   $definitions = \Drupal::service('plugin.manager.custom_csv_import')->getDefinitions();
@@ -790,7 +790,7 @@ public function startImport(array &$form, FormStateInterface $form_state) {
   $import = new CSVBatchImport($plugin_id, $fid, $skip_first_line, $delimiter, $enclosure);
   $import->setBatch();
 }
-~~~
+```
 
 А дальше всё как и раньше. Мы загружаем файл, выбираем плагин отвечающий за импорт, и стартуем его. CSVBatchImport разбирает CSV файл по строкам а затем запускает Batch. Batch передает построчно данные строк в виде массива в соответствующем порядке столбцов таблицы в выбранный нами плагин импорта. А плагин уже выполняет импорт.
 

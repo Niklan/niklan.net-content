@@ -32,7 +32,7 @@ P.s. на начальных этапах альфы, да и вообще ра�
 
 Сейчас реулизуется маршрутизацией. Это такой файлик, который ложится в корень модуля и имеет название MODULENAME.routing.yml. Примерный вид (копипаст из файла модуля [Mappy для Drupal 8](https://github.com/Niklan/Mappy/tree/8.x-1.x)):
 
-~~~yml
+```yml
 mappy.settings:
   path: '/admin/config/content/mappy'
   defaults:
@@ -40,7 +40,7 @@ mappy.settings:
     _form: '\Drupal\mappy\Form\MappySettingsForm'
   requirements:
     _permission: 'administer site configuration'
-~~~
+```
 
 Мы указываем системное имя для маршрута, путь, по которому будет ожидаться запрос, заголовок страницы, в данном случае namespace для формы, которая будет отображена и права к данной странице.
 
@@ -55,16 +55,16 @@ mappy.settings:
 Имеем url **/node/100**
 
 
-~~~php {"header":"Drupal 7"}
+```php {"header":"Drupal 7"}
 echo arg(0); // node
 echo arg(1); // 100
-~~~
+```
 
-~~~php {"header":"Drupal 8"}
+```php {"header":"Drupal 8"}
 $path_args = explode('/', current_path());
 echo $path_args[0]; // node
 echo $path_args[1]; // 1000
-~~~
+```
 
 При этом не забывайте, если функция сама отрабатывала на элементы которые пустые или вообще не существуют, то тут можно словить error.
 
@@ -82,20 +82,20 @@ echo $path_args[1]; // 1000
 
 MYMODULE (главная папка модуля)
 — config
-  — install
+  — install
 
 В нем необходимо создать файлик **MYMODULE.settings.yml** ([пример](https://github.com/Niklan/Mappy/blob/8.x-1.x/config/install/mappy.settings.yml)) - данные настройки будут импортированы в момент включения модуля, а также автоматически удалены в момент … удаления. Ведь модули теперь только удаляются, отключить, сохранив настройки, нельзя. Придется настройки ручками сохранять, благо это сейчас удобно сделано и в админке.
 
 Внутри него объявляется тип данных, название, описание и значения для данных.
 
-~~~yml
+```yml
 type: settings
 name: My module settings
 descrption: Import settings on installation.
 variable: value
 variable:
   subvariable: true
-~~~
+```
 
 Затем данные настройки будут доступны по следующему именованию: MYMODULE.variable и MYMODULE.variable.subvariable.
 
@@ -107,16 +107,16 @@ variable:
 
 Функции позволяющие хранить данные в базе данных, очень просто и понятно. Удалены в связи с тем что все основные данные и настройки хранятся в сущностях-конфигурациях.
 
-~~~php {"header":"Drupal 7"}
+```php {"header":"Drupal 7"}
 // Устанавливаем значение.
 variable_set('key', 'value');
 // Получаем значение.
 variable_get('key'); // value
 // Удаляем значение.
 variable_del('key');
-~~~
+```
 
-~~~php {"header":"Drupal 8"}
+```php {"header":"Drupal 8"}
 // Создаем объект конфигурации. machine-name - это название сущности - конфигурации.
 // Может быть любым, в контексте модуля имеет смысл использовать паттерн: 
 // MYMODULE.settings, например, для настроек.
@@ -129,7 +129,7 @@ $config->get('key'); // value.
 // Удаляем значение.
 $config->delete('key');
 $config->save();
-~~~
+```
 
 Теперь, если экспортировать конфигурацию сайта, вы обнаружите файлик **mymodule.settings.yml** со следующим содержанием key: value.
 
@@ -155,7 +155,7 @@ $config->save();
 
 Примерное содержание:
 
-~~~yml
+```yml
 mymodule.somelib:
   version: VERSION
     js:
@@ -164,22 +164,22 @@ mymodule.somelib:
   - core/jquery
   - core/drupal
   - core/drupalSettings
-~~~
+```
 
 Затем в хуке подключаем.
 
-~~~php
+```php
 /**
  * Implements hook_page_build().
  */
 function mymodule_page_build(&$page) {
   $page['#attached']['library'][] = 'mymodule/mymodule.somelib';
 }
-~~~
+```
 
 Если необходимо передать в js файл значения, аля Drupal.settings в Drupal 7, появляется доп строка в хуке:
 
-~~~php
+```php
 $page['#attached']['js'][] = array(
   'data' => array(
     'mymodule' => array(
@@ -187,7 +187,7 @@ $page['#attached']['js'][] = array(
     ),
   'type' => 'setting'
 );
-~~~
+```
 
 Теперь в js они получаются немного иначе: **drupalSettings.mymodule.location**
 
@@ -199,51 +199,51 @@ $page['#attached']['js'][] = array(
 
 Функция удалена. Теперь надо создавать renderable arrays. Если кто не в курсе, это массив с данными котрые заетм прогоняется через render(). hook_theme() остался прежним.
 
-~~~php {"header":"Drupal 7"}
+```php {"header":"Drupal 7"}
 echo theme('theme_name', array('items' => $items));
-~~~
+```
 
-~~~php {"header":"Drupal 8 "}
+```php {"header":"Drupal 8 "}
 $items_array = array(
 	'#theme' => 'theme_name',
 	'#items' => $items;
 );
 echo render($items_array);
-~~~
+```
 
 ### check_plain()
 
 
 Функция заменена на ООП аналог.
 
-~~~php {"header":"Drupal 8"}
+```php {"header":"Drupal 8"}
 // Сначала указываем пространство имен (импортируем) класса, отвечающего за
 // операции со строками.
 use Drupal\Component\Utility\String;
 // Используем новую функцию.
 String::checkPlain('string');
-~~~
+```
 
 ### node_load() / node_load_multiple()
 
 
 Функции заменены на ООП аналоги. Они доступна для Drupal 8, но будут удалены в будущем, еще до релиза Drupal 9\. Так что использовать её сейчас нельзя. Просто ещё не успели вычистить за ними все следы.
 
-~~~php {"header":"Drupal 8"}
+```php {"header":"Drupal 8"}
 // Сначала указываем пространство имен (импортируем) класса, отвечающего за операции
 // сущностей нод.
 Use Drupal\node\Entity\Node;
 // Используем новую функцию.
 $node = Node::load(1);
 $nodes = Node::loadMultiple(array(1,2,3));
-~~~
+```
 
 ### node_save()
 
 
 Функция заменена на ООП аналог.
 
-~~~php {"header":"Drupal 8 - Вариант 1"}
+```php {"header":"Drupal 8 - Вариант 1"}
 // Сначала указываем пространство имен (импортируем) класса, отвечающего за операции
 // сущностей нод.
 Use Drupal\node\Entity\Node;
@@ -256,9 +256,9 @@ $node = Node::create(
 
 // Собственно сама замена.
 $node->save();
-~~~
+```
 
-~~~php {"header":"Drupal 8 - Вариант 2"}
+```php {"header":"Drupal 8 - Вариант 2"}
 $node= entity_create(
   'node',
   array(
@@ -267,59 +267,59 @@ $node= entity_create(
 );
 
 $node->save;
-~~~
+```
 
 ### menu_get_object()
 
 
 Функция удалена. Обратите внимание что новый метод подходит для замены arg().
 
-~~~php {"header":"Drupal 7"}
+```php {"header":"Drupal 7"}
 $node = menu_get_object();
 if ($node->type == 'story') {
   ...
 }
-~~~
+```
 
-~~~php {"header":"Drupal 8"}
+```php {"header":"Drupal 8"}
 $request = \Drupal::request();
 $node = $request()->attributes->get('node');
 if ($node->type == 'story') {
   ...
 }
-~~~
+```
 
 ### taxonomy_vocabulary_machine_name_load()
 
 
 Функция удалена.
 
-~~~php {"header":"Drupal 7"}
+```php {"header":"Drupal 7"}
 // Загружаем объект таксономии.
 $vocabulary = taxonomy_vacabulary_machine_name_load('blog_categories');
 // Выводим название словара таксономии.
 echo $vocabulary->name;
-~~~
+```
 
-~~~php {"header":"Drupal 8"}
+```php {"header":"Drupal 8"}
 // Загружаем объект таксономии.
 $vocabulary = entity_load('taxonomy_vocabulary', 'blog_categories');
 // Выводим название словара таксономии.
 echo $vocabulary->label();
-~~~
+```
 
 ### taxonomy_get_tree()
 
 
 Функция удалена, передаваемые параметры остались прежними.
 
-~~~php {"header":"Drupal 8 - Вариант 1"}
+```php {"header":"Drupal 8 - Вариант 1"}
 $tree = \Drupal::entityManager()->getStorage('taxonomy_term')->loadTree();
-~~~
+```
 
-~~~php {"header":"Drupal 8 - Вариант 2"}
+```php {"header":"Drupal 8 - Вариант 2"}
 $tree = \Drupal\taxonomy\TermStorageController::loadTree();
-~~~
+```
 
 **Документация на Drupal.org:** [https://api.drupal.org/api/drupal/core!modules!taxonomy!src!TermStorage.php/function/TermStorage%3A%3AloadTree/8](https://api.drupal.org/api/drupal/core!modules!taxonomy!src!TermStorage.php/function/TermStorage%3A%3AloadTree/8)
 
@@ -329,41 +329,41 @@ $tree = \Drupal\taxonomy\TermStorageController::loadTree();
 
 Функция удалена и заменена.
 
-~~~php {"header":"Drupal 8"}
+```php {"header":"Drupal 8"}
 $fieldInfo = \Drupal\field\Field::fieldInfo();
 $fieldInfo->getField($entity_type, $field_name);
-~~~
+```
 
 ### field_info_instance()
 
 
 Функция удалена и заменена.
 
-~~~php {"header":"Drupal 8"}
+```php {"header":"Drupal 8"}
 $fieldInfo = \Drupal\field\Field::fieldInfo();
 $fieldInfo->getInstance('node', 'page', 'field_name');
-~~~
+```
 
 ### field_create_field()
 
 
 Функция удалена и заменена.
 
-~~~php {"header":"Drupal 8"}
+```php {"header":"Drupal 8"}
 $field = entity_create('field_config', array(
   'name' => 'field_myname',
   'entity_type' => 'node',
   'type' => 'text',
 ));
 $field->save();
-~~~
+```
 
 ### field_create_instance()
 
 
 Функция удалена и заменена.
 
-~~~php {"header":"Drupal 8"}
+```php {"header":"Drupal 8"}
 $field_instance = entity_create('field_instance_config', array(
   'field_name' => 'field_myname',
   'entity_type' => 'node',
@@ -371,16 +371,16 @@ $field_instance = entity_create('field_instance_config', array(
   'label' => 'My field name'
 ));
 $field_instance->save;
-~~~
+```
 
 ### drupal_get_http_header() / drupal_http_headers
 
 
 Функция удалена и заменена.
 
-~~~php {"header":"Drupal 8"}
+```php {"header":"Drupal 8"}
 use \Symfony\Component\HttpFoundation\Response;
 // ...
 $response = new Response();
 $response->getStatusCode();
-~~~
+```

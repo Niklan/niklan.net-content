@@ -40,7 +40,7 @@ tags:
 
 Для моего Hello World модуля я хочу сделать /admin/config/hello-world страницу. Для этого необходимо добавить роутинг в helloworld.routing.yml. 
 
-~~~yaml {"header":"helloworld.routing.yml"}
+```yaml {"header":"helloworld.routing.yml"}
 hello_world.admin_config_hello_world:
   path: '/admin/config/hello-world'
   defaults:
@@ -48,7 +48,7 @@ hello_world.admin_config_hello_world:
     _title: 'Hello World'
   requirements:
     _permission: 'access administration pages'
-~~~
+```
 
 Это самый обычный роут, единственное отличие от остальных, это пермишн для доступа, чтобы не пускало кого попало, и системный контроллер. Это самое важное во всей статье. Это то, что позволяет добавить свой блок на страницу конфигурации.
 
@@ -56,7 +56,7 @@ hello_world.admin_config_hello_world:
 
 В модуле Hello World уже есть путь /admin/config/helloworld (без дефиса), который используется для формы с настройками. Сразу же его перенесем в новый раздел, изменив путь на новый.
 
-~~~yaml {"header":"helloworld.routing.yml"}
+```yaml {"header":"helloworld.routing.yml"}
 # Я также заменил название роута чтобы оно было более "правильным" чем было до этого.
 hello_world.collect_phone_admin_settings:
   path: '/admin/config/hello-world/phone-settings'
@@ -65,7 +65,7 @@ hello_world.collect_phone_admin_settings:
     _title: 'Settings for CollectPhone form.'
   requirements:
     _permission: 'administer site configuration'
-~~~
+```
 
 Вот и всё, ну почти. Мы сделали путь для "блока" и добавили вложенный роут для настроек. Если вы сбросите кэш, ничего не появится, но почему жу так? Потому что это лишь роуты, эти страницы будут открываться по прямому запросу, но на странице конфигурации не появятся. А чтобы они там появились, нам нужно сделать ссылки на них. Так как, грубо говоря, страница конфигурации, это такое своеобразное меню, то там ничего не появится пока не добавишь в это самое меню ссылки.
 
@@ -73,13 +73,13 @@ hello_world.collect_phone_admin_settings:
 
 Первым делом добавляем ссылку на "блок".
 
-~~~yaml {"header":"helloworld.links.menu.yml"}
+```yaml {"header":"helloworld.links.menu.yml"}
 hello_world.admin_config_hello_world:
   title: 'Hello World'
   parent: system.admin_config
   route_name: hello_world.admin_config_hello_world
   weight: -50
-~~~
+```
 
 В листинге выше:
 
@@ -90,14 +90,14 @@ hello_world.admin_config_hello_world:
 
 Пока вы не добавите вложенные ссылки в данную ссылку, то данный блок не появится на странице. Таким образом для его отображение нужна как минимум одна вложенная ссылка. Ну чтож, нам есть что добавлять, и мы вложем ссылку на форму настроек модуля Hello World.
 
-~~~yaml {"header":"helloworld.links.menu.yml "}
+```yaml {"header":"helloworld.links.menu.yml "}
 hello_world.collect_phone_settings:
   title: 'Collect Phone settings'
   description: 'In this settings you can set default phone number for collect phone form.'
   parent: hello_world.admin_config_hello_world
   route_name: hello_world.collect_phone_admin_settings
   weight: 1
-~~~
+```
 
 Всё аналогично предыдущей ссылке. Только в данном случае родителем стала наша ранее созданная ссылка для блока, а роут от страницы с настройками. Вес в данном случае уже влияет на сортировку внутри данного блока.
 
@@ -122,7 +122,7 @@ hello_world.collect_phone_settings:
 
 Первым делом мы поправим роут для страницы импорта, чтобы он соответствовал нашему блоку.
 
-~~~yaml {"header":"custom_csv_import.routing.yml"}
+```yaml {"header":"custom_csv_import.routing.yml"}
 custom_csv_import.admin_settings:
   path: '/admin/config/hello-world/csv-import' # Заменили на новый путь
   defaults:
@@ -132,19 +132,19 @@ custom_csv_import.admin_settings:
     _permission: 'access administration pages'
   options:
     _admin_route: TRUE
-~~~
+```
 
 С роутом готово, мы лишь заменяем его путь и всё, и то, лишь для того чтобы он был с аналогичной иерархией пути. 
 
 В данном модуле даже есть links.menu.yml файл, нам опять же, достаточно лишь слегка поправить, чтобы ссылка появилас в нашем собственном блоке
 
-~~~yaml {"header":"custom_csv_import.links.menu.yml"}
+```yaml {"header":"custom_csv_import.links.menu.yml"}
 custom_csv_import.admin_settings:
   title: 'CSV import'
   description: 'Import content on site using CSV file.'
   route_name: custom_csv_import.admin_settings
   parent: hello_world.admin_config_hello_world # Меняем на нового родителя
-~~~
+```
 
 Мы лишь заменяем системное название родительской ссылки.
 

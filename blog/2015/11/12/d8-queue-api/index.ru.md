@@ -31,15 +31,15 @@ tags:
 
 Первым делом необходимо создать очередь.
 
-~~~php
+```php
 # Создаем нашу очередь с названием my_custom_queue.
 $queue = \Drupal::queue('my_custom_queue');
 $queue->createQueue();
-~~~
+```
 
 Далее нам нужно наполнить очередь данными:
 
-~~~php
+```php
 # Добавляем данные в очередь
 $queue->createItem([
   'key' => 'value',
@@ -47,32 +47,32 @@ $queue->createItem([
     'key' => 'value'
   ]
 ]);
-~~~
+```
 
 После того как вы наполнили очередь всеми данными, с ней можно начинать работать. Следовательно необходимо получать элементы очереди. Для получения текущего элемента очереди:
 
-~~~php
+```php
 $current_item = $queue->claimItem();
-~~~
+```
 
 После того как все необходимые действия с данным элементом закончены, его нужно удалить из очереди:
 
-~~~php
+```php
 $queue->deleteItem();
-~~~
+```
 
 Мы также можем удалить очередь:
 
 
-~~~php
+```php
 $queue->deleteQueue();
-~~~
+```
 
 Также может оказаться полезным получение количества оставшихся элементов в очереди:
 
-~~~php
+```php
 $items_in_queue = $queue->numberOfItems();
-~~~
+```
 
 В принципе осталось всё это собрать в единое целое.
 
@@ -88,7 +88,7 @@ $items_in_queue = $queue->numberOfItems();
 
 Первым делом объявим страницу с формой.
 
-~~~php {"header":"Листинг: /src/Form/QueueNode.php"}
+```php {"header":"Листинг: /src/Form/QueueNode.php"}
 <?php
 /**
  * @file
@@ -185,14 +185,14 @@ class QueueNode extends FormBase {
   }
 
 }
-~~~
+```
 
 В данной форме у нас два поведения. Изначально на форме кнопка "Создать ноды для пользователей", при нажатии которой из базы мы берем всех активных пользователей и ложем в нашу очередь их имя и UID. В случае если очередь уже имеется и не пустая, мы выводим текст сообщающий об этом, а также количество оставшихся элементов в очереди, а также кнопку для удаления данной очереди, чтобы можно было создать новую.
 
 
 ### Добавляем роут
 
-~~~yml {"header":"Листинг: helloworld.routing.yml"}
+```yml {"header":"Листинг: helloworld.routing.yml"}
 helloworld.queue_node:
   path: '/admin/config/people/queue-node'
   defaults:
@@ -201,7 +201,7 @@ helloworld.queue_node:
     _form: '\Drupal\helloworld\Form\QueueNode'
   requirements:
     _permission: 'administer node'
-~~~
+```
 
 ### Выполняем очередь
 
@@ -211,7 +211,7 @@ helloworld.queue_node:
 Для этого объявляем нашу операцию для крона. От Drupal 7 отличий совершенно никаких, hook_cron() никуда не делся.
 
 
-~~~php {"header":"Листинг: helloworld.module"}
+```php {"header":"Листинг: helloworld.module"}
 <?php
 
 /**
@@ -243,7 +243,7 @@ function helloworld_cron() {
     $queue->deleteItem($item);
   }
 }
-~~~
+```
 
 ### Проверяем
 

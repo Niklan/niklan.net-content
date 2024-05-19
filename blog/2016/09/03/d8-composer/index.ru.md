@@ -26,7 +26,7 @@ tags:
 
 Начиная с Drupal 8.1 в ядро был внедрён Composer, для управления зависимостями проекта. С этого момента подход к разработке, деплою и прочему начал меняться. 
 
-Работа с Composer теперь неотъемлемая часть процесса при разработке и поддержке сайта на 8-ой версии. Вы никуда от него не убежите, и нравится он вам или нет, вам придется его использовать. Так что, лучше сразу подружитесь с ним и полностью начните сопровождать проект с его помощью. На самом деле, Composer — круто! По началу напугает, будут непонимания, но со временем, вы будете только рады. Особенно после стандартного подхода деплоя и управления 8-кой, это просто рай.
+Работа с Composer теперь неотъемлемая часть процесса при разработке и поддержке сайта на 8-ой версии. Вы никуда от него не убежите, и нравится он вам или нет, вам придется его использовать. Так что, лучше сразу подружитесь с ним и полностью начните сопровождать проект с его помощью. На самом деле, Composer — круто! По началу напугает, будут непонимания, но со временем, вы будете только рады. Особенно после стандартного подхода деплоя и управления 8-кой, это просто рай.
 
 Для всех новых проектов на 8-ке, а также старых, если у вас есть желание и возможности, <mark>я настоятельно рекомендую использовать</mark> [Drupal Project](https://github.com/drupal-composer/drupal-project). Поверьте, проверьте, это просто и круто. Все беды с композером на данный момент лишь потому, что его внедрили после релиза 8-ки, и по уму, надо вообще запретить качать ядро друпала в виде архивов, либо оставлять их как ознакомительный вариант с исходным кодом (сейчас это делать, очевидно, очень проблематично, но вангану что Drupal 9, скорее всего, когда выйдет, будет поставляться именно так, без архивов). Надо делать как Symfony, попробуйте найдите архивы у них на сайте для загрузки, то-то же. Данный проект, немного меняет структуру проекта, но решает просто тонну различных проблем стандартного подхода от drupal.org. Друпал будет там тот же, всё будет абсолютно идентично, работа с проектом изменится совсем чуточку, из-за  немного измененной структуры, но плюсы, которые открывает данный подход, просто перекрывают всё. Работать, деплоить, обновлять и сопровождать проект будет просто сказка, после адовой солянки из стандартной сборки. _Эта штука, вообще тема для отдельной статьи, и если интересно, могу про неё детальнее рассказать, если есть трудности с пониманием что это._
 
@@ -90,15 +90,15 @@ tags:
     },
     "autoload": {
         "psr-4": {
-            "Drupal\\Core\\Composer\\": "core/lib/Drupal/Core/Composer"
+            "Drupal/Core/Composer/": "core/lib/Drupal/Core/Composer"
         }
     },
     "scripts": {
-        "pre-autoload-dump": "Drupal\\Core\\Composer\\Composer::preAutoloadDump",
-        "post-autoload-dump": "Drupal\\Core\\Composer\\Composer::ensureHtaccess",
-        "post-package-install": "Drupal\\Core\\Composer\\Composer::vendorTestCodeCleanup",
-        "post-package-update": "Drupal\\Core\\Composer\\Composer::vendorTestCodeCleanup",
-        "drupal-phpunit-upgrade-check": "Drupal\\Core\\Composer\\Composer::upgradePHPUnit",
+        "pre-autoload-dump": "Drupal/Core/Composer/Composer::preAutoloadDump",
+        "post-autoload-dump": "Drupal/Core/Composer/Composer::ensureHtaccess",
+        "post-package-install": "Drupal/Core/Composer/Composer::vendorTestCodeCleanup",
+        "post-package-update": "Drupal/Core/Composer/Composer::vendorTestCodeCleanup",
+        "drupal-phpunit-upgrade-check": "Drupal/Core/Composer/Composer::upgradePHPUnit",
         "drupal-phpunit-upgrade": "@composer update phpunit/phpunit --with-dependencies --no-progress",
         "phpcs": "phpcs --standard=core/phpcs.xml.dist --runtime-set installed_paths $($COMPOSER_BINARY config vendor-dir)/drupal/coder/coder_sniffer --",
         "phpcbf": "phpcbf --standard=core/phpcs.xml.dist --runtime-set installed_paths $($COMPOSER_BINARY config vendor-dir)/drupal/coder/coder_sniffer --"
@@ -237,15 +237,15 @@ _Я также добавил туда `"libraries/{$name}": ["type:drupal-libra
     },
     "autoload": {
         "psr-4": {
-            "Drupal\\Core\\Composer\\": "core/lib/Drupal/Core/Composer"
+            "Drupal/Core/Composer/": "core/lib/Drupal/Core/Composer"
         }
     },
     "scripts": {
-        "pre-autoload-dump": "Drupal\\Core\\Composer\\Composer::preAutoloadDump",
-        "post-autoload-dump": "Drupal\\Core\\Composer\\Composer::ensureHtaccess",
-        "post-package-install": "Drupal\\Core\\Composer\\Composer::vendorTestCodeCleanup",
-        "post-package-update": "Drupal\\Core\\Composer\\Composer::vendorTestCodeCleanup",
-        "drupal-phpunit-upgrade-check": "Drupal\\Core\\Composer\\Composer::upgradePHPUnit",
+        "pre-autoload-dump": "Drupal/Core/Composer/Composer::preAutoloadDump",
+        "post-autoload-dump": "Drupal/Core/Composer/Composer::ensureHtaccess",
+        "post-package-install": "Drupal/Core/Composer/Composer::vendorTestCodeCleanup",
+        "post-package-update": "Drupal/Core/Composer/Composer::vendorTestCodeCleanup",
+        "drupal-phpunit-upgrade-check": "Drupal/Core/Composer/Composer::upgradePHPUnit",
         "drupal-phpunit-upgrade": "@composer update phpunit/phpunit --with-dependencies --no-progress",
         "phpcs": "phpcs --standard=core/phpcs.xml.dist --runtime-set installed_paths $($COMPOSER_BINARY config vendor-dir)/drupal/coder/coder_sniffer --",
         "phpcbf": "phpcbf --standard=core/phpcs.xml.dist --runtime-set installed_paths $($COMPOSER_BINARY config vendor-dir)/drupal/coder/coder_sniffer --"
@@ -389,15 +389,15 @@ JS библиотек нет в репозиториях композера, т�
     },
     "autoload": {
         "psr-4": {
-            "Drupal\\Core\\Composer\\": "core/lib/Drupal/Core/Composer"
+            "Drupal/Core/Composer/": "core/lib/Drupal/Core/Composer"
         }
     },
     "scripts": {
-        "pre-autoload-dump": "Drupal\\Core\\Composer\\Composer::preAutoloadDump",
-        "post-autoload-dump": "Drupal\\Core\\Composer\\Composer::ensureHtaccess",
-        "post-package-install": "Drupal\\Core\\Composer\\Composer::vendorTestCodeCleanup",
-        "post-package-update": "Drupal\\Core\\Composer\\Composer::vendorTestCodeCleanup",
-        "drupal-phpunit-upgrade-check": "Drupal\\Core\\Composer\\Composer::upgradePHPUnit",
+        "pre-autoload-dump": "Drupal/Core/Composer/Composer::preAutoloadDump",
+        "post-autoload-dump": "Drupal/Core/Composer/Composer::ensureHtaccess",
+        "post-package-install": "Drupal/Core/Composer/Composer::vendorTestCodeCleanup",
+        "post-package-update": "Drupal/Core/Composer/Composer::vendorTestCodeCleanup",
+        "drupal-phpunit-upgrade-check": "Drupal/Core/Composer/Composer::upgradePHPUnit",
         "drupal-phpunit-upgrade": "@composer update phpunit/phpunit --with-dependencies --no-progress",
         "phpcs": "phpcs --standard=core/phpcs.xml.dist --runtime-set installed_paths $($COMPOSER_BINARY config vendor-dir)/drupal/coder/coder_sniffer --",
         "phpcbf": "phpcbf --standard=core/phpcs.xml.dist --runtime-set installed_paths $($COMPOSER_BINARY config vendor-dir)/drupal/coder/coder_sniffer --"
@@ -504,15 +504,15 @@ JS библиотек нет в репозиториях композера, т�
     },
     "autoload": {
         "psr-4": {
-            "Drupal\\Core\\Composer\\": "core/lib/Drupal/Core/Composer"
+            "Drupal/Core/Composer/": "core/lib/Drupal/Core/Composer"
         }
     },
     "scripts": {
-        "pre-autoload-dump": "Drupal\\Core\\Composer\\Composer::preAutoloadDump",
-        "post-autoload-dump": "Drupal\\Core\\Composer\\Composer::ensureHtaccess",
-        "post-package-install": "Drupal\\Core\\Composer\\Composer::vendorTestCodeCleanup",
-        "post-package-update": "Drupal\\Core\\Composer\\Composer::vendorTestCodeCleanup",
-        "drupal-phpunit-upgrade-check": "Drupal\\Core\\Composer\\Composer::upgradePHPUnit",
+        "pre-autoload-dump": "Drupal/Core/Composer/Composer::preAutoloadDump",
+        "post-autoload-dump": "Drupal/Core/Composer/Composer::ensureHtaccess",
+        "post-package-install": "Drupal/Core/Composer/Composer::vendorTestCodeCleanup",
+        "post-package-update": "Drupal/Core/Composer/Composer::vendorTestCodeCleanup",
+        "drupal-phpunit-upgrade-check": "Drupal/Core/Composer/Composer::upgradePHPUnit",
         "drupal-phpunit-upgrade": "@composer update phpunit/phpunit --with-dependencies --no-progress",
         "phpcs": "phpcs --standard=core/phpcs.xml.dist --runtime-set installed_paths $($COMPOSER_BINARY config vendor-dir)/drupal/coder/coder_sniffer --",
         "phpcbf": "phpcbf --standard=core/phpcs.xml.dist --runtime-set installed_paths $($COMPOSER_BINARY config vendor-dir)/drupal/coder/coder_sniffer --"
@@ -658,15 +658,15 @@ git — лучший друг для composer.
     },
     "autoload": {
         "psr-4": {
-            "Drupal\\Core\\Composer\\": "core/lib/Drupal/Core/Composer"
+            "Drupal/Core/Composer/": "core/lib/Drupal/Core/Composer"
         }
     },
     "scripts": {
-        "pre-autoload-dump": "Drupal\\Core\\Composer\\Composer::preAutoloadDump",
-        "post-autoload-dump": "Drupal\\Core\\Composer\\Composer::ensureHtaccess",
-        "post-package-install": "Drupal\\Core\\Composer\\Composer::vendorTestCodeCleanup",
-        "post-package-update": "Drupal\\Core\\Composer\\Composer::vendorTestCodeCleanup",
-        "drupal-phpunit-upgrade-check": "Drupal\\Core\\Composer\\Composer::upgradePHPUnit",
+        "pre-autoload-dump": "Drupal/Core/Composer/Composer::preAutoloadDump",
+        "post-autoload-dump": "Drupal/Core/Composer/Composer::ensureHtaccess",
+        "post-package-install": "Drupal/Core/Composer/Composer::vendorTestCodeCleanup",
+        "post-package-update": "Drupal/Core/Composer/Composer::vendorTestCodeCleanup",
+        "drupal-phpunit-upgrade-check": "Drupal/Core/Composer/Composer::upgradePHPUnit",
         "drupal-phpunit-upgrade": "@composer update phpunit/phpunit --with-dependencies --no-progress",
         "phpcs": "phpcs --standard=core/phpcs.xml.dist --runtime-set installed_paths $($COMPOSER_BINARY config vendor-dir)/drupal/coder/coder_sniffer --",
         "phpcbf": "phpcbf --standard=core/phpcs.xml.dist --runtime-set installed_paths $($COMPOSER_BINARY config vendor-dir)/drupal/coder/coder_sniffer --",

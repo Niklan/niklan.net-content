@@ -25,13 +25,13 @@ tags:
 
 Так как форма может называться как угодно, нам необходимо получать машинное имя данной формы, это делается следующим образом:
 
-~~~php
+```php
 $default_form_name = \Drupal::config('contact.settings')->get('default_form');
-~~~
+```
 
 Далее мы получаем форму.
 
-~~~php
+```php
 # Получаем форму по её машинному имени напрямую, или можете задействовать
 # $default_form_name.
 $entity = \Drupal::entityManager()->getStorage('contact_form')->load('feedback');
@@ -44,14 +44,14 @@ $message = \Drupal::entityManager()
 
 # Тут будет наша форма.
 $form = \Drupal::service('entity.form_builder')->getForm($message)
-~~~
+```
 
 ## Выводим форму в Twig
 
 
 В моём случае надо было вывести форму в темплейте page.html.twig. Для этого в файле `THEMENAME.theme` пишем:
 
-~~~php {"header":"THEMENAME.theme"}
+```php {"header":"THEMENAME.theme"}
 /**
  * Implements hook_preprocess_page().
  */
@@ -69,8 +69,8 @@ function THEMENAME_preprocess_page(&$variables) {
 
   $variables['contact_form'] = \Drupal::service('entity.form_builder')->getForm($message);
 }
-~~~
+```
 
-~~~twig {"header":"page.html.twig"}
+```twig {"header":"page.html.twig"}
 {{ contact_form }}
-~~~
+```

@@ -34,13 +34,13 @@ tags:
 
 Первым делом мы добавим пункт Hello World в тулбар. Для этого, нам необходимо в `helloworld.links.menu.yml` добавить ссылку на нашу страницу указав в качестве родителя роутинг для тулбара.
 
-~~~yaml {"header":"helloworld.links.menu.yml"}
+```yaml {"header":"helloworld.links.menu.yml"}
 hello_world.admin_toolbar_hello_world:
   title: 'Hello World'
   parent: system.admin
   route_name: hello_world.admin_config_hello_world
   weight: 0
-~~~
+```
 
 Опять же, если вы читали предыдущую статью, то можете обратить внимание, что отличие от `hello_world.admin_config_hello_world` — который добавляет раздел на странице конфигурации лишь в parent. Для страницы кофнигурации это `system.admin_config`, а для тулбара `system.admin`. Вот и вся разница между статьями.
 
@@ -55,14 +55,14 @@ hello_world.admin_toolbar_hello_world:
 
 
 
-~~~yaml {"header":"helloworld.links.menu.yml"}
+```yaml {"header":"helloworld.links.menu.yml"}
 hello_world.admin_toolbar_collect_phone_settings:
   title: 'Collect Phone settings'
   description: 'In this settings you can set default phone number for collect phone form.'
   parent: hello_world.admin_toolbar_hello_world
   route_name: hello_world.collect_phone_admin_settings
   weight: 1
-~~~
+```
 
 Опять же, сбрасываем кэш и смотрим что получилось.
 
@@ -84,34 +84,34 @@ hello_world.admin_toolbar_collect_phone_settings:
 
 Для этого, создаем папку **css** в корне модуля, в нём создаем файл **helloworld.toolbar.css** и добавляем нашу иконку.
 
-~~~css {"header":"css/helloworld.toolbar.css"}
+```css {"header":"css/helloworld.toolbar.css"}
 .toolbar-icon-hello-world-admin-toolbar-hello-world:before {
   background-image: url('../img/globe.svg');
 }
-~~~
+```
 
 Далее нам необходимо обьявить этот файл в виде библиотеки, и подключить данную библиотеку к тулбару.
 
 Первым делом, вспоминая [Libraries API](/blog/72), нам необходимо обьявить наш css файл в качестве библиотеки. Для этого создаем файл **helloworld.libraries.yml** и добавляем наш файл стилей.
 
-~~~yml {"header":"helloworld.libraries.yml"}
+```yml {"header":"helloworld.libraries.yml"}
 helloworld.toolbar:
   version: VERSION
   css:
     theme:
       css/helloworld.toolbar.css: {}
-~~~
+```
 
 Библиотеку обьявили, теперь надо её подключить к тулбару. Лучше всего, как по мне, использовать хук `hook_preprocess_HOOK` и повесить подключение данной библиотеки (стиля) непосредственно к тулбару. Если модуль тулбар по каким-то причинам отключат, то и библиотека перестанет подключаться. Соответственно, гостям эта библиотека также не будет грузится.
 
-~~~php {"header":"helloworld.module"}
+```php {"header":"helloworld.module"}
 /**
  * Implements hook_preprocess_HOOK().
  */
 function helloworld_preprocess_toolbar(&$variables) {
   $variables['#attached']['library'][] = 'helloworld/helloworld.toolbar';
 }
-~~~
+```
 
 Сбрасываем кэш, перезагружаем страницу и смотрим на результат.
 

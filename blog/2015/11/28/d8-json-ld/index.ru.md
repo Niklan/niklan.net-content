@@ -30,7 +30,7 @@ tags:
 
 Давайте его добавим на все страницы сайта (пока это не особо важно). В данном примере больше всего вас должен заинтересовать синтаксис render array для json-ld:
 
-~~~php
+```php
 /**
  * Implements hook_page_attachments().
  */
@@ -55,7 +55,7 @@ function MYMODULE_page_attachments(array &$page) {
 
   $page['#attached']['html_head'][] = [$json_ld, 'json-ld'];
 }
-~~~
+```
 
 И на каждой странице должен появиться наш тег с данными:
 
@@ -75,7 +75,7 @@ function MYMODULE_page_attachments(array &$page) {
 
 Затем, когда у нас есть поля, нам достаточно их вывести:
 
-~~~php
+```php
 /**
  * Implements hook_entity_view().
  */
@@ -103,7 +103,7 @@ function MYMODULE_entity_view(array &$build, \Drupal\Core\Entity\EntityInterface
     $build['#attached']['html_head'][] = [$json_ld, 'json-ld'];
   }
 }
-~~~
+```
 
 И смотрим что на странице:
 

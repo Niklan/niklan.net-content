@@ -564,7 +564,7 @@ $databases['default']['default'] = array (
   'prefix' => '',
   'host' => 'mariadb',
   'port' => '3306',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'namespace' => 'Drupal/Core/Database/Driver/mysql',
   'driver' => 'mysql',
 );
 
@@ -577,7 +577,7 @@ $databases['druio_old']['default'] = array (
   'prefix' => '',
   'host' => 'mariadb',
   'port' => '3306',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'namespace' => 'Drupal/Core/Database/Driver/mysql',
   'driver' => 'mysql',
 );
 ```

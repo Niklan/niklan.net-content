@@ -38,19 +38,19 @@ tags:
 Первым делом нужно установить оболочку Zsh, для этого в Ubuntu необходимо просто  запросить данный пакет, так как он находится в официальных репозиториях:
 
 
-~~~php {"header":"Установка Zsh на Ubuntu"}
+```php {"header":"Установка Zsh на Ubuntu"}
 sudo apt install zsh
-~~~
+```
 
 Далее нам необходимо поставить фреймворк [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh). Разработчики предлагают два варианта установки, по сути они одинаковые, вам просто предоставляется выбор как вытянуть скрипт установщика, `wget` или `curl`, это лишь важно в тех случаях, когда на системе нет одного из них (частенько можно встретить отсутствие curl), и вы не хотите ставить пакет ради этого, или нет прав. Я также пишу вам два варианта, а какой использовать решайте сами:
 
 
-~~~sh {"header":"Установка Oh My Zsh"}
+```sh {"header":"Установка Oh My Zsh"}
 # Curl
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 # Wget
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-~~~
+```
 
 После данной установки, у вас запросят пароль чтобы переключить шел для текущего пользователя на Zsh. Вводим, и всё готово!
 
@@ -103,7 +103,7 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 Давайте установим [пропатченные шрифты](https://github.com/powerline/fonts):
 
 
-~~~sh
+```sh
 # clone
 git clone https://github.com/powerline/fonts.git
 # install
@@ -112,7 +112,7 @@ cd fonts
 # clean-up a bit
 cd ..
 rm -rf fonts
-~~~
+```
 
 Этого уже будет достаточно, можно работать. Но некоторые моменты я ещё затрону.
 
@@ -145,14 +145,14 @@ rm -rf fonts
 Вариант первый, это в файле конфига `~/.zshrc` раскомментировать соответсвующую строку в самом начале и добавить нужные пути, либо добавить их прямо из терминала:
 
 
-~~~sh
+```sh
 # Добавить в конец переменной
 path+=('/home/USERNAME/SOMEPATH/bin')
 # Добавить в начало переменной
 path=('/home/USERNAME/SOMEPATH/bin' $path)
 # Отгрузить новую переменную
 export PATH
-~~~
+```
 
 ## Удаляем Oh My Zsh
 
@@ -160,9 +160,9 @@ export PATH
 Если вам потребуется полностью удалить Oh My Zsh и сам шелл с системы, то это делается достаточно просто:
 
 
-~~~sh {"header":"Удаление"}
+```sh {"header":"Удаление"}
 # Удаляем Oh My Zsh и всё что с ним связано
 uninstall_oh_my_zsh
 # Удаляем Zsh
 sudo apt uninstall zsh
-~~~
+```
