@@ -4,7 +4,6 @@ language: ru
 title: 'Drupal 8: Plugin API — создание собственных типов плагинов'
 created: '2016-09-17T13:39:21'
 updated: '2023-10-16T18:21:20'
-needs_manual_review: true
 description: 'В этом материале я расскажу как создавать собственные типы плагинов при помощи Plugin API. '
 attachments:
   - name: 'Заготовка для теста импорта статей.'

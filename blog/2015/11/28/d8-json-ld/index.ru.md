@@ -4,7 +4,6 @@ language: ru
 title: 'Drupal 8: Добавление JSON-LD'
 created: '2015-11-28T14:11:07'
 updated: '2023-10-16T18:21:20'
-needs_manual_review: true
 description: 'Программное добавление JSON-LD разметки на сайт.'
 promo: 'image/d8json-ld.png'
 tags:
