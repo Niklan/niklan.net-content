@@ -107,7 +107,7 @@ public function defaultConfiguration() {
 ### blockForm()
 
 При помощи данного метода вы сможете объявить форму с настройками для данного
-блока используя [Form API](/blog/73).
+блока используя [Form API][d8-form-api].
 
 ```php
 use Drupal\Core\Form\FormStateInterface;
@@ -369,3 +369,5 @@ class PrintMyMessages extends BlockBase {
 ![Результат](image/4.png)
 
 Вот и всё. Такой процесс работы с блоками в Drupal 8 на программном уровне.
+
+[d8-form-api]: ../../../../2015/10/16/d8-form-api/index.ru.md

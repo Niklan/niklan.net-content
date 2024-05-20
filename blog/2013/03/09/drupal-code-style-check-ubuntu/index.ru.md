@@ -63,4 +63,6 @@ Drupal_) [Coder](http://drupal.org/project/coder) ветки 7.x-2.x
 ## P.s.
 
 Как правило, он находит огромное количество ошибок. 90% из них исправляются
-правильной [настройкой IDE под стандарты Drupal](/node/3).
+правильной [настройкой IDE под стандарты Drupal][d7fb-translate].
+
+[d7fb-translate]: ../../../../2013/01/24/d7fb-translate/index.ru.md
