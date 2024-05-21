@@ -48,7 +48,7 @@ function MYMODULE_preprocess_html(&$variables) {
 }
 ```
 
-![Результат](image/1%20(36).png)
+![Результат](image/1.png)
 
 ## Добавление метатега только на странице сущности
 

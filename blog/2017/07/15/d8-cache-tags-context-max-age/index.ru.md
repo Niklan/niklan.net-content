@@ -7,7 +7,7 @@ updated: '2023-10-16T18:21:20'
 description: 'Всё что нужно знать об основном кэшировании в восьмерке.'
 attachments:
   - name: 'Исходник схемы'
-    path: 'attachment/scmeme.svg'
+    path: 'attachment/scheme.svg'
   - name: 'Готовый модуль со всеми примерами'
     path: 'attachment/dummy.tar.gz'
 promo: 'image/speed.jpeg'
