@@ -107,7 +107,7 @@ class PriceResolverExample implements PriceResolverInterface {
 
 ## Объявление Service
 
-Созаднный(е) вами resolver нужно объявить в качестве [сервиса](/blog/150).
+Созданный(е) вами resolver нужно объявить в качестве [сервиса][d8-services].
 Объявление выглядит следующим образом:
 
 ```yaml {"header":"Пример объявления Price Resolver в качестве сервиса"}
@@ -283,3 +283,5 @@ return $entity->getPrice()->divide('0.5');
 
 Эти методы облегчат написание и читаемость кода при более сложных
 ценообразованиях, не забывайте про них.
+
+[d8-services]: ../../../../2017/06/21/d8-services/index.ru.md

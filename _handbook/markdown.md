@@ -60,9 +60,9 @@ using the `<video>` tag.
 :: video [Video title] (./path/to/video.mp4)
 ```
 
-- `[]`: The video title will be used to save the file.
-- `()`: The path to the video file. The path should be local; external videos
-  will not be downloaded.
+- `[]`: (required) The video title will be used to save the file.
+- `()`: (required) The path to the video file. The path should be local;
+  external videos will not be downloaded.
 
 ### YouTube video
 
@@ -73,7 +73,7 @@ Used to embed a YouTube video on the page.
 ```
 
 - `{}`
-  - `vid`: The YouTube video ID.
+  - `vid`: (required) The YouTube video ID.
 
 ## Container block directives
 

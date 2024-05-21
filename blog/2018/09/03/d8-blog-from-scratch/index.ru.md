@@ -88,10 +88,10 @@ tags:
 
 **Рекомендации к прочтению**:
 
-* [Drupal 8: Мой процесс разработки и деплоя на июнь 2018](https://niklan.net/blog/186)
-* [Drupal 8: Два варианта установки ядра](https://niklan.net/blog/185)
-* [Установка и настройка Docker4Drupal на Ubuntu](https://niklan.net/blog/172)
-* [Drupal 8: Работа с Composer](https://niklan.net/blog/130)
+* [Drupal 8: Мой процесс разработки и деплоя на июнь 2018][develop-and-deploy-2018]
+* [Drupal 8: Два варианта установки ядра][d8-two-ways-of-install]
+* [Установка и настройка Docker4Drupal на Ubuntu][docker4drupal-ubuntu]
+* [Drupal 8: Работа с Composer][d8-composer]
 * (
   видео) [Настройка PhpStorm для работы с Drupal 8](https://www.youtube.com/watch?v=cOfp016iyts)
 
@@ -137,9 +137,9 @@ tags:
 
 **Рекомендации по изучению**:
 
-* [Drupal 8: Работа с Composer](https://niklan.net/blog/130)
-* [Drupal 8: Tokens](https://niklan.net/blog/191)
-* [Drupal 8: Создание Paragraphs Behavior Plugin](https://niklan.net/blog/175)
+* [Drupal 8: Работа с Composer][d8-composer]
+* [Drupal 8: Tokens][d8-tokens]
+* [Drupal 8: Создание Paragraphs Behavior Plugin][d8-paragraphs-behavior-plugin]
 
 **Тайминги**:
 
@@ -173,13 +173,13 @@ tags:
 
 **Рекомендации по изучению**:
 
-* [Drupal 8: Создание Paragraphs Behavior Plugin](https://niklan.net/blog/175)
+* [Drupal 8: Создание Paragraphs Behavior Plugin][d8-paragraphs-behavior-plugin]
 * (
   видео) [Настройка PhpStorm для работы с Drupal 8](https://www.youtube.com/watch?v=cOfp016iyts)
-* [Drupal 8: Создание кнопок на предыдущий и следующий материал](https://niklan.net/blog/178)
-* [Drupal 8: Создание псевдо-полей](https://niklan.net/blog/177)
-* [Drupal 8: hooks](https://niklan.net/blog/184)
-* [Drupal 8: hook_theme()](https://niklan.net/blog/151)
+* [Drupal 8: Создание кнопок на предыдущий и следующий материал][d8-prev-next-buttons]
+* [Drupal 8: Создание псевдо-полей][d8-extra-field]
+* [Drupal 8: hooks][d8-hooks]
+* [Drupal 8: hook_theme()][d8-hook-theme]
 
 **Тайминги**:
 
@@ -211,10 +211,10 @@ Hero Image.
 
 **Рекомендации по изучению**:
 
-* [Drupal 8: Plugin API — создание собственных типов плагинов](/blog/134)
-* [Drupal 8: hooks](/blog/184)
-* [Drupal 8: hook_theme()](/blog/151)
-* [Drupal 8: #cache — cache tags, context и max-age](/blog/155)
+* [Drupal 8: Plugin API — создание собственных типов плагинов][d8-custom-plugins]
+* [Drupal 8: hooks][d8-hooks]
+* [Drupal 8: hook_theme()][d8-hook-theme]
+* [Drupal 8: #cache — cache tags, context и max-age][d8-cache-metadata]
 
 **Тайминги**:
 
@@ -262,7 +262,7 @@ Hero Image.
 
 **Рекомендации по изучению**:
 
-* [Drupal 8: Мой процесс разработки и деплоя на июнь 2018](/blog/186)
+* [Drupal 8: Мой процесс разработки и деплоя на июнь 2018][develop-and-deploy-2018]
 
 **Тайминги**:
 
@@ -312,7 +312,7 @@ Hero Image.
 
 **Рекомендации по изучению**:
 
-* [Drupal 8: Создание Paragraphs Behavior Plugin](https://niklan.net/blog/175)
+* [Drupal 8: Создание Paragraphs Behavior Plugin][d8-paragraphs-behavior-plugin]
 
 **Тайминги**:
 
@@ -346,7 +346,7 @@ ImageMagick. Оформим тизеры записей в блог и мног�
 
 **Рекомендации по изучению:**
 
-* [Drupal: Оптимизация сжатия и загрузки изображений](https://niklan.net/blog/139)
+* [Drupal: Оптимизация сжатия и загрузки изображений][d7-d8-imagemagick]
 
 **Тайминги**:
 
@@ -394,9 +394,9 @@ Views. Поработаем с theme_hook(), #lazy_builder, EntityQuery и по�
 
 **Рекомендации к прочтению:**
 
-* [Drupal 8: hook_theme()](https://niklan.net/blog/151)
-* [Drupal 8: Services](https://niklan.net/blog/150)
-* [Drupal 8: #lazy_builder — ленивый билдер](https://niklan.net/blog/154)
+* [Drupal 8: hook_theme()][d8-hook-theme]
+* [Drupal 8: Services][d8-services]
+* [Drupal 8: #lazy_builder — ленивый билдер][d8-lazy-builder]
 
 **Тайминги**:
 
@@ -420,8 +420,8 @@ Views. Поработаем с theme_hook(), #lazy_builder, EntityQuery и по�
 
 **Рекомендации к прочтению:**
 
-* [Drupal 8: hook_theme()](https://niklan.net/blog/151)
-* [Drupal 8: Services](https://niklan.net/blog/150)
+* [Drupal 8: hook_theme()][d8-hook-theme]
+* [Drupal 8: Services][d8-services]
 
 **Тайминги**:
 
@@ -448,8 +448,8 @@ Views. Поработаем с theme_hook(), #lazy_builder, EntityQuery и по�
 
 **Рекомендации к прочтению:**
 
-* [Drupal 8: Condition Plugin](https://niklan.net/blog/181)
-* [Drupal 8: Services](https://niklan.net/blog/150)
+* [Drupal 8: Condition Plugin][d8-condition-plugin]
+* [Drupal 8: Services][d8-services]
 
 **Тайминги**:
 
@@ -524,8 +524,8 @@ Resrouce, который программно ищет в Search API, и под�
 
 **Рекомендации к прочтению:**
 
-- [Drupal 8: Search API — программный поиск по сайту](https://niklan.net/blog/176)
-- [Drupal 8: Создание REST Resource Plugin](https://niklan.net/blog/165)
+- [Drupal 8: Search API — программный поиск по сайту][d8-search-api-programmatically]
+- [Drupal 8: Создание REST Resource Plugin][d8-rest-plugin]
 
 **Тайминги**:
 
@@ -570,3 +570,22 @@ Resrouce, который программно ищет в Search API, и под�
 * 01:31:27 — Проверяем на PageSpeed.
 
 :: youtube {vid=axklsJ1439o}
+
+[d8-services]: ../../../../2017/06/21/d8-services/index.ru.md
+[d8-cache-metadata]: ../../../../2017/07/15/d8-cache-tags-context-max-age/index.ru.md
+[d8-rest-plugin]: ../../../../2018/01/16/d8-rest-plugin/index.ru.md
+[d8-hook-theme]: ../../../../2017/06/26/d8-hook-theme/index.ru.md
+[d8-extra-field]: ../../../../2018/04/26/d8-extra-field/index.ru.md
+[d8-custom-plugins]: ../../../../2016/09/17/d8-custom-plugins/index.ru.md
+[d8-composer]: ../../../../2016/09/03/d8-composer/index.ru.md
+[d8-two-ways-of-install]: ../../../../2018/06/29/d8-two-ways-of-install/index.ru.md
+[docker4drupal-ubuntu]: ../../../../2018/04/15/docker4drupal-ubuntu/index.ru.md
+[develop-and-deploy-2018]: ../../../../2018/07/03/develop-and-deploy-2018/index.ru.md
+[d8-tokens]: ../../../../2018/09/06/d8-tokens/index.ru.md
+[d8-paragraphs-behavior-plugin]: ../../../../2018/04/20/d8-paragraphs-behavior-plugin/index.ru.md
+[d8-prev-next-buttons]: ../../../../2018/04/27/d8-prev-next-buttons/index.ru.md
+[d8-hooks]: ../../../../2018/06/28/d8-hooks/index.ru.md
+[d7-d8-imagemagick]: ../../../../2017/03/30/d7-d8-imagemagick/index.ru.md
+[d8-lazy-builder]: ../../../../2017/07/07/d8-lazy-builder/index.ru.md
+[d8-condition-plugin]: ../../../../2018/05/25/d8-condition-plugin/index.ru.md
+[d8-search-api-programmatically]: ../../../../2018/04/24/d8-search-api-programmatically/index.ru.md

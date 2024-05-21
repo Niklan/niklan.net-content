@@ -1440,6 +1440,8 @@ public function get() {
 либо возвращать `ModifiedResourceResponse()` вместо `ResourceResponse()`.
 
 Если для вас данный раздел полон вопросов, то рекомендую почитать материал
-про [кэширование в 8-ке](/blog/155).
+про [кэширование в 8-ке][d8-cache-metadata].
 
 Готовый модуль со всеми примерами прилагается.
+
+[d8-cache-metadata]: ../../../../2017/07/15/d8-cache-tags-context-max-age/index.ru.md

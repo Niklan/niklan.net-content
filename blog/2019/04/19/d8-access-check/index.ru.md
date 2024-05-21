@@ -46,7 +46,7 @@ tags:
 ## Состав Access Check сервиса
 
 Access check является просто объектом, объявленным как
-тегированный [сервис](/blog/150). Мы не будем разбираться в данной статье что
+тегированный [сервис][d8-services]. Мы не будем разбираться в данной статье, что
 такое сервисы, поэтому, обратитесь к соответствующему материалу.
 
 Как и подобает сервису, он имеет описание в `*.services.yml` файле и объект,
@@ -136,7 +136,7 @@ Check. Это очень специфичный метод и, скорее вс
 Если у вас проблемы с пониманием что
 делает `cachePerPermissions()`, `cachePerUser()` или `setCacheMaxAge()`,
 рекомендую
-прочитать [Drupal 8: #cache — cache tags, context и max-age](/blog/155).
+прочитать [Drupal 8: #cache — cache tags, context и max-age][d8-cache-metadata].
 
 Пример объекта Access Check
 
@@ -355,8 +355,8 @@ class DefaultAccessCheck implements RoutingAccessInterface {
 - При включении модуля system срабатывает `system_install()` хук.
 - В данном хуке генерируется случайный ключ для Cron
   URL `$cron_key = Crypt::randomBytesBase64(55);`.
-- Затем он сохраняется при
-  помощи [State API](/blog/74) `\Drupal::state()->set('system.cron_key', $cron_key);`.
+- Затем он сохраняется при помощи [State API][d8-state-api]
+  `\Drupal::state()->set('system.cron_key', $cron_key);`.
 
 Теперь посмотрим на сам маршрут для вызова крон операций при помощи HTTP
 запроса.
@@ -681,3 +681,7 @@ class CsrfRequestHeaderAccessCheck implements AccessCheckInterface {
 разобрали 3 сервиса из ядра, и теперь вы будете знать как они работают. Учитывая
 что все они разные и комплексные, вы сможете понять как работают другие access
 check не только от ядра, но и от сторонних модулей.
+
+[d8-services]: ../../../../2017/06/21/d8-services/index.ru.md
+[d8-cache-metadata]: ../../../../2017/07/15/d8-cache-tags-context-max-age/index.ru.md
+[d8-state-api]: ../../../../2015/10/16/d8-state-api/index.ru.md

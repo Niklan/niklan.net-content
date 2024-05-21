@@ -308,7 +308,7 @@ api - [ишью с проблемой и патчем](https://www.drupal.org/pr
 
 Вам также потребуется REST UI для активации ресурса. Для более детальной
 информации о коде и примере в целом обращайтесь к
-материалу - [создание REST Resource Plugin](/blog/165).
+материалу - [создание REST Resource Plugin][d8-rest-plugin].
 
 ```php {"header":"src/Plugin/rest/resource/GlobalSearchResource.php"}
 <?php
@@ -398,6 +398,9 @@ class GlobalSearchResource extends ResourceBase {
 отдельно. Таким образом со временем этот ресурс будет работать нереально шустро,
 но и БД разрастется от большго кол-ва поиска. Поэтому, если что, скорректируйте
 кэширование под себя. Если не знакомы с кэшированием,
-почитайте [статью про кэширование в 8-ке](/blog/155).
+почитайте [статью про кэширование в 8-ке][d8-cache-metadata].
 
 _На момент публикации, поиск по блогу работает именно так, в связке с Vue.js._
+
+[d8-cache-metadata]: ../../../../2017/07/15/d8-cache-tags-context-max-age/index.ru.md
+[d8-rest-plugin]: ../../../../2018/01/16/d8-rest-plugin/index.ru.md

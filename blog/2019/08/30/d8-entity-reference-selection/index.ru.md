@@ -15,9 +15,9 @@ tags:
   - 'Plugin API'
 ---
 
-У меня уже есть материал по поводу [добавления автодополнения](/blog/77), но он
-покрывает лишь в общих чертах как это работает и как пользоваться. В данном
-материале, мы рассмотрим один из способов детальнее.
+У меня уже есть материал по поводу [добавления автодополнения][d8-autocomplete],
+но он покрывает лишь в общих чертах как это работает и как пользоваться. В
+данном материале, мы рассмотрим один из способов детальнее.
 
 В Drupal 8 появился такой FormElement как `entity_autocomplete`. Он позволяет
 добавлять автодополнение по сущностям с некоторыми настройками. Элемент является
@@ -51,8 +51,8 @@ $element['autocomplete'] = [
 Но когда появляется потребность как-то повлиять на работу этого элемента, данные
 плагины приходят на помощь. Если вы попытаетесь погуглить по этой задаче, вы
 найдете некорректные материалы и советы (по крайней мере из того что попалось
-мне). Все они советуют использовать [альтер маршрутов](/blog/171), для того
-чтобы подменить контроллер `system.entity_autocomplete`, и в нём править
+мне). Все они советуют использовать [альтер маршрутов][d8-route-subscriber], для
+того чтобы подменить контроллер `system.entity_autocomplete`, и в нём править
 результаты. Что в корне неверно, когда у нас есть под это целая система
 плагинов, с которой взаимодействует не только какой-то конкретный элемент, но и
 поля, а также прочие модули.
@@ -203,7 +203,7 @@ default".
    Пример: `Drupal\views\Plugin\EntityReferenceSelection\ViewsSelection`.
 2. Базовый плагин + плагины сущностей. Подобный подход используется
    плагином `default` из ядра. Он имеет базовый плагин, в котором описана
-   основная логика, а при помощи [деритив](/blog/203) создаются плагины под
+   основная логика, а при помощи [деритив][d8-derivatives] создаются плагины под
    каждую сущность на сайте. Выходит, что у каждой сущности есть свой
    собственный плагин.
    Пример: `Drupal\Core\Entity\Plugin\EntityReferenceSelection\DefaultSelection` + `Drupal\Core\Entity\Plugin\Derivative\DefaultSelectionDeriver`.
@@ -222,7 +222,7 @@ default".
 
 Если вы хотите создать плагин, который привязывается к каждой сущности. Вам
 нужно создать базовый плагин по принципу монолитного, при этом также создать и
-указать [деритиву](/blog/203). При данном подходе `id` должен быть в
+указать [деритиву][d8-derivatives]. При данном подходе `id` должен быть в
 формате `{group}:{entity_type_id}`. Самое важное здесь, чтобы вторая часть была
 равна `entity_type_id`, так как там стоят на это доп. проверки. Например, у
 плагинов `default`, для ноды создаётся плагин `default:node`.
@@ -275,7 +275,8 @@ default".
   - TS-SYMFONY-RED
   - TS-SYMFONY-BLUE
 
-:: video [commerce-product-reference-original.mp4] (video/commerce-product-reference-original.mp4)
+:: video [commerce-product-reference-original.mp4] (
+video/commerce-product-reference-original.mp4)
 
 Как видно, поиск по артикулам совершенно не работает, но отлично справляется с
 заголовком. Проблему усугублена тем, что автогенерация заголовков вариантам
@@ -378,7 +379,8 @@ class ProductVariationWithSkuSelection extends DefaultSelection {
   в `Drupal\Core\Entity\Element\EntityAutocomplete::extractEntityIdFromAutocompleteInput()`
   ищет её в конце строки.
 
-:: video [commerce-product-reference-with-plugin.mp4] (video/commerce-product-reference-with-plugin.mp4)
+:: video [commerce-product-reference-with-plugin.mp4] (
+video/commerce-product-reference-with-plugin.mp4)
 
 Вы также можете теперь использовать в формах следующую конструкцию для
 добавления автодополнения с учетом плагина:
@@ -394,3 +396,7 @@ class ProductVariationWithSkuSelection extends DefaultSelection {
 параметр `#selection_handler` по умолчанию в `default`, таким образом,
 подхватывается наш плагин. Также, везде где использовался данный элемент и
 другими модулями, заработают подсказки.
+
+[d8-route-subscriber]: ../../../../2018/04/13/d8-route-subscriber/index.ru.md
+[d8-derivatives]: ../../../../2019/05/04/d8-derivatives/index.ru.md
+[d8-autocomplete]: ../../../../2015/10/27/d8-autocomplete/index.ru.md

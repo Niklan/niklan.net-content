@@ -71,7 +71,7 @@ config дериктории модуля, который описывает сх
 
 Внутри данного файла описывается структура(ы) для конфигураций данного же
 модуля. Например, выдернем **tour.schema.yml** из модуля tour, что в ядре (
-можете прочитать про [Tour API](/blog/78) отдельно):
+можете прочитать про [Tour API][d8-tour-api] отдельно):
 
 ```yaml
 # Schema for the configuration files of the Tour module.
@@ -505,7 +505,7 @@ dummy.message:
 ```
 
 Схема есть, конфиг есть, теперь время
-объявить [конфигурационную форму](/blog/73) для того чтобы всё это править.
+объявить [конфигурационную форму][d8-form-api] для того чтобы всё это править.
 
 ```php {"header":"src/Form/DummyMessageSettings.php"}
 <?php
@@ -666,3 +666,6 @@ function dummy_preprocess_page(&$variables) {
 Перейдя на русскую версию сайта, сообщение будет переведено!
 
 ![Ru](image/message-translated.png)
+
+[d8-tour-api]: ../../../../2015/11/04/d8-tour-api/index.ru.md
+[d8-form-api]: ../../../../2015/10/16/d8-form-api/index.ru.md
