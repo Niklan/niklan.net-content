@@ -4,7 +4,10 @@ language: ru
 title: 'Drupal 8: Работа с Composer'
 created: '2016-09-03T10:49:21'
 updated: '2023-10-16T18:21:20'
-description: 'Начиная с Drupal 8.1 работа с composer в Drupal становится де-факто обязательной, и в этой статье мы рассмотрим как им пользоваться.'
+description: >-
+  Начиная с версии Drupal 8.1, использование composer становится неотъемлемой
+  частью работы с Drupal. В этой статье мы рассмотрим, как правильно
+  использовать composer.
 attachments:
   - name: 'Первая версия статьи с файлами и контекнтом.'
     path: 'attachment/article-v1.tar.gz'

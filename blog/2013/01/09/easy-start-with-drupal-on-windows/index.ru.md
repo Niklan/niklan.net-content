@@ -4,7 +4,8 @@ language: ru
 title: 'Самый простой и быстрый способ начать работать с Drupal на Windows'
 created: '2013-01-09T16:18:18'
 updated: '2023-10-16T18:21:20'
-description: 'Acquia Dev Desktop — для быстрой и легкой разработки на Drupal под Windows.'
+description: >-
+  Acquia Dev Desktop — для быстрой и легкой разработки на Drupal под Windows.
 attachments:
   - name: add1.png
     path: 'image/add1.png'

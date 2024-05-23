@@ -4,7 +4,8 @@ language: ru
 title: 'Drupal 8 Hello World: Пишем свой первый модуль'
 created: '2014-10-12T15:29:46'
 updated: '2023-10-16T18:21:20'
-description: 'Создаем простой модуль, в котором необходимо писать весь свой код.'
+description: >-
+   Создаем простой модуль, в котором необходимо писать весь свой код.
 attachments:
   - name: 'Готовый модуль'
     path: 'attachment/helloworld.tar.gz'

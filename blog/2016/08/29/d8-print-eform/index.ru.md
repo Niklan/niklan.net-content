@@ -4,7 +4,9 @@ language: ru
 title: 'Drupal 8: Программный вывод EForm'
 created: '2016-08-29T17:09:43'
 updated: '2023-10-16T18:21:20'
-description: 'Небольшая заметка о том, как выводить EForm (entityform из Drupal 7) программным способом  где это необходимо.'
+description: >-
+  Небольшая заметка о том, как выводить EForm (entityform из Drupal 7)
+  программным способом, где это необходимо.
 promo: 'image/d8eform.png'
 tags:
   - Drupal

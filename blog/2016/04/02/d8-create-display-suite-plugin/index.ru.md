@@ -4,7 +4,8 @@ language: ru
 title: 'Drupal 8: Пишем плагин Display Suite поля'
 created: '2016-04-02T20:19:03'
 updated: '2023-10-16T18:21:20'
-description: 'Создание собственных плагинов Display Suite для добавления программных полей.'
+description: >-
+  Создание собственных плагинов Display Suite для добавления программных полей.
 attachments:
   - name: 'Модуль со всеми примерами'
     path: 'attachment/DsField_examples.tar.gz'

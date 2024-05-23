@@ -4,7 +4,8 @@ language: ru
 title: 'Drupal 8: Libraries API (Добавление CSS/JS на страницы)'
 created: '2015-10-15T21:17:05'
 updated: '2023-10-16T18:21:20'
-description: 'Работаем с библиотеками в Drupal 8. Программное подключение JS и CSS.'
+description: >-
+  Работаем с библиотеками в Drupal 8. Программное подключение JS и CSS.
 attachments:
   - name: 'Готовый результат'
     path: 'attachment/helloworld.tar.gz'
