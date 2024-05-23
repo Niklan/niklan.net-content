@@ -7,7 +7,7 @@ updated: '2023-10-16T18:21:20'
 description: 'Настраиваем алиасы (синонимы) для URL.'
 attachments:
   - name: 'Результат выполнения'
-    path: 'attachment/dfbeginners.dev_.tar.gz'
+    path: 'attachment/dfbeginners.dev.tar.gz'
 promo: 'image/dfbeginners.jpg'
 tags:
   - Drupal

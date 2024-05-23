@@ -7,7 +7,7 @@ updated: '2023-10-16T18:21:20'
 description: 'Делаем сетку вьюсов на дивах.'
 attachments:
   - name: views-view-grid.tpl.php
-    path: 'attachment/views-view-grid.tpl_.php_.zip'
+    path: 'attachment/views-view-grid.tpl.php.zip'
 promo: 'image/grid.png'
 tags:
   - Drupal

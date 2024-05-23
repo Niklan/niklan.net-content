@@ -8,7 +8,7 @@ description: 'Даем возможность выбирать цвет темы
 attachments:
   - name: 'Пустая базовая тема'
     path: 'attachment/color_theme_begin.zip'
-  - name: 'Готвая тема, с возможностью менять цвета.'
+  - name: 'Готовая тема, с возможностью менять цвета.'
     path: 'attachment/color_theme_result.zip'
 promo: 'image/color_promo.png'
 tags:

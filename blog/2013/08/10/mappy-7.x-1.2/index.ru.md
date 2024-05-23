@@ -5,9 +5,6 @@ title: 'Mappy: 7.x-1.2'
 created: '2013-08-10T15:58:46'
 updated: '2023-10-16T18:21:20'
 description: 'Список правок и изменений.'
-attachments:
-  - name: 'Mappy 7.x-1.2'
-    path: 'attachment/mappy-7.x-1.2.tar.gz'
 promo: 'image/mappy7х12.png'
 tags:
   - Drupal
