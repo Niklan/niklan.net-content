@@ -4,7 +4,9 @@ language: ru
 title: 'Rules: Блокируем доступ к материалам.'
 created: '2013-05-06T11:22:13'
 updated: '2023-10-16T18:21:20'
-description: 'Блокируем доступ к материалам средствами Rules.'
+description: >-
+  Советы по защите данных и ограничению нежелательного доступа к важному
+  содержимому с помощью Rules.
 attachments:
   - name: 'Экспорт правила'
     path: 'attachment/block_node_rule.txt'

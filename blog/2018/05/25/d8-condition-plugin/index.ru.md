@@ -4,7 +4,7 @@ language: ru
 title: 'Drupal 8: Condition Plugin'
 created: '2018-05-25T16:45:28'
 updated: '2023-10-16T18:21:20'
-description: 'Изучаем из чего состоят и как писать свои собственные Condition Plugin.'
+description: 'Узнайте, как создавать собственные плагины для проверки условий.'
 attachments:
   - name: 'Готовый модуль с примерами'
     path: 'attachment/dummy.tar.gz'

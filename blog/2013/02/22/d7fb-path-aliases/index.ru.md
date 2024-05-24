@@ -4,7 +4,8 @@ language: ru
 title: 'Drupal 7 для начинающих: ЧПУ (синонимы)'
 created: '2013-02-22T23:33:39'
 updated: '2023-10-16T18:21:20'
-description: 'Настраиваем алиасы (синонимы) для URL.'
+description: >-
+  ЧПУ в Drupal делает сайт удобным для пользователей и помогает в SEO.
 attachments:
   - name: 'Результат выполнения'
     path: 'attachment/dfbeginners.dev.tar.gz'

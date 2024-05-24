@@ -4,7 +4,8 @@ language: ru
 title: 'Добавляем поддержку Color-модуля в тему. Работа с цветами.'
 created: '2013-04-17T14:45:40'
 updated: '2023-10-16T18:21:20'
-description: 'Даем возможность выбирать цвет темы из админки.'
+description: >-
+  Добавьте в свою тему поддержку Color-модуля и легко меняйте цвета!
 attachments:
   - name: 'Пустая базовая тема'
     path: 'attachment/color_theme_begin.zip'

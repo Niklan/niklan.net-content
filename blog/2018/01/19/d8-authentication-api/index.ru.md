@@ -4,7 +4,10 @@ language: ru
 title: 'Drupal 8: Authentication API — создание Authentication Provider'
 created: '2018-01-19T19:17:14'
 updated: '2023-10-16T18:21:20'
-description: 'Создание собственных сервисов Authentication Provider, которые позволяют добавлять новые способы авторизации на сайте.'
+description: >-
+  Узнайте, как создавать собственные сервисы аутентификации в Drupal 8.
+  Научитесь добавлять новые способы авторизации, такие как авторизация через API
+  ключ, автоматическая авторизация с определённых IP-адресов и другие.
 attachments:
   - name: 'Модуль с примерами'
     path: 'attachment/dummy.tar.gz'

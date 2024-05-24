@@ -4,7 +4,9 @@ language: ru
 title: 'Drupal 8: Search API — программный поиск по сайту'
 created: '2018-04-24T19:00:26'
 updated: '2023-10-16T18:21:20'
-description: 'Программный поиск по сайту с использованием Search API.'
+description: >-
+  Усовершенствуйте поиск на своём сайте с Drupal 8 и Search API: освойте мощный
+  инструмент для точного и гибкого поиска контента.
 attachments:
   - name: 'Третий пример'
     path: 'attachment/dummy.tar.gz'

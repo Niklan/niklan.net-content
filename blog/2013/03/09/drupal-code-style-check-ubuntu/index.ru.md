@@ -4,7 +4,8 @@ language: ru
 title: 'Проверка на стандарты кодирования Drupal в Ubuntu'
 created: '2013-03-09T12:52:13'
 updated: '2023-10-16T18:21:20'
-description: 'Проверяем свой код на соответствие стандартам.'
+description: >-
+  Узнайте, как проверить код на соответствие стандартам Drupal в Ubuntu.
 promo: 'image/drupalcodecheck.png'
 tags:
   - Drupal

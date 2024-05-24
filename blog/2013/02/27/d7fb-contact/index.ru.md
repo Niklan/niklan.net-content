@@ -4,7 +4,7 @@ language: ru
 title: 'Drupal 7 для начинающих: Форма обратной связи.'
 created: '2013-02-27T21:21:13'
 updated: '2023-10-16T18:21:20'
-description: 'Добавляем форму обратной связи.'
+description: 'Создаём форму обратной связи в Drupal 7: просто и удобно!'
 attachments:
   - name: 'Результат выполнения'
     path: 'attachment/dfbeginners.tar.gz'

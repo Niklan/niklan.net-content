@@ -4,7 +4,8 @@ language: ru
 title: 'Drupal 8: Мой процесс разработки и деплоя на июнь 2018'
 created: '2018-07-03T07:32:46'
 updated: '2023-10-16T18:21:20'
-description: 'Как устроен мой процесс разработки и деплоя изменений.'
+description: >-
+  Советы и рекомендации по эффективной разработке и деплою проектов на Drupal 8.
 promo: 'image/pexels-photo_0.jpg'
 tags:
   - Drupal

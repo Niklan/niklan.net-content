@@ -4,7 +4,9 @@ language: ru
 title: 'Rate: Создаем кнопку «Мне нравится»'
 created: '2013-05-19T16:01:48'
 updated: '2023-10-16T18:21:20'
-description: 'Like? Лайк!'
+description: >-
+  Создайте кнопку «Мне нравится» на своём сайте с помощью Rate. Это простой
+  способ улучшить взаимодействие с пользователями.
 promo: 'image/like_promo.png'
 tags:
   - Drupal

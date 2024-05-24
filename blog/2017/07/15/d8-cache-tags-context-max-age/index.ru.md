@@ -4,7 +4,9 @@ language: ru
 title: 'Drupal 8: #cache — cache tags, context и max-age'
 created: '2017-07-15T11:42:18'
 updated: '2023-10-16T18:21:20'
-description: 'Всё что нужно знать об основном кэшировании в восьмерке.'
+description: >-
+  Узнайте, как работает кэширование в Drupal 8 и какие типы существуют. Поймёте,
+  как эффективно использовать кэширование для оптимизации вашего сайта.
 attachments:
   - name: 'Исходник схемы'
     path: 'attachment/scheme.svg'

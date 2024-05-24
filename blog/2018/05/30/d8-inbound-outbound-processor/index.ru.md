@@ -4,7 +4,9 @@ language: ru
 title: 'Drupal 8: Inbound и Outbound Processor'
 created: '2018-05-30T17:35:01'
 updated: '2023-10-16T18:21:20'
-description: 'Разбираемся что это такое и как работают алиасы в Drupal.'
+description: >-
+  Узнайте всё об алиасах. Понимание особенностей работы inbound и outbound
+  процессоров поможет вам создавать эффективные решения.
 attachments:
   - name: 'Готовый модуль с примером'
     path: 'attachment/dummy.tar.gz'

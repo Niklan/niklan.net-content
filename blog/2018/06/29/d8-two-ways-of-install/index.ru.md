@@ -4,7 +4,10 @@ language: ru
 title: 'Drupal 8: Два варианта установки ядра'
 created: '2018-06-29T17:11:50'
 updated: '2023-10-16T18:21:20'
-description: 'Стандартная установка с drupal.org и composer drupal project. В чём их отличие, плюсы и минусы. А также, как мигрировать из одного варианта в другой.'
+description: >-
+  Узнайте, как установить ядро Drupal 8 двумя способами: стандартным с
+  drupal.org и через Composer Drupal Project. Сравните плюсы и минусы каждого
+  метода, а также научитесь мигрировать между ними.
 promo: 'image/road-forest-trees-way-5967.jpg'
 tags:
   - Drupal

@@ -1,10 +1,12 @@
 ---
 id: d7fb-update
 language: ru
-title: 'Drupal 7 для начинающих: Обновления ядра Drupal.'
+title: 'Drupal 7 для начинающих: Обновления ядра Drupal'
 created: '2013-02-27T23:41:49'
 updated: '2023-10-16T18:21:20'
-description: 'Как обновлять ядро Drupal 7.'
+description: >-
+   Узнайте, как легко обновлять ядро Drupal 7, чтобы улучшить безопасность и
+   функциональность вашего сайта.
 attachments:
   - name: Screenshot_20160822_122606.png
     path: 'image/Screenshot_20160822_122606.png'

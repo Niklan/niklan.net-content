@@ -4,7 +4,9 @@ language: ru
 title: 'Drupal Commerce 2: Собственные этапы (статусы) выполнения заказа'
 created: '2018-07-10T17:47:07'
 updated: '2023-10-16T18:21:20'
-description: 'Описываем свои собственные статусы и этапы оформления для заказов в Drupal Commerce 2.'
+description: >-
+  Подробная инструкция по настройке уникальных статусов и этапов оформления
+  заказов в Drupal Commerce 2.
 attachments:
   - name: 'Готовый модуль с примером'
     path: 'attachment/dummy.tar.gz'

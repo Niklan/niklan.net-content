@@ -4,7 +4,8 @@ language: ru
 title: 'Drupal 7: Создание технической поддержки (тикеты).'
 created: '2013-04-19T20:37:16'
 updated: '2023-10-16T18:21:20'
-description: 'Создаем систему поддержки на Drupal 7.'
+description: >-
+  Создаём систему техподдержки на Drupal 7: организуем работу с тикетами.
 attachments:
   - name: 'Модуль блокировки тикетов'
     path: 'attachment/ticket_access.zip'

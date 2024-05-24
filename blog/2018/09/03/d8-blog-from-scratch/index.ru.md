@@ -4,7 +4,8 @@ language: ru
 title: 'Drupal 8: Создание собственного блога с нуля'
 created: '2018-09-03T08:26:39'
 updated: '2023-10-16T18:21:20'
-description: 'Серия видеороликов о разработке собственного блога на Drupal 8 с нуля.'
+description: >-
+  Серия видеороликов о разработке собственного блога на Drupal 8 с нуля.
 promo: 'image/apple-device-blur-blurry-273222.jpg'
 tags:
   - 'Drupal 8'

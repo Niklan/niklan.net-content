@@ -4,7 +4,10 @@ language: ru
 title: 'Drupal 8: Route Subscriber — альтерим роуты'
 created: '2018-04-13T14:27:29'
 updated: '2023-10-16T18:21:20'
-description: 'Как править роутеры программно используя Route Subscriber.'
+description: >-
+  Расширенные возможности маршрутизации в Drupal 8: освойте подписчик события
+  Route Subscriber для детальной настройки маршрутов вашего сайта, что позволит
+  сделать его более удобным и функциональным.
 attachments:
   - name: 'Готовый модуль с примерами'
     path: 'attachment/dummy.tar.gz'

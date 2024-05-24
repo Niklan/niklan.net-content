@@ -4,7 +4,9 @@ language: ru
 title: 'Drupal 7: Создание каталога с помощью Taxonomy & Views & Panels'
 created: '2013-03-24T22:41:27'
 updated: '2023-10-16T18:21:20'
-description: 'Создаем каталог на вьюсах и панелях.'
+description: >-
+  Создайте удобный каталог товаров с помощью Drupal 7, используя Taxonomy, Views
+  и Panels.
 attachments:
   - name: 'Представление: Дочерние термины'
     path: 'attachment/child_terms.txt'

@@ -4,7 +4,9 @@ language: ru
 title: 'Миграция с drupal-composer/drupal-project на drupal/recommended-project'
 created: '2020-01-15T17:08:24'
 updated: '2023-10-16T18:21:20'
-description: 'Освежаем старые проекты и приводим их в «современный» вид в соответствии с официальными Composer шаблонами проектов.'
+description: >-
+  Миграция с drupal-composer/drupal-project на drupal/recommended-project:
+  обновите свой проект Drupal до официальной версии.
 promo: 'image/osman-rana-Oi1fJwi35oI-unsplash.jpg'
 tags:
   - Drupal

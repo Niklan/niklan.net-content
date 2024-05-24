@@ -4,7 +4,8 @@ language: ru
 title: 'Drupal 8: Configuration Schema'
 created: '2018-05-04T17:57:03'
 updated: '2023-10-16T18:21:20'
-description: 'Описание схемы для конфигурационных файлов.'
+description: >-
+  Узнайте, как создавать схемы для конфигурационных файлов в Drupal 8.
 attachments:
   - name: 'Готовый модуль с примером'
     path: 'attachment/dummy.tar.gz'

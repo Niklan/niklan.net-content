@@ -4,7 +4,10 @@ language: ru
 title: 'Drupal 8, 9: lock и lock.persistent — блокировка состояния'
 created: '2020-04-30T14:13:22'
 updated: '2023-10-16T18:21:20'
-description: 'Разбираемся что такое «блокировщик», какие выполняет задачи и как может быть применён.'
+description: >-
+  Drupal 8, 9: блокировка состояния — узнайте, как обеспечить целостность
+  данных, предотвратить конфликты при работе с сайтом и избежать «состояние
+  гонки».
 promo: 'image/michael-chacon-sLFP7UtFiHw-unsplash.jpg'
 tags:
   - Drupal

@@ -4,7 +4,9 @@ language: ru
 title: 'Drupal 7 для начинающих: Группировка материалов с помощью Views.'
 created: '2013-02-16T01:16:17'
 updated: '2023-10-16T18:21:20'
-description: 'Группируем материалы вместе.'
+description: >-
+  Drupal 7 и группировка материалов с помощью Views. Объединяем материалы в
+  группы.
 attachments:
   - name: 'Результаты выполнения'
     path: 'attachment/dfbeginners.tar.gz'

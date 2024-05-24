@@ -4,7 +4,9 @@ language: ru
 title: 'Установка Drush на Ubuntu & Использование Drush на Drupalhosting'
 created: '2013-02-28T19:33:11'
 updated: '2023-10-16T18:21:20'
-description: 'Устанавливаем драш на убунту.'
+description: >-
+  Ускорьте работу с Drupal на Ubuntu с Drush! Эффективные команды для управления
+  сайтом.
 promo: 'image/ssh.png'
 tags:
   - Drush

@@ -4,7 +4,9 @@ language: ru
 title: 'Drupal 8: Services'
 created: '2017-06-21T18:16:53'
 updated: '2023-10-16T18:21:20'
-description: 'В этом тексте рассмотрим Services в Drupal 8, их назначение и стоит ли их использовать.'
+description: >-
+  Узнайте, как эффективно использовать сервисы в Drupal 8 для улучшения кода
+  ваших модулей.
 attachments:
   - name: 'Модуль со всеми примерами (кроме альтера)'
     path: 'attachment/dummy.tar.gz'

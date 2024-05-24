@@ -4,7 +4,7 @@ language: ru
 title: 'Drupal 7: Создаем Feature'
 created: '2013-04-28T22:06:30'
 updated: '2023-10-16T18:21:20'
-description: 'Пакуем все что накликали в модуль, и преносим куда угодно.'
+description: 'Добавьте функционал на сайт легко и просто!'
 attachments:
   - name: 'Feature - Техническая поддержка'
     path: 'attachment/technical_support-7.x-1.0.tar'

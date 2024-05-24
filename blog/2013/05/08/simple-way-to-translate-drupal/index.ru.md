@@ -4,7 +4,7 @@ language: ru
 title: 'Простой способ перевести Drupal и его модули на Русский'
 created: '2013-05-08T20:58:54'
 updated: '2023-10-16T18:21:20'
-description: 'Переводим Drupal 7 на русский.'
+description: 'Простой способ русифицировать Drupal и его модули.'
 promo: 'image/dru_ru.png'
 tags:
   - Drupal

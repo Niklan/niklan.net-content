@@ -4,7 +4,9 @@ language: ru
 title: 'Drupal 8: LanguageNegotiaton — программное определение языка'
 created: '2017-07-04T17:39:09'
 updated: '2023-10-16T18:21:20'
-description: 'Если вам не хватает того что предоставлено из коробки.'
+description: >-
+  В этом материале рассмотрим, как добавить на сайт возможность программного
+  определения языка с помощью плагина LanguageNegotiator.
 attachments:
   - name: 'Готовый модуль с примерами'
     path: 'attachment/dummy.tar.gz'

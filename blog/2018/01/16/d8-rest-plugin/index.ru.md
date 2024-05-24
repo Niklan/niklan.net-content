@@ -4,7 +4,9 @@ language: ru
 title: 'Drupal 8: Создание REST Resource Plugin'
 created: '2018-01-16T18:13:01'
 updated: '2023-10-16T18:21:20'
-description: 'В этом материале рассматриваются REST Resource плагины, которые позволяют писать API для своего сайта и использовать в дальнейших целях.'
+description: >-
+  Узнайте, как создавать REST Resource Plugin в Drupal 8. Научитесь писать API
+  для своего сайта и использовать его в дальнейших целях.
 attachments:
   - name: 'Готовый модуль'
     path: 'attachment/dummy.tar.gz'
@@ -16,31 +18,31 @@ tags:
   - 'Plugin API'
 ---
 
-Вы уже, наверное, заметили, что Дрис постоянно говорит и поднимает тему
-Decoupled Drupal. Также вы, скорее всего, уже в курсе всяких фронтенд-либ типа
-Vuejs, React, Angular и т.д. И понять куда движется веб в общем то не сложно,
-как и друпал. Если говорить очень коротко, во всём этом болоте терминологий и
-технологий Drupal служит как бэкенд, хранилище и структуризация данных, как
-некий менеджер, а не всё в одном.
+Вы наверняка уже заметили, что Дрис часто говорит и поднимает тему Decoupled
+Drupal. Также вы, скорее всего, уже знакомы с различными фронтенд-библиотеками,
+такими как Vuejs, React, Angular и т. д. И понять, куда движется веб, в
+общем-то, несложно, как и друпал. Если говорить кратко, во всём этом
+многообразии терминов и технологий Drupal служит как бэкенд, хранилище и
+структуризация данных, как некий менеджер, а не всё в одном.
 
-REST и Decoupled идут рука об руку и это, если уже не на первом месте, то
-однозначно находилось в ТОПе задач для Drupal 8 в момент его написания. Начиная
-с 8-ки Drupal может быть использовать как сервис и для этого есть просто
-огромное кол-во инструментов в ядре и очень много было пересмотрено под это
-дело. В 7-ке всё это также можно реализовать, но 8-ка позволяет это сделать
+REST и Decoupled идут рука об руку, и это, если уже не на первом месте, то
+однозначно находилось в ТОПе задач для Drupal 8 в момент его создания. Начиная с
+версии 8, Drupal можно использовать как сервис, и для этого есть огромное
+количество инструментов в ядре, и очень много было пересмотрено под это дело. В
+версии 7 всё это также можно реализовать, но версия 8 позволяет это сделать
 намного проще и элегантнее.
 
-Если вы следите за моим телеграм каналом, вы должны были обратить внимание как
+Если вы следите за моим телеграм-каналом, вы должны были обратить внимание, как
 регулярно я стал поднимать тему про Vuejs и ему подобные. И это неспроста.
-Вместо данного материала должен был быть Vue.js + Search API и как сделать свой
-красивый, быстрый и отзывчивый поиск на сайте на такой связке. Но недавно я
-решил завести пет-прожект и поколупать 8-ку в тех местах где ещё мне не
-доводилось это сделать на клиентских сайтах, и ставил себе задачки которые не
-совсем ясно как решать с ходу и юзать на клиентских - страшно, и я нашел это —
-REST Resource, ответ на многие мои вопросы и источник для целой цепочки
-материалов. Это отлично, ведь если бы я написал запланированную статью раньше
-этой, то она была бы не совсем корректной, как мне теперь кажется. Итак,
-перейдем к делу.
+Вместо этого материала должен был быть материал о Vue.js + Search API и о том,
+как сделать свой красивый, быстрый и отзывчивый поиск на сайте на такой связке.
+Но недавно я решил завести личный проект и изучить Drupal 8 в тех местах, где
+ещё мне не доводилось это делать на клиентских сайтах, и ставил себе задачи,
+которые не совсем ясно, как решать с ходу и использовать на клиентских —
+страшно, и я нашёл это — REST Resource, ответ на многие мои вопросы и источник
+для целой цепочки материалов. Это отлично, ведь если бы я написал
+запланированную статью раньше этой, то она была бы не совсем корректной, как мне
+теперь кажется. Итак, перейдём к делу.
 
 ## Кому и зачем это нужно
 
@@ -709,6 +711,7 @@ class ListArticlesResource extends ResourceBase {
 
 Весь каркас остался прежним. Изменилось название, URL и появилось новое свойство
 у объекта `$limit`, которое содержит ограничение результатов на страницу равное
+
 10.
 
 А теперь пойдем по логике:
@@ -758,35 +761,35 @@ $.ajax({
 
 ```json {"header":"Пример ответа"}
 {
-   "items":[
-      {
-         "label":"Created via REST",
-         "id":"57",
-         "created":"1515932692"
-      },
-      {
-         "label":"test",
-         "id":"38",
-         "created":"1506701746"
-      },
-      {
-         "label":"test",
-         "id":"54",
-         "created":"1506701746"
-      },
-      {
-         "label":"test",
-         "id":"39",
-         "created":"1506701746"
-      },
-      {
-         "label":"test",
-         "id":"55",
-         "created":"1506701746"
-      }
-   ],
-   "next_page":"\/api\/v1\/list-articles?_format=json\u0026limit=5\u0026page=1",
-   "prev_page":false
+  "items": [
+    {
+      "label": "Created via REST",
+      "id": "57",
+      "created": "1515932692"
+    },
+    {
+      "label": "test",
+      "id": "38",
+      "created": "1506701746"
+    },
+    {
+      "label": "test",
+      "id": "54",
+      "created": "1506701746"
+    },
+    {
+      "label": "test",
+      "id": "39",
+      "created": "1506701746"
+    },
+    {
+      "label": "test",
+      "id": "55",
+      "created": "1506701746"
+    }
+  ],
+  "next_page": "\/api\/v1\/list-articles?_format=json\u0026limit=5\u0026page=1",
+  "prev_page": false
 }
 ```
 
@@ -933,147 +936,142 @@ $.ajax({
 
 ```json {"header":"Пример ответа ресурса"}
 {
-   "nid":[
-      {
-         "value":57
-      }
-   ],
-   "uuid":[
-      {
-         "value":"a926af69-3f8b-410f-a7b6-29b99fb8e875"
-      }
-   ],
-   "vid":[
-      {
-         "value":107
-      }
-   ],
-   "langcode":[
-      {
-         "value":"en"
-      }
-   ],
-   "type":[
-      {
-         "target_id":"article",
-         "target_type":"node_type",
-         "target_uuid":"fceeaa32-5ea0-4d4c-b359-1ef3b2d866c7"
-      }
-   ],
-   "revision_timestamp":[
-      {
-         "value":"2018-01-14T12:24:52+00:00",
-         "format":"Y-m-d/TH:i:sP"
-      }
-   ],
-   "revision_uid":[
-      {
-         "target_id":1,
-         "target_type":"user",
-         "target_uuid":"50ea3e78-85c6-4834-8d15-5680bc258617",
-         "url":"\/en\/user\/1"
-      }
-   ],
-   "revision_log":[
-
-   ],
-   "status":[
-      {
-         "value":true
-      }
-   ],
-   "title":[
-      {
-         "value":"Created via REST"
-      }
-   ],
-   "uid":[
-      {
-         "target_id":1,
-         "target_type":"user",
-         "target_uuid":"50ea3e78-85c6-4834-8d15-5680bc258617",
-         "url":"\/en\/user\/1"
-      }
-   ],
-   "created":[
-      {
-         "value":"2018-01-14T12:24:52+00:00",
-         "format":"Y-m-d/TH:i:sP"
-      }
-   ],
-   "changed":[
-      {
-         "value":"2018-01-14T12:24:52+00:00",
-         "format":"Y-m-d/TH:i:sP"
-      }
-   ],
-   "promote":[
-      {
-         "value":true
-      }
-   ],
-   "sticky":[
-      {
-         "value":false
-      }
-   ],
-   "default_langcode":[
-      {
-         "value":true
-      }
-   ],
-   "revision_translation_affected":[
-      {
-         "value":true
-      }
-   ],
-   "metatag":{
-      "value":{
-         "title":"Created via REST | Drupal8 DEVELOPMENT"
-      }
-   },
-   "path":[
-      {
-         "alias":null,
-         "pid":null,
-         "langcode":"en"
-      }
-   ],
-   "menu_link":[
-
-   ],
-   "content_translation_source":[
-      {
-         "value":"und"
-      }
-   ],
-   "content_translation_outdated":[
-      {
-         "value":false
-      }
-   ],
-   "body":[
-
-   ],
-   "comment":[
-      {
-         "status":2,
-         "cid":0,
-         "last_comment_timestamp":1515932692,
-         "last_comment_name":null,
-         "last_comment_uid":1,
-         "comment_count":0
-      }
-   ],
-   "field_image":[
-
-   ],
-   "field_tags":[
-
-   ],
-   "field_test":[
-      "Metatags are normalized in the metatag field."
-   ]
+  "nid": [
+    {
+      "value": 57
+    }
+  ],
+  "uuid": [
+    {
+      "value": "a926af69-3f8b-410f-a7b6-29b99fb8e875"
+    }
+  ],
+  "vid": [
+    {
+      "value": 107
+    }
+  ],
+  "langcode": [
+    {
+      "value": "en"
+    }
+  ],
+  "type": [
+    {
+      "target_id": "article",
+      "target_type": "node_type",
+      "target_uuid": "fceeaa32-5ea0-4d4c-b359-1ef3b2d866c7"
+    }
+  ],
+  "revision_timestamp": [
+    {
+      "value": "2018-01-14T12:24:52+00:00",
+      "format": "Y-m-d/TH:i:sP"
+    }
+  ],
+  "revision_uid": [
+    {
+      "target_id": 1,
+      "target_type": "user",
+      "target_uuid": "50ea3e78-85c6-4834-8d15-5680bc258617",
+      "url": "\/en\/user\/1"
+    }
+  ],
+  "revision_log": [
+  ],
+  "status": [
+    {
+      "value": true
+    }
+  ],
+  "title": [
+    {
+      "value": "Created via REST"
+    }
+  ],
+  "uid": [
+    {
+      "target_id": 1,
+      "target_type": "user",
+      "target_uuid": "50ea3e78-85c6-4834-8d15-5680bc258617",
+      "url": "\/en\/user\/1"
+    }
+  ],
+  "created": [
+    {
+      "value": "2018-01-14T12:24:52+00:00",
+      "format": "Y-m-d/TH:i:sP"
+    }
+  ],
+  "changed": [
+    {
+      "value": "2018-01-14T12:24:52+00:00",
+      "format": "Y-m-d/TH:i:sP"
+    }
+  ],
+  "promote": [
+    {
+      "value": true
+    }
+  ],
+  "sticky": [
+    {
+      "value": false
+    }
+  ],
+  "default_langcode": [
+    {
+      "value": true
+    }
+  ],
+  "revision_translation_affected": [
+    {
+      "value": true
+    }
+  ],
+  "metatag": {
+    "value": {
+      "title": "Created via REST | Drupal8 DEVELOPMENT"
+    }
+  },
+  "path": [
+    {
+      "alias": null,
+      "pid": null,
+      "langcode": "en"
+    }
+  ],
+  "menu_link": [
+  ],
+  "content_translation_source": [
+    {
+      "value": "und"
+    }
+  ],
+  "content_translation_outdated": [
+    {
+      "value": false
+    }
+  ],
+  "body": [
+  ],
+  "comment": [
+    {
+      "status": 2,
+      "cid": 0,
+      "last_comment_timestamp": 1515932692,
+      "last_comment_name": null,
+      "last_comment_uid": 1,
+      "comment_count": 0
+    }
+  ],
+  "field_image": [
+  ],
+  "field_tags": [
+  ],
+  "field_test": [
+    "Metatags are normalized in the metatag field."
+  ]
 }
 ```
 

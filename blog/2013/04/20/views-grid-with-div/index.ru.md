@@ -4,7 +4,8 @@ language: ru
 title: "Вывод Views Grid (Сетка) div'ами"
 created: '2013-04-20T18:32:13'
 updated: '2023-10-16T18:21:20'
-description: 'Делаем сетку вьюсов на дивах.'
+description: >-
+  Узнайте, как вывести сетку Views с помощью div’ов для гибкой верстки.
 attachments:
   - name: views-view-grid.tpl.php
     path: 'attachment/views-view-grid.tpl.php.zip'

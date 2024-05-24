@@ -4,7 +4,9 @@ language: ru
 title: 'Ubuntu 13.04 устранение проблемы с bash скриптами'
 created: '2013-04-28T15:23:33'
 updated: '2023-10-16T18:21:20'
-description: 'Решаем проблемы с новым Nautilus.'
+description: >-
+  В Ubuntu 13.04 bash скрипты открываются через gedit. Но есть решение! Узнайте,
+  как исправить проблему и снова запускать скрипты.
 promo: 'image/ubuntu_promo.png'
 tags:
   - Ubuntu

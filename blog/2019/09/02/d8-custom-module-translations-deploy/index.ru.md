@@ -4,7 +4,9 @@ language: ru
 title: 'Drupal 8: Деплой переводов для кастомных модулей'
 created: '2019-09-02T17:46:16'
 updated: '2023-10-16T18:21:20'
-description: 'Поставляем переводы собственных модулей на продакшен.'
+description: >-
+  Drupal 8: Деплой переводов для кастомных модулей — развертываем переводы для
+  пользовательских модулей.
 promo: 'image/alphabet-close-up-communication-278887.jpg'
 tags:
   - Multilingual
