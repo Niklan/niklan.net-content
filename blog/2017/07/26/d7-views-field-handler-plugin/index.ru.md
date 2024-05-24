@@ -4,7 +4,7 @@ language: ru
 title: 'Drupal 8 Views Field Handler Plugin — собственные поля для Views'
 created: '2017-07-26T18:51:00'
 updated: '2023-10-16T18:21:20'
-description: 'Гайд о том как добавлять свои собственные поля для модуля Views.'
+description: 'Руководство по добавлению собственных полей в модуль Views.'
 attachments:
   - name: 'Готовый модуль с примерами'
     path: 'attachment/dummy.tar.gz'

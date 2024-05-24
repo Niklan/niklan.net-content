@@ -7,7 +7,7 @@ updated: '2023-10-16T18:21:20'
 description: 'Программный поиск по сайту с использованием Search API.'
 attachments:
   - name: 'Третий пример'
-    path: 'attachment/dummy.tar_0.gz'
+    path: 'attachment/dummy.tar.gz'
 promo: 'image/book-close-up-focus-208452.jpg'
 tags:
   - Drupal

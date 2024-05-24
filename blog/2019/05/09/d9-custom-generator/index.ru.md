@@ -7,7 +7,7 @@ updated: '2023-10-16T18:21:20'
 description: 'Пишем генераторы кода для Drush 9.'
 attachments:
   - name: 'Пример создания генератора'
-    path: 'attachment/dummy.tar__6.gz'
+    path: 'attachment/dummy.tar.gz'
 promo: 'image/circuits-connection-cyborg-1476321.jpg'
 tags:
   - Drupal

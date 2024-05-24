@@ -4,7 +4,7 @@ language: ru
 title: 'Drupal 7 для начинающих: Создание собственных типов материалов. '
 created: '2013-01-29T23:19:04'
 updated: '2023-10-16T18:21:20'
-description: 'Свои типы материалов, чтобы контент не путался.'
+description: 'Руководство по управлению типами содержимого.'
 attachments:
   - name: 'Результат выполнения'
     path: 'attachment/dfbeginners_contenttypes.zip'

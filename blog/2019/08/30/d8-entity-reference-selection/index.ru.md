@@ -7,7 +7,7 @@ updated: '2023-10-16T18:21:20'
 description: 'Знакомимся с плагинами, которые ответственны за автодополнения сущностей в Drupal.'
 attachments:
   - name: 'Пример плагина EntityReferenceSelection'
-    path: 'attachment/dummy.tar_.gz'
+    path: 'attachment/dummy.tar.gz'
 promo: 'image/black-cat-black-keyboard-cat-1049764.jpg'
 tags:
   - Drupal

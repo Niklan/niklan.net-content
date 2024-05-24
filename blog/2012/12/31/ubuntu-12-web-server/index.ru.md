@@ -4,7 +4,8 @@ language: ru
 title: 'Установка веб-сервера на Ubuntu 12.x'
 created: '2012-12-31T22:39:23'
 updated: '2023-10-16T18:21:20'
-description: 'Подготавливаем локальный веб-сервер для разработки на Ubuntu.'
+description: >-
+  Подготавливаем локальный веб-сервер для разработки на Ubuntu 12.x.
 attachments:
   - name: 'Скрипт добавления алиасов'
     path: 'attachment/add_alias.sh.zip'

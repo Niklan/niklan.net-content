@@ -7,7 +7,7 @@ updated: '2023-10-16T18:21:20'
 description: 'Изучаем из чего состоят и как писать свои собственные Condition Plugin.'
 attachments:
   - name: 'Готовый модуль с примерами'
-    path: 'attachment/dummy.tar__0.gz'
+    path: 'attachment/dummy.tar.gz'
 promo: 'image/pexels-photo-356043.jpeg'
 tags:
   - Drupal

@@ -6,8 +6,7 @@ created: '2017-07-04T17:39:09'
 updated: '2023-10-16T18:21:20'
 description: 'Если вам не хватает того что предоставлено из коробки.'
 attachments:
-  -
-    name: 'Готовый модуль с примерами'
+  - name: 'Готовый модуль с примерами'
     path: 'attachment/dummy.tar.gz'
 promo: 'image/language-flag-countries.jpeg'
 tags:

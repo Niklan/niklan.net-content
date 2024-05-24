@@ -7,7 +7,7 @@ updated: '2023-10-16T18:21:20'
 description: 'Как задать выводимое полем значение по умолчанию, при пустом значении поля.'
 attachments:
   - name: 'Пример установки значения по умолчанию для пустого поля'
-    path: 'attachment/dummy.tar__3.gz'
+    path: 'attachment/dummy.tar.gz'
 promo: 'image/art-art-gallery-art-studio-1931465.jpg'
 tags:
   - Drupal

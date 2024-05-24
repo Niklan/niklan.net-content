@@ -4,7 +4,7 @@ language: ru
 title: 'Drupal 7 для начинающих: Работа с полями.'
 created: '2013-02-01T21:44:53'
 updated: '2023-10-16T18:21:20'
-description: 'Что такое поля, зачем нужны, и учимся пользоваться.'
+description: 'Что такое поля и зачем они нужны? Учимся ими пользоваться.'
 attachments:
   - name: 'Результат выполнения'
     path: 'attachment/dfbeginners_fields.zip'

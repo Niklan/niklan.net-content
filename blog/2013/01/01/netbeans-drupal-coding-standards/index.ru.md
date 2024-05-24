@@ -4,7 +4,9 @@ language: ru
 title: 'Настройка NetBeans в соответствии с Drupal Coding Standards'
 created: '2013-01-01T02:21:21'
 updated: '2023-10-16T18:21:20'
-description: 'Пишем код по стандартам в NetBeans.'
+description: >-
+  Руководство по настройке NetBeans в соответствии со стандартами кодирования
+  Drupal.
 promo: 'image/drupalbeans.jpg'
 tags:
   - Drupal

@@ -7,7 +7,7 @@ updated: '2023-10-16T18:21:20'
 description: '"Ключ-значение" хранилище для пользователей.'
 attachments:
   - name: 'Модуль с примером user.data'
-    path: 'attachment/dummy.tar__2.gz'
+    path: 'attachment/dummy.tar.gz'
 promo: 'image/factory-man-planks-1797415.jpg'
 tags:
   - Drupal

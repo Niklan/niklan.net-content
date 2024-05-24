@@ -7,7 +7,7 @@ updated: '2023-10-16T18:21:20'
 description: 'Derivatives (деривативы, производные) — механизм в системе плагинов, позволяющий использовать одну логику для множества плагинов.'
 attachments:
   - name: 'Пример объявления deriver и плагина'
-    path: 'attachment/dummy.tar__4.gz'
+    path: 'attachment/dummy.tar.gz'
 promo: 'image/architecture-building-low-angle-shot-245838.jpg'
 tags:
   - Drupal

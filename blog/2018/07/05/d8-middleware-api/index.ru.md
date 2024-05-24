@@ -4,7 +4,9 @@ language: ru
 title: 'Drupal 8: Middleware API'
 created: '2018-07-05T07:15:54'
 updated: '2023-10-16T18:21:20'
-description: 'В этом материале рассказываю и показываю что такое Middleware API и как он может вам помочь.'
+description: >-
+  В этом материале рассказываю и показываю что такое Middleware API и как он
+  может вам помочь.
 attachments:
   - name: 'Готовый модуль с примерами'
     path: 'attachment/dummy.tar.gz'

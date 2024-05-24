@@ -4,7 +4,7 @@ language: ru
 title: 'Drupal 7 для начинающих: Работа с материалами.'
 created: '2013-01-25T18:21:17'
 updated: '2023-10-16T18:21:20'
-description: 'Добавляем, редактируем и удаляем материалы.'
+description: 'Как добавлять, редактировать и удалять материалы.'
 attachments:
   - name: 'Результаты выполнения'
     path: 'attachment/materials.zip'

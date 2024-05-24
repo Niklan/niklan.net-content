@@ -4,7 +4,10 @@ language: ru
 title: 'Drupal 8: Migrate API — Source, Process, Destination'
 created: '2017-10-22T10:21:29'
 updated: '2023-10-16T18:21:20'
-description: 'Если вы не знаете, что такое Migrate API или слышали о нём, но не использовали, то я расскажу вам о его возможностях. Миграции — это просто и удобно.'
+description: >-
+  Если вы не знаете, что такое Migrate API или слышали о нём, но не
+  использовали, то я расскажу вам о его возможностях. Миграции — это просто и
+  удобно.
 attachments:
   - name: 'Пользователи для финального примера'
     path: 'attachment/users.csv'

@@ -7,7 +7,7 @@ updated: '2023-10-16T18:21:20'
 description: 'Разбираемся что такое сервисы с метками, и чем отличаются от плагинов.'
 attachments:
   - name: 'Пример создания сервисов с метками и их менеджером'
-    path: 'attachment/dummy.tar__5.gz'
+    path: 'attachment/dummy.tar.gz'
 promo: 'image/blank-card-cardboard-998501.jpg'
 tags:
   - Drupal

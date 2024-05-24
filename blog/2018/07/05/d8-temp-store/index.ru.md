@@ -7,7 +7,7 @@ updated: '2023-10-16T18:21:20'
 description: 'Приватные и общие временные хранилища данных.'
 attachments:
   - name: 'Готовый модуль с примером'
-    path: 'attachment/dummy.tar_.gz'
+    path: 'attachment/dummy.tar.gz'
 promo: 'image/pexels-photo-170453.jpeg'
 tags:
   - Drupal

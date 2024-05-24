@@ -4,7 +4,8 @@ language: ru
 title: 'Drupal 7 для начинающих: Управление отображением. Работа с картинками.'
 created: '2013-02-04T14:19:38'
 updated: '2023-10-16T18:21:20'
-description: 'Настраиваем отображение материала.'
+description: >-
+  Управление отображением материала и работа с картинками в Drupal 7.
 attachments:
   - name: 'Результат выполнения'
     path: 'attachment/dfbeginers_display.zip'
