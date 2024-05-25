@@ -9,7 +9,7 @@ description: >-
   частью работы с Drupal. В этой статье мы рассмотрим, как правильно
   использовать composer.
 attachments:
-  - name: 'Первая версия статьи с файлами и контекнтом.'
+  - name: 'Первая версия статьи с файлами и контентом.'
     path: 'attachment/article-v1.tar.gz'
 promo: 'image/pexels-photo-258847.jpeg'
 tags:

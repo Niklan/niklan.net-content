@@ -4,7 +4,10 @@ language: ru
 title: 'Drupal 8: Queue API'
 created: '2015-11-12T20:41:25'
 updated: '2023-10-16T18:21:20'
-description: 'Программное создание и управление очередями в Drupal 8.'
+description: >-
+  Drupal 8 Queue API позволяет разработчикам управлять задачами, которые требуют
+  много времени или ресурсов, путём их помещения в очередь для выполнения в
+  фоновом режиме.
 attachments:
   - name: 'Результат выполнения'
     path: 'attachment/helloworld_queueapi_end.tar.gz'

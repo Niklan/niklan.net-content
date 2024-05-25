@@ -4,7 +4,10 @@ language: ru
 title: 'Drupal 7: Программное создание DisplaySuite полей'
 created: '2016-03-29T20:13:28'
 updated: '2023-10-16T18:21:20'
-description: 'Добавление полей Display Suite при помощи кода.'
+description: >-
+  Научитесь расширять функциональность своих сайтов, используя возможности
+  DisplaySuite и Field Group. Узнайте, как упростить вёрстку и повысить её
+  эффективность.
 attachments:
   - name: 'Готовый модуль с примерами'
     path: 'attachment/ds_fields_example.tar.gz'

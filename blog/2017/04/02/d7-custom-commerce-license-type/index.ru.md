@@ -4,7 +4,9 @@ language: ru
 title: 'Drupal 7: Создание собственного типа Commerce License'
 created: '2017-04-02T12:00:00'
 updated: '2023-10-16T18:21:20'
-description: 'Материал о том, как создать свой собственный тип Commerce License и использовать в различных целях. В данном случае, показано на примере продажи платных публикаций.'
+description: >-
+  Подробное руководство по созданию и продаже лицензий в Drupal Commerce с
+  использованием модуля Commerce License.
 attachments:
   - name: 'Готовый модуль'
     path: 'attachment/paid_advertisement_license.tar.gz'

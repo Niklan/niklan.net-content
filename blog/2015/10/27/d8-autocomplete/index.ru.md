@@ -4,7 +4,10 @@ language: ru
 title: 'Drupal 8: Добавление автодополнения (autocomplete) в форму'
 created: '2015-10-27T19:52:35'
 updated: '2023-10-16T18:21:20'
-description: 'Автозаполнение в формах Drupal 8.'
+description: >-
+  Drupal 8 предоставляет возможность интеграции функции автодополнения в формы,
+  что значительно упрощает процесс ввода данных и повышает удобство
+  использования сайта.
 attachments:
   - name: 'Пример готового модуля'
     path: 'attachment/helloworld_autocomplete_result.tar.gz'

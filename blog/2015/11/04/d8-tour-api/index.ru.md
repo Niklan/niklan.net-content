@@ -4,7 +4,9 @@ language: ru
 title: 'Drupal 8: Tour API'
 created: '2015-11-04T12:05:27'
 updated: '2023-10-16T18:21:20'
-description: 'Добавляем инструкции для редакторов в адмнику.'
+description: >-
+  Drupal 8 Tour API позволяет создавать интерактивные туры по административным
+  страницам, предоставляя редакторам наглядные обучающие подсказки.
 attachments:
   - name: Результат
     path: 'attachment/helloworld_tourapi_end.tar.gz'

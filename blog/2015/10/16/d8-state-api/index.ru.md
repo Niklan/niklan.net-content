@@ -4,7 +4,11 @@ language: ru
 title: 'Drupal 8: State API или замена variable_get() и variabe_set()'
 created: '2015-10-16T22:51:23'
 updated: '2023-10-16T18:21:20'
-description: 'Хранение значений в БД Drupal 8.'
+description: >-
+  Drupal 8 предлагает State API как замену функциям variable_get() и
+  variable_set(), предоставляя разработчикам эффективный способ хранения
+  системных данных, которые не должны переноситься между серверами или
+  окружениями.
 promo: 'image/drupal8stateapi.png'
 tags:
   - Drupal

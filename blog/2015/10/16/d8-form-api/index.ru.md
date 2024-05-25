@@ -4,7 +4,10 @@ language: ru
 title: 'Drupal 8: Form API что изменилось и как использовать'
 created: '2015-10-16T22:10:44'
 updated: '2023-10-16T18:21:20'
-description: 'Изменения Form API в Drupal 8.'
+description: >-
+  Drupal 8 Form API — значительное улучшение, предлагает гибкий и удобный подход
+  к созданию форм. Основные изменения касаются ООП, делая код более
+  структурированным и понятным.
 attachments:
   - name: Заготовка
     path: 'attachment/helloworld_formapi_start.tar.gz'

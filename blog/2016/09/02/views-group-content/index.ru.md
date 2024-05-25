@@ -4,7 +4,9 @@ language: ru
 title: 'Drupal - группировка материалов во Views'
 created: '2016-09-02T08:06:03'
 updated: '2023-10-16T18:21:20'
-description: 'Небольшая заметка о группировке материалов во Views.'
+description: >-
+  Узнайте, как объединять элементы по определённому признаку для улучшения
+  структуры и навигации вашего сайта.
 promo: 'image/drupalviewsgrouping.png'
 tags:
   - Drupal

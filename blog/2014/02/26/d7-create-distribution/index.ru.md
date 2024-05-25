@@ -4,7 +4,7 @@ language: ru
 title: 'Создание сборки Drupal 7 (дистрибутивы, установочные профили)'
 created: '2014-02-26T00:07:44'
 updated: '2023-10-16T18:21:20'
-description: 'Создание дистрибутивов в Drupal 7.'
+description: 'Создание дистрибутивов Drupal 7: руководство для разработчиков.'
 attachments:
   - name: 'My first distro'
     path: 'attachment/my_first_distro.zip'

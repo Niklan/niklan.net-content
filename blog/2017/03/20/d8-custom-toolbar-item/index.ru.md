@@ -4,7 +4,9 @@ language: ru
 title: 'Drupal 8: Добавление пункта меню в Toolbar'
 created: '2017-03-20T09:35:39'
 updated: '2023-10-16T18:21:20'
-description: 'Небольшая статья о том, как добавить свой собственный пункт меню в административный тулбар.'
+description: >-
+  Узнайте, как добавить свой собственный пункт в административный тулбар
+  Drupal 8.
 attachments:
   - name: 'Hello World — готовый модуль'
     path: 'attachment/helloworld.tar.gz'

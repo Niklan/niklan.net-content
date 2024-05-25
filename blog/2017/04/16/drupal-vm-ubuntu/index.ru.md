@@ -4,7 +4,9 @@ language: ru
 title: 'Установка и настройка Drupal VM на Ubuntu'
 created: '2017-04-16T09:50:31'
 updated: '2023-10-16T18:21:20'
-description: 'Инструкция по установке и настройке Drupal VM на Ubuntu для локальной разработки.'
+description: >-
+  Узнайте, как установить и настроить Drupal VM на Ubuntu для локальной
+  разработки.
 promo: 'image/server-m.jpg'
 tags:
   - Drupal
