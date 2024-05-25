@@ -3,7 +3,7 @@ id: drupalife-store-preview
 language: ru
 title: 'Drupalife Store - легковесный и простой дистрибутив интернет-магазина'
 created: '2014-02-24T18:12:44'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: 'Дистрибутив магазина для Drupal Commerce 1.'
 promo: 'image/dsstore_promo.png'
 tags:

@@ -3,7 +3,7 @@ id: mappy-7.x-1.2
 language: ru
 title: 'Mappy: 7.x-1.2'
 created: '2013-08-10T15:58:46'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: 'Список правок и изменений.'
 promo: 'image/mappy7х12.png'
 tags:

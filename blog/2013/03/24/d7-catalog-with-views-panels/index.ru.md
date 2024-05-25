@@ -3,7 +3,7 @@ id: d7-catalog-with-views-panels
 language: ru
 title: 'Drupal 7: Создание каталога с помощью Taxonomy & Views & Panels'
 created: '2013-03-24T22:41:27'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: >-
   Создайте удобный каталог товаров с помощью Drupal 7, используя Taxonomy, Views
   и Panels.

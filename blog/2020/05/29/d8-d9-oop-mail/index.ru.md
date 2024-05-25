@@ -3,7 +3,7 @@ id: d8-d9-oop-mail
 language: ru
 title: 'Drupal 8, 9: Отправка писем используя ООП и Dependency Injection'
 created: '2020-05-29T14:47:23'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: >-
   Узнайте, как отправлять письма в Drupal 8 и 9 с использованием ООП и
   Dependency Injection для улучшения структуры кода и удобства разработки.

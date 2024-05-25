@@ -3,7 +3,7 @@ id: d8-custom-csv-import
 language: ru
 title: 'Drupal 8: Пишем собственный импорт из CSV файла'
 created: '2016-09-11T10:05:15'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: >-
   Узнайте, как создать собственный модуль импорта содержимого на сайт из CSV
   файла, используя Form API, File API, Entity API и Batch operations. Разберём

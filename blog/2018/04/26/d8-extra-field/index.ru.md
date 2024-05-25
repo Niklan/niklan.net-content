@@ -3,7 +3,7 @@ id: d8-extra-field
 language: ru
 title: 'Drupal 8: Создание псевдо-полей (Extra Fields)'
 created: '2018-04-26T21:00:14'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: >-
   Создаём псевдо-поля в Drupal 8: узнайте, как добавить новые поля к
   существующим сущностям и формам.

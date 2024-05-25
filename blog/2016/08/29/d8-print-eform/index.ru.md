@@ -3,7 +3,7 @@ id: d8-print-eform
 language: ru
 title: 'Drupal 8: Программный вывод EForm'
 created: '2016-08-29T17:09:43'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: >-
   Небольшая заметка о том, как выводить EForm (entityform из Drupal 7)
   программным способом, где это необходимо.

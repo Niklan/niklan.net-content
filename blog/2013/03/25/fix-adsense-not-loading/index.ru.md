@@ -3,7 +3,7 @@ id: fix-adsense-not-loading
 language: ru
 title: 'Решение проблемы с AdSense - Низкая пропускная способность.'
 created: '2013-03-25T19:51:06'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: 'Если AdSense перестал грузиться.'
 promo: 'image/google_adsense-codit.png'
 tags:

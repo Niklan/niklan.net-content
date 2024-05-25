@@ -3,7 +3,7 @@ id: d8-blog-from-scratch
 language: ru
 title: 'Drupal 8: Создание собственного блога с нуля'
 created: '2018-09-03T08:26:39'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: >-
   Серия видеороликов о разработке собственного блога на Drupal 8 с нуля.
 promo: 'image/apple-device-blur-blurry-273222.jpg'

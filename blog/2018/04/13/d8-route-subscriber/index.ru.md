@@ -3,7 +3,7 @@ id: d8-route-subscriber
 language: ru
 title: 'Drupal 8: Route Subscriber — альтерим роуты'
 created: '2018-04-13T14:27:29'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: >-
   Расширенные возможности маршрутизации в Drupal 8: освойте подписчик события
   Route Subscriber для детальной настройки маршрутов вашего сайта, что позволит

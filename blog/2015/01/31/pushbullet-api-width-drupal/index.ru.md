@@ -3,7 +3,7 @@ id: pushbullet-api-width-drupal
 language: ru
 title: 'Pushbullet API - пуш-уведомления из Drupal на различные устройства'
 created: '2015-01-31T18:28:29'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: 'Небольшой обзор модуля Pushbullet.'
 promo: 'image/pushbullet.png'
 tags:

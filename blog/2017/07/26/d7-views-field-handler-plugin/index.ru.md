@@ -3,7 +3,7 @@ id: d7-views-field-handler-plugin
 language: ru
 title: 'Drupal 8 Views Field Handler Plugin — собственные поля для Views'
 created: '2017-07-26T18:51:00'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: 'Руководство по добавлению собственных полей в модуль Views.'
 attachments:
   - name: 'Готовый модуль с примерами'

@@ -3,7 +3,7 @@ id: programmatically-print-entityform
 language: ru
 title: 'Программный вывод Entityform'
 created: '2014-04-11T13:08:44'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: 'Выводим формы entityform программно.'
 promo: 'image/entityform.png'
 tags:

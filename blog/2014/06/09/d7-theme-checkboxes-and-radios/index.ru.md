@@ -3,7 +3,7 @@ id: d7-theme-checkboxes-and-radios
 language: ru
 title: 'Drupal 7: Темизация checkbox и radio кнопок'
 created: '2014-06-09T16:07:39'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: 'Приводим чекбоксы и радио кнопки к единому стилю.'
 promo: 'image/checkboxpromo.png'
 tags:

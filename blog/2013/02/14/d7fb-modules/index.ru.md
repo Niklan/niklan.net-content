@@ -3,7 +3,7 @@ id: d7fb-modules
 language: ru
 title: 'Drupal 7 для начинающих: Модули.'
 created: '2013-02-14T12:00:30'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: 'Разбираемся с модулями в Drupal 7.'
 attachments:
   - name: 'Результаты выполнения'

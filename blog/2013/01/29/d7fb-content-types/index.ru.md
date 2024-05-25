@@ -3,7 +3,7 @@ id: d7fb-content-types
 language: ru
 title: 'Drupal 7 для начинающих: Создание собственных типов материалов. '
 created: '2013-01-29T23:19:04'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: 'Руководство по управлению типами содержимого.'
 attachments:
   - name: 'Результат выполнения'

@@ -3,7 +3,7 @@ id: d7fb-drupal
 language: ru
 title: 'Drupal 7 для начинающих: Введение. Что такое Drupal.'
 created: '2013-01-21T21:56:59'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: 'Знакомимся с Drupal.'
 promo: 'image/dfbeginners.jpg'
 tags:

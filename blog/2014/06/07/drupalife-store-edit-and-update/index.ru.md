@@ -3,7 +3,7 @@ id: drupalife-store-edit-and-update
 language: ru
 title: 'Drupalife Store: как править тему и обновлять сборку'
 created: '2014-06-07T21:20:49'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: 'Небольшие подсказки, чтобы было проще.'
 promo: 'image/paint.png'
 tags:

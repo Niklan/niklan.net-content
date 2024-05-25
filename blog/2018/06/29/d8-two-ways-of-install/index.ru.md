@@ -3,7 +3,7 @@ id: d8-two-ways-of-install
 language: ru
 title: 'Drupal 8: Два варианта установки ядра'
 created: '2018-06-29T17:11:50'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: >-
   Узнайте, как установить ядро Drupal 8 двумя способами: стандартным с
   drupal.org и через Composer Drupal Project. Сравните плюсы и минусы каждого

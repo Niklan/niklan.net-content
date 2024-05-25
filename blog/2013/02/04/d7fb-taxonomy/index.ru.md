@@ -3,7 +3,7 @@ id: d7fb-taxonomy
 language: ru
 title: 'Drupal 7 для начинающих: Таксономия.'
 created: '2013-02-04T23:11:39'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: 'Разбираемся со словарями.'
 promo: 'image/dfbeginners.jpg'
 tags:

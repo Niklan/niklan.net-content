@@ -3,7 +3,7 @@ id: d8-d9-placeholder-strategy
 language: ru
 title: 'Drupal 8, 9: Placeholder Strategy'
 created: '2020-05-15T10:51:12'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: >-
   Drupal 8, 9: Placeholder Strategy — узнайте, как оптимизировать рендер страниц
   с помощью плейсхолдеров и асинхронной обработки данных.

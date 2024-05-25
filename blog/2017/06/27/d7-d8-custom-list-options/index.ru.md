@@ -3,7 +3,7 @@ id: d7-d8-custom-list-options
 language: ru
 title: 'Drupal: Динамические опции для поля-списка'
 created: '2017-06-27T18:45:08'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: >-
    Узнайте, как создавать динамические списки опций в Drupal, чтобы избежать
    ручного ввода данных. Изучите настройку allowed_values_function, которая

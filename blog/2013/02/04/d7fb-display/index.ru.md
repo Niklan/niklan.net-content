@@ -3,7 +3,7 @@ id: d7fb-display
 language: ru
 title: 'Drupal 7 для начинающих: Управление отображением. Работа с картинками.'
 created: '2013-02-04T14:19:38'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: >-
   Управление отображением материала и работа с картинками в Drupal 7.
 attachments:

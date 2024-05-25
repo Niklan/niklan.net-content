@@ -3,7 +3,7 @@ id: d7-boost
 language: ru
 title: 'Boostим сайт за пару минут'
 created: '2013-05-22T23:13:03'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: >-
   Ускорьте свой сайт с Drupal 7! Настройте Boost для статичного кеширования
   страниц.

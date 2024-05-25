@@ -3,7 +3,7 @@ id: block-content-access-with-rules
 language: ru
 title: 'Rules: Блокируем доступ к материалам.'
 created: '2013-05-06T11:22:13'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: >-
   Советы по защите данных и ограничению нежелательного доступа к важному
   содержимому с помощью Rules.

@@ -3,7 +3,7 @@ id: how-to-fix-sa-core-2013-003
 language: ru
 title: 'Как фиксить SA-CORE-2013-003 в Drupal'
 created: '2013-12-01T14:15:09'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: 'Решаем проблему с обновлением.'
 promo: 'image/drupal_31.jpg'
 tags:

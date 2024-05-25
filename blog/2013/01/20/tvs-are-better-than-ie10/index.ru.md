@@ -3,7 +3,7 @@ id: tvs-are-better-than-ie10
 language: ru
 title: 'Телевизоры обрабатывают веб-сайты лучше IE 10, время прошить браузер'
 created: '2013-01-20T19:29:27'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: 'Такие дела.'
 promo: 'image/chromie.jpg'
 ---

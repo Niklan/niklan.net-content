@@ -3,7 +3,7 @@ id: d7fb-translate
 language: ru
 title: 'Drupal 7 для начинающих: Переводим Drupal.'
 created: '2013-01-24T23:14:45'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: 'Переводим Drupal на русский.'
 attachments:
   - name: 'Результат выполнения (сайт + база)'

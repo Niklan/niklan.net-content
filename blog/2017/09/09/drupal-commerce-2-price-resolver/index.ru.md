@@ -3,7 +3,7 @@ id: drupal-commerce-2-price-resolver
 language: ru
 title: 'Drupal Commerce 2: Ценообразование'
 created: '2017-09-09T10:09:25'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: >-
   Узнайте, как влиять на цены товаров в Drupal Commerce 2.0. Научитесь создавать
   гибкие ценовые политики, адаптированные под ваши бизнес-задачи.

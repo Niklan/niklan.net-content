@@ -3,7 +3,7 @@ id: d8-print-contact-form
 language: ru
 title: 'Drupal 8: Программный вывод формы Contact'
 created: '2015-11-21T18:22:13'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: 'Узнайте, как легко вывести форму Contact программно в Drupal 8.'
 promo: 'image/contactprogrammaticallyd8.png'
 tags:

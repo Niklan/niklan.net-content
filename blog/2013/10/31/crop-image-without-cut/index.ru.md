@@ -3,7 +3,7 @@ id: crop-image-without-cut
 language: ru
 title: 'Режем картинки без "отрубаний"'
 created: '2013-10-31T22:02:42'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: 'Настраиваем корректную обрезку картинок в Drupal 7.'
 promo: 'image/resize.png'
 tags:

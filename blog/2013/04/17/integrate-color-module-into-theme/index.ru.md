@@ -3,7 +3,7 @@ id: integrate-color-module-into-theme
 language: ru
 title: 'Добавляем поддержку Color-модуля в тему. Работа с цветами.'
 created: '2013-04-17T14:45:40'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: >-
   Добавьте в свою тему поддержку Color-модуля и легко меняйте цвета!
 attachments:

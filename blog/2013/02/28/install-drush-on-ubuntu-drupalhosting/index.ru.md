@@ -3,7 +3,7 @@ id: install-drush-on-ubuntu-drupalhosting
 language: ru
 title: 'Установка Drush на Ubuntu & Использование Drush на Drupalhosting'
 created: '2013-02-28T19:33:11'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: >-
   Ускорьте работу с Drupal на Ubuntu с Drush! Эффективные команды для управления
   сайтом.

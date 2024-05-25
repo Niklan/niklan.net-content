@@ -3,7 +3,7 @@ id: digitalocean-mini-hosting
 language: ru
 title: 'Свой мини-хостинг (сервер) на DigitalOcean'
 created: '2015-01-25T18:25:28'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: >-
   Создание собственного мини-хостинга на DigitalOcean с использованием VestaCP —
   это эффективный способ получить полный контроль над своими проектами и

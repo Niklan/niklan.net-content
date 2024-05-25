@@ -3,7 +3,7 @@ id: d7-fix-encrypted-connection-error
 language: ru
 title: 'Drupal 7: Не устанавливаются темы и модули.'
 created: '2013-03-25T11:10:03'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: >-
   Исправляем права на папку чтобы модули и темы начали устанавливаться на
   Ubuntu.

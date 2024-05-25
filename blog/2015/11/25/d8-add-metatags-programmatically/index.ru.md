@@ -3,7 +3,7 @@ id: d8-add-metatags-programmatically
 language: ru
 title: 'Drupal 8: Программное добавление метатегов'
 created: '2015-11-25T08:36:04'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: >-
   Узнайте, как легко добавлять, изменять и удалять метатеги в Drupal 8 без
   использования сторонних модулей.

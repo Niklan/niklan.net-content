@@ -3,7 +3,7 @@ id: d8-lazy-builder
 language: ru
 title: 'Drupal 8: #lazy_builder — ленивый билдер'
 created: '2017-07-07T20:27:30'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: >-
   Концепция #lazy_builder позволяет отложить генерацию определённых частей
   сайта. Это полезно для оптимизации производительности.

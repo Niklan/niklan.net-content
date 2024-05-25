@@ -3,7 +3,7 @@ id: d7fb-configure
 language: ru
 title: 'Drupal 7 для начинающих: Настраиваем сайт.'
 created: '2013-01-28T22:59:34'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: 'В этом уроке мы рассмотрим базовые настройки Drupal 7.'
 attachments:
   - name: 'Результат выполнения'

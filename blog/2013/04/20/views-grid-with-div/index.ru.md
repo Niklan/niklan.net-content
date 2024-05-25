@@ -3,7 +3,7 @@ id: views-grid-with-div
 language: ru
 title: "Вывод Views Grid (Сетка) div'ами"
 created: '2013-04-20T18:32:13'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: >-
   Узнайте, как вывести сетку Views с помощью div’ов для гибкой верстки.
 attachments:

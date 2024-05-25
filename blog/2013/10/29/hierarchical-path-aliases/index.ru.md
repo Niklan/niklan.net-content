@@ -3,7 +3,7 @@ id: hierarchical-path-aliases
 language: ru
 title: 'Хлебные крошки и ЧПУ с иерархией'
 created: '2013-10-29T19:33:04'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: 'Настраиваем все, для максимальной пользы в SEO.'
 promo: 'image/paths.png'
 tags:

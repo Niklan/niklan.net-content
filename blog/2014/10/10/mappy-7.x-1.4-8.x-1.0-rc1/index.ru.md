@@ -3,7 +3,7 @@ id: mappy-7.x-1.4-8.x-1.0-rc1
 language: ru
 title: 'Mappy: 7.x-1.4 / 8.x-1.0-rc1'
 created: '2014-10-10T19:02:30'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: 'Список изменений.'
 promo: 'image/mappy14.png'
 tags:

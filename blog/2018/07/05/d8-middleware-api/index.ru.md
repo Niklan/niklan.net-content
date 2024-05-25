@@ -3,7 +3,7 @@ id: d8-middleware-api
 language: ru
 title: 'Drupal 8: Middleware API'
 created: '2018-07-05T07:15:54'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: >-
   В этом материале рассказываю и показываю что такое Middleware API и как он
   может вам помочь.

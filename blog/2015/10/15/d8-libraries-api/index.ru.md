@@ -3,7 +3,7 @@ id: d8-libraries-api
 language: ru
 title: 'Drupal 8: Libraries API (Добавление CSS/JS на страницы)'
 created: '2015-10-15T21:17:05'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: >-
   Drupal 8 предлагает новый подход к добавлению CSS и JS на страницы с помощью
   Libraries API. Это позволяет загружать библиотеки только на тех страницах, где

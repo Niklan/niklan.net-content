@@ -3,7 +3,7 @@ id: blog-is-1-year
 language: ru
 title: 'Блогу 1 год'
 created: '2014-03-08T14:50:32'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: 'Happy Birthday!'
 promo: 'image/loloneyear.png'
 tags:

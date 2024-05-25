@@ -3,7 +3,7 @@ id: d8-condition-plugin
 language: ru
 title: 'Drupal 8: Condition Plugin'
 created: '2018-05-25T16:45:28'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: 'Узнайте, как создавать собственные плагины для проверки условий.'
 attachments:
   - name: 'Готовый модуль с примерами'

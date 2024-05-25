@@ -3,7 +3,7 @@ id: follow-functionality-with-flag
 language: ru
 title: 'Подписка на пользователей при помощи модуля Flag'
 created: '2013-12-03T16:20:19'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: 'Аналог Follow из различных соц. сетей.'
 attachments:
   - name: 'Feature с вьюхами и флагом'

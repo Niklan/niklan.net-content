@@ -3,7 +3,7 @@ id: advanced-contact-page
 language: ru
 title: 'Продвинутая страница контактов'
 created: '2013-05-21T23:34:03'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: >-
   Создайте продвинутую страницу контактов, чтобы облегчить связь с клиентами.
 attachments:

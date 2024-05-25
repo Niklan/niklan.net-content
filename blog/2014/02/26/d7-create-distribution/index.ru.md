@@ -3,7 +3,7 @@ id: d7-create-distribution
 language: ru
 title: 'Создание сборки Drupal 7 (дистрибутивы, установочные профили)'
 created: '2014-02-26T00:07:44'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: 'Создание дистрибутивов Drupal 7: руководство для разработчиков.'
 attachments:
   - name: 'My first distro'

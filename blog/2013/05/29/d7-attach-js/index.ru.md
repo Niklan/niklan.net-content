@@ -3,7 +3,7 @@ id: d7-attach-js
 language: ru
 title: '3 варианта как подключить JavaScript в Drupal 7'
 created: '2013-05-29T00:10:28'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: >-
   Узнайте, как легко подключить JavaScript в Drupal 7: через кастом-модуль с
   помощью drupal_add_js(), через тему сайта, добавляя скрипты в .info файл, и

@@ -3,7 +3,7 @@ id: d7fb-contact
 language: ru
 title: 'Drupal 7 для начинающих: Форма обратной связи.'
 created: '2013-02-27T21:21:13'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: 'Создаём форму обратной связи в Drupal 7: просто и удобно!'
 attachments:
   - name: 'Результат выполнения'

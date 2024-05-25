@@ -3,7 +3,7 @@ id: hello-world
 language: ru
 title: 'Hello World'
 created: '2012-12-31T22:10:03'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: 'Отсюда всё начинается!'
 promo: 'image/hello-world.jpg'
 ---

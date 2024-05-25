@@ -3,7 +3,7 @@ id: d8-custom-module-translations-deploy
 language: ru
 title: 'Drupal 8: Деплой переводов для кастомных модулей'
 created: '2019-09-02T17:46:16'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: >-
   Drupal 8: Деплой переводов для кастомных модулей — развертываем переводы для
   пользовательских модулей.

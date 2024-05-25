@@ -3,7 +3,7 @@ id: d8-hook-theme
 language: ru
 title: 'Drupal 8: hook_theme()'
 created: '2017-06-26T19:37:14'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: >-
   Изучите основы работы с одним из ключевых хуков Drupal. Узнайте, как создавать
   и использовать тем хуки в Drupal 8.

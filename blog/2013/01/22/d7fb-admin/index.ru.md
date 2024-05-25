@@ -3,7 +3,7 @@ id: d7fb-admin
 language: ru
 title: 'Drupal 7 для начинающих: Панель инструментов. Ярлыки. Администрирование.'
 created: '2013-01-22T19:37:21'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: 'Знакомимся с панелью инструментов администратора.'
 promo: 'image/dfbeginners.jpg'
 tags:

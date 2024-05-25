@@ -3,7 +3,7 @@ id: ds-fg-poc-theming
 language: ru
 title: 'DS + FG proof of concept или как я верстаю в Drupal'
 created: '2016-04-04T19:54:09'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: >-
   В этой статье я расскажу о своём подходе к вёрстке на Drupal, основанном на
   использовании связки DisplaySuite и FieldGroup. Я сравню его с другими

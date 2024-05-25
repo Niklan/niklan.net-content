@@ -3,7 +3,7 @@ id: d7-install-and-configure-ckeditor
 language: ru
 title: 'Установка и настройка CKEditor в Drupal 7'
 created: '2013-12-07T14:41:11'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: 'Настраиваем CKEditor, чтобы редакторы не пачкали разметку.'
 promo: 'image/write.jpg'
 tags:

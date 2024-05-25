@@ -3,7 +3,7 @@ id: d7-create-feature
 language: ru
 title: 'Drupal 7: Создаем Feature'
 created: '2013-04-28T22:06:30'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: 'Добавьте функционал на сайт легко и просто!'
 attachments:
   - name: 'Feature - Техническая поддержка'

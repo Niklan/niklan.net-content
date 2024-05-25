@@ -3,7 +3,7 @@ id: d8-search-api-programmatically
 language: ru
 title: 'Drupal 8: Search API — программный поиск по сайту'
 created: '2018-04-24T19:00:26'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: >-
   Усовершенствуйте поиск на своём сайте с Drupal 8 и Search API: освойте мощный
   инструмент для точного и гибкого поиска контента.

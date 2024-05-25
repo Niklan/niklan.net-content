@@ -3,7 +3,7 @@ id: d8-state-api
 language: ru
 title: 'Drupal 8: State API или замена variable_get() и variabe_set()'
 created: '2015-10-16T22:51:23'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: >-
   Drupal 8 предлагает State API как замену функциям variable_get() и
   variable_set(), предоставляя разработчикам эффективный способ хранения

@@ -3,7 +3,7 @@ id: d7fb-fields
 language: ru
 title: 'Drupal 7 для начинающих: Работа с полями.'
 created: '2013-02-01T21:44:53'
-updated: '2023-10-16T18:21:20'
+updated: '2024-05-25T00:00:00'
 description: 'Что такое поля и зачем они нужны? Учимся ими пользоваться.'
 attachments:
   - name: 'Результат выполнения'
