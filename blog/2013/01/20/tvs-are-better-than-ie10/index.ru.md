@@ -1,5 +1,5 @@
 ---
-id: tvs-are-better-than-ie10
+id: tvs-are-better-than-internet-explorer-10
 language: ru
 title: 'Телевизоры обрабатывают веб-сайты лучше IE 10, время прошить браузер'
 created: '2013-01-20T19:29:27'

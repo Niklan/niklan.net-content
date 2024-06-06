@@ -83,7 +83,7 @@ tags:
 состав плагина, так как по такой цепочке вы логически будете заполнять данные из
 предыдущих пунктов, а не прыгать между классами.
 
-Первым делом нам необходимо [объявить свой модуль][d8-hello-world]. Давайте
+Первым делом нам необходимо [объявить свой модуль][drupal-8-hello-world]. Давайте
 назовем его **plugin_messages**. Думаю это не составит труда и двигаемся дальше.
 
 Далее нужно объявить аннотации для нашего плагина. Аннотации находятся
@@ -939,5 +939,5 @@ public function startImport(array &$form, FormStateInterface $form_state) {
 канал [в Telegram](https://telegram.me/niklannet) там я пишу по мелочи, не
 только о Drupal.
 
-[d8-hello-world]: ../../../../2014/10/12/d8-hello-world/index.ru.md
+[drupal-8-hello-world]: ../../../../2014/10/12/drupal-8-hello-world/index.ru.md
 [d8-custom-csv-import]: ../../../../2016/09/11/d8-custom-csv-import/index.ru.md

@@ -1,5 +1,5 @@
 ---
-id: hierarchical-path-aliases
+id: drupal-7-hierarchical-path-aliases
 language: ru
 title: 'Хлебные крошки и ЧПУ с иерархией'
 created: '2013-10-29T19:33:04'
@@ -14,7 +14,7 @@ tags:
 ---
 
 Как-то я написал гайд как
-сделать [каталог товаров на Views + Panels + Taxonomy][d7-catalog-with-views-panels].
+сделать [каталог товаров на Views + Panels + Taxonomy][drupal-7-catalog-with-views-panels].
 Эта статья сейчас является самой обсуждаемой и читаемой в блоге. И я заметил что
 многие испытывают проблемы именно с настройкой URL’ов для категорий и товаров.
 Поэтому данная статья посвящена именно настройка грамотных URL с иерархией, ну и
@@ -148,4 +148,4 @@ drush dl entity path_breadcrumbs token pathauto && drush en path_breadcrumbs_ui 
 Вот и все. Если у кого есть опыт с адресами огромной вложенности, поделитесь
 своим опытом.
 
-[d7-catalog-with-views-panels]: ../../../../2013/03/24/d7-catalog-with-views-panels/index.ru.md
+[drupal-7-catalog-with-views-panels]: ../../../../2013/03/24/drupal-7-catalog-with-views-panels/index.ru.md

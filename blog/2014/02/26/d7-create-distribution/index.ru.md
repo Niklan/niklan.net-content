@@ -1,5 +1,5 @@
 ---
-id: d7-create-distribution
+id: drupal-7-create-distribution
 language: ru
 title: 'Создание сборки Drupal 7 (дистрибутивы, установочные профили)'
 created: '2014-02-26T00:07:44'

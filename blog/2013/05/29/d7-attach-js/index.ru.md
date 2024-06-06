@@ -1,5 +1,5 @@
 ---
-id: d7-attach-js
+id: drupal-7-attach-javascript
 language: ru
 title: '3 варианта как подключить JavaScript в Drupal 7'
 created: '2013-05-29T00:10:28'

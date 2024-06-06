@@ -1,5 +1,5 @@
 ---
-id: d8-hello-world
+id: drupal-8-hello-world
 language: ru
 title: 'Drupal 8 Hello World: Пишем свой первый модуль'
 created: '2014-10-12T15:29:46'

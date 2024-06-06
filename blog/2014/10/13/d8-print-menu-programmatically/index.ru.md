@@ -1,5 +1,5 @@
 ---
-id: d8-print-menu-programmatically
+id: drupal-8-render-menu-programmatically
 language: ru
 title: 'Drupal 8: Программный вывод меню'
 created: '2014-10-13T15:25:47'

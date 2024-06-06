@@ -1,5 +1,5 @@
 ---
-id: d7-create-feature
+id: drupal-7-create-feature
 language: ru
 title: 'Drupal 7: Создаем Feature'
 created: '2013-04-28T22:06:30'

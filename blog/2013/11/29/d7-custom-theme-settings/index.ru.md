@@ -1,5 +1,5 @@
 ---
-id: d7-custom-theme-settings
+id: drupal-7-custom-theme-settings
 language: ru
 title: 'Добавление собственных настроек в тему Drupal 7'
 created: '2013-11-29T22:55:30'

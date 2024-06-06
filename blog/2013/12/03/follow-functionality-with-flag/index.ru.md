@@ -1,5 +1,5 @@
 ---
-id: follow-functionality-with-flag
+id: drupal-7-follow-functionality-with-flag
 language: ru
 title: 'Подписка на пользователей при помощи модуля Flag'
 created: '2013-12-03T16:20:19'

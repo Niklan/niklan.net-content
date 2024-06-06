@@ -1,5 +1,5 @@
 ---
-id: block-content-access-with-rules
+id: drupal-7-block-content-access-with-rules
 language: ru
 title: 'Rules: Блокируем доступ к материалам.'
 created: '2013-05-06T11:22:13'

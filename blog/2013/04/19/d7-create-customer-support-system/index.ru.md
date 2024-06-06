@@ -1,5 +1,5 @@
 ---
-id: d7-create-customer-support-system
+id: drupal-7-create-customer-support-system
 language: ru
 title: 'Drupal 7: Создание технической поддержки (тикеты).'
 created: '2013-04-19T20:37:16'

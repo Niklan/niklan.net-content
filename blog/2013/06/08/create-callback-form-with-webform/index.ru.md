@@ -1,5 +1,5 @@
 ---
-id: create-callback-form-with-webform
+id: drupal-7-create-callback-form-with-webform
 language: ru
 title: 'Создание формы заказа звонка при помощи Webform'
 created: '2013-06-08T12:55:35'

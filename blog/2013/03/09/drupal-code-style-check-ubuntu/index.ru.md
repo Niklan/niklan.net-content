@@ -1,5 +1,5 @@
 ---
-id: drupal-code-style-check-ubuntu
+id: drupal-7-code-style-check-ubuntu
 language: ru
 title: 'Проверка на стандарты кодирования Drupal в Ubuntu'
 created: '2013-03-09T12:52:13'
@@ -64,6 +64,6 @@ Drupal_) [Coder](http://drupal.org/project/coder) ветки 7.x-2.x
 ## P.s.
 
 Как правило, он находит огромное количество ошибок. 90% из них исправляются
-правильной [настройкой IDE под стандарты Drupal][d7fb-translate].
+правильной [настройкой IDE под стандарты Drupal][drupal-7-for-beginners-translating-drupal].
 
-[d7fb-translate]: ../../../../2013/01/24/d7fb-translate/index.ru.md
+[drupal-7-for-beginners-translating-drupal]: ../../../../2013/01/24/drupal-7-for-beginners-translating-drupal/index.ru.md

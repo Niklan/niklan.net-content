@@ -1,7 +1,7 @@
 ---
-id: d7fb-taxonomy
+id: drupal-7-for-beginners-taxonomy
 language: ru
-title: 'Drupal 7 для начинающих: Таксономия.'
+title: 'Drupal 7 для начинающих: Таксономия'
 created: '2013-02-04T23:11:39'
 updated: '2024-05-25T00:00:00'
 description: 'Разбираемся со словарями.'

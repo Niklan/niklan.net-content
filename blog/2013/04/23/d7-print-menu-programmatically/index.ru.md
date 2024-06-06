@@ -1,5 +1,5 @@
 ---
-id: d7-print-menu-programmatically
+id: drupal-7-print-menu-programmatically
 language: ru
 title: 'Drupal 7: Программный вывод меню'
 created: '2013-04-23T21:05:20'

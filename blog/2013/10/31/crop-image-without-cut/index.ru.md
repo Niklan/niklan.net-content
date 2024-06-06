@@ -1,5 +1,5 @@
 ---
-id: crop-image-without-cut
+id: drupal-7-crop-image-without-cut
 language: ru
 title: 'Режем картинки без "отрубаний"'
 created: '2013-10-31T22:02:42'

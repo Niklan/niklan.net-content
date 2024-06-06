@@ -1,5 +1,5 @@
 ---
-id: integrate-color-module-into-theme
+id: drupal-7-integrate-color-module-into-theme
 language: ru
 title: 'Добавляем поддержку Color-модуля в тему. Работа с цветами.'
 created: '2013-04-17T14:45:40'

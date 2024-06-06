@@ -1,5 +1,5 @@
 ---
-id: simple-way-to-translate-drupal
+id: simple-way-to-translate-drupal-7
 language: ru
 title: 'Простой способ перевести Drupal и его модули на Русский'
 created: '2013-05-08T20:58:54'

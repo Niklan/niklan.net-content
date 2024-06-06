@@ -449,7 +449,6 @@ base64 сериализованных данных функции обратно
 стратегией:
 
 ```html
-
 <span data-ajax-placeholder="{&quot;callback&quot;:&quot;example.slow_block_lazy_builder:build&quot;,&quot;args&quot;:[],&quot;token&quot;:&quot;dXani8FiRrPyb_5IdLcaYrd_1X7ngGmb1FT_n9b19lQ&quot;}"></span>
 ```
 

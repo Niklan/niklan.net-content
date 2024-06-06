@@ -1,5 +1,5 @@
 ---
-id: d7-boost
+id: drupal-7-boost
 language: ru
 title: 'Boostим сайт за пару минут'
 created: '2013-05-22T23:13:03'

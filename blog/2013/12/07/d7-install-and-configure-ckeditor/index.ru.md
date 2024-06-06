@@ -1,5 +1,5 @@
 ---
-id: d7-install-and-configure-ckeditor
+id: drupal-7-install-and-configure-ckeditor
 language: ru
 title: 'Установка и настройка CKEditor в Drupal 7'
 created: '2013-12-07T14:41:11'

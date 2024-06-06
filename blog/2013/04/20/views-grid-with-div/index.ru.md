@@ -1,5 +1,5 @@
 ---
-id: views-grid-with-div
+id: drupal-7-views-grid-with-div
 language: ru
 title: "Вывод Views Grid (Сетка) div'ами"
 created: '2013-04-20T18:32:13'

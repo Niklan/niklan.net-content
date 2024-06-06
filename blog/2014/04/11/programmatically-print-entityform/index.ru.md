@@ -1,5 +1,5 @@
 ---
-id: programmatically-print-entityform
+id: drupal-7-programmatically-render-entityform
 language: ru
 title: 'Программный вывод Entityform'
 created: '2014-04-11T13:08:44'

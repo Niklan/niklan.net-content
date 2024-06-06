@@ -1,5 +1,5 @@
 ---
-id: d7-node-grants-and-access
+id: drupal-7-node-grants-and-access
 language: ru
 title: 'Drupal 7: Программно контролируем доступ к материалам'
 created: '2014-06-22T08:56:28'
@@ -227,7 +227,7 @@ function mymodule_node_access_records($node) {
 ## В чём плюсы
 
 1. В отличие от
-   [блокировки доступа средствами Rules][block-content-access-with-rules],
+   [блокировки доступа средствами Rules][drupal-7-block-content-access-with-rules],
    текущий вариант железный. Нет роли - нет доступа.
 2. Можно гнуть как угодно. Любые условия, проверки и т.д. На что хватит
    фантазии.
@@ -237,4 +237,4 @@ function mymodule_node_access_records($node) {
 Всё не так уж и сложно. Главное уловить идею про выдачу уровней доступа и
 понимание придёт. Удачи в создании закрытых разделов. ;)
 
-[block-content-access-with-rules]: ../../../../2013/05/06/block-content-access-with-rules/index.ru.md
+[drupal-7-block-content-access-with-rules]: ../../../../2013/05/06/drupal-7-block-content-access-with-rules/index.ru.md

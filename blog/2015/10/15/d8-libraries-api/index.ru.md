@@ -73,7 +73,7 @@ tags:
 Я буду показывать объявление библиотеки на примере модуля, следовательно, у вас
 должен быть объявлен модуль в соответствии с новыми требованиями. Можете
 объявить сами воспользовавшись моим гайдом
-по [созданию hello world модуля в Drupal 8][d8-hello-world], или прямо
+по [созданию hello world модуля в Drupal 8][drupal-8-hello-world], или прямо
 оттуда [скачать готовый вариант](/sites/default/files/blog/66/attachments/helloworld.tar.gz),
 на котором я буду всё показывать.
 
@@ -359,4 +359,4 @@ public function helloWorld() {
 На этом всё. Удачи в изучении Drupal 8.
 
 [drupal-8-api-changes]: ../../../../2014/10/07/drupal-8-api-changes/index.ru.md
-[d8-hello-world]: ../../../../2014/10/12/d8-hello-world/index.ru.md
+[drupal-8-hello-world]: ../../../../2014/10/12/drupal-8-hello-world/index.ru.md

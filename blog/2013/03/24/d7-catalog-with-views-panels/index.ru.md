@@ -1,5 +1,5 @@
 ---
-id: d7-catalog-with-views-panels
+id: drupal-7-catalog-with-views-panels
 language: ru
 title: 'Drupal 7: Создание каталога с помощью Taxonomy & Views & Panels'
 created: '2013-03-24T22:41:27'

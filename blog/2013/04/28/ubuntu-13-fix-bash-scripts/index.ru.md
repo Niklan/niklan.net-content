@@ -1,5 +1,5 @@
 ---
-id: ubuntu-13-fix-bash-scripts
+id: ubuntu-13.04-fix-bash-scripts
 language: ru
 title: 'Ubuntu 13.04 устранение проблемы с bash скриптами'
 created: '2013-04-28T15:23:33'

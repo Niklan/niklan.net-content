@@ -1,5 +1,5 @@
 ---
-id: d7-theme-checkboxes-and-radios
+id: drupal-7-theme-checkboxes-and-radios
 language: ru
 title: 'Drupal 7: Темизация checkbox и radio кнопок'
 created: '2014-06-09T16:07:39'

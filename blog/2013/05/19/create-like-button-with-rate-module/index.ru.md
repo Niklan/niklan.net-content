@@ -1,5 +1,5 @@
 ---
-id: create-like-button-with-rate-module
+id: drupal-7-create-like-button-with-rate-module
 language: ru
 title: 'Rate: Создаем кнопку «Мне нравится»'
 created: '2013-05-19T16:01:48'
