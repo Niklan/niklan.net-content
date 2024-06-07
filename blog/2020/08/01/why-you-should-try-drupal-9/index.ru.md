@@ -557,7 +557,7 @@ video/Drupal.8.workspaces.preview.mp4)
 
 В Drupal очень гибкая система настроек прав доступа. От привычных для остальных
 систем ролей и прав доступа, до более
-[гибких и тонких настроек][drupal-7-node-grants-and-access] при помощи кода.
+[гибких и тонких настроек][programmatically-controlling-access-to-content-in-drupal-7] при помощи кода.
 
 Всё меняется, настраивается и переопределяется. Не устраивает или не подходит
 аутентификация по логину и паролю?
@@ -1148,7 +1148,7 @@ Drupal идеален для проектов которые после запу
 [d8-d9-placeholder-strategy]: ../../../../2020/05/15/d8-d9-placeholder-strategy/index.ru.md
 [d8-language-negation]: ../../../../2017/07/04/d8-language-negation/index.ru.md
 [d8-custom-module-translations-deploy]: ../../../../2019/09/02/d8-custom-module-translations-deploy/index.ru.md
-[drupal-7-node-grants-and-access]: ../../../../2014/06/22/drupal-7-node-grants-and-access/index.ru.md
+[programmatically-controlling-access-to-content-in-drupal-7]: ../../../../2014/06/22/programmatically-controlling-access-to-content-in-drupal-7/index.ru.md
 [d8-d9-oop-mail]: ../../../../2020/05/29/d8-d9-oop-mail/index.ru.md
 [d8-filter-plugin]: ../../../../2015/10/25/d8-filter-plugin/index.ru.md
 [d8-d9-lock-services]: ../../../../2020/04/30/d8-d9-lock-services/index.ru.md

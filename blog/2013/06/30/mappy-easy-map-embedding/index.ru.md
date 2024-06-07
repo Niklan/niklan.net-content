@@ -1,5 +1,5 @@
 ---
-id: mappy-easy-map-embedding
+id: mappy-easy-map-embedding-on-website
 language: ru
 title: 'Mappy - простая вставка карт на сайт'
 created: '2013-06-30T14:39:36'
