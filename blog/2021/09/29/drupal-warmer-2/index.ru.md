@@ -55,7 +55,7 @@ SEO-краулера, который пробежится по всем стра
 
 [Warmer](https://www.drupal.org/project/warmer) (`warmer`) — это модуль, который
 предоставляет инструментарий для прогрева кеша. Его работа построена
-на [очередях][d8-queue-api] и [плагинах][d8-custom-plugins] `@Warmer`. Также
+на [очередях][drupal-8-queue-api] и [плагинах][drupal-8-how-to-create-custom-plugin-type] `@Warmer`. Также
 модуль предоставляет команды для Drush и административный интерфейс, в котором
 можно запускать прогрев вручную и настраивать плагины.
 
@@ -1812,7 +1812,7 @@ $ curl http://video-examples.localhost/node/13184 -s -o /dev/null -w %{time_star
 * [Исходный код примера](https://github.com/Niklan/niklan.net-examples/tree/master/blog/216),
   GitHub
 
-[d8-custom-plugins]: ../../../../2016/09/17/d8-custom-plugins/index.ru.md
-[d8-queue-api]: ../../../../2015/11/12/d8-queue-api/index.ru.md
+[drupal-8-how-to-create-custom-plugin-type]: ../../../../2016/09/17/drupal-8-how-to-create-custom-plugin-type/index.ru.md
+[drupal-8-queue-api]: ../../../../2015/11/12/drupal-8-queue-api/index.ru.md
 [d8-batch-api]: ../../../../2018/09/11/d8-batch-api/index.ru.md
 [d8-queue-worker]: ../../../../2019/04/21/d8-queue-worker/index.ru.md

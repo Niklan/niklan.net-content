@@ -578,7 +578,7 @@ class CacheContextRequestHeaderTest extends BlockBase {
 Думаю объяснять по поводу генерации содержимого нет никакого смысла, все итак
 ясно. Но я не просто так добавил `getCacheContexts()` метод.
 
-У меня есть материал про [Block Plugin API][d8-block-plugin] и там нет такого
+У меня есть материал про [Block Plugin API][drupal-8-block-plugin] и там нет такого
 метода. Все потому что он не является частью этого API, он является частью Cache
 API и в данной статье его самое время упомянуть. Если посмотреть в `BlockBase`,
 то он также не содержит данных методов, но он расширяет
@@ -795,4 +795,4 @@ class CacheContextUtmTest extends BlockBase {
 
 [d8-lazy-builder]: ../../../../2017/07/07/d8-lazy-builder/index.ru.md
 [d8-services]: ../../../../2017/06/21/d8-services/index.ru.md
-[d8-block-plugin]: ../../../../2015/10/19/d8-block-plugin/index.ru.md
+[drupal-8-block-plugin]: ../../../../2015/10/19/drupal-8-block-plugin/index.ru.md

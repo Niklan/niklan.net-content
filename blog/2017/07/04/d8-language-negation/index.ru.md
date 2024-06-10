@@ -154,7 +154,7 @@ negotiator. Справа достаточно поставить галочку 
 мы создадим настройку где указываются список IP для которых включить русский
 язык.
 
-Для начала создадим форму с настройкой, обычный [Form API][d8-form-api].
+Для начала создадим форму с настройкой, обычный [Form API][drupal-8-form-api].
 
 ```php {"header":"src/Form/LanguageNegotiationIpSettings.php"}
 <?php
@@ -302,4 +302,4 @@ ips: ''
 остальные из списка, которые легко найти в
 ядре: `core/modules/language/src/Plugin/LanguageNegotiation`.
 
-[d8-form-api]: ../../../../2015/10/16/d8-form-api/index.ru.md
+[drupal-8-form-api]: ../../../../2015/10/16/drupal-8-form-api/index.ru.md

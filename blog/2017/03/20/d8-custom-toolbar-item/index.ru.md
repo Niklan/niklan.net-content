@@ -119,7 +119,7 @@ hello_world.admin_toolbar_collect_phone_settings:
 Далее нам необходимо обьявить этот файл в виде библиотеки, и подключить данную
 библиотеку к тулбару.
 
-Первым делом, вспоминая [Libraries API][d8-libraries-api], нам необходимо 
+Первым делом, вспоминая [Libraries API][drupal-8-libraries-api], нам необходимо 
 объявить наш css файл в качестве библиотеки. Для этого создаем файл 
 **helloworld.libraries.yml** и добавляем наш файл стилей.
 
@@ -153,4 +153,4 @@ function helloworld_preprocess_toolbar(&$variables) {
 Готовый модуль, как обычно, во вложениях.
 
 [d8-custom-configure-section]: ../../../../2017/03/17/d8-custom-configure-section/index.ru.md
-[d8-libraries-api]: ../../../../2015/10/15/d8-libraries-api/index.ru.md
+[drupal-8-libraries-api]: ../../../../2015/10/15/drupal-8-libraries-api/index.ru.md

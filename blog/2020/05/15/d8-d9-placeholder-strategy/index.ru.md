@@ -1418,11 +1418,11 @@ final class SlowBlock extends BlockBase {
 - [Drupal 8: Сервисы][d8-services]
 - [Drupal 8: #lazy_builder — ленивый билдер][d8-lazy-builder]
 - [Drupal 8: #cache — cache tags, context и max-age][d8-cache-metadata]
-- [Drupal 8: Libraries API (Добавление CSS/JS на страницы)][d8-libraries-api]
+- [Drupal 8: Libraries API (Добавление CSS/JS на страницы)][drupal-8-libraries-api]
 
 [d8-services]: ../../../../2017/06/21/d8-services/index.ru.md
 [d8-cache-metadata]: ../../../../2017/07/15/d8-cache-tags-context-max-age/index.ru.md
 [d8-lazy-builder]: ../../../../2017/07/07/d8-lazy-builder/index.ru.md
 [d8-tagged-services]: ../../../../2019/05/05/d8-tagged-services/index.ru.md
 [d8-render-arrays]: ../../../../2020/02/05/d8-render-arrays/index.ru.md
-[d8-libraries-api]: ../../../../2015/10/15/d8-libraries-api/index.ru.md
+[drupal-8-libraries-api]: ../../../../2015/10/15/drupal-8-libraries-api/index.ru.md

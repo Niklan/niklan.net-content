@@ -43,7 +43,7 @@ tags:
 ## Практика
 
 Для основы я возьму модуль Hello World
-из [статьи про Form API][d8-form-api]. Так как там реализована страница с
+из [статьи про Form API][drupal-8-form-api]. Так как там реализована страница с
 настройками для модуля и он отлично подходит для примера.
 
 Например, если вы разделяете код на несколько модулей, то "блок" конфигурации
@@ -159,7 +159,7 @@ hello_world.collect_phone_settings:
 покажу как добавить ссылку в данный блок из другого модуля.
 
 Далеко за заготовкой я ходить не буду, возьму модуль из статьи
-про [CSV импорт][d8-custom-csv-import] только из статьи про
+про [CSV импорт][drupal-8-custom-csv-import] только из статьи про
 [оптимизацию импорта][d8-csv-import-optimization] так как там все изменения
 связанные с этим модулем.
 
@@ -206,6 +206,6 @@ custom_csv_import.admin_settings:
 Теперь у вас есть собственный раздел на странице конфигурации, куда можно
 складывать все кастомные настройки модулей и их ни с чем будет не спутать.
 
-[d8-form-api]: ../../../../2015/10/16/d8-form-api/index.ru.md
-[d8-custom-csv-import]: ../../../../2016/09/11/d8-custom-csv-import/index.ru.md
+[drupal-8-form-api]: ../../../../2015/10/16/drupal-8-form-api/index.ru.md
+[drupal-8-custom-csv-import]: ../../../../2016/09/11/drupal-8-custom-csv-import/index.ru.md
 [d8-csv-import-optimization]: ../../../../2017/03/16/d8-csv-import-optimization/index.ru.md

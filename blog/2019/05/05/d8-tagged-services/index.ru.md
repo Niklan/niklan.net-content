@@ -26,7 +26,7 @@ tags:
 ## Сервисы с метками или плагины
 
 Сервисы с метками по своей сути очень похожи на
-[систему плагинов][d8-custom-plugins]. Между ними достаточно легко провести
+[систему плагинов][drupal-8-how-to-create-custom-plugin-type]. Между ними достаточно легко провести
 параллели. У них есть объекты, отвечающие за бизнес логику, а также есть
 менеджеры, собирающие все необходимые объекты и использующие их для достижения
 своей цели.
@@ -48,7 +48,7 @@ tags:
 Сервисы с метками более точечный инструмент, тогда как плагины - более
 универсальный.
 
-Для сравнения возьмем [билдер хлебных крошек][d8-breadcrumb-builder] — который
+Для сравнения возьмем [билдер хлебных крошек][drupal-8-breadcrumb-builder] — который
 является сервисом с меткой, а также [плагин QueueWorker][d8-queue-worker].
 
 Оба не имеют пользовательских интерфейсов, и никаких выходов на них, они просто
@@ -266,7 +266,7 @@ class MyTaggedServiceManager {
 
 Хочу заметить, что `service_id_collector` самый не распространенный вариант. В
 ядре всего два подобных коллектора, один для Workspace модуля,
-второй [ThemeNegotiator][d8-theme-negotiator].
+второй [ThemeNegotiator][drupal-8-theme-negotiator].
 
 Поэтому, если вы не уверены какой из них использовать,
 берите `service_collector`.
@@ -620,8 +620,8 @@ function dummy_preprocess_page(&$variables) {
 ![Результат сервисов с метками](image/result.png)
 
 [d8-services]: ../../../../2017/06/21/d8-services/index.ru.md
-[d8-custom-plugins]: ../../../../2016/09/17/d8-custom-plugins/index.ru.md
+[drupal-8-how-to-create-custom-plugin-type]: ../../../../2016/09/17/drupal-8-how-to-create-custom-plugin-type/index.ru.md
 [d8-queue-worker]: ../../../../2019/04/21/d8-queue-worker/index.ru.md
-[d8-breadcrumb-builder]: ../../../../2016/09/02/d8-breadcrumb-builder/index.ru.md
+[drupal-8-breadcrumb-builder]: ../../../../2016/09/02/drupal-8-breadcrumb-builder/index.ru.md
 [d8-derivatives]: ../../../../2019/05/04/d8-derivatives/index.ru.md
-[d8-theme-negotiator]: ../../../../2016/08/30/d8-theme-negotiator/index.ru.md
+[drupal-8-theme-negotiator]: ../../../../2016/08/30/drupal-8-theme-negotiator/index.ru.md

@@ -75,7 +75,7 @@ drupal.org: [Menu Condition](https://www.drupal.org/project/menu_condition), [Te
 ## API
 
 _Если данный раздел вызывает некоторые трудности с пониманием как плагины
-работают, рекомендую почитать [отдельную статью][d8-custom-plugins]._
+работают, рекомендую почитать [отдельную статью][drupal-8-how-to-create-custom-plugin-type]._
 
 Первым делом рассмотрим как можно общаться с данными плагинами из кода. Для
 обращения к плагинам всегда используется сервис-менеджер который позволяет их
@@ -627,5 +627,5 @@ if ($user_has_node_type_content_check->execute()) {
 
 ![Condition Plugin в Block Visibility Group](image/example-2-bvg-summary.png)
 
-[d8-custom-plugins]: ../../../../2016/09/17/d8-custom-plugins/index.ru.md
+[drupal-8-how-to-create-custom-plugin-type]: ../../../../2016/09/17/drupal-8-how-to-create-custom-plugin-type/index.ru.md
 [d8-configuration-schema]: ../../../../2018/05/04/d8-configuration-schema/index.ru.md

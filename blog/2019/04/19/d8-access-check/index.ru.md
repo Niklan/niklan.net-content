@@ -358,7 +358,7 @@ class DefaultAccessCheck implements RoutingAccessInterface {
 - При включении модуля system срабатывает `system_install()` хук.
 - В данном хуке генерируется случайный ключ для Cron
   URL `$cron_key = Crypt::randomBytesBase64(55);`.
-- Затем он сохраняется при помощи [State API][d8-state-api]
+- Затем он сохраняется при помощи [State API][drupal-8-state-api]
   `\Drupal::state()->set('system.cron_key', $cron_key);`.
 
 Теперь посмотрим на сам маршрут для вызова крон операций при помощи HTTP
@@ -687,4 +687,4 @@ check не только от ядра, но и от сторонних моду�
 
 [d8-services]: ../../../../2017/06/21/d8-services/index.ru.md
 [d8-cache-metadata]: ../../../../2017/07/15/d8-cache-tags-context-max-age/index.ru.md
-[d8-state-api]: ../../../../2015/10/16/d8-state-api/index.ru.md
+[drupal-8-state-api]: ../../../../2015/10/16/drupal-8-state-api/index.ru.md

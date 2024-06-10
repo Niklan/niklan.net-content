@@ -18,7 +18,7 @@ tags:
 ---
 
 **QueueWorker** — тип плагина, позволяющий реализовать
-выполнение [очередей][d8-queue-api] в cron операциях. Данный тип плагина
+выполнение [очередей][drupal-8-queue-api] в cron операциях. Данный тип плагина
 предоставляется ядром, поэтому вам не потребуется никаких дополнительных модулей
 для его работы.
 
@@ -293,5 +293,5 @@ class ThumbnailDownloader extends QueueWorkerBase implements ContainerFactoryPlu
 стандартных инструментов.
 
 [d8-services]: ../../../../2017/06/21/d8-services/index.ru.md
-[d8-queue-api]: ../../../../2015/11/12/d8-queue-api/index.ru.md
+[drupal-8-queue-api]: ../../../../2015/11/12/drupal-8-queue-api/index.ru.md
 [d8-batch-api]: ../../../../2018/09/11/d8-batch-api/index.ru.md

@@ -22,8 +22,8 @@ tags:
 форме сущности.
 
 Если вы знакомы с Display Suite, то уже, наверное, в курсе как создавать его
-поля [в Drupal 7][d7-create-display-suite-field] и 
-[в Drupal 8][d8-create-display-suite-plugin]. Это примерно то же самое, только в
+поля [в Drupal 7][drupal-7-how-to-create-display-suite-field] и 
+[в Drupal 8][drupal-8-how-to-create-display-suite-plugin]. Это примерно то же самое, только в
 ядре.
 
 Данные поля можно использовать, когда нужно выводить какие-то повторяющиеся
@@ -35,7 +35,7 @@ tags:
 хуков `hook_entity_extra_field_info()` и `hook_ENTITY_TYPE_view()`
 или `hook_form_alter()`, в зависимости от задачи. Они отличаются от обычных
 полей тем, что они: не хранят никаких данных в БД (ну если вы сами это как-то не
-опишите), не имеют виджетов и форматеров как [типы полей][d8-custom-field-type].
+опишите), не имеют виджетов и форматеров как [типы полей][drupal-8-how-to-create-custom-field-type].
 
 Если проводить аналогию с DS полям, то можно разделить на плюсы и минусы
 псевдо-полей перед DS полями:
@@ -257,6 +257,6 @@ API.
 различные доп кнопки и вставка вьюсов. В общем область применения у псевдо-полей
 для `display` куда шире и это будет самый популярный юз-кейс для данных "полей".
 
-[d7-create-display-suite-field]: ../../../../2016/03/29/d7-create-display-suite-field/index.ru.md
-[d8-create-display-suite-plugin]: ../../../../2016/04/02/d8-create-display-suite-plugin/index.ru.md
-[d8-custom-field-type]: ../../../../2016/09/06/d8-custom-field-type/index.ru.md
+[drupal-7-how-to-create-display-suite-field]: ../../../../2016/03/29/drupal-7-how-to-create-display-suite-field/index.ru.md
+[drupal-8-how-to-create-display-suite-plugin]: ../../../../2016/04/02/drupal-8-how-to-create-display-suite-plugin/index.ru.md
+[drupal-8-how-to-create-custom-field-type]: ../../../../2016/09/06/drupal-8-how-to-create-custom-field-type/index.ru.md

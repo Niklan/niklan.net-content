@@ -92,7 +92,7 @@ tags:
 * [Drupal 8: Мой процесс разработки и деплоя на июнь 2018][develop-and-deploy-2018]
 * [Drupal 8: Два варианта установки ядра][d8-two-ways-of-install]
 * [Установка и настройка Docker4Drupal на Ubuntu][docker4drupal-ubuntu]
-* [Drupal 8: Работа с Composer][d8-composer]
+* [Drupal 8: Работа с Composer][drupal-8-composer]
 * (
   видео) [Настройка PhpStorm для работы с Drupal 8](https://www.youtube.com/watch?v=cOfp016iyts)
 
@@ -138,7 +138,7 @@ tags:
 
 **Рекомендации по изучению**:
 
-* [Drupal 8: Работа с Composer][d8-composer]
+* [Drupal 8: Работа с Composer][drupal-8-composer]
 * [Drupal 8: Tokens][d8-tokens]
 * [Drupal 8: Создание Paragraphs Behavior Plugin][d8-paragraphs-behavior-plugin]
 
@@ -212,7 +212,7 @@ Hero Image.
 
 **Рекомендации по изучению**:
 
-* [Drupal 8: Plugin API — создание собственных типов плагинов][d8-custom-plugins]
+* [Drupal 8: Plugin API — создание собственных типов плагинов][drupal-8-how-to-create-custom-plugin-type]
 * [Drupal 8: hooks][d8-hooks]
 * [Drupal 8: hook_theme()][d8-hook-theme]
 * [Drupal 8: #cache — cache tags, context и max-age][d8-cache-metadata]
@@ -577,8 +577,8 @@ Resrouce, который программно ищет в Search API, и под�
 [d8-rest-plugin]: ../../../../2018/01/16/d8-rest-plugin/index.ru.md
 [d8-hook-theme]: ../../../../2017/06/26/d8-hook-theme/index.ru.md
 [d8-extra-field]: ../../../../2018/04/26/d8-extra-field/index.ru.md
-[d8-custom-plugins]: ../../../../2016/09/17/d8-custom-plugins/index.ru.md
-[d8-composer]: ../../../../2016/09/03/d8-composer/index.ru.md
+[drupal-8-how-to-create-custom-plugin-type]: ../../../../2016/09/17/drupal-8-how-to-create-custom-plugin-type/index.ru.md
+[drupal-8-composer]: ../../../../2016/09/03/drupal-8-composer/index.ru.md
 [d8-two-ways-of-install]: ../../../../2018/06/29/d8-two-ways-of-install/index.ru.md
 [docker4drupal-ubuntu]: ../../../../2018/04/15/docker4drupal-ubuntu/index.ru.md
 [develop-and-deploy-2018]: ../../../../2018/07/03/develop-and-deploy-2018/index.ru.md

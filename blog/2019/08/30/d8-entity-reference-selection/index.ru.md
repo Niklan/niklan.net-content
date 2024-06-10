@@ -19,7 +19,7 @@ tags:
   - 'Plugin API'
 ---
 
-У меня уже есть материал по поводу [добавления автодополнения][d8-autocomplete],
+У меня уже есть материал по поводу [добавления автодополнения][drupal-8-entity-autocomplete-form-element],
 но он покрывает лишь в общих чертах как это работает и как пользоваться. В
 данном материале, мы рассмотрим один из способов детальнее.
 
@@ -403,4 +403,4 @@ video/commerce-product-reference-with-plugin.mp4)
 
 [d8-route-subscriber]: ../../../../2018/04/13/d8-route-subscriber/index.ru.md
 [d8-derivatives]: ../../../../2019/05/04/d8-derivatives/index.ru.md
-[d8-autocomplete]: ../../../../2015/10/27/d8-autocomplete/index.ru.md
+[drupal-8-entity-autocomplete-form-element]: ../../../../2015/10/27/drupal-8-entity-autocomplete-form-element/index.ru.md

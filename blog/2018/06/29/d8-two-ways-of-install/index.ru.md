@@ -236,7 +236,7 @@ Composer — это круто и удобно, но то как он работ
 
 Корень проекта будет выглядеть так, а вебрут уже будет находиться в web папке.
 
-![Структура Composer Drupal Project](image/d8-composer-structure.png)
+![Структура Composer Drupal Project](image/drupal-8-composer-structure.png)
 
 А теперь небольшой обзор, в чем же их отлчие. По факту, всем чем отличается
 стандартный подход от composer drupal project в том, что, то что в composer
