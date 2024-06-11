@@ -28,7 +28,7 @@ tags:
   правок, читай хотфиксов.
 - Деплою через конфиги и git.
 - Зависимости контролирую через [composer][drupal-8-composer].
-- В качестве ядра использую [composer drupal project][d8-two-ways-of-install].
+- В качестве ядра использую [composer drupal project][two-ways-of-installing-drupal-8].
 
 ## Вода
 
@@ -166,7 +166,7 @@ Bitbucket, понравилось, в принципе и не дергаюсь.
 
 **Почему composer drupal project?** В качестве установки ядра я не использую
 стандартный способ. Все за и против я собрал в отдельном материале
-про [два варианта установки ядра Drupal 8][d8-two-ways-of-install].
+про [два варианта установки ядра Drupal 8][two-ways-of-installing-drupal-8].
 
 Я все веду через composer, что он позволяет вести, конечно ;)
 
@@ -228,5 +228,5 @@ Bitbucket, понравилось, в принципе и не дергаюсь.
 блог так веду, на продакшене только контент, всё изменения на локалке.
 
 [drupal-8-composer]: ../../../../2016/09/03/drupal-8-composer/index.ru.md
-[d8-two-ways-of-install]: ../../../../2018/06/29/d8-two-ways-of-install/index.ru.md
+[two-ways-of-installing-drupal-8]: ../../../../2018/06/29/two-ways-of-installing-drupal-8/index.ru.md
 [docker4drupal-ubuntu]: ../../../../2018/04/15/docker4drupal-ubuntu/index.ru.md

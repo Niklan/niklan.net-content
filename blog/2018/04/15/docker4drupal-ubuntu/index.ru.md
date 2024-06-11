@@ -19,7 +19,7 @@ tags:
 :: youtube {vid=VEIOmxAnoTg}
 
 В последние пол года, а может и больше, я перешел на Docker4Drupal с ранее
-описанного [Drupal VM][drupal-vm-ubuntu]. Всё это время я набивал шишки,
+описанного [Drupal VM][install-and-configure-drupal-vm-on-ubuntu]. Всё это время я набивал шишки,
 эксперементировал, и вот делюсь тем как всё "варить".
 
 Сразу отвечу почему я перешел на вариант с Docker против Vagrant. Ответ один и
@@ -708,5 +708,5 @@ $ openssl req -new -x509 -key example.localhost.key -out example.localhost.cert 
 сайт будет открываться по любому поддомену, например moscow.example.localhost.
 На этом, пожалуй всё. Если что интересного узнаю, напишу отдельно или дополню.
 
-[drupal-vm-ubuntu]: ../../../../2017/04/16/drupal-vm-ubuntu/index.ru.md
+[install-and-configure-drupal-vm-on-ubuntu]: ../../../../2017/04/16/install-and-configure-drupal-vm-on-ubuntu/index.ru.md
 [oh-my-zsh]: ../../../../2017/06/19/oh-my-zsh/index.ru.md

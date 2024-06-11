@@ -275,7 +275,7 @@ class ThumbnailDownloader extends QueueWorkerBase implements ContainerFactoryPlu
 медиа сущностей.
 
 Также вы можете обратить внимание на то, что данный пример более комплексный
-из-за Dependency Injection [сервисов][d8-services].
+из-за Dependency Injection [сервисов][drupal-8-services].
 
 ## Заключение
 
@@ -292,6 +292,6 @@ class ThumbnailDownloader extends QueueWorkerBase implements ContainerFactoryPlu
 плагин поможет вам поставить всё на автоматическую обработку при помощи
 стандартных инструментов.
 
-[d8-services]: ../../../../2017/06/21/d8-services/index.ru.md
+[drupal-8-services]: ../../../../2017/06/21/drupal-8-services/index.ru.md
 [drupal-8-queue-api]: ../../../../2015/11/12/drupal-8-queue-api/index.ru.md
 [d8-batch-api]: ../../../../2018/09/11/d8-batch-api/index.ru.md

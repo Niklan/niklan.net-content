@@ -49,7 +49,7 @@ tags:
 ## Состав Access Check сервиса
 
 Access check является просто объектом, объявленным как
-тегированный [сервис][d8-services]. Мы не будем разбираться в данной статье, что
+тегированный [сервис][drupal-8-services]. Мы не будем разбираться в данной статье, что
 такое сервисы, поэтому, обратитесь к соответствующему материалу.
 
 Как и подобает сервису, он имеет описание в `*.services.yml` файле и объект,
@@ -685,6 +685,6 @@ class CsrfRequestHeaderAccessCheck implements AccessCheckInterface {
 что все они разные и комплексные, вы сможете понять как работают другие access
 check не только от ядра, но и от сторонних модулей.
 
-[d8-services]: ../../../../2017/06/21/d8-services/index.ru.md
-[d8-cache-metadata]: ../../../../2017/07/15/d8-cache-tags-context-max-age/index.ru.md
+[drupal-8-services]: ../../../../2017/06/21/drupal-8-services/index.ru.md
+[d8-cache-metadata]: ../../../../2017/07/15/drupal-8-cache-metadata/index.ru.md
 [drupal-8-state-api]: ../../../../2015/10/16/drupal-8-state-api/index.ru.md

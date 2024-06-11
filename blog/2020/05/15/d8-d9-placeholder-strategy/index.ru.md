@@ -29,7 +29,7 @@ PHP (в чистом виде) не асинхронный, он выполня�
 
 Но не всё так плохо. У нас есть множество инструментов и подходов к тому, как
 решать данные проблемы. Один из данных инструментов
-это — [ленивые билдеры][d8-lazy-builder].
+это — [ленивые билдеры][drupal-8-lazy-builder].
 
 **Ленивый билдер** (`#lazy_builder`) — позволяет производить специальную
 разметку в [рендер массивах][d8-render-arrays] для тех частей сайта, где заранее
@@ -75,7 +75,7 @@ Drupal ядро предоставляет две стратегии по умо
 ## Создание стратегии
 
 Итак, вы захотели создать свою стратегию. И это очень просто! Всё что вам нужно,
-это создать [сервис][d8-services] [с меткой][d8-tagged-services]
+это создать [сервис][drupal-8-services] [с меткой][d8-tagged-services]
 `placeholder_strategy`, который реализует
 `\Drupal\Core\Render\Placeholder\PlaceholderStrategyInterface`.
 
@@ -1415,14 +1415,14 @@ final class SlowBlock extends BlockBase {
 - [Исходный код примера](https://github.com/Niklan/niklan.net-examples/tree/master/blog/213)
 - [Drupal 8: Рендер массивы и их рендеринг][d8-render-arrays]
 - [Drupal 8: Сервисы с метками][d8-tagged-services]
-- [Drupal 8: Сервисы][d8-services]
-- [Drupal 8: #lazy_builder — ленивый билдер][d8-lazy-builder]
+- [Drupal 8: Сервисы][drupal-8-services]
+- [Drupal 8: #lazy_builder — ленивый билдер][drupal-8-lazy-builder]
 - [Drupal 8: #cache — cache tags, context и max-age][d8-cache-metadata]
 - [Drupal 8: Libraries API (Добавление CSS/JS на страницы)][drupal-8-libraries-api]
 
-[d8-services]: ../../../../2017/06/21/d8-services/index.ru.md
-[d8-cache-metadata]: ../../../../2017/07/15/d8-cache-tags-context-max-age/index.ru.md
-[d8-lazy-builder]: ../../../../2017/07/07/d8-lazy-builder/index.ru.md
+[drupal-8-services]: ../../../../2017/06/21/drupal-8-services/index.ru.md
+[d8-cache-metadata]: ../../../../2017/07/15/drupal-8-cache-metadata/index.ru.md
+[drupal-8-lazy-builder]: ../../../../2017/07/07/drupal-8-lazy-builder/index.ru.md
 [d8-tagged-services]: ../../../../2019/05/05/d8-tagged-services/index.ru.md
 [d8-render-arrays]: ../../../../2020/02/05/d8-render-arrays/index.ru.md
 [drupal-8-libraries-api]: ../../../../2015/10/15/drupal-8-libraries-api/index.ru.md

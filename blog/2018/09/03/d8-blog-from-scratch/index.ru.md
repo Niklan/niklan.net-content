@@ -90,7 +90,7 @@ tags:
 **Рекомендации к прочтению**:
 
 * [Drupal 8: Мой процесс разработки и деплоя на июнь 2018][develop-and-deploy-2018]
-* [Drupal 8: Два варианта установки ядра][d8-two-ways-of-install]
+* [Drupal 8: Два варианта установки ядра][two-ways-of-installing-drupal-8]
 * [Установка и настройка Docker4Drupal на Ubuntu][docker4drupal-ubuntu]
 * [Drupal 8: Работа с Composer][drupal-8-composer]
 * (
@@ -140,7 +140,7 @@ tags:
 
 * [Drupal 8: Работа с Composer][drupal-8-composer]
 * [Drupal 8: Tokens][d8-tokens]
-* [Drupal 8: Создание Paragraphs Behavior Plugin][d8-paragraphs-behavior-plugin]
+* [Drupal 8: Создание Paragraphs Behavior Plugin][drupal-8-creating-paragraphs-behavior-plugin]
 
 **Тайминги**:
 
@@ -174,13 +174,13 @@ tags:
 
 **Рекомендации по изучению**:
 
-* [Drupal 8: Создание Paragraphs Behavior Plugin][d8-paragraphs-behavior-plugin]
+* [Drupal 8: Создание Paragraphs Behavior Plugin][drupal-8-creating-paragraphs-behavior-plugin]
 * (
   видео) [Настройка PhpStorm для работы с Drupal 8](https://www.youtube.com/watch?v=cOfp016iyts)
-* [Drupal 8: Создание кнопок на предыдущий и следующий материал][d8-prev-next-buttons]
-* [Drupal 8: Создание псевдо-полей][d8-extra-field]
-* [Drupal 8: hooks][d8-hooks]
-* [Drupal 8: hook_theme()][d8-hook-theme]
+* [Drupal 8: Создание кнопок на предыдущий и следующий материал][drupal-8-creating-previous-and-next-content-buttons]
+* [Drupal 8: Создание псевдо-полей][drupal-8-creating-extra-fields]
+* [Drupal 8: hooks][drupal-8-hooks]
+* [Drupal 8: hook_theme()][drupal-8-hook-theme]
 
 **Тайминги**:
 
@@ -213,8 +213,8 @@ Hero Image.
 **Рекомендации по изучению**:
 
 * [Drupal 8: Plugin API — создание собственных типов плагинов][drupal-8-how-to-create-custom-plugin-type]
-* [Drupal 8: hooks][d8-hooks]
-* [Drupal 8: hook_theme()][d8-hook-theme]
+* [Drupal 8: hooks][drupal-8-hooks]
+* [Drupal 8: hook_theme()][drupal-8-hook-theme]
 * [Drupal 8: #cache — cache tags, context и max-age][d8-cache-metadata]
 
 **Тайминги**:
@@ -313,7 +313,7 @@ Hero Image.
 
 **Рекомендации по изучению**:
 
-* [Drupal 8: Создание Paragraphs Behavior Plugin][d8-paragraphs-behavior-plugin]
+* [Drupal 8: Создание Paragraphs Behavior Plugin][drupal-8-creating-paragraphs-behavior-plugin]
 
 **Тайминги**:
 
@@ -347,7 +347,7 @@ ImageMagick. Оформим тизеры записей в блог и мног�
 
 **Рекомендации по изучению:**
 
-* [Drupal: Оптимизация сжатия и загрузки изображений][d7-d8-imagemagick]
+* [Drupal: Оптимизация сжатия и загрузки изображений][drupal-7-8-optimizing-images-using-imagemagick]
 
 **Тайминги**:
 
@@ -395,9 +395,9 @@ Views. Поработаем с theme_hook(), #lazy_builder, EntityQuery и по�
 
 **Рекомендации к прочтению:**
 
-* [Drupal 8: hook_theme()][d8-hook-theme]
-* [Drupal 8: Services][d8-services]
-* [Drupal 8: #lazy_builder — ленивый билдер][d8-lazy-builder]
+* [Drupal 8: hook_theme()][drupal-8-hook-theme]
+* [Drupal 8: Services][drupal-8-services]
+* [Drupal 8: #lazy_builder — ленивый билдер][drupal-8-lazy-builder]
 
 **Тайминги**:
 
@@ -421,8 +421,8 @@ Views. Поработаем с theme_hook(), #lazy_builder, EntityQuery и по�
 
 **Рекомендации к прочтению:**
 
-* [Drupal 8: hook_theme()][d8-hook-theme]
-* [Drupal 8: Services][d8-services]
+* [Drupal 8: hook_theme()][drupal-8-hook-theme]
+* [Drupal 8: Services][drupal-8-services]
 
 **Тайминги**:
 
@@ -449,8 +449,8 @@ Views. Поработаем с theme_hook(), #lazy_builder, EntityQuery и по�
 
 **Рекомендации к прочтению:**
 
-* [Drupal 8: Condition Plugin][d8-condition-plugin]
-* [Drupal 8: Services][d8-services]
+* [Drupal 8: Condition Plugin][drupal-8-how-to-create-a-custom-condition-plugin]
+* [Drupal 8: Services][drupal-8-services]
 
 **Тайминги**:
 
@@ -525,8 +525,8 @@ Resrouce, который программно ищет в Search API, и под�
 
 **Рекомендации к прочтению:**
 
-- [Drupal 8: Search API — программный поиск по сайту][d8-search-api-programmatically]
-- [Drupal 8: Создание REST Resource Plugin][d8-rest-plugin]
+- [Drupal 8: Search API — программный поиск по сайту][drupal-8-search-api-programmatic-site-search]
+- [Drupal 8: Создание REST Resource Plugin][drupal-8-how-to-create-a-custom-rest-plugin]
 
 **Тайминги**:
 
@@ -572,21 +572,21 @@ Resrouce, который программно ищет в Search API, и под�
 
 :: youtube {vid=axklsJ1439o}
 
-[d8-services]: ../../../../2017/06/21/d8-services/index.ru.md
-[d8-cache-metadata]: ../../../../2017/07/15/d8-cache-tags-context-max-age/index.ru.md
-[d8-rest-plugin]: ../../../../2018/01/16/d8-rest-plugin/index.ru.md
-[d8-hook-theme]: ../../../../2017/06/26/d8-hook-theme/index.ru.md
-[d8-extra-field]: ../../../../2018/04/26/d8-extra-field/index.ru.md
+[drupal-8-services]: ../../../../2017/06/21/drupal-8-services/index.ru.md
+[d8-cache-metadata]: ../../../../2017/07/15/drupal-8-cache-metadata/index.ru.md
+[drupal-8-how-to-create-a-custom-rest-plugin]: ../../../01/16/drupal-8-how-to-create-a-custom-rest-plugin/index.ru.md
+[drupal-8-hook-theme]: ../../../../2017/06/26/drupal-8-hook-theme/index.ru.md
+[drupal-8-creating-extra-fields]: ../../../../2018/04/26/drupal-8-creating-extra-fields/index.ru.md
 [drupal-8-how-to-create-custom-plugin-type]: ../../../../2016/09/17/drupal-8-how-to-create-custom-plugin-type/index.ru.md
 [drupal-8-composer]: ../../../../2016/09/03/drupal-8-composer/index.ru.md
-[d8-two-ways-of-install]: ../../../../2018/06/29/d8-two-ways-of-install/index.ru.md
+[two-ways-of-installing-drupal-8]: ../../../../2018/06/29/two-ways-of-installing-drupal-8/index.ru.md
 [docker4drupal-ubuntu]: ../../../../2018/04/15/docker4drupal-ubuntu/index.ru.md
 [develop-and-deploy-2018]: ../../../../2018/07/03/develop-and-deploy-2018/index.ru.md
 [d8-tokens]: ../../../../2018/09/06/d8-tokens/index.ru.md
-[d8-paragraphs-behavior-plugin]: ../../../../2018/04/20/d8-paragraphs-behavior-plugin/index.ru.md
-[d8-prev-next-buttons]: ../../../../2018/04/27/d8-prev-next-buttons/index.ru.md
-[d8-hooks]: ../../../../2018/06/28/d8-hooks/index.ru.md
-[d7-d8-imagemagick]: ../../../../2017/03/30/d7-d8-imagemagick/index.ru.md
-[d8-lazy-builder]: ../../../../2017/07/07/d8-lazy-builder/index.ru.md
-[d8-condition-plugin]: ../../../../2018/05/25/d8-condition-plugin/index.ru.md
-[d8-search-api-programmatically]: ../../../../2018/04/24/d8-search-api-programmatically/index.ru.md
+[drupal-8-creating-paragraphs-behavior-plugin]: ../../../../2018/04/20/drupal-8-creating-paragraphs-behavior-plugin/index.ru.md
+[drupal-8-creating-previous-and-next-content-buttons]: ../../../../2018/04/27/drupal-8-creating-previous-and-next-content-buttons/index.ru.md
+[drupal-8-hooks]: ../../../../2018/06/28/drupal-8-hooks/index.ru.md
+[drupal-7-8-optimizing-images-using-imagemagick]: ../../../../2017/03/30/drupal-7-8-optimizing-images-using-imagemagick/index.ru.md
+[drupal-8-lazy-builder]: ../../../../2017/07/07/drupal-8-lazy-builder/index.ru.md
+[drupal-8-how-to-create-a-custom-condition-plugin]: ../../../../2018/05/25/drupal-8-how-to-create-a-custom-condition-plugin/index.ru.md
+[drupal-8-search-api-programmatic-site-search]: ../../../../2018/04/24/drupal-8-search-api-programmatic-site-search/index.ru.md

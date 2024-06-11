@@ -372,7 +372,7 @@ final class MailHandler {
 - `array $body`: [Рендер массив][d8-render-arrays] с телом письма. Мы будем
   отсылать письма именно через рендер массивы. Это открывает множество
   возможностей, например, формирование письма через
-  [hook_theme()][d8-hook-theme].
+  [hook_theme()][drupal-8-hook-theme].
 - `array $params`: Массив параметров для письма, как и в обычной отправке. В
   нашем случае, он также будет использован для возможности изменить параметры по
   умолчанию.
@@ -810,5 +810,5 @@ function example_user_login(UserInterface $account) {
 
 - [Исходный код примера](https://github.com/Niklan/niklan.net-examples/tree/master/blog/214)
 
-[d8-hook-theme]: ../../../../2017/06/26/d8-hook-theme/index.ru.md
+[drupal-8-hook-theme]: ../../../../2017/06/26/drupal-8-hook-theme/index.ru.md
 [d8-render-arrays]: ../../../../2020/02/05/d8-render-arrays/index.ru.md

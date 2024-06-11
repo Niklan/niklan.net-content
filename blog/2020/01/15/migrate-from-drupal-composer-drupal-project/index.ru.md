@@ -60,7 +60,7 @@ tags:
 цель, управление Drupal через Composer, а также, вынесение корня сайта на
 уровень ниже.
 
-У меня есть материал о [двух вариантах установки Drupal][d8-two-ways-of-install].
+У меня есть материал о [двух вариантах установки Drupal][two-ways-of-installing-drupal-8].
 Я также везде где можно рекомендовал использовать
 **drupal-composer/drupal-project** для своих проектов. И вот, мы теперь имеем
 официальный шаблон.
@@ -445,4 +445,4 @@ drupal-composer/drupal-project._
 Если всё сделали правильно, ваш проект будет обновлён. Протестируйте его
 работоспособность и пуште на прод. Всё готово!
 
-[d8-two-ways-of-install]: ../../../../2018/06/29/d8-two-ways-of-install/index.ru.md
+[two-ways-of-installing-drupal-8]: ../../../../2018/06/29/two-ways-of-installing-drupal-8/index.ru.md

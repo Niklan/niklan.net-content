@@ -109,7 +109,7 @@ Oh My Zsh. Но удалять папку просто так не стоит, �
 
 - **npm** — добавлят поддержку автодополнения к команде npm
 - **vagrant** — так как я часто пользуюсь vagrant из-за
-  [Drupal VM][drupal-vm-ubuntu], то мне он тоже не помешает. Так же как и npm
+  [Drupal VM][install-and-configure-drupal-vm-on-ubuntu], то мне он тоже не помешает. Так же как и npm
   добавляет поддержку автодополнения. Там же есть и **docker**.
 - **composer** — в 8-ке очень активно
   [использую composer][drupal-8-composer], а данный плагин опять же, добавляет
@@ -254,5 +254,5 @@ uninstall_oh_my_zsh
 sudo apt uninstall zsh
 ```
 
-[drupal-vm-ubuntu]: ../../../../2017/04/16/drupal-vm-ubuntu/index.ru.md
+[install-and-configure-drupal-vm-on-ubuntu]: ../../../../2017/04/16/install-and-configure-drupal-vm-on-ubuntu/index.ru.md
 [drupal-8-composer]: ../../../../2016/09/03/drupal-8-composer/index.ru.md

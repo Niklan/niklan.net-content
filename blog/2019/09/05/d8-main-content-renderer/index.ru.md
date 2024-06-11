@@ -15,14 +15,14 @@ tags:
 
 Drupal, так или иначе, отдаёт ответ на пришедший запрос. В качестве результата
 ответа может быть что угодно: html, json, xml и т.д. Если вы знакомы
-с [REST Resource плагинами][d8-rest-plugin], то вы уже знаете параметр
+с [REST Resource плагинами][drupal-8-how-to-create-a-custom-rest-plugin], то вы уже знаете параметр
 `_format`, который позволяет влиять на то, в каком формате вернёт ответ
 REST-ресурс. В это материале мы разберемся и посмотрим как можно заставить ядро
 отдавать результат страниц, так как нужно и в каком нужно формате.
 
 ## Событие KernelEvents::VIEW
 
-Наша история начинается с [события][d8-events] `KernelEvents::VIEW`. Данное
+Наша история начинается с [события][drupal-8-events] `KernelEvents::VIEW`. Данное
 событие вызывается в тех случаях, когда контроллер страницы не
 возвращает `Response`. В случае если `Response` возвращается непосредственно
 контроллером, то наша история на этом заканчивается, что там вернули, то и будет
@@ -214,7 +214,7 @@ services:
 Ему стоит уделить отдельное внимание. Во-первых, именно он формирует остаточную
 обёртку страниц, заворчивая содержимое в `page.html.twig`, а также
 в `html.html.twig`. Да, именно тут происходит
-вызов [хуков тем][d8-hook-theme] `page` и `html`, с передачей всех переменных.
+вызов [хуков тем][drupal-8-hook-theme] `page` и `html`, с передачей всех переменных.
 Во-вторых, он имеет свою систему плагинов! А это значит, вы можете влиять на его
 работу.
 
@@ -883,10 +883,10 @@ video/full-result.mp4)
 
 - [Исходники примеров](https://github.com/Niklan/niklan.net-examples/tree/master/blog/208)
 
-[d8-cache-metadata]: ../../../../2017/07/15/d8-cache-tags-context-max-age/index.ru.md
+[d8-cache-metadata]: ../../../../2017/07/15/drupal-8-cache-metadata/index.ru.md
 
-[d8-rest-plugin]: ../../../../2018/01/16/d8-rest-plugin/index.ru.md
-[d8-events]: ../../../../2018/04/10/d8-events/index.ru.md
-[d8-hook-theme]: ../../../../2017/06/26/d8-hook-theme/index.ru.md
+[drupal-8-how-to-create-a-custom-rest-plugin]: ../../../../2018/01/16/drupal-8-how-to-create-a-custom-rest-plugin/index.ru.md
+[drupal-8-events]: ../../../../2018/04/10/drupal-8-events/index.ru.md
+[drupal-8-hook-theme]: ../../../../2017/06/26/drupal-8-hook-theme/index.ru.md
 [d8-tagged-services]: ../../../../2019/05/05/d8-tagged-services/index.ru.md
 [drupal-8-modal-api]: ../../../../2016/08/30/drupal-8-modal-api/index.ru.md

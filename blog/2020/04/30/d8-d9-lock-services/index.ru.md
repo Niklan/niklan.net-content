@@ -99,7 +99,7 @@ Drupal предоставляет интерфейс `\Drupal\Core\Lock\LockBack
 описывает требования к блокировщикам. Вы можете создавать свои собственные
 механизмы блокировки.
 
-Из коробки мы имеем два готовых [сервиса][d8-services] для управления
+Из коробки мы имеем два готовых [сервиса][drupal-8-services] для управления
 блокировками `lock` и `lock.persistent`. `lock.persistent` практически 100%
 копия `lock`, но есть небольшое, но очень важное отличие между ними:
 
@@ -687,5 +687,5 @@ example.form:
 
 - [Исходный код примеров](https://github.com/Niklan/niklan.net-examples/tree/master/blog/211)
 
-[d8-services]: ../../../../2017/06/21/d8-services/index.ru.md
+[drupal-8-services]: ../../../../2017/06/21/drupal-8-services/index.ru.md
 [drupal-8-composer]: ../../../../2016/09/03/drupal-8-composer/index.ru.md

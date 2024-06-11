@@ -17,7 +17,7 @@ tags:
   - Services
 ---
 
-**Сервисы с метками** — способ объявления и работы с [сервисами][d8-services]
+**Сервисы с метками** — способ объявления и работы с [сервисами][drupal-8-services]
 при помощи меток. У данных сервисов всегда имеется collector (коллектор,
 сборщик), который собирает все доступные сервисы и производит какие-то операции
 с ними. Иными словами, это позволяет группировать схожие по задаче и структуре
@@ -619,7 +619,7 @@ function dummy_preprocess_page(&$variables) {
 
 ![Результат сервисов с метками](image/result.png)
 
-[d8-services]: ../../../../2017/06/21/d8-services/index.ru.md
+[drupal-8-services]: ../../../../2017/06/21/drupal-8-services/index.ru.md
 [drupal-8-how-to-create-custom-plugin-type]: ../../../../2016/09/17/drupal-8-how-to-create-custom-plugin-type/index.ru.md
 [d8-queue-worker]: ../../../../2019/04/21/d8-queue-worker/index.ru.md
 [drupal-8-breadcrumb-builder]: ../../../../2016/09/02/drupal-8-breadcrumb-builder/index.ru.md

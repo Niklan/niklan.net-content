@@ -59,7 +59,7 @@ Symfony [Console](https://symfony.com/doc/current/components/console.html).
 
 Генератор для Drush — это [сервис с меткой][d8-tagged-services]
 `drush.generator`, объявленный в файле **drush.services.yml** по всем тем же
-правилам, что и [обычные сервисы][d8-services].
+правилам, что и [обычные сервисы][drupal-8-services].
 
 Пример сервиса
 
@@ -596,7 +596,7 @@ services:
 
 ![Drush Generate подсказка](image/generate-help.png)
 
-[d8-services]: ../../../../2017/06/21/d8-services/index.ru.md
+[drupal-8-services]: ../../../../2017/06/21/drupal-8-services/index.ru.md
 [drupal-8-block-plugin]: ../../../../2015/10/19/drupal-8-block-plugin/index.ru.md
 [d8-derivatives]: ../../../../2019/05/04/d8-derivatives/index.ru.md
 [d8-tagged-services]: ../../../../2019/05/05/d8-tagged-services/index.ru.md
