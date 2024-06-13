@@ -44,15 +44,13 @@ tags:
 
 1. Устанавливаем Drupal с профилем Standart.
 2. Типу содержимого Article добавляем поле: 1. Название: “Для своих”;
-2. Машинное имя: field_**members_only**;
-3. Тип: boolean;
-4. Виджет: Single on/off checkbox.
-3. Добавляем новую роль для пользователей: Members и располагаем после
+3. Машинное имя: field_**members_only**;
+4. Тип: boolean;
+5. Виджет: Single on/off checkbox.
+6. Добавляем новую роль для пользователей: Members и располагаем после
    авторизованных пользователей.
-
-![Роли.](image/1.png)
-
-4. [Скачайте](/sites/default/files/blog/63/attachments/mymodule_empty.tar.gz) и
+   ![Роли.](image/1.png)
+7. [Скачайте](/sites/default/files/blog/63/attachments/mymodule_empty.tar.gz) и
    расположите заготовку для модуля в /sites/all/modules/.
 
 ## Теоретическая часть

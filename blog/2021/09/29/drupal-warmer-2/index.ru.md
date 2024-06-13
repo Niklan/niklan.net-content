@@ -135,7 +135,7 @@ SEO-краулера, который пробежится по всем стра
 ##### ::getBatchSize()
 
 Метод `::getBatchSize()` должен возвращать число с количеством элементов для
-одной операции [пакетной обработки данных][d8-batch-api]. Иными словами, какое
+одной операции [пакетной обработки данных][drupal-8-batch-api]. Иными словами, какое
 количество элементов будет разогреваться за один проход.
 
 ##### ::getFrequency()
@@ -400,7 +400,7 @@ drush warmer:enqueue cdn --run-queue
 
 Это достаточно опасная опция. Если элементов очереди очень много, это
 перманентная нагрузка на сервер. По умолчанию, прогрев выполняется с
-использованием [@QueueWorker][d8-queue-worker] и этот подход более щадящий для
+использованием [@QueueWorker][drupal-8-queue-worker-plugin] и этот подход более щадящий для
 сервера.
 
 Если вы хотите «пнуть» прогрев, чтобы не дожидаться очередного крона, вы можете
@@ -479,7 +479,7 @@ drush queue:run warmer --items-limit=10
 прогрев. Если страниц очень много и вы их все прогреваете, не бойтесь выставлять
 большие значения.
 
-Так же держите в уме то, что [Queue Worker][d8-queue-worker] плагины,
+Так же держите в уме то, что [Queue Worker][drupal-8-queue-worker-plugin] плагины,
 выполняемые по Drupal крону, обрабатывают очереди последовательно и в таком
 случае, либо нужно выносить обработчики (свои или модуля) из крона и вешать
 вызов на системный крон через Drush, либо учитывать общее время выполнение всех
@@ -1814,5 +1814,5 @@ $ curl http://video-examples.localhost/node/13184 -s -o /dev/null -w %{time_star
 
 [drupal-8-how-to-create-custom-plugin-type]: ../../../../2016/09/17/drupal-8-how-to-create-custom-plugin-type/index.ru.md
 [drupal-8-queue-api]: ../../../../2015/11/12/drupal-8-queue-api/index.ru.md
-[d8-batch-api]: ../../../../2018/09/11/d8-batch-api/index.ru.md
-[d8-queue-worker]: ../../../../2019/04/21/d8-queue-worker/index.ru.md
+[drupal-8-batch-api]: ../../../../2018/09/11/drupal-8-batch-api/index.ru.md
+[drupal-8-queue-worker-plugin]: ../../../../2019/04/21/drupal-8-queue-worker-plugin/index.ru.md

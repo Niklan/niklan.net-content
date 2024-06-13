@@ -40,9 +40,7 @@ WYSIWYG редакторов, что как бы заставляет нович
    используется у вас для ввода с ограничением по тегам.
 3. Переходим в “Editor Appearance” и в разделе toolbar жмем “basic”. Это
    поставит нам базовый набор элементов.
-
-![Basic CKEditor](image/1.png)
-
+   ![Basic CKEditor](image/1.png)
 4. Сохраняем.
 
 Для фула я не буду писать, по сути тоже самое, только очевидные изменения будут
@@ -92,8 +90,8 @@ WYSIWYG редакторов, что как бы заставляет нович
 4. По сути они часто юзают вставку картинок и прочего, поэтому рубить им html
    нельзя. Единственные фильтры что я включаю: 1. Convert line breaks into
    HTML (i.e. `<br>` and `<p>`)
-2. Convert URLs into links
-3. Correct faulty and chopped off HTML
+5. Convert URLs into links
+6. Correct faulty and chopped off HTML
 
 Всё, дальше бремя мы скинем на CKEditor.
 
@@ -101,9 +99,7 @@ WYSIWYG редакторов, что как бы заставляет нович
 2. Создаем новый профиль.
 3. В “Basic setup” даём ему соответствующее название и выбираем созданный нами
    формат ввода.
-
-![Setup](image/3.png)
-
+   ![Setup](image/3.png)
 4. Переходим во вкладку “Editor Appereacne” и загружаем “Basic” (им опасно
    давать что-то больше этого).
 5. В разделе “Cleanup and output” надо подправить “Font formats” — это те теги,
