@@ -117,4 +117,4 @@ shortcut».
 опять же упрощает работу. 
 
 [ubuntu-12-web-server]: ../../../../2012/12/31/ubuntu-12-web-server/index.ru.md
-[tvs-are-better-than-internet-explorer-10]: ../../../../2013/01/20/tvs-are-better-than-internet-explorer-10/index.ru.md
+[tvs-are-better-than-internet-explorer-10]: ../../../../2013/01/20/tvs-are-better-than-ie10/index.ru.md
