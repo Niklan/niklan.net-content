@@ -385,10 +385,8 @@ class LastContentBlockDeriver extends DeriverBase implements ContainerDeriverInt
   protected $entityTypeBundleInfo;
 
   /**
-   * QueueWorkerDeriver constructor.
+   * LastContentBlockDeriver constructor.
    *
-   * @param string $base_plugin_id
-   *   The base plugin id.
    * @param \Drupal\Core\Entity\EntityTypeBundleInfoInterface $entity_type_bundle_info
    *   The entity type bundle info.
    */
