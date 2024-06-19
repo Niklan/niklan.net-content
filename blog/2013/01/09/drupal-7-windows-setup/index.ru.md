@@ -7,27 +7,6 @@ updated: '2024-05-25T00:00:00'
 description: >-
   Acquia Dev Desktop – это инструмент для быстрой и удобной разработки на Drupal
   под операционную систему Windows.
-attachments:
-  - name: add1.png
-    path: 'image/add1.png'
-  - name: add2.png
-    path: 'image/add2.png'
-  - name: add3.png
-    path: 'image/add3.png'
-  - name: add4.png
-    path: 'image/add4.png'
-  - name: add5.png
-    path: 'image/add5.png'
-  - name: add6.png
-    path: 'image/add6.png'
-  - name: add7.png
-    path: 'image/add7.png'
-  - name: add8.png
-    path: 'image/add8.png'
-  - name: add9.png
-    path: 'image/add9.png'
-  - name: add10.png
-    path: 'image/add10.png'
 promo: 'image/druwin.jpg'
 tags:
   - Drupal
