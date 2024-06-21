@@ -7,9 +7,6 @@ updated: '2024-05-25T00:00:00'
 description: >-
   Сервисы с метками — удобный инструмент для организации сервисов. Узнайте, чем
   они отличаются от плагинов и как их использовать.
-attachments:
-  - name: 'Пример создания сервисов с метками и их менеджером'
-    path: 'attachment/dummy.tar.gz'
 promo: 'image/blank-card-cardboard-998501.jpg'
 tags:
   - Drupal
@@ -618,6 +615,10 @@ function dummy_preprocess_page(&$variables) {
 Сбросив кэш, зайдя на любую страницу сайта, вы увидите данные сообщения.
 
 ![Результат сервисов с метками](image/result.png)
+
+## Ссылки
+
+- [Модуль с примером](example/dummy)
 
 [drupal-8-services]: ../../../../2017/06/21/drupal-8-services/index.ru.md
 [drupal-8-how-to-create-custom-plugin-type]: ../../../../2016/09/17/drupal-8-how-to-create-custom-plugin-type/index.ru.md

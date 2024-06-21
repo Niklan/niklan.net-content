@@ -8,9 +8,6 @@ description: >-
   Сервис user.data — это инструмент, который позволяет хранить пользовательские
   данные в виде пар «ключ-значение». Это удобно для хранения дополнительной
   информации о пользователе, такой как предпочтения или настройки.
-attachments:
-  - name: 'Модуль с примером user.data'
-    path: 'attachment/dummy.tar.gz'
 promo: 'image/factory-man-planks-1797415.jpg'
 tags:
   - Drupal
@@ -308,6 +305,10 @@ function dummy_form_user_form_alter(array &$form, FormStateInterface $form_state
 
 Если включить модуль, все пользователи получать свои уникальные ключи и секреты,
 и при редактировании своих профилей будут видеть соответствующий раздел в форме.
+
+## Ссылки
+
+- [Модуль с примером](example/dummy)
 
 [drupal-8-queue-api]: ../../../../2015/11/12/drupal-8-queue-api/index.ru.md
 [drupal-8-state-api]: ../../../../2015/10/16/drupal-8-state-api/index.ru.md

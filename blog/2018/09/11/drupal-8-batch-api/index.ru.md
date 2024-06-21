@@ -8,9 +8,6 @@ description: >-
   Batch API — это API для пакетной обработки данных. Оно позволяет выполнять
   длительные операции, разбивая их на части. В этом материале мы рассмотрим, как
   использовать Batch API.
-attachments:
-  - name: 'Готовый модуль с примером'
-    path: 'attachment/dummy.tar.gz'
 promo: 'image/pexels-photo-247701.jpeg'
 tags:
   - Drupal
@@ -687,8 +684,10 @@ dummy.batch:
 
 После чего, вы можете запустить батч и посмотреть на результат!
 
+## Ссылки
+
+- [Модуль с примером](example/dummy)
+
 [drupal-8-queue-api]: ../../../../2015/11/12/drupal-8-queue-api/index.ru.md
-
 [drupal-8-custom-csv-import]: ../../../../2016/09/11/drupal-8-custom-csv-import/index.ru.md
-
 [drupal-8-custom-csv-import-optimization]: ../../../../2017/03/16/drupal-8-custom-csv-import-optimization/index.ru.md

@@ -9,9 +9,6 @@ description: >-
   @EntityReferenceSelection. Он позволяет удобно выбирать сущности, используя
   механизм автодополнения. Это упрощает работу с контентом и делает процесс
   выбора более интуитивным.
-attachments:
-  - name: 'Пример плагина EntityReferenceSelection'
-    path: 'attachment/dummy.tar.gz'
 promo: 'image/black-cat-black-keyboard-cat-1049764.jpg'
 tags:
   - Drupal
@@ -400,6 +397,10 @@ video/commerce-product-reference-with-plugin.mp4)
 параметр `#selection_handler` по умолчанию в `default`, таким образом,
 подхватывается наш плагин. Также, везде где использовался данный элемент и
 другими модулями, заработают подсказки.
+
+## Ссылки
+
+- [Модуль с примером](example/dummy)
 
 [drupal-8-route-subscriber]: ../../../../2018/04/13/drupal-8-route-subscriber/index.ru.md
 [drupal-8-derivatives]: ../../../../2019/05/04/drupal-8-derivatives/index.ru.md

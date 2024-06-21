@@ -8,9 +8,6 @@ description: >-
   Derivatives — это мощный инструмент, который позволяет создавать множество
   экземпляров плагина с одной логикой, что делает разработку более гибкой и
   эффективной.
-attachments:
-  - name: 'Пример объявления deriver и плагина'
-    path: 'attachment/dummy.tar.gz'
 promo: 'image/architecture-building-low-angle-shot-245838.jpg'
 tags:
   - Drupal
@@ -556,6 +553,10 @@ class LastContentBlockDeriver extends DeriverBase implements ContainerDeriverInt
 После чего видно результат на странице.
 
 ![Результат](image/deriver-plugins-result.png)
+
+## Ссылки
+
+- [Модуль с примером](example/dummy)
 
 [drupal-8-queue-api]: ../../../../2015/11/12/drupal-8-queue-api/index.ru.md
 [drupal-8-queue-worker-plugin]: ../../../../2019/04/21/drupal-8-queue-worker-plugin/index.ru.md

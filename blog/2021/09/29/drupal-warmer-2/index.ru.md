@@ -1809,8 +1809,7 @@ $ curl http://video-examples.localhost/node/13184 -s -o /dev/null -w %{time_star
 ## Ссылки
 
 * [Модуль Warmer](https://www.drupal.org/project/warmer), drupal.org
-* [Исходный код примера](https://github.com/Niklan/niklan.net-examples/tree/master/blog/216),
-  GitHub
+* [Модуль с примером](example)
 
 [drupal-8-how-to-create-custom-plugin-type]: ../../../../2016/09/17/drupal-8-how-to-create-custom-plugin-type/index.ru.md
 [drupal-8-queue-api]: ../../../../2015/11/12/drupal-8-queue-api/index.ru.md

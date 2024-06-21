@@ -685,7 +685,7 @@ example.form:
 
 ## Ссылки
 
-- [Исходный код примеров](https://github.com/Niklan/niklan.net-examples/tree/master/blog/211)
+- [Модуль с примером](example)
 
 [drupal-8-services]: ../../../../2017/06/21/drupal-8-services/index.ru.md
 [drupal-8-composer]: ../../../../2016/09/03/drupal-8-composer/index.ru.md
