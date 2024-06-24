@@ -1,0 +1,18 @@
+# Configuration schema for dummy message.
+
+dummy.message:
+  type: config_object
+  label: 'Dummy message'
+  mapping:
+    status:
+      type: boolean
+      label: 'Status of message'
+    type:
+      type: string
+      label: 'Message type'
+    subject:
+      type: label
+      label: 'Subject of message'
+    body:
+      type: text
+      label: 'Body of message'

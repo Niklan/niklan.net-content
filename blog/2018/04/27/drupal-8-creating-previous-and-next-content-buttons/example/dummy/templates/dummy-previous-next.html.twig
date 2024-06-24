@@ -1,0 +1,18 @@
+<div class="previous-next">
+  <div class="previous-next__previous">
+    {% if previous %}
+      <a href="{{ previous.url }}" class="previous-next__link previous-next__link--previous">
+        <span>← {{ 'Previous'|t }}</span>
+        {{ previous.label }}
+      </a>
+    {% endif %}
+  </div>
+  <div class="previous-next__next">
+    {% if next %}
+      <a href="{{ next.url }}" class="previous-next__link previous-next__link--next">
+        <span>{{ 'Next'|t }} →</span>
+        {{ next.label }}
+      </a>
+    {% endif %}
+  </div>
+</div>

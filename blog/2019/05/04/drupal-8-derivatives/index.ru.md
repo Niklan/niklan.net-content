@@ -556,7 +556,7 @@ class LastContentBlockDeriver extends DeriverBase implements ContainerDeriverInt
 
 ## Ссылки
 
-- [Модуль с примером](example/dummy)
+- [Исходный код модуля с примером](example/dummy)
 
 [drupal-8-queue-api]: ../../../../2015/11/12/drupal-8-queue-api/index.ru.md
 [drupal-8-queue-worker-plugin]: ../../../../2019/04/21/drupal-8-queue-worker-plugin/index.ru.md

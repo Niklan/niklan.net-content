@@ -1,0 +1,40 @@
+<?php
+
+/**
+ * @file
+ * File for custom hooks and code.
+ */
+
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_preprocess_pager().
+ */
+function dummy_preprocess_pager(array &$variables) {
+  foreach ($variables['items'] as $type => $items) {
+    if ($type == 'pages') {
+      foreach ($items as $key => $item) {
+        if (isset($item['href'])) {
+          $variables['items'][$type][$key]['href'] = _dummy_clean_pager_url($item['href']);
+        }
+      }
+    }
+    else {
+      if (isset($items['href'])) {
+        $variables['items'][$type]['href'] = _dummy_clean_pager_url($items['href']);
+      }
+    }
+  }
+}
+
+/**
+ * Clean pager URL't to support outbound processing.
+ */
+function _dummy_clean_pager_url($url) {
+  // If no query args.
+  if (strpos($url, '?') !== 0) {
+    return $url;
+  }
+  parse_str(substr($url, 1), $query);
+  return Url::fromRoute('<current>', [], ['query' => $query]);
+}

@@ -7,9 +7,6 @@ updated: '2024-05-25T00:00:00'
 description: >-
   Подробная инструкция по настройке уникальных статусов и этапов оформления
   заказов в Drupal Commerce 2.
-attachments:
-  - name: 'Готовый модуль с примером'
-    path: 'attachment/dummy.tar.gz'
 promo: 'image/pexels-photo-375889.jpeg'
 tags:
   - Drupal
@@ -423,5 +420,9 @@ services:
 нашего темплейта `order_processed`.
 
 ![Новая запись активности в заказе](image/order-activity-2.png)
+
+## Ссылки
+
+- [Исходный код модуля с примером](example/dummy)
 
 [drupal-8-events]: ../../../../2018/04/10/drupal-8-events/index.ru.md

@@ -595,7 +595,7 @@ services:
 
 ## Ссылки
 
-- [Модуль с примером](example/dummy)
+- [Исходный код модуля с примером](example/dummy)
 
 [drupal-8-services]: ../../../../2017/06/21/drupal-8-services/index.ru.md
 [drupal-8-block-plugin]: ../../../../2015/10/19/drupal-8-block-plugin/index.ru.md

@@ -1,0 +1,78 @@
+<?php
+
+/**
+ * @file
+ * Main file for hooks and custom functions.
+ */
+
+use Drupal\Component\Utility\NestedArray;
+use Drupal\Core\StringTranslation\TranslatableMarkup;
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function dummy_form_user_login_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  $form['welcome'] = [
+    '#markup' => '<h2>Hello world!</h2>',
+    '#weight' => -100,
+  ];
+
+  $form['name']['#attributes']['placeholder'] = 'Enter your username here!';
+}
+
+/**
+ * Implements hook_user_login().
+ */
+function dummy_user_login($account) {
+  $message = new TranslatableMarkup('Nice to see you again, <strong>@username</strong>!', [
+    '@username' => $account->getDisplayName(),
+  ]);
+  \Drupal::messenger()->addMessage($message);
+}
+
+/**
+ * Implements hook_user_format_name_alter().
+ */
+function dummy_user_format_name_alter(&$name, $account) {
+  $name .= ' (' . $account->id() . ')';
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for page.html.twig.
+ */
+function dummy_preprocess_page(&$variables) {
+  $messages = [
+    'Default message',
+  ];
+
+  // hook_dummy_page_message().
+  $result = \Drupal::moduleHandler()->invokeAll('dummy_page_message');
+  $messages = NestedArray::mergeDeep($messages, $result);
+
+  // hook_dummy_page_messages_alter().
+  \Drupal::moduleHandler()->alter('dummy_page_messages', $messages);
+
+  if (!empty($messages)) {
+    foreach ($messages as $message) {
+      \Drupal::messenger()->addMessage($message);
+    }
+  }
+}
+
+/**
+ * Implements hook_dummy_page_message().
+ */
+function dummy_dummy_page_message() {
+  return [
+    'Hello world',
+    'Hello world 2',
+  ];
+}
+
+/**
+ * Implements hook_dummy_page_messages_alter().
+ */
+function dummy_dummy_page_messages_alter(&$messages) {
+  $messages[2] = 'We replaced "Hello world 2"';
+  $messages[] = 'And add new one!';
+}

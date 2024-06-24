@@ -1,0 +1,38 @@
+my_custom_workflow:
+  id: my_custom_workflow
+  group: commerce_order
+  label: 'My custom workflow'
+  states:
+    draft:
+      label: Draft
+    validation:
+      label: Validation
+    processing:
+      label: Processing
+    delivery:
+      label: Delivery
+    completed:
+      label: Completed
+    canceled:
+      label: Canceled
+  transitions:
+    place:
+      label: 'Place order'
+      from: [draft]
+      to: validation
+    validate:
+      label: 'Validate order'
+      from: [validation]
+      to: processing
+    processing_complete:
+      label: 'Processing complete'
+      from: [processing]
+      to: delivery
+    complete:
+      label: 'Complete order'
+      from: [draft, validation, delivery]
+      to: completed
+    cancel:
+      label: 'Cancel order'
+      from: [draft, validation]
+      to: canceled

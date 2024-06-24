@@ -685,7 +685,7 @@ example.form:
 
 ## Ссылки
 
-- [Модуль с примером](example)
+- [Исходный код модуля с примером](example)
 
 [drupal-8-services]: ../../../../2017/06/21/drupal-8-services/index.ru.md
 [drupal-8-composer]: ../../../../2016/09/03/drupal-8-composer/index.ru.md

@@ -1,0 +1,10 @@
+services:
+  dummy.middleware.utm:
+    class: Drupal\dummy\UtmDummyMiddleware
+    tags:
+      - { name: http_middleware, priority: 450 }
+
+  dummy.middleware.geoip:
+    class: Drupal\dummy\GeoIpDummyMiddleware
+    tags:
+      - { name: http_middleware, priority: 400 }

@@ -272,7 +272,7 @@ Drupal как "отрендерить значение данного поля, 
 
 ## Ссылки
 
-- [Модуль с примером](example/dummy)
+- [Исходный код модуля с примером](example/dummy)
 
 [d8-cache-metadata]: ../../../../2017/07/15/drupal-8-cache-metadata/index.ru.md
 [drupal-8-hook-theme]: ../../../../2017/06/26/drupal-8-hook-theme/index.ru.md

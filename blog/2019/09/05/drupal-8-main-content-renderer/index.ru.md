@@ -881,7 +881,7 @@ video/full-result.mp4)
 
 ## Ссылки
 
-- [Модуль с примером](example)
+- [Исходный код модуля с примером](example)
 
 [d8-cache-metadata]: ../../../../2017/07/15/drupal-8-cache-metadata/index.ru.md
 [drupal-8-how-to-create-a-custom-rest-plugin]: ../../../../2018/01/16/drupal-8-how-to-create-a-custom-rest-plugin/index.ru.md

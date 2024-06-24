@@ -400,7 +400,7 @@ video/commerce-product-reference-with-plugin.mp4)
 
 ## Ссылки
 
-- [Модуль с примером](example/dummy)
+- [Исходный код модуля с примером](example/dummy)
 
 [drupal-8-route-subscriber]: ../../../../2018/04/13/drupal-8-route-subscriber/index.ru.md
 [drupal-8-derivatives]: ../../../../2019/05/04/drupal-8-derivatives/index.ru.md

@@ -1385,4 +1385,4 @@ function dummy_tokens($type, $tokens, array $data, array $options, BubbleableMet
 
 ## Ссылки
 
-- [Модуль с примером](example/dummy)
+- [Исходный код модуля с примером](example/dummy)

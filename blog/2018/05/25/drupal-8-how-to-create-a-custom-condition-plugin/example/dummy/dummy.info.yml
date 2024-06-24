@@ -1,0 +1,5 @@
+name: Dummy
+type: module
+description: Example of Condition Plugin.
+package: Custom
+core: 8.x

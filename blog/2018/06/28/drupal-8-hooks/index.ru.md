@@ -7,9 +7,6 @@ updated: '2024-05-25T00:00:00'
 description: >-
   Всё, что нужно знать о хуках в Drupal 8. Типы, использование и создание своих
   хуков. Научитесь понимать код модулей и работать с ним.
-attachments:
-  - name: 'Готовый модуль с примерами'
-    path: 'attachment/dummy.tar.gz'
 promo: 'image/pexels-photo-533227.jpeg'
 tags:
   - 'Drupal 8'
@@ -594,5 +591,9 @@ function hook_dummy_page_messages_alter(array &$messages) {
 
 Вот и всё, вам больше хакать ядро и модули не придется, как и другим
 разработчикам, хакать ваш модуль?
+
+## Ссылки
+
+- [Исходный код модуля с примером](example/dummy)
 
 [drupal-8-events]: ../../../../2018/04/10/drupal-8-events/index.ru.md

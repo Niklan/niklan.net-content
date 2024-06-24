@@ -308,7 +308,7 @@ function dummy_form_user_form_alter(array &$form, FormStateInterface $form_state
 
 ## Ссылки
 
-- [Модуль с примером](example/dummy)
+- [Исходный код модуля с примером](example/dummy)
 
 [drupal-8-queue-api]: ../../../../2015/11/12/drupal-8-queue-api/index.ru.md
 [drupal-8-state-api]: ../../../../2015/10/16/drupal-8-state-api/index.ru.md

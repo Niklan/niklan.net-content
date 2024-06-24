@@ -618,7 +618,7 @@ function dummy_preprocess_page(&$variables) {
 
 ## Ссылки
 
-- [Модуль с примером](example/dummy)
+- [Исходный код модуля с примером](example/dummy)
 
 [drupal-8-services]: ../../../../2017/06/21/drupal-8-services/index.ru.md
 [drupal-8-how-to-create-custom-plugin-type]: ../../../../2016/09/17/drupal-8-how-to-create-custom-plugin-type/index.ru.md

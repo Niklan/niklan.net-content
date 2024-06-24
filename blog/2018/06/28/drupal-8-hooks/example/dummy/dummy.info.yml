@@ -1,0 +1,5 @@
+name: Dummy
+description: Hooks usage and definition examples.
+type: module
+core: 8.x
+version: 1.x

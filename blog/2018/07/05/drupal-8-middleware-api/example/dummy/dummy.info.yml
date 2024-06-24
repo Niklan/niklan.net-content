@@ -1,0 +1,5 @@
+name: Dummy
+description: Middleware example.
+type: module
+core: 8.x
+version: 1.x

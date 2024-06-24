@@ -16,8 +16,6 @@ attachments:
     path: 'attachment/product.txt'
   - name: 'Panels: Отображение подкатегорий и товаров'
     path: 'attachment/panels_catalog.txt'
-  - name: 'Объяснение для комментария'
-    path: 'image/to_alexander.jpg'
 promo: 'image/catalog_promo.png'
 tags:
   - Drupal

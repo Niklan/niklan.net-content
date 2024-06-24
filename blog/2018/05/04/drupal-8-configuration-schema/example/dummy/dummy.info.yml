@@ -1,0 +1,5 @@
+name: dummy
+type: module
+description: Drupal 8 Configuration schema
+package: Custom
+core: 8.x
