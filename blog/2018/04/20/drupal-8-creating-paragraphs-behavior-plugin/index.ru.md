@@ -8,9 +8,6 @@ description: >-
   Улучшение функциональности параграфов с помощью плагина Paragraphs Behavior:
   предоставьте возможность создания индивидуальных настроек для параграфов и
   контролируйте их отображение.
-attachments:
-  - name: 'Готовый модуль с примерами'
-    path: 'attachment/dummy.tar.gz'
 promo: 'image/computer-content-control-270700.jpg'
 tags:
   - Drupal
@@ -558,5 +555,9 @@ _Например, если сделать пример 3 через поле с
 Это раз проблемка, а вторая в том, что все эти опции будут доступны всегда, либо
 придется писать [динамические селекты][drupal-7-8-dynamic-select-options-list], что явно
 подольше и не так удобно как всё в одном месте._
+
+## Ссылки
+
+- [Исходный код модуля с примером](example/dummy)
 
 [drupal-7-8-dynamic-select-options-list]: ../../../../2017/06/27/drupal-7-8-dynamic-select-options-list/index.ru.md

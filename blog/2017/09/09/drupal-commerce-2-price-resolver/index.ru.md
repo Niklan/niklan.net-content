@@ -7,9 +7,6 @@ updated: '2024-05-25T00:00:00'
 description: >-
   Узнайте, как влиять на цены товаров в Drupal Commerce 2.0. Научитесь создавать
   гибкие ценовые политики, адаптированные под ваши бизнес-задачи.
-attachments:
-  - name: 'Готовый модуль с примером'
-    path: 'attachment/dummy.tar.gz'
 promo: 'image/electronic-pricelabel-shelf.jpg'
 tags:
   - Drupal
@@ -285,5 +282,9 @@ return $entity->getPrice()->divide('0.5');
 
 Эти методы облегчат написание и читаемость кода при более сложных
 ценообразованиях, не забывайте про них.
+
+## Ссылки
+
+- [Исходный код модуля с примером](example/dummy)
 
 [drupal-8-services]: ../../../../2017/06/21/drupal-8-services/index.ru.md

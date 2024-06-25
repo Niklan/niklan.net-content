@@ -1,0 +1,8 @@
+name: 'My color field'
+description: 'Custom colorpicker field.'
+type: module
+core: 8.x
+version: 1.x
+package: Field types
+dependencies:
+  - field

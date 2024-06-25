@@ -1,0 +1,10 @@
+{% if quote %}
+<blockquote>
+  <p>{{ quote }}</p>
+  {% if footer %}
+    <footer>
+      — {{ footer|raw }}
+    </footer>
+  {% endif %}
+</blockquote>
+{% endif %}

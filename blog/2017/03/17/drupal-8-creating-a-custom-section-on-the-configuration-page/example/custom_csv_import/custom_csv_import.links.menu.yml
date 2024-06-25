@@ -1,0 +1,5 @@
+custom_csv_import.admin_settings:
+  title: 'CSV import'
+  description: 'Import content on site using CSV file.'
+  route_name: custom_csv_import.admin_settings
+  parent: hello_world.admin_config_hello_world # Меняем на нового родителя

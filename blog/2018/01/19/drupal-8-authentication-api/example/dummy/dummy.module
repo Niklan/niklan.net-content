@@ -1,0 +1,79 @@
+<?php
+
+/**
+ * @file
+ * Main file for hooks and custom functions.
+ */
+
+use Drupal\Component\Utility\Crypt;
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Field\BaseFieldDefinition;
+use Drupal\user\Entity\User;
+
+/**
+ * Implements hook_entity_base_field_info().
+ *
+ * This hook requires to run `drush entity:updates` (entity-updates for older
+ * versions).
+ */
+function dummy_entity_base_field_info(EntityTypeInterface $entity_type) {
+  if ($entity_type->id() == 'user') {
+    $fields = [];
+    $fields['dummy_key'] = BaseFieldDefinition::create('string')
+      ->setLabel(t('API Key'))
+      ->setRevisionable(FALSE)
+      ->setTranslatable(FALSE);
+    $fields['dummy_secret'] = BaseFieldDefinition::create('string')
+      ->setLabel(t('API Secret'))
+      ->setRevisionable(FALSE)
+      ->setTranslatable(FALSE);
+    return $fields;
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function dummy_form_user_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  $user = \Drupal::routeMatch()->getParameter('user');
+  if ($user) {
+    $key_secret = _dummy_get_key_and_secret($user->id());
+
+    $form['dummy_api'] = [
+      '#type' => 'fieldset',
+      '#title' => 'API',
+    ];
+    $form['dummy_api']['key'] = [
+      '#type' => 'item',
+      '#title' => 'Key',
+      '#markup' => $key_secret['key'],
+    ];
+    $form['dummy_api']['secret'] = [
+      '#type' => 'item',
+      '#title' => 'Secret',
+      '#markup' => $key_secret['secret'],
+    ];
+  }
+}
+
+/**
+ * Returns key and secret for API. If the are not exists, generate new one.
+ */
+function _dummy_get_key_and_secret($uid) {
+  $user = User::load($uid);
+
+  if ($user->dummy_key->isEmpty()) {
+    $user->dummy_key->value = Crypt::randomBytesBase64(16);
+    $user->save();
+  }
+
+  if ($user->dummy_secret->isEmpty()) {
+    $user->dummy_secret->value = Crypt::randomBytesBase64(16);
+    $user->save();
+  }
+
+  return [
+    'key' => $user->dummy_key->value,
+    'secret' => $user->dummy_secret->value,
+  ];
+}

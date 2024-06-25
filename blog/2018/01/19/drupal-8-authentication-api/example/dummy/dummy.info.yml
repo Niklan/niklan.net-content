@@ -1,0 +1,6 @@
+name: Dummy
+description: Examples for Authentication Provider
+type: module
+core: 8.x
+version: 1.x
+

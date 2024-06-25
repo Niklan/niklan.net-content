@@ -7,9 +7,6 @@ updated: '2024-05-25T00:00:00'
 description: >-
   Узнайте, как эффективно использовать сервисы в Drupal 8 для улучшения кода
   ваших модулей.
-attachments:
-  - name: 'Модуль со всеми примерами (кроме альтера)'
-    path: 'attachment/dummy.tar.gz'
 promo: 'image/service.jpg'
 tags:
   - Drupal
@@ -642,5 +639,9 @@ class DummyFormWithServiceDependency extends FormBase {
 
 На этом тема с сервисами, считаю, полностью покрыта и закрыта. Больше тут
 добавить нечего. Разве что убавить. ;)
+
+## Ссылки
+
+- [Исходный код модуля с примером](example/dummy)
 
 [drupal-8-form-api]: ../../../../2015/10/16/drupal-8-form-api/index.ru.md

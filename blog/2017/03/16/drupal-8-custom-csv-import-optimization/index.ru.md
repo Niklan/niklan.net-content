@@ -7,9 +7,6 @@ updated: '2024-05-25T00:00:00'
 description: >-
   Оптимизация импорта больших объёмов данных: разбиение на части для повышения
   производительности.
-attachments:
-  - name: 'Готовый модуль'
-    path: 'attachment/custom_csv_import.tar.gz'
 promo: 'image/drupal8csvoptimisation_0.png'
 tags:
   - 'Drupal 8'
@@ -240,6 +237,10 @@ foreach из-за того что данные идут в несколько с
 :: youtube {vid=gRHZfvjvGF8}
 
 P.s. В Drupal 7 всё работает аналогично.
+
+## Ссылки
+
+- [Исходный код модуля с примером](example/custom_csv_import)
 
 [drupal-8-custom-csv-import]: ../../../../2016/09/11/drupal-8-custom-csv-import/index.ru.md
 [drupal-8-queue-api]: ../../../../2015/11/12/drupal-8-queue-api/index.ru.md

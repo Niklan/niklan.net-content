@@ -1,0 +1,8 @@
+name = Dummy Module
+description = DisplaySuite field example.
+core = 7.x
+version = 7.x-1.x
+
+; Entity for EMW.
+dependencies[] = entity
+dependencies[] = ds

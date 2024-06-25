@@ -1,0 +1,5 @@
+name: Dummy
+description: 'Example for #lazy_builder.'
+version: VERSION
+core: 8.x
+type: module

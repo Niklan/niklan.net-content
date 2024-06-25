@@ -1,0 +1,6 @@
+name: Dummy
+description: 'Custom e xamples'
+type: module
+core: 8.x
+version: 1.x
+package: Custom

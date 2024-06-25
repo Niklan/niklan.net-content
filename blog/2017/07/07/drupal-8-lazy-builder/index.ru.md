@@ -7,9 +7,6 @@ updated: '2024-05-25T00:00:00'
 description: >-
   Концепция #lazy_builder позволяет отложить генерацию определённых частей
   сайта. Это полезно для оптимизации производительности.
-attachments:
-  - name: 'Готовый модуль с примерами'
-    path: 'attachment/dummy.tar.gz'
 promo: 'image/zootopia-4668x3300-sloth-best-animation-movies-of-2016-cartoon-8017.jpg'
 tags:
   - Drupal
@@ -547,6 +544,10 @@ dummy.lazy_page:
 Моя криворукая демонстрация с данным примером.
 
 :: youtube {vid=vFJFA8SCV60}
+
+## Ссылки
+
+- [Исходный код модуля с примером](example/dummy)
 
 [drupal-8-services]: ../../../../2017/06/21/drupal-8-services/index.ru.md
 [drupal-8-hook-theme]: ../../../../2017/06/26/drupal-8-hook-theme/index.ru.md

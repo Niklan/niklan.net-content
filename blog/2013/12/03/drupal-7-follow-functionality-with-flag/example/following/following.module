@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Following feature.
+ */
+
+include_once 'following.features.inc';

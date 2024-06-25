@@ -5,9 +5,6 @@ title: 'Как создать сборку Drupal 7: дистрибутивы и
 created: '2014-02-26T00:07:44'
 updated: '2024-05-25T00:00:00'
 description: 'Создание дистрибутивов Drupal 7: руководство для разработчиков.'
-attachments:
-  - name: 'My first distro'
-    path: 'attachment/my_first_distro.zip'
 promo: 'image/distro_promo.png'
 tags:
   - Drupal
@@ -441,3 +438,7 @@ function my_first_distro_batch_operation_2($msg = 'Bye') {
 ![Завершение установки.](image/4.png)
 
 ![Установленный сайт.](image/5.png)
+
+## Ссылки
+
+- [Исходный код установочного профиля с примером](example/my_first_distro)

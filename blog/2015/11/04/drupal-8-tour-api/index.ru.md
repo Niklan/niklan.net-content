@@ -7,11 +7,6 @@ updated: '2024-05-25T00:00:00'
 description: >-
   Drupal 8 Tour API позволяет создавать интерактивные туры по административным
   страницам, предоставляя редакторам наглядные обучающие подсказки.
-attachments:
-  - name: Результат
-    path: 'attachment/helloworld_tourapi_end.tar.gz'
-  - name: 'Заготовка для модуля'
-    path: 'attachment/helloworld_tourapi_start.tar.gz'
 promo: 'image/d8tourapi.png'
 tags:
   - 'Drupal 8'
@@ -119,9 +114,9 @@ tips:
 ## Практика
 
 Чтобы нам особо не мучиться с подготовкой, давайте
-возьмем [заготовку для модуля](/sites/default/files/blog/78/attachments/helloworld_tourapi_start.tar.gz),
-который будет добавлять тур на страницу '
-/admin/config/system/site-information' (Информация о сайте). Эта страничка из
+возьмем [заготовку для модуля](example/helloworld_tourapi_start/helloworld),
+который будет добавлять тур на страницу 
+'/admin/config/system/site-information' (Информация о сайте). Эта страничка из
 ядра, и на ней достаточно обьемная форма, поэтому она удачно сойдет за пример,
 так как на ней отсутствует тур.
 
@@ -272,3 +267,7 @@ config/optional.
 Почему-то не распознает конфигурацию, даже с UUID меткой.
 
 На этом всё, спасибо за внимание.
+
+## Ссылки
+
+- [Исходный код модуля с примером](example/helloworld_tourapi_end/helloworld)

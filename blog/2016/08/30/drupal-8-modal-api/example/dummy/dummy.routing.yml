@@ -1,0 +1,7 @@
+devel.admin_settings:
+  path: '/dummy/form-with-modal-button'
+  defaults:
+    _form: '\Drupal\dummy\Form\FormWithModalButton'
+    _title: 'Form with modal button'
+  requirements:
+    _permission: 'access content'

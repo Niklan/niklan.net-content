@@ -7,9 +7,6 @@ updated: '2024-05-25T00:00:00'
 description: >-
   Из этого материала вы узнаете, как создавать собственные и другие формы с
   валидацией и отправкой данных с помощью AJAX.
-attachments:
-  - name: 'Модуль с примерами.'
-    path: 'attachment/dummy.tar.gz'
 promo: 'image/d8ajaxforms.png'
 tags:
   - Drupal
@@ -381,3 +378,7 @@ function dummy_form_contact_message_form_alter(&$form, \Drupal\Core\Form\FormSta
 ![Теперь Contact формы будут отправляться при помощи AJAX.](image/Screenshot_20160831_115856.png)
 
 На этом всё, модуль с примерами прилагаю.
+
+## Ссылки
+
+- [Исходный код модуля с примером](example/dummy)

@@ -1,0 +1,53 @@
+id: dummy_article_files
+label: 'Article files'
+migration_group: dummy
+migration_tags:
+  - file
+  - article
+source:
+  plugin: csv
+  path: modules/custom/dummy/assets/articles.csv
+  delimiter: ';'
+  enclosure: '"'
+  header_row_count: 1
+  column_names:
+    0:
+      id: 'Article ID'
+    1:
+      title: 'Title'
+    2:
+      image_url: 'Promo image URL'
+    3:
+      uid: 'Author ID'
+    4:
+      body: 'Content'
+  keys:
+    - id
+  constants:
+    status: 1
+    uid: 1
+    destination: 'public://migration-downloads/articles/image.jpg'
+process:
+  uri:
+    -
+      # Мы будем пробовать качать каждый файл и называть его image_N.jpg чтобы
+      # не заморачиваться и не добавлять для этого плагинов и новых данных.
+      plugin: download
+      source:
+        - image_url
+        - 'constants/destination'
+      rename: true
+    -
+      plugin: skip_on_empty
+      method: row
+      message: 'Field downloaded_photo is missed'
+  status: 'constants/status'
+  uid: 'constants/uid'
+destination:
+  plugin: entity:file
+migration_dependencies: {}
+dependencies:
+  enforced:
+    module:
+      - dummy
+      - migrate_source_csv

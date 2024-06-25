@@ -1,0 +1,9 @@
+custom_csv_import.admin_settings:
+  path: '/admin/config/development/csv_import'
+  defaults:
+    _form: '\Drupal\custom_csv_import\Form\ImportForm'
+    _title: 'Import Form'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE

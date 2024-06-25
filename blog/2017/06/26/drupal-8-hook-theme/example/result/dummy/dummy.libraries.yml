@@ -1,0 +1,5 @@
+hook_theme_form.css:
+  version: VERSION
+  css:
+    theme:
+      styles/css/styles.css: { }

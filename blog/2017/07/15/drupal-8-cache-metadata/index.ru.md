@@ -10,8 +10,6 @@ description: >-
 attachments:
   - name: 'Исходник схемы'
     path: 'attachment/scheme.svg'
-  - name: 'Готовый модуль со всеми примерами'
-    path: 'attachment/dummy.tar.gz'
 promo: 'image/speed.jpeg'
 tags:
   - Drupal
@@ -789,6 +787,10 @@ class CacheContextUtmTest extends BlockBase {
 
 Вот так можно гибко использовать кэш. Каждый из этих вариантов будет иметь
 собственный кэш, и соответственно, будет грузиться очень быстро.
+
+## Ссылки
+
+- [Исходный код модуля с примером](example/dummy)
 
 [drupal-8-lazy-builder]: ../../../../2017/07/07/drupal-8-lazy-builder/index.ru.md
 [drupal-8-services]: ../../../../2017/06/21/drupal-8-services/index.ru.md

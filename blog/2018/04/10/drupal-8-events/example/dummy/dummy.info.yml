@@ -1,0 +1,5 @@
+name: Dummy
+description: 'Drupal 8 Events'
+type: module
+core: 8.x
+version: 8.x-1.0

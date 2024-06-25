@@ -1,0 +1,30 @@
+<?php
+
+/**
+ * @file
+ * Hooks for plugin_messages module.
+ */
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function plugin_messages_preprocess_page(&$variables) {
+  $plugin_service = \Drupal::service('plugin.manager.plugin_messages');
+  foreach ($plugin_service->getDefinitions() as $plugin_id => $plugin) {
+    $instance = $plugin_service->createInstance($plugin_id);
+    $message_type = $instance->getMessageType();
+    $message = $instance->getMessage();
+    # Переводим массив с адресами для отображения в строку, где каждый элемент
+    # массива с новой строки.
+    $pages = implode("\n", $instance->getPages());
+    $current_path = \Drupal::service('path.current')->getPath();
+    $path_match = \Drupal::service('path.matcher')->matchPath($current_path, $pages);
+
+    # Мы будем выводить сообщение, если не задано страниц для вывода - это
+    # значит что сообщение нужно выводить везде, а если задано, то только на тех
+    # страницах (паттернах) которые указаны. Поддерживаются <front>, node/*.
+    if (empty($instance->getPages()) || $path_match) {
+      drupal_set_message($message, $message_type);
+    }
+  }
+}

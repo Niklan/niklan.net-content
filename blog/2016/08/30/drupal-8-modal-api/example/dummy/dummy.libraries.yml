@@ -1,0 +1,6 @@
+modal.from.js:
+  version: 1.x
+  js:
+    js/modal_form.js: {}
+  dependencies:
+    - core/drupal.dialog.ajax

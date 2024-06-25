@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * @file
+ * Hooks for dummy module.
+ */
+use Drupal\Component\Utility\Html;
+
+/**
+ * Implements hook_form_BASE_FORM_ID_alter().
+ */
+function dummy_form_contact_message_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  # Добавляем элемент куда будем выводить сообщения об ошибках или успешном
+  # отправлении формы.
+  $form['system_messages'] = [
+    '#markup' => '<div id="' . Html::getClass($form_id) . '-messages"></div>',
+    '#weight' => -100,
+  ];
+
+  # Добавляем наш AJAX колбек для кнопки. Так как он находится в отдельном
+  # объекте, то указывать нужно полный путь с пространством имен.
+  $form['actions']['submit']['#ajax'] = [
+    'callback' => 'Drupal\dummy\AjaxContactSubmit::ajaxSubmitCallback',
+    'event' => 'click',
+    'progress' => [
+      'type' => 'throbber',
+    ],
+  ];
+}

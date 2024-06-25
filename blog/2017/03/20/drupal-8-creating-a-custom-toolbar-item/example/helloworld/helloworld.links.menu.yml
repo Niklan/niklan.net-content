@@ -1,0 +1,27 @@
+# Configuration page
+hello_world.admin_config_hello_world:
+  title: 'Hello World'
+  parent: system.admin_config
+  route_name: hello_world.admin_config_hello_world
+  weight: -50
+
+hello_world.collect_phone_settings:
+  title: 'Collect Phone settings'
+  description: 'In this settings you can set default phone number for collect phone form.'
+  parent: hello_world.admin_config_hello_world
+  route_name: hello_world.collect_phone_admin_settings
+  weight: 1
+
+# Toolbar
+hello_world.admin_toolbar_hello_world:
+  title: 'Hello World'
+  parent: system.admin
+  route_name: hello_world.admin_config_hello_world
+  weight: 0
+
+hello_world.admin_toolbar_collect_phone_settings:
+  title: 'Collect Phone settings'
+  description: 'In this settings you can set default phone number for collect phone form.'
+  parent: hello_world.admin_toolbar_hello_world
+  route_name: hello_world.collect_phone_admin_settings
+  weight: 1

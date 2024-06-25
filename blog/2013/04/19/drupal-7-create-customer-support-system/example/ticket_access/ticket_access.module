@@ -1,0 +1,42 @@
+<?php
+
+/**
+ *  Применяем hook_node_access().
+ *
+ *  Блокирует доступ к ноде 'ticket' всем пользователям, кроме автора и админа.
+*/
+function ticket_access_node_access($node, $op, $account) {
+  if (is_object($node)) {
+    if (($node->type == 'ticket')  && (($op == 'view') || ($op == 'update'))) {
+      if ($account->uid == $node->uid) {
+        return NODE_ACCESS_ALLOW;
+      }
+      else {
+        return NODE_ACCESS_DENY;
+      }
+    }
+  }
+
+  return NODE_ACCESS_IGNORE;
+}
+
+/**
+ *  Применяем hook_form_ID_alter().
+ *
+ *  Ставим полю title ноды типа 'ticket' пустое значение.
+ *  Также устанавливаем полю title новый class - 'hidden'.
+ */
+function ticket_access_form_ticket_node_form_alter(&$form, &$form_state, $form_id) {
+  $form['title'] = array(
+    '#type' => 'textfield',
+    '#maxlength' => 255,
+    '#weight' => -5,
+    '#required' => FALSE,
+    '#default_value' => '',
+    '#attributes' => array(
+      'class' => array(
+        'hidden',
+      ),
+    ),
+  );
+}

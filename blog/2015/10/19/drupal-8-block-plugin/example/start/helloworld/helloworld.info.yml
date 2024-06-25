@@ -1,0 +1,6 @@
+name: Hello World
+description: 'HelloWorld module - Block API learning!'
+type: module
+core: 8.x
+version: 1.0
+package: Examples

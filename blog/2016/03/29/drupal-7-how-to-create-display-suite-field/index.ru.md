@@ -8,9 +8,6 @@ description: >-
   Научитесь расширять функциональность своих сайтов, используя возможности
   DisplaySuite и Field Group. Узнайте, как упростить вёрстку и повысить её
   эффективность.
-attachments:
-  - name: 'Готовый модуль с примерами'
-    path: 'attachment/ds_fields_example.tar.gz'
 promo: 'image/ds_field_promo.png'
 tags:
   - Drupal
@@ -585,3 +582,7 @@ function dummy_ds_field_format_summary($field) {
 ```
 
 На этом всё. ;) Готовый модуль с изменениями прилагаю.
+
+## Ссылки
+
+- [Исходный код модуля с примером](example/dummy)

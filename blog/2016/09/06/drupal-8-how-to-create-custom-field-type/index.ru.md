@@ -7,9 +7,6 @@ updated: '2024-05-25T00:00:00'
 description: >-
   Создание нового типа поля в Drupal 8: добавляем на сайт поле «цвет» в
   соответствии с HTML5 элементом input/color.
-attachments:
-  - name: 'Готовый модуль с полем.'
-    path: 'attachment/my_color_field.tar.gz'
 promo: 'image/drupal8customfield.png'
 tags:
   - Drupal
@@ -391,3 +388,7 @@ class MyColorFieldDivFormatter extends FormatterBase {
 
 Вот и всё, на самом деле объявлять поля не так сложно. Главное не путаться в
 FieldWidget и FieldFormatter. В остальном всё похоже на Form API.
+
+## Ссылки
+
+- [Исходный код модуля с примером](example/my_color_field)

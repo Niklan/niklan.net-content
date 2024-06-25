@@ -1,0 +1,6 @@
+name: Plugin Messages
+description: 'Custom examples'
+type: module
+core: 8.x
+version: 1.x
+package: Custom

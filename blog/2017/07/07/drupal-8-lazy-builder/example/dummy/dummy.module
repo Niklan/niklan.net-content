@@ -1,0 +1,38 @@
+<?php
+
+/**
+ * @file
+ * Main file for custom hooks and functions.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function dummy_theme($existing, $type, $theme, $path) {
+  return [
+    'dummy_node_list' => [
+      'variables' => [
+        'limit' => 10,
+      ],
+    ],
+  ];
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function template_preprocess_dummy_node_list(&$variables) {
+  $variables['nodes'] = NULL;
+  $nids = \Drupal::entityQuery('node')
+    ->condition('type', 'article')
+    ->range(0, $variables['limit'])
+    ->execute();
+  $nodes =  \Drupal\node\Entity\Node::loadMultiple($nids);
+  foreach ($nodes as $node) {
+    $variables['nodes'][] = [
+      'label' => $node->title->value,
+    ];
+  }
+  // Random order.
+  shuffle($variables['nodes']);
+}

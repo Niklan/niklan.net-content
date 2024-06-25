@@ -7,9 +7,6 @@ updated: '2024-05-25T00:00:00'
 description: >-
   Чтобы избежать путаницы и упростить управление кастомными настройками,
   соберите все настройки в едином разделе на странице конфигурации.
-attachments:
-  - name: 'HelloWorld и CSV Import со всеми изменениями'
-    path: 'attachment/hello_and_csv.tar.gz'
 promo: 'image/drupal8config-menu.png'
 tags:
   - Drupal
@@ -205,6 +202,11 @@ custom_csv_import.admin_settings:
 
 Теперь у вас есть собственный раздел на странице конфигурации, куда можно
 складывать все кастомные настройки модулей и их ни с чем будет не спутать.
+
+## Ссылки
+
+- [Исходный код helloworld модуля с примером](example/helloworld)
+- [Исходный код custom_csv_import модуля с примером](example/custom_csv_import)
 
 [drupal-8-form-api]: ../../../../2015/10/16/drupal-8-form-api/index.ru.md
 [drupal-8-custom-csv-import]: ../../../../2016/09/11/drupal-8-custom-csv-import/index.ru.md

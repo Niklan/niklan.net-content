@@ -7,9 +7,6 @@ updated: '2024-05-25T00:00:00'
 description: >-
   Подробное руководство по созданию и продаже лицензий в Drupal Commerce с
   использованием модуля Commerce License.
-attachments:
-  - name: 'Готовый модуль'
-    path: 'attachment/paid_advertisement_license.tar.gz'
 promo: 'image/commerce-license.jpg'
 tags:
   - Drupal
@@ -900,3 +897,7 @@ function paid_advertisement_license_form_advertisement_node_form_submit($form, &
 ![Список лицензий](image/final-licenses.png)
 
 Готовый модуль вы можете скачать ниже в аттачментах.
+
+## Ссылки
+
+- [Исходный код модуля с примером](example/paid_advertisement_license)

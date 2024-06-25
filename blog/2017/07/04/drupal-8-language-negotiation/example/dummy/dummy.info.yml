@@ -1,0 +1,7 @@
+name: Dummy
+description: Example with Language Negotiators.
+version: VERSION
+core: 8.x
+type: module
+dependencies:
+  - language

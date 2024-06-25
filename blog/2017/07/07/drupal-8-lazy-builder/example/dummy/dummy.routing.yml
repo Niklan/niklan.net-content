@@ -1,0 +1,6 @@
+dummy.lazy_page:
+  path: '/lazy-page'
+  defaults:
+    _controller: '\Drupal\dummy\Controller\LazyPage::build'
+  requirements:
+    _permission: 'access content'

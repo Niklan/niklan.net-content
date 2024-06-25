@@ -1,0 +1,6 @@
+services:
+  dummy.article_breadcrumb:
+    class: Drupal\dummy\ArticleBreadcrumbBuilder
+    arguments: []
+    tags:
+      - { name: breadcrumb_builder, priority: 10 }

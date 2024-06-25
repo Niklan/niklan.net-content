@@ -1,0 +1,7 @@
+dummy.hook_theme:
+  path: '/hook-theme'
+  defaults:
+    _controller: '\Drupal\dummy\Controller\HookThemeExamples::page'
+    _title: 'hook_theme() examples'
+  requirements:
+    _permission: 'access content'

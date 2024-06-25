@@ -1,0 +1,217 @@
+<?php
+
+/**
+ * @file
+ * Main file for hooks and custom functions.
+ */
+
+/**
+ * Implements hook_ctools_plugin_directory().
+ */
+function paid_advertisement_license_ctools_plugin_directory($owner, $plugin_type) {
+  if ($owner == 'commerce_license') {
+    return "plugins/$plugin_type";
+  }
+}
+
+/**
+ * Returns array of objects with active Paid Advertisements Licenses for user.
+ */
+function paid_advertisement_license_get_user_active_licenses($uid = NULL) {
+  if (!$uid) {
+    global $user;
+    $uid = $user->uid;
+  }
+
+  $result = &drupal_static(__FUNCTION__ . $uid);
+  if (!isset($result)) {
+    $query = new EntityFieldQuery;
+    $query->entityCondition('entity_type', 'commerce_license')
+      ->entityCondition('bundle', 'paid_advertisement_license')// как название файла плагина
+      ->propertyCondition('status', COMMERCE_LICENSE_ACTIVE)
+      ->propertyCondition('uid', $uid);
+
+    $query_result = $query->execute();
+    if (isset($query_result['commerce_license'])) {
+      $result = array_keys($query_result['commerce_license']);
+    }
+    else {
+      $result = array();
+    }
+  }
+
+  return $result;
+}
+
+/**
+ * Returns how much publication and promotions left in total.
+ */
+function paid_advertisement_license_get_user_balance($uid = NULL) {
+  $licenses = paid_advertisement_license_get_user_active_licenses($uid);
+  $result = array(
+    'publications' => 0,
+    'promotions' => 0,
+  );
+  foreach ($licenses as $license_id) {
+    $wrapper = entity_metadata_wrapper('commerce_license', $license_id);
+    $result['promotions'] += $wrapper->pap_promotions_left->value();
+    $publications_left = $wrapper->pap_publications_left->value();
+    if ($publications_left == -1) {
+      $result['publications'] = $publications_left;
+    }
+    elseif ($result['publications'] != -1) {
+      $result['publications'] += $publications_left;
+    }
+  }
+  return $result;
+}
+
+/**
+ * Subtracts from balance publication and promotions. Priority is given to
+ * oldest licenses.
+ *
+ * @param $publications
+ *   0 or 1, any number greater than one will be equated to one.
+ * @param $promotions
+ *   0 or 1, any number greater than one will be equated to one.
+ */
+function paid_advertisement_license_subtract_from_balance($publications = 0, $promotions = 0, $uid = NULL) {
+  $publications = ($publications > 1) ? 1 : $publications;
+  $promotions = ($promotions > 1) ? 1 : $promotions;
+  $licenses = paid_advertisement_license_get_user_active_licenses($uid);
+  $balance = paid_advertisement_license_get_user_balance($uid);
+  foreach ($licenses as $license_id) {
+    $wrapper = entity_metadata_wrapper('commerce_license', $license_id);
+    $license_publications_left = $wrapper->pap_publications_left->value();
+    $license_promotions_left = $wrapper->pap_promotions_left->value();
+
+    // Subtract publications at first. We don't subtract if publications is
+    // unlimited.
+    if ($balance['publications'] > 0 && $publications > 0 && $license_publications_left > 0) {
+      $wrapper->pap_publications_left = $license_publications_left - 1;
+      $publications--;
+    }
+
+    // Subtract promotions.
+    if ($balance['promotions'] > 0 && $promotions > 0 && $license_promotions_left > 0) {
+      $wrapper->pap_promotions_left = $license_promotions_left - 1;
+      $promotions--;
+    }
+
+    $wrapper->save();
+  }
+}
+
+/**
+ * Find all advertisement
+ */
+function paid_advertisement_license_disable_expired_promotions() {
+  $query = new EntityFieldQuery;
+  $query->entityCondition('entity_type', 'node')
+    ->entityCondition('bundle', 'advertisement')
+    ->propertyCondition('sticky', NODE_STICKY)
+    ->fieldCondition('field_advertisement_prom_ending', 'value', REQUEST_TIME, '<');
+
+  $result = $query->execute();
+  if (isset($result['node'])) {
+    $nids = array_keys($result['node']);
+    foreach ($nids as $nid) {
+      $wrapper = entity_metadata_wrapper('node', $nid);
+      $wrapper->sticky = FALSE;
+      $wrapper->field_advertisement_prom_ending = NULL;
+      $wrapper->save();
+    }
+  }
+}
+
+/**
+ * Implements hook_permission().
+ */
+function paid_advertisement_license_permission() {
+  return array(
+    'bypass balance check paid advertisement license' => array(
+      'title' => t('Bypass balance check'),
+    ),
+    'edit promotion ending time paid advertisement license' => array(
+      'title' => t('Edit promotion ending time'),
+    ),
+  );
+}
+
+/**
+ * Implements hook_cronapi().
+ */
+function paid_advertisement_license_cronapi($op, $job = NULL) {
+  $items['disable_expired_promotions'] = array(
+    'description' => 'Disable expired promotions for paid advertisements',
+    'rule' => '*/5 * * * *', // every 5 minutes
+    'callback' => 'paid_advertisement_license_disable_expired_promotions',
+  );
+
+  return $items;
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function paid_advertisement_license_form_advertisement_node_form_alter(&$form, &$form_state, $form_id) {
+  $nid = $form['nid']['#value'];
+  $balance = paid_advertisement_license_get_user_balance();
+
+  // Node creation form.
+  if ($nid == NULL) {
+    if ($balance['publications'] == 0 && !user_access('bypass balance check paid advertisement license')) {
+      drupal_set_message(t('You don\'t have enough publications available.'), 'warning');
+      drupal_goto('store');
+    }
+  }
+
+  // Hide promotion ending time field.
+  if (!user_access('edit promotion ending time paid advertisement license')) {
+    $form['field_advertisement_prom_ending']['#access'] = FALSE;
+  }
+
+  // Adding promotion checkbox.
+  $form['promote_advertisement'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Promotes this advertise on one hour'),
+  );
+
+  if ($balance['promotions'] == 0) {
+    $form['promote_advertisement']['#attributes']['disabled'] = 'disabled';
+    $form['promote_advertisement']['#description'] = t('You don\'t have enough promotions available.');
+  }
+
+  // Add custom submit callback.
+  array_unshift($form['actions']['submit']['#submit'], 'paid_advertisement_license_form_advertisement_node_form_submit');
+}
+
+/**
+ * Custom submit handler for Advertisement node.
+ */
+function paid_advertisement_license_form_advertisement_node_form_submit($form, &$form_state) {
+  $values = &$form_state['values'];
+  $promote = $values['promote_advertisement'];
+  $wrapper = entity_metadata_wrapper('node', $form_state['node']);
+  $is_new = $wrapper->is_new->value();
+  $balance = paid_advertisement_license_get_user_balance();
+
+  if ($is_new && !user_access('bypass balance check paid advertisement license') && $balance['publications'] != -1) {
+    paid_advertisement_license_subtract_from_balance(1);
+  }
+
+  if ($promote) {
+    $values['sticky'] = TRUE;
+    if ($current_ending = $wrapper->field_advertisement_prom_ending->value()) {
+      // Adds additional hour to exists time.
+      $wrapper->field_advertisement_prom_ending = $current_ending + 60 * 60;
+    }
+    else {
+      $wrapper->field_advertisement_prom_ending = REQUEST_TIME + 60 * 60;
+    }
+
+    if (!user_access('bypass balance check paid advertisement license')) {
+      paid_advertisement_license_subtract_from_balance(0, 1);
+    }
+  }
+}

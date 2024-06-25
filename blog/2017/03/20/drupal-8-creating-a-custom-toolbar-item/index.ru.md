@@ -7,9 +7,6 @@ updated: '2024-05-25T00:00:00'
 description: >-
   Узнайте, как добавить свой собственный пункт в административный тулбар
   Drupal 8.
-attachments:
-  - name: 'Hello World — готовый модуль'
-    path: 'attachment/helloworld.tar.gz'
 promo: 'image/drupal8toolbar-menu.png'
 tags:
   - Drupal
@@ -29,10 +26,10 @@ tags:
 одновременно.
 
 За основу этой статьи я
-беру [модуль](/sites/default/files/blog/attachment/2017/3/17/hello%20and%20csv.tar.gz)
-из предыдщей статьи.
+беру [модуль](../../16/drupal-8-custom-csv-import-optimization/example/custom_csv_import)
+из предыдущей статьи.
 
-В данном модуле у нас имеется файл `helloworld.routing.yml` в котором обьявлена
+В данном модуле у нас имеется файл `helloworld.routing.yml` в котором объявлена
 страница ("блок") для пунктов на странице конфигурации, и путь для формы с
 настройками модуля. Мы задействуем оба роута. Первый `/admin/config/hello-world`
 станет основным пунктом в тулбаре, а
@@ -151,6 +148,10 @@ function helloworld_preprocess_toolbar(&$variables) {
 ![Toolbar с иконкой](image/toolbar.png)
 
 Готовый модуль, как обычно, во вложениях.
+
+## Ссылки
+
+- [Исходный код модуля с примером](example/helloworld)
 
 [drupal-8-creating-a-custom-section-on-the-configuration-page]: ../../../../2017/03/17/drupal-8-creating-a-custom-section-on-the-configuration-page/index.ru.md
 [drupal-8-libraries-api]: ../../../../2015/10/15/drupal-8-libraries-api/index.ru.md

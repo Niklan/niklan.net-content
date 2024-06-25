@@ -8,11 +8,6 @@ description: >-
   Drupal 8 предлагает широкие возможности для программного создания блоков,
   позволяя разработчикам адаптировать функционал сайта под конкретные нужды без
   необходимости использования сторонних модулей.
-attachments:
-  - name: 'Базовый модуль'
-    path: 'attachment/helloworld_blockapi_start.tar.gz'
-  - name: Результат
-    path: 'attachment/helloworld_blockapi_result.tar.gz'
 promo: 'image/drupal8blockapi.png'
 tags:
   - Drupal
@@ -171,7 +166,7 @@ public function blockSubmit($form, FormStateInterface $form_state) {
 
 В данном примере я расскажу как создать самый простой блок, лишь минимум из
 минимумов, который будет выводить простой текст. Для старта можете
-воспользоваться [голой заготовкой модуля](/sites/default/files/blog/75/attachments/helloworld_blockapi_start.tar.gz).
+воспользоваться [голой заготовкой модуля](example/start/helloworld).
 
 Для создания блока, нам, первым делом, нужно создать файл для класса, через
 который мы и объявим блок. Классы plugin-блоков хранятся в
@@ -372,5 +367,9 @@ class PrintMyMessages extends BlockBase {
 ![Результат](image/4.png)
 
 Вот и всё. Такой процесс работы с блоками в Drupal 8 на программном уровне.
+
+## Ссылки
+
+- [Исходный код модуля с примером](example/result/helloworld)
 
 [drupal-8-form-api]: ../../../../2015/10/16/drupal-8-form-api/index.ru.md

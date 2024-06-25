@@ -1,0 +1,9 @@
+services:
+  dummy.dummy_subscriber:
+    class: Drupal\dummy\EventSubscriber\DummySubscriber
+    tags:
+      - { name: event_subscriber }
+  dummy.commerce_subscriber:
+    class: Drupal\dummy\EventSubscriber\CommerceSubscriber
+    tags:
+      - { name: event_subscriber }

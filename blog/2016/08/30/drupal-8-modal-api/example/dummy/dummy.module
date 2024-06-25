@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * @file
+ * Hooks for dummy module.
+ */
+
+/**
+ * Implements hook_block_view_alter().
+ */
+function dummy_block_view_alter(array &$build, \Drupal\Core\Block\BlockPluginInterface $block) {
+  switch ($build['#id']) {
+    # Машинное имя блока.
+    case 'linktohelp':
+      $build['#attached']['library'][] = 'core/drupal.dialog.ajax';
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function dummy_preprocess_page(&$variables) {
+  if (\Drupal::service('path.matcher')->isFrontPage()) {
+    $variables['#attached']['library'][] = 'dummy/modal.from.js';
+  }
+}

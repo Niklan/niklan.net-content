@@ -1,0 +1,3 @@
+services:
+  dummy.lazy_renderer:
+    class: Drupal\dummy\LazyRenderer

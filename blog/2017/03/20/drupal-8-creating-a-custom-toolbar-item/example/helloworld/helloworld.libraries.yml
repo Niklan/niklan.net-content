@@ -1,0 +1,5 @@
+helloworld.toolbar:
+  version: VERSION
+  css:
+    theme:
+      css/helloworld.toolbar.css: {}

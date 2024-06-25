@@ -1,0 +1,6 @@
+services:
+  cache_context.dummy_request_header:
+    class: Drupal\dummy\Cache\Context\DummyRequestHeaderCacheContext
+    arguments: ['@request_stack']
+    tags:
+      - { name: cache.context }

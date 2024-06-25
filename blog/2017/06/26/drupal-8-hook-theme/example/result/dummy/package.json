@@ -1,0 +1,11 @@
+{
+  "name": "dummy",
+  "version": "1.0.0",
+  "description": "Examples for Drupal 8 hook_theme()",
+  "homepage": "https://niklan.net/",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0"
+  }
+}

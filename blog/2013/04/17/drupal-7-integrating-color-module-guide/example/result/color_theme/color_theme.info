@@ -1,0 +1,12 @@
+name = Пример Color-темы
+description = <a href="http://niklan.net/" target="_blank">Пример Color-темы</a>
+core = 7.x
+
+; Регионы
+regions[header] = Шапка
+regions[content] = Контент
+regions[footer] = Footer
+
+; Стили
+stylesheets[all][] = css/style.css
+stylesheets[all][] = color/color.css

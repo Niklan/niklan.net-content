@@ -8,9 +8,6 @@ description: >-
   Drupal 8 предоставляет возможность интеграции функции автодополнения в формы,
   что значительно упрощает процесс ввода данных и повышает удобство
   использования сайта.
-attachments:
-  - name: 'Пример готового модуля'
-    path: 'attachment/helloworld_autocomplete_result.tar.gz'
 promo: 'image/drupal8autocomplete.png'
 tags:
   - Drupal
@@ -190,3 +187,7 @@ $controller = \Drupal::entityManager()->getStorage('node');
 
 Вот так создаются автодополнения с использованием функционала из ядра. На этом
 всё.
+
+## Ссылки
+
+- [Исходный код модуля с примером](example/helloworld)

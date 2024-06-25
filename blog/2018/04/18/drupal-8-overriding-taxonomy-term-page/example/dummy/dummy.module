@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @file
+ * Contains custom functions and hooks.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function dummy_theme($existing, $type, $theme, $path) {
+  return [
+    'dummy_last_products_in_category' => [
+      'variables' => [
+        'taxonomy_term' => NULL,
+      ],
+      'file' => 'dummy.theme.inc',
+    ],
+  ];
+}

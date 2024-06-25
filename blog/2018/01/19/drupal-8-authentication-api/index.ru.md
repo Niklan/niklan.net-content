@@ -8,9 +8,6 @@ description: >-
   Узнайте, как создавать собственные сервисы аутентификации в Drupal 8.
   Научитесь добавлять новые способы авторизации, такие как авторизация через API
   ключ, автоматическая авторизация с определённых IP-адресов и другие.
-attachments:
-  - name: 'Модуль с примерами'
-    path: 'attachment/dummy.tar.gz'
 promo: 'image/keyboard-key-success-online-39389.jpeg'
 tags:
   - Drupal
@@ -644,6 +641,10 @@ hash для нашего ресурса, и так же мы его провер
 ![Postman - POST](image/Screenshot_20180119_204332.png)
 
 ![Postman - POST со скомпрометированными данными](image/Screenshot_20180119_204416.png)
+
+## Ссылки
+
+- [Исходный код модуля с примером](example/dummy)
 
 [drupal-8-services]: ../../../../2017/06/21/drupal-8-services/index.ru.md
 [drupal-8-how-to-create-a-custom-rest-plugin]: ../../16/drupal-8-how-to-create-a-custom-rest-plugin/index.ru.md

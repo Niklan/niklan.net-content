@@ -8,11 +8,6 @@ description: >-
   Drupal 8 Form API — значительное улучшение, предлагает гибкий и удобный подход
   к созданию форм. Основные изменения касаются ООП, делая код более
   структурированным и понятным.
-attachments:
-  - name: Заготовка
-    path: 'attachment/helloworld_formapi_start.tar.gz'
-  - name: 'Готовый вариант с FormBase и ConfigFormBase'
-    path: 'attachment/helloworld_formapi_end.tar.gz'
 promo: 'image/drupal8formapi.png'
 tags:
   - Drupal
@@ -215,7 +210,7 @@ public function submitForm(array &$form, FormStateInterface $form_state) {
 
 Для практической части нам потребуется кастомный модуль в котором мы и объявим
 свою форму. Для этого вы можете сами объявить свой модуль,
-либо [воспользоваться пустой заготовкой](/sites/default/files/blog/73/attachments/helloworld_formapi_start.tar.gz).
+либо [воспользоваться пустой заготовкой](example/start/helloworld).
 Далее по материалу мы подразумеваем что наш модуль имеет название `helloworld`.
 
 ### Создание формы на основе FormBase
@@ -547,3 +542,7 @@ function helloworld_form_collect_phone_alter(&$form, &$form_state) {
 
 Вот и всё. Так мы будем работать с формами в Drupal 8. Как по мне, так намного
 удобнее и приятнее работать с такими формами.
+
+## Ссылки
+
+- [Исходный код модуля с примером](example/result/helloworld)

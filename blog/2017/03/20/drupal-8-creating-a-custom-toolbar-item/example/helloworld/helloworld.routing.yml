@@ -1,0 +1,24 @@
+collect_phone.form:
+  path: '/collect-phone'
+  defaults:
+    _title: 'Collect Phone - Form API example.'
+    # Подгружаем форму по неймспейсу.
+    _form: '\Drupal\helloworld\Form\CollectPhone'
+  requirements:
+    _permission: 'access content'
+
+hello_world.collect_phone_admin_settings:
+  path: '/admin/config/hello-world/phone-settings'
+  defaults:
+    _form: '\Drupal\helloworld\Form\CollectPhoneSettings'
+    _title: 'Settings for CollectPhone form.'
+  requirements:
+    _permission: 'administer site configuration'
+
+hello_world.admin_config_hello_world:
+  path: '/admin/config/hello-world'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Hello World'
+  requirements:
+    _permission: 'access administration pages'

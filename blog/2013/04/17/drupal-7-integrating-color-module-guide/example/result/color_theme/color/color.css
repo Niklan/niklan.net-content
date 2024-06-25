@@ -1,0 +1,20 @@
+/* bg */
+body {
+	background: #f1f1f1;
+}
+
+/* link_color */
+a {
+  color: #2158ce;
+}
+
+/* page_bg */
+#page-wrapper {
+	background: #ffffff; 
+}
+
+/* menu_bg_color && menu_link_color */
+#navigation ul.menu li a {
+  background: #ececec; 
+  color: #000000;
+}

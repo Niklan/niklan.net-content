@@ -1,0 +1,78 @@
+{{ form.form_build_id }}
+{{ form.form_token }}
+{{ form.form_id }}
+
+<div class="description">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nisi nisi, vehicula quis massa at, fermentum tempor risus. Phasellus consequat vel neque vel euismod. Curabitur tellus leo, commodo at nibh sed, euismod mattis orci. Nam in semper ante. Vestibulum pellentesque vitae nibh vel sollicitudin. Aliquam efficitur tortor arcu, eu dignissim urna venenatis nec. Donec ullamcorper et nibh eget scelerisque. Aenean non nunc tempus, congue turpis congue, scelerisque metus. Nulla rutrum egestas sapien. Cras vel suscipit sapien. Donec at est non ligula venenatis blandit. Donec non tortor eu elit consectetur semper luctus ut erat. Morbi et facilisis dui. Aenean est dolor, porttitor pretium convallis vel, feugiat vel neque.
+</div>
+
+<div class="form-elements">
+  <div class="left">
+    <div class="row">
+      <div class="title">Tour length</div>
+      <div class="elements">
+        {{ form.tour_length }}
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="title">My Travel Party</div>
+      <div class="elements three-in-row">
+        {{ form.adults }}
+        {{ form.kids }}
+        {{ form.infants }}
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="title">Arrival and departure date</div>
+      <div class="elements two-in-row">
+        {{ form.arrival_date }}
+        {{ form.departure_date }}
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="title">Arrival and departure city</div>
+      <div class="elements two-in-row">
+        {{ form.arrival_city }}
+        {{ form.departure_city }}
+      </div>
+    </div>
+  </div>
+
+  <div class="right">
+    <div class="row">
+      <div class="title">Cars & Hotels options</div>
+      <div class="elements two-in-row">
+        {{ form.car }}
+        {{ form.hotel }}
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="title">My interests</div>
+      <div class="elements">
+        {{ form.my_interests }}
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="title">My Contact Details</div>
+      <div class="elements">
+        <div class="information two-in-row">
+          {{ form.name }}
+          {{ form.email }}
+          {{ form.country }}
+          {{ form.phone }}
+        </div>
+
+        {{ form.comment }}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="buttons">
+  {{ form.submit }}
+</div>

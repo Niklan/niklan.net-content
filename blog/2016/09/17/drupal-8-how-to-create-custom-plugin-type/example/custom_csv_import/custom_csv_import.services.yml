@@ -1,0 +1,4 @@
+services:
+  plugin.manager.custom_csv_import:
+    class: Drupal\custom_csv_import\CustomCSVImportManager
+    parent: default_plugin_manager

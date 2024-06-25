@@ -1,0 +1,7 @@
+dummy.language_negotiation_ip_settings:
+  path: '/admin/config/regional/language/detection/ip'
+  defaults:
+    _form: '\Drupal\dummy\Form\LanguageNegotiationIpSettings'
+    _title: 'Language IP negotiation settings'
+  requirements:
+    _permission: 'administer site configuration'
