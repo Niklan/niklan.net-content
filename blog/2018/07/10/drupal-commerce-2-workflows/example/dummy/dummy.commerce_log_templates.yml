@@ -1,0 +1,4 @@
+order_processed:
+  category: commerce_order
+  label: 'Order processed'
+  template: '<p>The order was processed.</p>'

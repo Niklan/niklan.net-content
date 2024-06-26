@@ -1,0 +1,11 @@
+condition.plugin.dummy_user_authenticated:
+  type: condition.plugin
+  label: 'User authenticated condition'
+
+condition.plugin.dummy_user_has_node_type_content:
+  type: condition.plugin
+  label: 'User has node type content'
+  mapping:
+    node_type:
+      type: string
+      label: 'Node type to check for'

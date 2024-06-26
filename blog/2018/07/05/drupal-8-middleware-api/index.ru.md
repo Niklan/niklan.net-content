@@ -7,9 +7,6 @@ updated: '2024-05-25T00:00:00'
 description: >-
   В этом материале рассказываю и показываю что такое Middleware API и как он
   может вам помочь.
-attachments:
-  - name: 'Готовый модуль с примерами'
-    path: 'attachment/dummy.tar.gz'
 promo: 'image/pexels-photo-247768.jpeg'
 tags:
   - Drupal
@@ -501,6 +498,10 @@ function dummy_preprocess_page(&$variables) {
 смогли определить.
 
 ![GeoPlugin пример](image/example-2.png)
+
+## Ссылки
+
+- [Исходный код модуля с примером](example/dummy)
 
 [drupal-8-services]: ../../../../2017/06/21/drupal-8-services/index.ru.md
 [drupal-8-events]: ../../../../2018/04/10/drupal-8-events/index.ru.md

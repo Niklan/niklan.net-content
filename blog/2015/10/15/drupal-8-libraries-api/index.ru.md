@@ -9,9 +9,6 @@ description: >-
   Libraries API. Это позволяет загружать библиотеки только на тех страницах, где
   они необходимы, оптимизируя загрузку ресурсов и повышая производительность
   сайта.
-attachments:
-  - name: 'Готовый результат'
-    path: 'attachment/helloworld.tar.gz'
 promo: 'image/d8librariesapi.png'
 tags:
   - Drupal
@@ -74,7 +71,7 @@ tags:
 должен быть объявлен модуль в соответствии с новыми требованиями. Можете
 объявить сами воспользовавшись моим гайдом
 по [созданию hello world модуля в Drupal 8][drupal-8-hello-world], или прямо
-оттуда [скачать готовый вариант](/sites/default/files/blog/66/attachments/helloworld.tar.gz),
+оттуда [скачать готовый вариант](../../../../2014/10/12/drupal-8-hello-world/example/helloworld),
 на котором я буду всё показывать.
 
 ### Базовый синтаксис
@@ -357,6 +354,10 @@ public function helloWorld() {
 ![VexJS Alert](image/2.png)
 
 На этом всё. Удачи в изучении Drupal 8.
+
+## Ссылки
+
+- [Исходный код модуля с примером](example/helloworld)
 
 [drupal-8-api-changes]: ../../../../2014/10/07/drupal-8-api-changes/index.ru.md
 [drupal-8-hello-world]: ../../../../2014/10/12/drupal-8-hello-world/index.ru.md

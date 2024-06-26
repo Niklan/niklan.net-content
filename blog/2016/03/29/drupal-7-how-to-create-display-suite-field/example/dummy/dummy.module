@@ -1,0 +1,71 @@
+<?php
+
+/**
+ * @file
+ * Module for tutorials.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function dummy_theme($existing, $type, $theme, $path) {
+  return array(
+    // Объявляем нашу темплейт функцию.
+    'dummy_word_frequency_list' => array(
+      // Объявляем темплейт. tpl.php добавляется автоматически.
+      'template' => 'theme/word-frequency-list',
+    ),
+  );
+}
+
+/**
+ * Implements temaplte_preprocess_THEME().
+ *
+ * Так как никакой callback функции нет, нам нужно как-то подготовить данные к
+ * использованию. В этом хуке мы подготовим переменные для использования в
+ * шаблоне. Вся необходимая информация как и в колбеке есть в $variables.
+ */
+function template_preprocess_dummy_word_frequency_list(&$variables) {
+  // Определяем како формат список выбран в настройках.
+  switch ($variables['formatter_settings']['list_wrapper']) {
+    case 0:
+      $list_format = 'ul';
+      break;
+
+    case 1:
+      $list_format = 'ol';
+      break;
+  }
+  // Передаем формат в темплейт.
+  $variables['list_format'] = $list_format;
+
+  $entity_wrapper = entity_metadata_wrapper('node', $variables['entity']);
+  if ($body_value = $entity_wrapper->body->value->value()) {
+    // Считаем повторяющиеся слова.
+    $words_with_count = array_count_values(str_word_count(strip_tags($body_value), 1));
+    // Удаляем значения меньше меньше 2.
+    foreach ($words_with_count as $k => $v) {
+      if ($v < 2) {
+        unset($words_with_count[$k]);
+      }
+    }
+    // Сортируем по убыванию.
+    arsort($words_with_count);
+    // Присваем массив в переменную $results для шаблона.
+    $variables['results'] = $words_with_count;
+  }
+}
+
+/**
+ * Implements hook_ds_field_settings_form().
+ */
+function dummy_ds_field_settings_form($field) {
+  return ds_ds_field_settings_form($field);
+}
+
+/**
+ * Implements hook_ds_field_format_summary().
+ */
+function dummy_ds_field_format_summary($field) {
+  return ds_ds_field_format_summary($field);
+}

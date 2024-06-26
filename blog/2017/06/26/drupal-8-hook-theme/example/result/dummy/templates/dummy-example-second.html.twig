@@ -1,0 +1,23 @@
+{#
+/**
+ * Тут мы проверяем, есть ли данные в переменной items. Если массив пустой или
+ * вовсе не был передан, то мы ничего рендерить не будем. Соовтетственно наш
+ * theme hook ничего не вернет и на странице ничего не будет.
+ */
+#}
+{% if items is not empty %}
+  {# Делаем обертку для списка подставляя значение переменной в тег. #}
+  <{{ list_type }} {{ attributes }}>
+    {# Выводим наши данные из items. #}
+    {% for item in items %}
+      <li>
+        {% if item.title %}
+          <h3 class="title">{{ item.title }}</h3>
+        {% endif %}
+        {% if item.text %}
+          <p class="text">{{ item.text }}</p>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </{{ list_type }}>
+{% endif %}

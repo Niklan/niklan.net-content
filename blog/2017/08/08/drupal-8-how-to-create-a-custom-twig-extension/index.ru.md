@@ -9,9 +9,6 @@ description: >-
   узнаете, как расширить возможности шаблонизатора, добавив собственные функции
   и фильтры. Это позволит упростить разработку тем и улучшить их
   функциональность.
-attachments:
-  - name: 'Готовый модуль с примерами'
-    path: 'attachment/dummy.tar.gz'
 promo: 'image/twigondrugs.png'
 tags:
   - Drupal
@@ -371,6 +368,10 @@ public function tel(string $phone) {
 Вот так вот объявляются Twig расширения в виде функций и фильтров. Всё
 действительно настолько просто, зато как это может облегчать жизнь и избавлять
 от кучи препроцессов в каждом втором темплейте.
+
+## Ссылки
+
+- [Исходный код модуля с примером](example/dummy)
 
 [drupal-7-how-to-theme-using-display-suite-and-field-group]: ../../../../2016/04/04/drupal-7-how-to-theme-using-display-suite-and-field-group/index.ru.md
 [drupal-8-services]: ../../../../2017/06/21/drupal-8-services/index.ru.md

@@ -1,0 +1,7 @@
+dummy.form.temp_store:
+  path: '/temp-store-form'
+  defaults:
+    _title: 'Form with temp storage'
+    _form: 'Drupal\dummy\Form\FormWithTempStore'
+  requirements:
+    _permission: 'access content'

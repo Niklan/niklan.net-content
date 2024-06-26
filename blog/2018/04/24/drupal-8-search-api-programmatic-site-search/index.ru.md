@@ -7,9 +7,6 @@ updated: '2024-05-25T00:00:00'
 description: >-
   Усовершенствуйте поиск на своём сайте с Drupal 8 и Search API: освойте мощный
   инструмент для точного и гибкого поиска контента.
-attachments:
-  - name: 'Третий пример'
-    path: 'attachment/dummy.tar.gz'
 promo: 'image/book-close-up-focus-208452.jpg'
 tags:
   - Drupal
@@ -403,6 +400,10 @@ class GlobalSearchResource extends ResourceBase {
 почитайте [статью про кэширование в 8-ке][d8-cache-metadata].
 
 _На момент публикации, поиск по блогу работает именно так, в связке с Vue.js._
+
+## Ссылки
+
+- [Исходный код модуля с примером](example/dummy)
 
 [d8-cache-metadata]: ../../../../2017/07/15/drupal-8-cache-metadata/index.ru.md
 [drupal-8-how-to-create-a-custom-rest-plugin]: ../../../01/16/drupal-8-how-to-create-a-custom-rest-plugin/index.ru.md

@@ -1,0 +1,133 @@
+// Variables
+$path-to-svg-icons: '../../images/icons/';
+
+@mixin svg-icon($icon-name, $width: 26px, $height: 26px, $padding: true) {
+  position: relative;
+  box-sizing: border-box;
+
+  @if $padding {
+    padding-left: $width + 6px;
+  }
+
+  &:before {
+    content: '';
+    width: $width;
+    height: $height;
+    display: block;
+    background: url($path-to-svg-icons + $icon-name + '.svg') no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+  }
+}
+
+.clearfix {
+  &:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+
+.hook-theme-form-example {
+  .description {
+    margin-bottom: 15px;
+  }
+
+  .form-elements {
+    @extend .clearfix;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #cccccc;
+
+    > .left {
+      width: 48%;
+      float: left;
+      margin-right: 4%;
+    }
+
+    > .right {
+      width: 48%;
+      float: left;
+    }
+
+    .row {
+      margin-bottom: 10px;
+
+      > .title {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 1.2;
+      }
+
+      .elements {
+        $icon-map: (
+          '.form-item-tour-length': 'form-sun',
+          '.form-item-adults': 'form-adults',
+          '.form-item-kids': 'form-kids',
+          '.form-item-infants': 'form-infants',
+          '.form-item-arrival-date': 'form-days',
+          '.form-item-departure-date': 'form-days',
+          '.form-item-arrival-city': 'form-plane-down',
+          '.form-item-departure-city': 'form-plane-up',
+          '.form-item-car': 'form-car',
+          '.form-item-hotel': 'form-hotels',
+          '.form-item-my-interests': 'form-interests',
+          '.form-item-name': 'form-name',
+          '.form-item-email': 'form-name',
+          '.form-item-country': 'form-place',
+          '.form-item-phone': 'form-phone',
+          '.form-item-comment': 'form-comments',
+        );
+
+        @each $selector, $icon in $icon-map {
+          #{$selector} {
+            @include svg-icon($icon);
+          }
+        }
+
+        .form-item-comment:before {
+          top: 0;
+        }
+      }
+
+      .three-in-row {
+        @extend .clearfix;
+
+        .form-item {
+          width: 33%;
+          float: left;
+
+          input {
+            width: calc(100% - 10px);
+          }
+        }
+      }
+
+      .two-in-row {
+        @extend .clearfix;
+
+        .form-item {
+          width: 50%;
+          float: left;
+
+          input {
+            width: calc(100% - 10px);
+          }
+        }
+      }
+    }
+  }
+
+  .buttons {
+    display: table;
+    margin: 0 auto;
+
+    .form-submit {
+      font-size: 18px;
+      padding: 15px 50px;
+      border-radius: 0;
+    }
+  }
+}

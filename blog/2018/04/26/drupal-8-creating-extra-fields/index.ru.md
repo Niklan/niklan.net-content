@@ -7,9 +7,6 @@ updated: '2024-05-25T00:00:00'
 description: >-
   Создаём псевдо-поля в Drupal 8: узнайте, как добавить новые поля к
   существующим сущностям и формам.
-attachments:
-  - name: 'Готовый модуль с примерами'
-    path: 'attachment/dummy.tar.gz'
 promo: 'image/adult-blur-business-374899.jpg'
 tags:
   - Drupal
@@ -256,6 +253,10 @@ API.
 вывода их в сущности можно насобирать прилично. Например: ссылки соц. сетей,
 различные доп кнопки и вставка вьюсов. В общем область применения у псевдо-полей
 для `display` куда шире и это будет самый популярный юз-кейс для данных "полей".
+
+## Ссылки
+
+- [Исходный код модуля с примером](example/dummy)
 
 [drupal-7-how-to-create-display-suite-field]: ../../../../2016/03/29/drupal-7-how-to-create-display-suite-field/index.ru.md
 [drupal-8-how-to-create-display-suite-plugin]: ../../../../2016/04/02/drupal-8-how-to-create-display-suite-plugin/index.ru.md

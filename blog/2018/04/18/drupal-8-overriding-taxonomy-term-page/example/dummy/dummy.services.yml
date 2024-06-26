@@ -1,0 +1,5 @@
+services:
+  dummy.route_subscriber:
+    class: Drupal\dummy\EventSubscriber\RouteSubscriber
+    tags:
+      - { name: event_subscriber }

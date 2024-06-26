@@ -8,9 +8,6 @@ description: >-
   Drupal 8 Queue API позволяет разработчикам управлять задачами, которые требуют
   много времени или ресурсов, путём их помещения в очередь для выполнения в
   фоновом режиме.
-attachments:
-  - name: 'Результат выполнения'
-    path: 'attachment/helloworld_queueapi_end.tar.gz'
 promo: 'image/queueapid8.png'
 tags:
   - Drupal
@@ -303,5 +300,9 @@ Queue наследуюясь от QueueInterface.
 каждого элемента очереди есть дата его создания (`$item>created`) и т.д.
 
 Спасибо за внимание.
+
+## Ссылки
+
+- [Исходный код модуля с примером](example/helloworld)
 
 [drupal-8-batch-api]: ../../../../2018/09/11/drupal-8-batch-api/index.ru.md

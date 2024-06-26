@@ -1,0 +1,11 @@
+services:
+  authentication.dummy.cookie_backdoor:
+    class: Drupal\dummy\Authentication\Provider\CookieBackdoorProvider
+    arguments: ['@entity_type.manager']
+    tags:
+      - { name: authentication_provider, provider_id: cookie_backdoor, priority: 100, global: TRUE }
+  authentication.dummy.key_secret:
+    class: Drupal\dummy\Authentication\Provider\KeySecretProvider
+    arguments: ['@entity_type.manager']
+    tags:
+      - { name: authentication_provider, provider_id: key_secret, priority: 100 }

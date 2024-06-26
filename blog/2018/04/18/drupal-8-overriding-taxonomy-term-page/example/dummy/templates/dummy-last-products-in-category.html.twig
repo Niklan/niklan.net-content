@@ -1,0 +1,14 @@
+<div{{ attributes.addClass('last-products-in-category') }}>
+  {% for item in items %}
+    <div class="last-products-in-category__category">
+      <div class="last-products-in-category__header">
+        <h2 class="last-products-in-category__title">{{ item.label }}</h2>
+        <a href="{{ item.url }}" class="last-products-in-category__more">{{ 'More'|t }}</a>
+      </div>
+
+      <div class="last-products-in-category__content">
+        {{ item.view }}
+      </div>
+    </div>
+  {% endfor %}
+</div>

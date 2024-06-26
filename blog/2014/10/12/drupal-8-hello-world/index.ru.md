@@ -7,9 +7,6 @@ updated: '2024-05-25T00:00:00'
 description: >-
    Создание своего первого модуля в Drupal 8 — это отличный способ начать
    изучение разработки на этой платформе.
-attachments:
-  - name: 'Готовый модуль'
-    path: 'attachment/helloworld.tar.gz'
 promo: 'image/d8helloworld.png'
 tags:
   - Drupal
@@ -210,5 +207,9 @@ helloworld.hellopage:
 BINGO!
 
 Готовый модуль прикреплен к материалу.
+
+## Ссылки
+
+- [Исходный код модуля с примером](example/helloworld)
 
 [drupal-8-api-changes]: ../../../../2014/10/07/drupal-8-api-changes/index.ru.md

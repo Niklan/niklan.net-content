@@ -13,8 +13,6 @@ attachments:
     path: 'attachment/custom_csv_import_1.csv'
   - name: 'Импорт с 1000 материалами'
     path: 'attachment/custom_csv_import_1000.csv'
-  - name: 'Готовый модуль'
-    path: 'attachment/custom_csv_import.tar.gz'
 promo: 'image/drupal8customcsvimport.png'
 tags:
   - Drupal
@@ -918,8 +916,8 @@ custom_csv_import.admin_settings:
 ## Проверка модуля
 
 Настало время проверять модуль. Для тестов я заготовил два
-файла [импорт из 1 материала](/sites/default/files/blog/attachment/2016/9/11/custom_csv_import_1.csv)
-и [импорт из 1000 материалов](/sites/default/files/blog/attachment/2016/9/11/custom_csv_import_1000.csv).
+файла [импорт из 1 материала](attachment/custom_csv_import_1.csv)
+и [импорт из 1000 материалов](attachment/custom_csv_import_1000.csv).
 Для начала я рекомендую тестить именно на одном материале, разницы от 1000 по
 сути никакой, на 1000 можно потестить разве что скорость выполнения.
 
@@ -970,5 +968,9 @@ custom_csv_import.admin_settings:
 
 P.s. Я тут ещё создал [Telegram канал](https://telegram.me/niklannet),
 присоединяйтесь, буду там что-то помимо записей в блог закидывать.
+
+## Ссылки
+
+- [Исходный код модуля с примером](example/custom_csv_import)
 
 [drupal-8-form-api]: ../../../../2015/10/16/drupal-8-form-api/index.ru.md

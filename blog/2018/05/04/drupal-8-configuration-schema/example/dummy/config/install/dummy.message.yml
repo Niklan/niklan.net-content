@@ -1,0 +1,5 @@
+status: false
+type: 'status'
+subject: 'Hello World!'
+body: 'This is default configuration message.'
+langcode: 'en'

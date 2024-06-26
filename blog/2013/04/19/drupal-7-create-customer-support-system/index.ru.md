@@ -7,8 +7,6 @@ updated: '2024-05-25T00:00:00'
 description: >-
   Создаём систему техподдержки на Drupal 7: организуем работу с тикетами.
 attachments:
-  - name: 'Модуль блокировки тикетов'
-    path: 'attachment/ticket_access.zip'
   - name: 'Результат выполнения'
     path: 'attachment/drupaldev.20130419_044448.tar.gz'
 promo: 'image/support.png'
@@ -244,7 +242,7 @@ function hook_node_access($node, $op, $account) {
 ```
 
 Кто не
-знает, [качайте заготовку](/sites/default/files/blog/28/attachments/ticket_access.zip)>
+знает, [качайте заготовку](example/ticket_access)>
 и не забываем включить.
 
 ### Устраняем проблему с заголовком тикета
@@ -429,3 +427,7 @@ logged in user», сохраняем.
 Включив тему Corolla и немного поговнокодив, я привел сообщения к такому виду:
 
 ![Результат.](image/result.png)
+
+## Ссылки
+
+- [Исходный код модуля с примером](example/ticket_access)

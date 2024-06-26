@@ -7,9 +7,6 @@ updated: '2024-05-25T00:00:00'
 description: >-
   В этом материале рассмотрим, как добавить на сайт возможность программного
   определения языка с помощью плагина LanguageNegotiator.
-attachments:
-  - name: 'Готовый модуль с примерами'
-    path: 'attachment/dummy.tar.gz'
 promo: 'image/language-flag-countries.jpeg'
 tags:
   - Drupal
@@ -301,5 +298,9 @@ ips: ''
 Вот так просто. Если нужны другие примеры, можете посмотреть как реализованы
 остальные из списка, которые легко найти в
 ядре: `core/modules/language/src/Plugin/LanguageNegotiation`.
+
+## Ссылки
+
+- [Исходный код модуля с примером](example/dummy)
 
 [drupal-8-form-api]: ../../../../2015/10/16/drupal-8-form-api/index.ru.md

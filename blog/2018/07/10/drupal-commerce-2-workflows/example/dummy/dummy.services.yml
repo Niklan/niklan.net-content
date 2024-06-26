@@ -1,0 +1,6 @@
+services:
+  dummy.order_workflow_subscriber:
+    class: Drupal\dummy\EventSubscriber\OrderWorkflowSubscriber
+    arguments: ['@entity_type.manager']
+    tags:
+      - { name: event_subscriber }

@@ -1,0 +1,7 @@
+dummy.message.settings:
+  path: '/dummy-message'
+  defaults:
+    _title: 'Dummy message settings'
+    _form: 'Drupal\dummy\Form\DummyMessageSettings'
+  requirements:
+    _permission: 'administer site configuration'

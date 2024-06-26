@@ -1,0 +1,63 @@
+id: dummy_articles
+label: 'Article'
+migration_group: dummy
+migration_tags:
+  - node
+  - article
+source:
+  plugin: csv
+  path: modules/custom/dummy/assets/articles.csv
+  delimiter: ';'
+  enclosure: '"'
+  header_row_count: 1
+  column_names:
+    0:
+      id: 'Article ID'
+    1:
+      title: 'Title'
+    2:
+      image_url: 'Promo image URL'
+    3:
+      uid: 'Author ID'
+    4:
+      body: 'Content'
+  keys:
+    - id
+  constants:
+    status: 1
+    sticky: 0
+    body_format: 'full_html'
+process:
+  title: title
+  uid:
+    -
+      # В данном плагине мы ищем актуальный uid юзера зная его UID в источнике.
+      plugin: migration_lookup
+      migration: dummy_users
+      source: uid
+    -
+      # Если по каким-то причинам связь не нашлась, отдаем авторство админу.
+      plugin: default_value
+      default_value: 1
+  sticky: 'constants/sticky'
+  status: 'constants/status'
+  'body/value': body
+  'body/format': 'constants/body_format'
+  # Находим fid загруженного файла и записываем его в поле для изображения.
+  'field_image/target_id':
+    plugin: migration_lookup
+    migration: dummy_article_files
+    source: id
+destination:
+  plugin: entity:node
+  # Вы также можете установить данное значение в process как type.
+  default_bundle: article
+migration_dependencies:
+  required:
+    - dummy_users
+    - dummy_article_files
+dependencies:
+  enforced:
+    module:
+      - dummy
+      - migrate_source_csv

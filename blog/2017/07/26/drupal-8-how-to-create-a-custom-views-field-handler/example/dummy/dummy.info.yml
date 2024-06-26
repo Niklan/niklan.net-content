@@ -1,0 +1,5 @@
+name: Dummy
+description: 'Example for Views Field Handler Plugin.'
+version: VERSION
+core: 8.x
+type: module

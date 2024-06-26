@@ -7,11 +7,6 @@ updated: '2024-05-25T00:00:00'
 description: >-
    Научитесь контролировать доступ к материалам в Drupal 7: создавайте скрытые
    материалы и ограничивайте доступ к ним на основе различных критериев.
-attachments:
-  - name: 'Заготовка модуля'
-    path: 'attachment/mymodule_empty.tar.gz'
-  - name: 'Готовый модуль'
-    path: 'attachment/mymodule_done.tar.gz'
 promo: 'image/nodeaccesspromo.png'
 tags:
   - Drupal
@@ -50,7 +45,7 @@ tags:
 6. Добавляем новую роль для пользователей: Members и располагаем после
    авторизованных пользователей.
    ![Роли.](image/1.png)
-7. [Скачайте](/sites/default/files/blog/63/attachments/mymodule_empty.tar.gz) и
+7. [Скачайте](example/start/mymodule) и
    расположите заготовку для модуля в /sites/all/modules/.
 
 ## Теоретическая часть
@@ -234,5 +229,9 @@ function mymodule_node_access_records($node) {
 
 Всё не так уж и сложно. Главное уловить идею про выдачу уровней доступа и
 понимание придёт. Удачи в создании закрытых разделов. ;)
+
+## Ссылки
+
+- [Исходный код модуля с примером](example/result/mymodule)
 
 [drupal-7-access-control-rules]: ../../../../2013/05/06/drupal-7-access-control-rules/index.ru.md

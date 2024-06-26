@@ -1,0 +1,4 @@
+skip_first_line: 1
+delimiter: ';'
+enclosure: ','
+chunk_size: 20

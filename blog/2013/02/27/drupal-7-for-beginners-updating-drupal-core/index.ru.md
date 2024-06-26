@@ -7,9 +7,6 @@ updated: '2024-05-25T00:00:00'
 description: >-
    Узнайте, как легко обновлять ядро Drupal 7, чтобы улучшить безопасность и
    функциональность вашего сайта.
-attachments:
-  - name: Screenshot_20160822_122606.png
-    path: 'image/Screenshot_20160822_122606.png'
 promo: 'image/drupalupdate.png'
 tags:
   - Drupal

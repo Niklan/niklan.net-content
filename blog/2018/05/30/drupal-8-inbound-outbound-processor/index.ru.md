@@ -7,9 +7,6 @@ updated: '2024-05-25T00:00:00'
 description: >-
   Узнайте всё об алиасах. Понимание особенностей работы inbound и outbound
   процессоров поможет вам создавать эффективные решения.
-attachments:
-  - name: 'Готовый модуль с примером'
-    path: 'attachment/dummy.tar.gz'
 promo: 'image/pexels-photo-315938.jpeg'
 tags:
   - Drupal
@@ -472,5 +469,9 @@ function _dummy_clean_pager_url($url) {
 После этого, генерация ссылок у пейджера будет корректной.
 
 ![Пейджер с новыми URL](image/example-2-pager.png)
+
+## Ссылки
+
+- [Исходный код модуля с примером](example/dummy)
 
 [drupal-8-services]: ../../../../2017/06/21/drupal-8-services/index.ru.md

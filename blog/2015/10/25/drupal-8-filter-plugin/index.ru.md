@@ -7,11 +7,6 @@ updated: '2024-05-25T00:00:00'
 description: >-
   Drupal 8 позволяет разработчикам создавать собственные фильтры для контента,
   обеспечивая гибкость и контроль над отображением данных на сайте.
-attachments:
-  - name: 'Заготовка для старта'
-    path: 'attachment/helloworld_plugin_filter_start.tar.gz'
-  - name: 'Финальный результат'
-    path: 'attachment/helloworld_plugin_filter_result.tar.gz'
 promo: 'image/drupal8pluginfilter.png'
 tags:
   - Drupal
@@ -86,7 +81,7 @@ public function setConfiguration(array $configuration) {
 Так как фильтр является плагином - он должен располагаться в соответствующей
 директории `/src/Plugin/Filter/MyFilter.php`. В качестве точки отрыва
 используйте
-уже [пустую заготовку модуля](/sites/default/files/blog/76/attachments/helloworld_plugin_filter_start.tar.gz).
+уже [пустую заготовку модуля](example/start/helloworld).
 
 ### Простой пример
 
@@ -296,3 +291,7 @@ class ReplaceTextForMe extends FilterBase {
 Вот и всё. Так вот просто объявляется фильтр в Drupal 8, впрочем, как и в
 Drupal 7. Только сделано это намного удобнее, хранится в одном файле и все
 разложено по полочкам.
+
+## Ссылки
+
+- [Исходный код модуля с примером](example/result/helloworld)

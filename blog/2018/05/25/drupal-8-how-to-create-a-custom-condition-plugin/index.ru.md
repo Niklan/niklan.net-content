@@ -5,9 +5,6 @@ title: 'Drupal 8: Condition Plugin'
 created: '2018-05-25T16:45:28'
 updated: '2024-05-25T00:00:00'
 description: 'Узнайте, как создавать собственные плагины для проверки условий.'
-attachments:
-  - name: 'Готовый модуль с примерами'
-    path: 'attachment/dummy.tar.gz'
 promo: 'image/pexels-photo-356043.jpeg'
 tags:
   - Drupal
@@ -626,6 +623,10 @@ if ($user_has_node_type_content_check->execute()) {
 ![Condition Plugin в Block Visibility Group](image/example-2-bvg.png)
 
 ![Condition Plugin в Block Visibility Group](image/example-2-bvg-summary.png)
+
+## Ссылки
+
+- [Исходный код модуля с примером](example/dummy)
 
 [drupal-8-how-to-create-custom-plugin-type]: ../../../../2016/09/17/drupal-8-how-to-create-custom-plugin-type/index.ru.md
 [drupal-8-configuration-schema]: ../../../../2018/05/04/drupal-8-configuration-schema/index.ru.md

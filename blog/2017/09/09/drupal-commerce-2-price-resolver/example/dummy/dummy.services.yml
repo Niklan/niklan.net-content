@@ -1,0 +1,6 @@
+services:
+  dummy.price_resolver_example:
+    class: Drupal\dummy\Resolvers\PriceResolverExample
+    arguments: ['@request_stack']
+    tags:
+      - { name: commerce_price.price_resolver, priority: 0 }

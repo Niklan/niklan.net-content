@@ -1,0 +1,7 @@
+name: dummy
+type: module
+description: Drupal 8 Search API processor
+package: Custom
+core: 8.x
+dependencies:
+ - search_api

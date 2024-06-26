@@ -1,0 +1,5 @@
+dummy.message:
+  title: 'Dummy message settings'
+  base_route_name: dummy.message.settings
+  names:
+    - dummy.message

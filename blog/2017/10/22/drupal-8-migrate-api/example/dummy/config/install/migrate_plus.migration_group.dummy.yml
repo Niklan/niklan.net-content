@@ -1,0 +1,13 @@
+# Очень важно чтобы данный id совпадал с последней частью в названии файла.
+id: dummy
+label: Dummy Articles
+description: Some Migration examples for article.
+source_type: CSV
+dependencies:
+  enforced:
+    module:
+      - dummy
+# Также можно задать значения общие для всех миграций в группе.
+#shared_configuration:
+#  source:
+#    key: old_database

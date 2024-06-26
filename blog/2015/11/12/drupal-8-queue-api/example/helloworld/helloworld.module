@@ -1,0 +1,31 @@
+<?php
+
+/**
+ * @file
+ */
+
+use Drupal\node\Entity\Node;
+
+/**
+ * Implements hook_cron().
+ */
+function helloworld_cron() {
+  $queue = \Drupal::queue('helloworld_mass_sending');
+  # Время которое мы отводим на выполнение очередей за данный крон. (30 сек)
+  $end = time() + 30;
+  while (time() < $end && ($item = $queue->claimItem())) {
+    # Данные которые мы добавляли в очередь находятся в $item->data.
+    $node = Node::create(array(
+      'type' => 'page',
+      'title' => 'Материал от ' . $item->data['name'],
+      'langcode' => 'ru',
+      'uid' => $item->data['uid'],
+      'status' => 1,
+      'field_fields' => array(),
+    ));
+    $node->save();
+
+    # Удаляем его из очереди, так как материал создан.
+    $queue->deleteItem($item);
+  }
+}

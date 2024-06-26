@@ -1,0 +1,27 @@
+<?php
+
+/**
+ * @file
+ * Main file for custom hooks.
+ */
+
+use Drupal\Core\StringTranslation\TranslatableMarkup;
+
+/**
+ * Implements hook_preprocess_HOOK() for page.html.twig.
+ */
+function dummy_preprocess_page(&$variables) {
+  $request = \Drupal::request();
+  $country = $request->headers->get('X-Country', FALSE);
+  $city = $request->headers->get('X-City', FALSE);
+  if ($country && $city) {
+    $message = new TranslatableMarkup('We know that you are from @city, @country! ;)', [
+      '@city' => $city,
+      '@country' => $country,
+    ]);
+    \Drupal::messenger()->addMessage($message);
+  }
+  else {
+    \Drupal::messenger()->addMessage('You are invisible to us, or accessing from localhost :)');
+  }
+}

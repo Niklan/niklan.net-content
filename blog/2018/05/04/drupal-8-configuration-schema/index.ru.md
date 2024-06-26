@@ -6,9 +6,6 @@ created: '2018-05-04T17:57:03'
 updated: '2024-05-25T00:00:00'
 description: >-
   Узнайте, как создавать схемы для конфигурационных файлов в Drupal 8.
-attachments:
-  - name: 'Готовый модуль с примером'
-    path: 'attachment/dummy.tar.gz'
 promo: 'image/startup-photos.jpg'
 tags:
   - Drupal
@@ -667,6 +664,10 @@ function dummy_preprocess_page(&$variables) {
 Перейдя на русскую версию сайта, сообщение будет переведено!
 
 ![Ru](image/message-translated.png)
+
+## Ссылки
+
+- [Исходный код модуля с примером](example/dummy)
 
 [drupal-8-tour-api]: ../../../../2015/11/04/drupal-8-tour-api/index.ru.md
 [drupal-8-form-api]: ../../../../2015/10/16/drupal-8-form-api/index.ru.md

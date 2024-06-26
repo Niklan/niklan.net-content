@@ -1,0 +1,8 @@
+helloworld.queue_node:
+  path: '/admin/config/people/queue-node'
+  defaults:
+    _title: 'Create nodes by Queue'
+    # Подгружаем форму по неймспейсу.
+    _form: '\Drupal\helloworld\Form\QueueNode'
+  requirements:
+    _permission: 'administer node'

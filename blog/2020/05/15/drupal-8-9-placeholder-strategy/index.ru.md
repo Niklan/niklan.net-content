@@ -1412,7 +1412,7 @@ final class SlowBlock extends BlockBase {
 
 ## Ссылки
 
-- [Исходный код примера](https://github.com/Niklan/niklan.net-examples/tree/master/blog/213)
+- [Исходный код модуля с примером](example)
 - [Drupal 8: Рендер массивы и их рендеринг][drupal-8-render-arrays]
 - [Drupal 8: Сервисы с метками][drupal-8-tagged-services]
 - [Drupal 8: Сервисы][drupal-8-services]

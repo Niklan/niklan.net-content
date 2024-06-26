@@ -1,0 +1,24 @@
+helloworld:
+  version: 1.x
+  js:
+    js/script.js: {}
+  # Так как наш скрипт использует jQuery, мы устанавливаем зависимость/
+  dependencies:
+    - core/jquery
+
+# Подключаем библиотеку VexJS.
+vexjs:
+  remote: https://github.com/HubSpot/vex
+  version: 2.3.2
+  license:
+      name: MIT
+      url: https://github.com/HubSpot/vex/blob/master/LICENSE
+      gpl-compatible: true
+  css:
+    theme:
+      https://cdn.rawgit.com/HubSpot/vex/master/css/vex.css: { type: external, minified: false }
+      https://cdn.rawgit.com/HubSpot/vex/master/css/vex-theme-default.css: { type: external, minified: false }
+  js:
+    https://cdn.rawgit.com/HubSpot/vex/master/js/vex.combined.min.js: { type: external, minified: true }
+  dependencies:
+    - core/jquery

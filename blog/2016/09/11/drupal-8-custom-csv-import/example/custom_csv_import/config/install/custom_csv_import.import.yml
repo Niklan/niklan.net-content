@@ -1,0 +1,3 @@
+skip_first_line: 1
+delimiter: ';'
+enclosure: ','

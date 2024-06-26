@@ -808,7 +808,7 @@ function example_user_login(UserInterface $account) {
 
 ## Ссылки
 
-- [Исходный код примера](https://github.com/Niklan/niklan.net-examples/tree/master/blog/214)
+- [Исходный код модуля с примером](example)
 
 [drupal-8-hook-theme]: ../../../../2017/06/26/drupal-8-hook-theme/index.ru.md
 [drupal-8-render-arrays]: ../../../../2020/02/05/drupal-8-render-arrays/index.ru.md

@@ -7,9 +7,6 @@ updated: '2024-05-25T00:00:00'
 description: >-
   В этом материале рассмотрим как добавлять свои собственные данные в поисковый
   индекс, для дальнейшего поиска по ним или фильтрации через фасеты.
-attachments:
-  - name: 'Готовый модуль с примерами'
-    path: 'attachment/dummy.tar.gz'
 promo: 'image/black-and-white-blank-challenge-262488.jpg'
 tags:
   - Drupal

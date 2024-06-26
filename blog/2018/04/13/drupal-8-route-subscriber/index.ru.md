@@ -8,9 +8,6 @@ description: >-
   Расширенные возможности маршрутизации в Drupal 8: освойте подписчик события
   Route Subscriber для детальной настройки маршрутов вашего сайта, что позволит
   сделать его более удобным и функциональным.
-attachments:
-  - name: 'Готовый модуль с примерами'
-    path: 'attachment/dummy.tar.gz'
 promo: 'image/camera-destination-finger-7979.jpg'
 tags:
   - Drupal
@@ -199,5 +196,9 @@ Symfony, и их использование в ядре я не нашел._
 
 Более детальные описания для значений можно найти
 на [drupal.org](https://www.drupal.org/docs/8/api/routing-system/structure-of-routes).
+
+## Ссылки
+
+- [Исходный код модуля с примером](example/dummy)
 
 [drupal-8-events]: ../../../../2018/04/10/drupal-8-events/index.ru.md

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Техническая поддержка feature.
+ */
+
+include_once 'technical_support.features.inc';

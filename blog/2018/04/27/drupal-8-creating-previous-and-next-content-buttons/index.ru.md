@@ -7,9 +7,6 @@ updated: '2024-05-25T00:00:00'
 description: >-
   Создаём кнопки «предыдущий» и «следующий» в Drupal 8: туториал научит вас
   делать навигационные кнопки для перехода между материалами.
-attachments:
-  - name: 'Готовый модуль'
-    path: 'attachment/dummy.tar.gz'
 promo: 'image/book-book-pages-chapter-5834_0.jpg'
 tags:
   - Drupal
@@ -282,7 +279,11 @@ function dummy_node_view(array &$build, EntityInterface $entity, EntityViewDispl
 ![Оформленные кнопки](image/buttons-styled.png)
 
 Вот у нас и готовы универсальные кнопочки на предыдущий и следующий материал для
-всех типов сущностей. ?
+всех типов сущностей.
+
+## Ссылки
+
+- [Исходный код модуля с примером](example/dummy)
 
 [drupal-8-hook-theme]: ../../../../2017/06/26/drupal-8-hook-theme/index.ru.md
 [drupal-8-creating-extra-fields]: ../../../../2018/04/26/drupal-8-creating-extra-fields/index.ru.md

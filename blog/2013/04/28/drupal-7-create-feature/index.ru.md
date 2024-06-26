@@ -5,9 +5,6 @@ title: 'Drupal 7: Создаем Feature'
 created: '2013-04-28T22:06:30'
 updated: '2024-05-25T00:00:00'
 description: 'Добавьте функционал на сайт легко и просто!'
-attachments:
-  - name: 'Feature - Техническая поддержка'
-    path: 'attachment/technical_support-7.x-1.0.tar'
 promo: 'image/features_promo.png'
 tags:
   - Drupal
@@ -164,3 +161,7 @@ template.php, который, feature перенести не может.
 
 Такие ньюансы нужно учитывать и прежде чем цеплять feature на продакшен, два-три
 раза протестируйте на чистых сборках.
+
+## Ссылки
+
+- [Исходный код модуля с примером](example/technical_support)

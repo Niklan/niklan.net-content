@@ -7,9 +7,6 @@ updated: '2024-05-25T00:00:00'
 description: >-
   Drush 9 позволяет разработчикам создавать собственные генераторы для
   автоматизации рутинных задач в Drupal, повышая эффективность работы.
-attachments:
-  - name: 'Пример создания генератора'
-    path: 'attachment/dummy.tar.gz'
 promo: 'image/circuits-connection-cyborg-1476321.jpg'
 tags:
   - Drupal
@@ -595,6 +592,10 @@ services:
 находятся в собственной группе, из-за неймспейса, с указанными нами описаниями
 
 ![Drush Generate подсказка](image/generate-help.png)
+
+## Ссылки
+
+- [Исходный код модуля с примером](example/dummy)
 
 [drupal-8-services]: ../../../../2017/06/21/drupal-8-services/index.ru.md
 [drupal-8-block-plugin]: ../../../../2015/10/19/drupal-8-block-plugin/index.ru.md

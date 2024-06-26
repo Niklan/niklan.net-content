@@ -5,9 +5,6 @@ title: 'Drupal 8 Views Field Handler Plugin — собственные поля 
 created: '2017-07-26T18:51:00'
 updated: '2024-05-25T00:00:00'
 description: 'Руководство по добавлению собственных полей в модуль Views.'
-attachments:
-  - name: 'Готовый модуль с примерами'
-    path: 'attachment/dummy.tar.gz'
 promo: 'image/drupal8viewsfieldhandlerplugin.png'
 tags:
   - Drupal
@@ -705,3 +702,7 @@ class DummyTwoFieldMath extends FieldPluginBase {
 рассчетов с проставлением связей с нужными материалами чтобы Views смог
 заджойнить данные таблицы. И только тогда вы сможете сделать сортировку по
 данному значению.
+
+## Ссылки
+
+- [Исходный код модуля с примером](example/dummy)

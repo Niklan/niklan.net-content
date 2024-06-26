@@ -75,7 +75,7 @@ Delegates: bzlib cairo djvu fftw fontconfig freetype jbig jng jpeg lcms lqr ltdl
 картинки, но примерно уловить можно.
 
 Исходный 6000x4000, размер 3.86МБ, jpg. Он пережимается в ноде до 1000х1000, и
-вот [результаты](/sites/default/files/blog/attachment/2017/3/31/comparsion.png):
+вот [результаты](image/comparsion.png):
 
 * Сжатие Drupal из коробки, степень сжатия 75% — 106,3кб
 * Сжатие Drupal из коробки, степень сжатия 85% — 144,9кб

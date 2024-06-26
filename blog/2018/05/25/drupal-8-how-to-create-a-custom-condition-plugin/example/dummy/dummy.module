@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * @file
+ * File for custom hooks and code.
+ */
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function dummy_form_block_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  unset($form['visibility']['dummy_user_authenticated']);
+  unset($form['visibility']['dummy_user_has_node_type_content']);
+}

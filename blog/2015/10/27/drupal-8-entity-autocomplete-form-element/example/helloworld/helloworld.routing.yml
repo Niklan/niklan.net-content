@@ -1,0 +1,17 @@
+helloworld.autocomlpete_examples.form:
+  path: '/autocomplete'
+  defaults:
+    _title: 'Autocomplete examples'
+    _form: '\Drupal\helloworld\Form\AutocompleteExamples'
+  requirements:
+    _permission: 'access content'
+
+# Наш кастомный autocomplete.
+helloworld.custom_autocomplete:
+  # Путь по которому будет осуществлятся запрос и получение результата на автодополнение.
+  path: '/helloworld/custom-autocomplete'
+  defaults:
+    # Контроллер и его метод, которые будут выполнять всю логику.
+    _controller: '\Drupal\helloworld\Controller\CustomAutocomplete::autocomplete'
+  requirements:
+    _permission: 'access content'

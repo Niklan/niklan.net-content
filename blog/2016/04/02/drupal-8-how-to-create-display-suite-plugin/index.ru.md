@@ -9,9 +9,6 @@ description: >-
   8. Мы разберём изменения в подходе по сравнению с Drupal 7 и рассмотрим, как
   работает система плагинов. Вы узнаете, где хранятся поля и как они должны быть
   реализованы.
-attachments:
-  - name: 'Модуль со всеми примерами'
-    path: 'attachment/DsField_examples.tar.gz'
 promo: 'image/ds_field_promo_d8.png'
 tags:
   - Drupal
@@ -363,5 +360,9 @@ class CallUsForMore extends DsFieldBase {
 Вот и всё! Рассмотрел все основные методы для формирования поля. Как по мне, так
 подход в D8 на голову превосходит создание полей для D7. Он быстрее, проще и
 понятнее.
+
+## Ссылки
+
+- [Исходный код модуля с примером](example/dummy)
 
 [drupal-7-how-to-create-display-suite-field]: ../../../../2016/03/29/drupal-7-how-to-create-display-suite-field/index.ru.md

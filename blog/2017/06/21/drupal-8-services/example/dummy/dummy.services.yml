@@ -1,0 +1,9 @@
+parameters:
+  dummy.message_types: ['status', 'warning', 'error']
+
+services:
+  dummy.random_message:
+    class: Drupal\dummy\RandomMessageGenerator
+  dummy.random_drupal_message:
+    class: Drupal\dummy\RandomDrupalMessage
+    arguments: ['@dummy.random_message', '%dummy.message_types%']

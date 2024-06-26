@@ -7,9 +7,6 @@ updated: '2024-05-25T00:00:00'
 description: >-
   Установка значения поля по умолчанию для пустых результатов — эффективный
   способ заполнить данные, если основное значение не введено.
-attachments:
-  - name: 'Пример установки значения по умолчанию для пустого поля'
-    path: 'attachment/dummy.tar.gz'
 promo: 'image/art-art-gallery-art-studio-1931465.jpg'
 tags:
   - Drupal
@@ -272,6 +269,10 @@ Drupal как "отрендерить значение данного поля, 
 пор, пока эта сущность рендерится стандартными путями.
 
 ![Значение поля по умолчанию из тега](image/bitmap.png)
+
+## Ссылки
+
+- [Исходный код модуля с примером](example/dummy)
 
 [d8-cache-metadata]: ../../../../2017/07/15/drupal-8-cache-metadata/index.ru.md
 [drupal-8-hook-theme]: ../../../../2017/06/26/drupal-8-hook-theme/index.ru.md

@@ -12,10 +12,6 @@ attachments:
     path: 'attachment/custom_csv_import_article.csv'
   - name: 'Заготовка для теста импорта страниц.'
     path: 'attachment/custom_csv_import_page.csv'
-  - name: 'Модуль с плагинами для вывода сообщений (пример 1)'
-    path: 'attachment/plugin_messages.tar.gz'
-  - name: 'Модуль импорта из CSV с системой плагинов (пример 2)'
-    path: 'attachment/custom_csv_import.tar.gz'
 promo: 'image/drupal8customplugin.png'
 tags:
   - Drupal
@@ -918,9 +914,8 @@ public function startImport(array &$form, FormStateInterface $form_state) {
 плагин уже выполняет импорт.
 
 Вот вам два файла для теста двух
-плагинов: [article](/sites/default/files/blog/attachment/2016/9/20/custom_csv_import_article_1.csv)
-и [page]
-/sites/default/files/blog/attachment/2016/9/20/custom_csv_import_page_1.csv).
+плагинов: [article](attachment/custom_csv_import_article.csv) и
+[page](attachment/custom_csv_import_page.csv).
 
 Если всё сделано верно, у вас появится селект и в соответствии с выбранным типом
 контента (плагина) будет производиться импорт из загруженного файла.
@@ -938,6 +933,11 @@ public function startImport(array &$form, FormStateInterface $form_state) {
 модуле. Оба модуля прилагаю. Залетайте также на мой
 канал [в Telegram](https://telegram.me/niklannet) там я пишу по мелочи, не
 только о Drupal.
+
+## Ссылки
+
+- [Исходный код модуля custom_csv_import с примером](example/custom_csv_import)
+- [Исходный код модуля plugin_messages с примером](example/plugin_messages)
 
 [drupal-8-hello-world]: ../../../../2014/10/12/drupal-8-hello-world/index.ru.md
 [drupal-8-custom-csv-import]: ../../../../2016/09/11/drupal-8-custom-csv-import/index.ru.md

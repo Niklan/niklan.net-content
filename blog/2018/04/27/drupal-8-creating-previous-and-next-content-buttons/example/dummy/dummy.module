@@ -1,0 +1,52 @@
+<?php
+
+/**
+ * @file
+ * Main file for hooks and custom functions.
+ */
+
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\node\Entity\NodeType;
+
+/**
+ * Implements hook_theme().
+ */
+function dummy_theme($existing, $type, $theme, $path) {
+  $file = 'dummy.theme.inc';
+  return [
+    'dummy_previous_next' => [
+      'variables' => [
+        'entity' => NULL,
+      ],
+      'file' => $file,
+    ],
+  ];
+}
+
+/**
+ * Implements hook_entity_extra_field_info().
+ */
+function dummy_entity_extra_field_info() {
+  $extra = [];
+  foreach (NodeType::loadMultiple() as $bundle) {
+    $extra['node'][$bundle->id()]['display']['previous_next'] = [
+      'label' => t("Buttons to previous and next entity"),
+      'weight' => 100,
+      'visible' => FALSE,
+    ];
+  }
+  return $extra;
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_view().
+ */
+function dummy_node_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
+  if ($display->getComponent('previous_next')) {
+    $build['previous_next'] = [
+      '#theme' => 'dummy_previous_next',
+      '#entity' => $entity,
+    ];
+  }
+}

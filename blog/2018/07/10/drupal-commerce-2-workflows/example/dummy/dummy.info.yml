@@ -1,0 +1,5 @@
+name: Dummy
+description: Drupal Commerce 2 order workflows.
+type: module
+core: 8.x
+version: 1.x

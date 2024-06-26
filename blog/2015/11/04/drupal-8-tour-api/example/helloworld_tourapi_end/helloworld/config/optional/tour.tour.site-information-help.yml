@@ -1,0 +1,77 @@
+id: site-information-help
+module: helloworld
+# Обратите внимание как нужно выводить ' внутри строки.
+label: 'Site''s information tour'
+# В данном случае мы используем русский чтобы писать подсказки сразу ну русском
+# в случае с языком en они станут переводимы - и надо будет писать на
+# английском.
+langcode: ru
+routes:
+  # /admin/config/system/site-information
+  - route_name: system.site_information_settings
+# Так как эту страницу добавляет модуль system (там же я и посмотрел название
+# роута для страницы), то нам надо установить зависимость.
+dependencies:
+  module:
+    - system
+tips:
+  greetings:
+    id: greetings
+    plugin: text
+    label: 'Привет! Это настройки сайта.'
+    body: 'В данном разделе вы можете изменить базовые настройки сайта.'
+    weight: 1
+  site-name:
+    id: site-name
+    plugin: text
+    label: 'Название сайта'
+    body: 'В данном поле вы указываете название вашего сайта, оно будет выводиться в шапке сайта, а также в заголовке окна браузера.'
+    weight: 2
+    attributes:
+      data-id: edit-site-name
+  site-slogan:
+    id: site-slogan
+    plugin: text
+    label: 'Слоган сайта'
+    body: 'В данном поле можно написать как слоган сайта, так и слоган компании. Поведение данного поля зависит от темы.'
+    weight: 3
+    attributes:
+      data-id: edit-site-slogan
+  site-mail:
+    id: site-mail
+    plugin: text
+    label: 'E-mail адрес сайта'
+    body: 'Данный электронный адрес будет использоваться в качестве отправителя всех писем с сайта по умолчанию. Также, на этот адрес будут высылаться оповещения об обновлениях и прочие письма.'
+    weight: 4
+    attributes:
+      data-id: edit-site-mail
+  site-frontpage:
+    id: site-frontpage
+    plugin: text
+    label: 'Главная страница сайта'
+    body: 'В данном поле вы можете указать относительный путь до страницы, которая будет использоваться в качестве главной. Вы также можете оставить данное поле пустым, чтобы главная страница была стандартной.'
+    weight: 5
+    attributes:
+      data-id: edit-site-frontpage
+  error-pages:
+    id: error-pages
+    plugin: text
+    label: 'Страницы об ошибках'
+    body: 'В этом разделе настраиваются страницы об ошибках 403 и 404. Если указаны пути, то на них будет произвдена переадресация в случае конкретной ошибки.'
+    weight: 6
+    attributes:
+      data-id: edit-error-page
+  save:
+    id: save
+    plugin: text
+    label: 'Сохранение настроек'
+    body: 'Если вы внесли какие-либо изменения на данной странице, вам необходимо сохранить их используя данную кнопку.'
+    weight: 7
+    attributes:
+      data-id: edit-submit
+  goodbye:
+    id: goodbye
+    plugin: text
+    label: 'Спасибо за внимание'
+    body: 'На этом тур завершен, спасибо за внимание.'
+    weight: 8

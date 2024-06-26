@@ -7,9 +7,6 @@ updated: '2024-05-25T00:00:00'
 description: >-
   Узнайте, как создавать REST Resource Plugin в Drupal 8. Научитесь писать API
   для своего сайта и использовать его в дальнейших целях.
-attachments:
-  - name: 'Готовый модуль'
-    path: 'attachment/dummy.tar.gz'
 promo: 'image/rest-api_0.jpg'
 tags:
   - Drupal
@@ -1433,5 +1430,9 @@ public function get() {
 про [кэширование в 8-ке][d8-cache-metadata].
 
 Готовый модуль со всеми примерами прилагается.
+
+## Ссылки
+
+- [Исходный код модуля с примером](example/dummy)
 
 [d8-cache-metadata]: ../../../../2017/07/15/drupal-8-cache-metadata/index.ru.md

@@ -1,0 +1,6 @@
+name: Dummy
+description: Custom code for learning
+type: module
+core: 8.x
+version: 8.x-1.x
+package: Custom
