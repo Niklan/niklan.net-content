@@ -61,9 +61,9 @@ class CSVBatchImport {
     $items = [];
     if (($handle = fopen($this->file->getFileUri(), 'r')) !== FALSE) {
       if ($this->skip_first_line) {
-        fgetcsv($handle, 0, ';');
+        fgetcsv($handle, 0, $this->delimiter);
       }
-      while (($data = fgetcsv($handle, 0, ';')) !== FALSE) {
+      while (($data = fgetcsv($handle, 0, $this->delimiter)) !== FALSE) {
         $items[] = $data;
       }
       fclose($handle);
