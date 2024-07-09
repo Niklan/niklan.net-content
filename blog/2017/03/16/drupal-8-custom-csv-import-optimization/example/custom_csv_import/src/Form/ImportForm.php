@@ -67,7 +67,7 @@ class ImportForm extends ConfigFormBase {
     # Если загружен файл, отображаем дополнительные элементы формы.
     if (!empty($config->get('fid'))) {
       $file = File::load($config->get('fid'));
-      if (!empty($file)) {
+      if ($file) {
         $created = \Drupal::service('date.formatter')
           ->format($file->created->value, 'medium');
   
@@ -164,7 +164,7 @@ class ImportForm extends ConfigFormBase {
       # используем.
       if (!empty($fid_old)) {
         $previous_file = File::load($fid_old);
-        if (!empty($previous_file)) {
+        if ($previous_file) {
           \Drupal::service('file.usage')
             ->delete($previous_file, 'custom_csv_import', 'config_form', $previous_file->id());
         }
