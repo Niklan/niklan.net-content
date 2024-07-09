@@ -129,7 +129,7 @@ public function startImport(array &$form, FormStateInterface $form_state) {
 ```yaml {"header":"/config/install/custom_csv_import.import.yml"}
 skip_first_line: 1
 delimiter: ';'
-enclosure: ','
+enclosure: '"'
 # new
 chunk_size: 20
 ```
@@ -147,7 +147,7 @@ CSVBatchImport в котором происходит парсиснг файл�
 private $chunk_size;
 
 # В конструкторе добавляем новый аргумент $chunk_size.
-public function __construct($plugin_id, $fid, $skip_first_line = FALSE, $delimiter = ';', $enclosure = ',', $chunk_size = 20, $batch_name = 'Custom CSV import') {
+public function __construct($plugin_id, $fid, $skip_first_line = FALSE, $delimiter = ';', $enclosure = '"', $chunk_size = 20, $batch_name = 'Custom CSV import') {
   # …
   # И пишем его в переменную.
   $this->chunk_size = $chunk_size;
@@ -164,9 +164,9 @@ public function parseCSV() {
   $items = [];
   if (($handle = fopen($this->file->getFileUri(), 'r')) !== FALSE) {
     if ($this->skip_first_line) {
-      fgetcsv($handle, 0, ';');
+      fgetcsv($handle, 0, $this->delimiter, $this->enclosure);
     }
-    while (($data = fgetcsv($handle, 0, ';')) !== FALSE) {
+    while (($data = fgetcsv($handle, 0, $this->delimiter, $this->enclosure)) !== FALSE) {
       # Данные мы теперь не устанавливаем на операцию,
       # а сохраняем в массив для дальнейшего дробления.
       $items[] = $data;

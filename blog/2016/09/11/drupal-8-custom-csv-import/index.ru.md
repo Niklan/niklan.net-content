@@ -121,7 +121,7 @@ private $enclosure;
 /**
  * {@inheritdoc}
  */
-public function __construct($fid, $skip_first_line = FALSE, $delimiter = ';', $enclosure = ',', $batch_name = 'Custom CSV import') {
+public function __construct($fid, $skip_first_line = FALSE, $delimiter = ';', $enclosure = '"', $batch_name = 'Custom CSV import') {
   $this->fid = $fid;
   $this->file = File::load($fid);
   $this->skip_first_line = $skip_first_line;
@@ -362,7 +362,7 @@ class CSVBatchImport {
   /**
    * {@inheritdoc}
    */
-  public function __construct($fid, $skip_first_line = FALSE, $delimiter = ';', $enclosure = ',', $batch_name = 'Custom CSV import') {
+  public function __construct($fid, $skip_first_line = FALSE, $delimiter = ';', $enclosure = '"', $batch_name = 'Custom CSV import') {
     $this->fid = $fid;
     $this->file = File::load($fid);
     $this->skip_first_line = $skip_first_line;
@@ -874,7 +874,7 @@ class ImportForm extends ConfigFormBase {
 ```yaml {"header":"Листинг config/install/custom_csv_import.import.yml"}
 skip_first_line: 1
 delimiter: ';'
-enclosure: ','
+enclosure: '"'
 ```
 
 ## Добавление страницы для формы

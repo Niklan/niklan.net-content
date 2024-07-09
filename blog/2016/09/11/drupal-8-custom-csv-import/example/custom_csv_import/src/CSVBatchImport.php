@@ -36,7 +36,7 @@ class CSVBatchImport {
   /**
    * {@inheritdoc}
    */
-  public function __construct($fid, $skip_first_line = FALSE, $delimiter = ';', $enclosure = ',', $batch_name = 'Custom CSV import') {
+  public function __construct($fid, $skip_first_line = FALSE, $delimiter = ';', $enclosure = '"', $batch_name = 'Custom CSV import') {
     $this->fid = $fid;
     $this->file = File::load($fid);
     $this->skip_first_line = $skip_first_line;
@@ -65,9 +65,9 @@ class CSVBatchImport {
       # Если необходимо пропустить первую строку csv файла, то мы просто в
       # холостую грузим и ничего не делаем с ней.
       if ($this->skip_first_line) {
-        fgetcsv($handle, 0, ';');
+        fgetcsv($handle, 0, $this->delimiter, $this->enclosure);
       }
-      while (($data = fgetcsv($handle, 0, ';')) !== FALSE) {
+      while (($data = fgetcsv($handle, 0, $this->delimiter, $this->enclosure)) !== FALSE) {
         $this->setOperation($data);
       }
       fclose($handle);
