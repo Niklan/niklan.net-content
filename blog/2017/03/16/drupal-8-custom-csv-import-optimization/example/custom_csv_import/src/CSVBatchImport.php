@@ -36,7 +36,7 @@ class CSVBatchImport {
   /**
    * {@inheritdoc}
    */
-  public function __construct($plugin_id, $fid, $skip_first_line = FALSE, $delimiter = ';', $enclosure = ',', $chunk_size = 20, $batch_name = 'Custom CSV import') {
+  public function __construct($plugin_id, $fid, $skip_first_line = FALSE, $delimiter = ';', $enclosure = '"', $chunk_size = 20, $batch_name = 'Custom CSV import') {
     $this->importPluginId = $plugin_id;
     $this->importPlugin = \Drupal::service('plugin.manager.custom_csv_import')
       ->createInstance($plugin_id);
@@ -61,9 +61,9 @@ class CSVBatchImport {
     $items = [];
     if (($handle = fopen($this->file->getFileUri(), 'r')) !== FALSE) {
       if ($this->skip_first_line) {
-        fgetcsv($handle, 0, $this->delimiter);
+        fgetcsv($handle, 0, $this->delimiter, $this->enclosure);
       }
-      while (($data = fgetcsv($handle, 0, $this->delimiter)) !== FALSE) {
+      while (($data = fgetcsv($handle, 0, $this->delimiter, $this->enclosure)) !== FALSE) {
         $items[] = $data;
       }
       fclose($handle);
