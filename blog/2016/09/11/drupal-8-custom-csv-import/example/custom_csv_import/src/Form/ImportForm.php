@@ -48,21 +48,22 @@ class ImportForm extends ConfigFormBase {
     # Если загружен файл, отображаем дополнительные элементы формы.
     if (!empty($config->get('fid'))) {
       $file = File::load($config->get('fid'));
-      $created = \Drupal::service('date.formatter')
-        ->format($file->created->value, 'medium');
+      if ($file) {
+        $created = \Drupal::service('date.formatter')
+          ->format($file->created->value, 'medium');
 
-      $form['file_information'] = [
-        '#markup' => $this->t('This file was uploaded at @created.', ['@created' => $created]),
-      ];
+        $form['file_information'] = [
+          '#markup' => $this->t('This file was uploaded at @created.', ['@created' => $created]),
+        ];
 
-
-      # Добавляем кнопку для начала импорта со своим собственным submit handler.
-      $form['actions']['start_import'] = [
-        '#type' => 'submit',
-        '#value' => $this->t('Start import'),
-        '#submit' => ['::startImport'],
-        '#weight' => 100,
-      ];
+        # Добавляем кнопку для начала импорта со своим собственным submit handler.
+        $form['actions']['start_import'] = [
+          '#type' => 'submit',
+          '#value' => $this->t('Start import'),
+          '#submit' => ['::startImport'],
+          '#weight' => 100,
+        ];
+      }
     }
 
     $form['additional_settings'] = [
@@ -119,8 +120,10 @@ class ImportForm extends ConfigFormBase {
       # используем.
       if (!empty($fid_old)) {
         $previous_file = File::load($fid_old);
-        \Drupal::service('file.usage')
-          ->delete($previous_file, 'custom_csv_import', 'config_form', $previous_file->id());
+        if ($previous_file) {
+          \Drupal::service('file.usage')
+            ->delete($previous_file, 'custom_csv_import', 'config_form', $previous_file->id());
+        }
       }
       # Теперь, не важно, был ли старый файл или нет, нам нужно сохранить
       # новый файл.
