@@ -3,7 +3,7 @@ id: drupal-8-custom-csv-import
 language: ru
 title: 'Drupal 8: Пишем собственный импорт из CSV файла'
 created: '2016-09-11T10:05:15'
-updated: '2024-05-25T00:00:00'
+updated: '2024-07-09T10:00:00'
 description: >-
   Узнайте, как создать собственный модуль импорта содержимого на сайт из CSV
   файла, используя Form API, File API, Entity API и Batch operations. Разберём
@@ -227,9 +227,9 @@ public function parseCSV() {
     # Если необходимо пропустить первую строку csv файла, то мы просто в
     # холостую грузим и ничего не делаем с ней.
     if ($this->skip_first_line) {
-      fgetcsv($handle, 0, ';');
+      fgetcsv($handle, 0, $this->delimiter, $this->enclosure);
     }
-    while (($data = fgetcsv($handle, 0, ';')) !== FALSE) {
+    while (($data = fgetcsv($handle, 0, $this->delimiter, $this->enclosure)) !== FALSE) {
       $this->setOperation($data);
     }
     fclose($handle);
@@ -382,9 +382,9 @@ class CSVBatchImport {
   public function parseCSV() {
     if (($handle = fopen($this->file->getFileUri(), 'r')) !== FALSE) {
       if ($this->skip_first_line) {
-        fgetcsv($handle, 0, ';');
+        fgetcsv($handle, 0, $this->delimiter, $this->enclosure)
       }
-      while (($data = fgetcsv($handle, 0, ';')) !== FALSE) {
+      while (($data = fgetcsv($handle, 0, $this->delimiter, $this->enclosure)) !== FALSE) {
         $this->setOperation($data);
       }
       fclose($handle);
