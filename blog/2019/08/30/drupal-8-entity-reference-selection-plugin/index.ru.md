@@ -276,8 +276,7 @@ default".
   - TS-SYMFONY-RED
   - TS-SYMFONY-BLUE
 
-:: video [commerce-product-reference-original.mp4] (
-video/commerce-product-reference-original.mp4)
+:: video [commerce-product-reference-original.mp4] (video/commerce-product-reference-original.mp4)
 
 Как видно, поиск по артикулам совершенно не работает, но отлично справляется с
 заголовком. Проблему усугублена тем, что автогенерация заголовков вариантам
@@ -380,8 +379,7 @@ class ProductVariationWithSkuSelection extends DefaultSelection {
   в `Drupal\Core\Entity\Element\EntityAutocomplete::extractEntityIdFromAutocompleteInput()`
   ищет её в конце строки.
 
-:: video [commerce-product-reference-with-plugin.mp4] (
-video/commerce-product-reference-with-plugin.mp4)
+:: video [commerce-product-reference-with-plugin.mp4] (video/commerce-product-reference-with-plugin.mp4)
 
 Вы также можете теперь использовать в формах следующую конструкцию для
 добавления автодополнения с учетом плагина:

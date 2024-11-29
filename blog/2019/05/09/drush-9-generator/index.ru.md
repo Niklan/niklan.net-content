@@ -400,8 +400,7 @@ services:
 
 Всё готово!
 
-:: video [drush generate dummy-hello-world] (
-video/Drush-generator-hello-world.mp4)
+:: video [drush generate dummy-hello-world] (video/Drush-generator-hello-world.mp4)
 
 ### Пример №2 — Deriver
 
