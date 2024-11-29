@@ -3,12 +3,12 @@ id: drupal-7-8-dynamic-select-options-list
 language: ru
 title: 'Drupal: Динамические опции для поля-списка'
 created: '2017-06-27T18:45:08'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-29T00:00:00'
 description: >-
    Узнайте, как создавать динамические списки опций в Drupal, чтобы избежать
    ручного ввода данных. Изучите настройку allowed_values_function, которая
    позволяет получать актуальные данные для #options в различных частях сайта.
-promo: 'image/drupal-dynamic-options_0.png'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 8'

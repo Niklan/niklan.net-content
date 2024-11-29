@@ -3,11 +3,11 @@ id: drupal-8-how-to-create-custom-field-type
 language: ru
 title: 'Drupal 8: Создание собственного типа поля'
 created: '2016-09-06T18:05:07'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-29T00:00:00'
 description: >-
   Создание нового типа поля в Drupal 8: добавляем на сайт поле «цвет» в
   соответствии с HTML5 элементом input/color.
-promo: 'image/drupal8customfield.png'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 8'

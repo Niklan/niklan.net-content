@@ -3,11 +3,11 @@ id: drupal-coding-standards-netbeans
 language: ru
 title: 'Настройка NetBeans в соответствии с Drupal Coding Standards'
 created: '2013-01-01T02:21:21'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-29T00:00:00'
 description: >-
   Руководство по настройке NetBeans в соответствии со стандартами кодирования
   Drupal.
-promo: 'image/drupalbeans.jpg'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - NetBeans

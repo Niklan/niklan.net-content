@@ -3,13 +3,13 @@ id: drupal-7-for-beginners-path-aliases
 language: ru
 title: 'Drupal 7 для начинающих: ЧПУ (синонимы)'
 created: '2013-02-22T23:33:39'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-29T00:00:00'
 description: >-
   ЧПУ в Drupal делает сайт удобным для пользователей и помогает в SEO.
 attachments:
   - name: 'Результат выполнения'
     path: 'attachment/dfbeginners.dev.tar.gz'
-promo: 'image/dfbeginners.jpg'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 7'

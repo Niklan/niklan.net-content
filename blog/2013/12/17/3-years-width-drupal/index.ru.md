@@ -3,9 +3,9 @@ id: 3-years-width-drupal
 language: ru
 title: '3 года с Drupal'
 created: '2013-12-17T12:18:02'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-29T00:00:00'
 description: 'И это только начало!'
-promo: 'image/3yeardrupal.png'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
 ---

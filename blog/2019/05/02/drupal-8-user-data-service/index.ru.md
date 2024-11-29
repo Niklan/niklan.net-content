@@ -3,12 +3,12 @@ id: drupal-8-user-data-service
 language: ru
 title: 'Drupal 8: Сервис user.data — хранилище данных пользователей'
 created: '2019-05-02T19:44:51'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-29T00:00:00'
 description: >-
   Сервис user.data — это инструмент, который позволяет хранить пользовательские
   данные в виде пар «ключ-значение». Это удобно для хранения дополнительной
   информации о пользователе, такой как предпочтения или настройки.
-promo: 'image/factory-man-planks-1797415.jpg'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 8'

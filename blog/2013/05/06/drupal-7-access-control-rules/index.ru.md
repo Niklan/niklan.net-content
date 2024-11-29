@@ -3,14 +3,14 @@ id: drupal-7-access-control-rules
 language: ru
 title: 'Настройка правил для блокировки доступа к материалам в Drupal 7'
 created: '2013-05-06T11:22:13'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-29T00:00:00'
 description: >-
   Советы по защите данных и ограничению нежелательного доступа к важному
   содержимому с помощью Rules.
 attachments:
   - name: 'Экспорт правила'
     path: 'attachment/block_node_rule.txt'
-promo: 'image/rules_promo.png'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 7'

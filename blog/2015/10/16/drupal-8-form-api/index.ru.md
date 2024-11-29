@@ -3,12 +3,12 @@ id: drupal-8-form-api
 language: ru
 title: 'Drupal 8: Form API что изменилось и как использовать'
 created: '2015-10-16T22:10:44'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-29T00:00:00'
 description: >-
   Drupal 8 Form API — значительное улучшение, предлагает гибкий и удобный подход
   к созданию форм. Основные изменения касаются ООП, делая код более
   структурированным и понятным.
-promo: 'image/drupal8formapi.png'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 8'

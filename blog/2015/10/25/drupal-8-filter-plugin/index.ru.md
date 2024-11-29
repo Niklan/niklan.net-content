@@ -3,11 +3,11 @@ id: drupal-8-filter-plugin
 language: ru
 title: 'Drupal 8: Пишем Filter Plugin'
 created: '2015-10-25T21:25:36'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-29T00:00:00'
 description: >-
   Drupal 8 позволяет разработчикам создавать собственные фильтры для контента,
   обеспечивая гибкость и контроль над отображением данных на сайте.
-promo: 'image/drupal8pluginfilter.png'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 8'

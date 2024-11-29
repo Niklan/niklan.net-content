@@ -3,11 +3,11 @@ id: drupal-commerce-2-workflows
 language: ru
 title: 'Drupal Commerce 2: Собственные этапы (статусы) выполнения заказа'
 created: '2018-07-10T17:47:07'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-29T00:00:00'
 description: >-
   Подробная инструкция по настройке уникальных статусов и этапов оформления
   заказов в Drupal Commerce 2.
-promo: 'image/pexels-photo-375889.jpeg'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 8'

@@ -3,11 +3,11 @@ id: drupal-8-services
 language: ru
 title: 'Drupal 8: Services'
 created: '2017-06-21T18:16:53'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-29T00:00:00'
 description: >-
   Узнайте, как эффективно использовать сервисы в Drupal 8 для улучшения кода
   ваших модулей.
-promo: 'image/service.jpg'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 8'

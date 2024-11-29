@@ -3,11 +3,11 @@ id: drupal-8-lazy-builder
 language: ru
 title: 'Drupal 8: #lazy_builder — ленивый билдер'
 created: '2017-07-07T20:27:30'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-29T00:00:00'
 description: >-
   Концепция #lazy_builder позволяет отложить генерацию определённых частей
   сайта. Это полезно для оптимизации производительности.
-promo: 'image/zootopia-4668x3300-sloth-best-animation-movies-of-2016-cartoon-8017.jpg'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 8'

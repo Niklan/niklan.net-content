@@ -3,12 +3,12 @@ id: drupal-8-derivatives
 language: ru
 title: 'Drupal 8: Derivatives — множественные экземпляры плагина'
 created: '2019-05-04T19:36:32'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-29T00:00:00'
 description: >-
   Derivatives — это мощный инструмент, который позволяет создавать множество
   экземпляров плагина с одной логикой, что делает разработку более гибкой и
   эффективной.
-promo: 'image/architecture-building-low-angle-shot-245838.jpg'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 8'

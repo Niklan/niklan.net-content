@@ -3,9 +3,9 @@ id: programmatically-render-entityform-in-drupal-7
 language: ru
 title: 'Как программно вывести Entityform в Drupal 7'
 created: '2014-04-11T13:08:44'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-29T00:00:00'
 description: 'Выводим формы entityform программно.'
-promo: 'image/entityform.png'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 7'

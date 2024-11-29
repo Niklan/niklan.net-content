@@ -3,9 +3,9 @@ id: how-to-create-a-call-order-form-with-webform-in-drupal-7
 language: ru
 title: 'Как создать форму заказа звонка с помощью Webform в Drupal 7'
 created: '2013-06-08T12:55:35'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-29T00:00:00'
 description: 'Простая инструкция по созданию формы заказа обратного звонка.'
-promo: 'image/call_me.png'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 7'

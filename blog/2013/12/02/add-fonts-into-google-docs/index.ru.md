@@ -3,9 +3,9 @@ id: add-fonts-into-google-docs
 language: ru
 title: 'Как в Google Docs добавлять шрифты'
 created: '2013-12-02T19:01:49'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-29T00:00:00'
 description: 'Больше шрифтов и разных!'
-promo: 'image/google_wallpaper_1280x800_by_vinceranda-d2xpzb4.jpg'
+promo: 'image/poster.ru.png'
 tags:
   - Google
 ---

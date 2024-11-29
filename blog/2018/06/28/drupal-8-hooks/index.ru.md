@@ -3,11 +3,11 @@ id: drupal-8-hooks
 language: ru
 title: 'Drupal 8: hooks'
 created: '2018-06-28T09:28:24'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-29T00:00:00'
 description: >-
   Всё, что нужно знать о хуках в Drupal 8. Типы, использование и создание своих
   хуков. Научитесь понимать код модулей и работать с ним.
-promo: 'image/pexels-photo-533227.jpeg'
+promo: 'image/poster.png'
 tags:
   - 'Drupal 8'
   - Drupal

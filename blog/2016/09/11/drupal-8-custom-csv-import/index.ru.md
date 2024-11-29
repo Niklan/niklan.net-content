@@ -13,7 +13,7 @@ attachments:
     path: 'attachment/custom_csv_import_1.csv'
   - name: 'Импорт с 1000 материалами'
     path: 'attachment/custom_csv_import_1000.csv'
-promo: 'image/drupal8customcsvimport.png'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 8'

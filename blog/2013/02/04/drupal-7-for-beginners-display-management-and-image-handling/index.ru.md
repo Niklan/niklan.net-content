@@ -3,13 +3,13 @@ id: drupal-7-for-beginners-display-management-and-image-handling
 language: ru
 title: 'Drupal 7 для начинающих: управление отображением и работа с картинками'
 created: '2013-02-04T14:19:38'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-29T00:00:00'
 description: >-
   Управление отображением материала и работа с картинками в Drupal 7.
 attachments:
   - name: 'Результат выполнения'
     path: 'attachment/dfbeginers_display.zip'
-promo: 'image/dfbeginners.jpg'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 7'

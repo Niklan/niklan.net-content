@@ -3,12 +3,12 @@ id: drupal-7-for-beginners-translating-drupal
 language: ru
 title: 'Drupal 7 для начинающих: Переводим Drupal'
 created: '2013-01-24T23:14:45'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-29T00:00:00'
 description: 'Переводим Drupal на русский.'
 attachments:
   - name: 'Результат выполнения (сайт + база)'
     path: 'attachment/translate_drupal.zip'
-promo: 'image/dfbeginners.jpg'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 7'

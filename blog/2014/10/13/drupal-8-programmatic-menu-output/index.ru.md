@@ -3,9 +3,9 @@ id: drupal-8-programmatic-menu-output
 language: ru
 title: 'Drupal 8: Программный вывод меню'
 created: '2014-10-13T15:25:47'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-29T00:00:00'
 description: 'Программно выводим нужное меню в Drupal 8.'
-promo: 'image/d8menu.png'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 8'

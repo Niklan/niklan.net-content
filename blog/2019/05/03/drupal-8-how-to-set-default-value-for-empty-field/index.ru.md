@@ -3,11 +3,11 @@ id: drupal-8-how-to-set-default-value-for-empty-field
 language: ru
 title: 'Drupal 8: Устанавливаем значение поля для пустого результата'
 created: '2019-05-03T18:43:51'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-29T00:00:00'
 description: >-
   Установка значения поля по умолчанию для пустых результатов — эффективный
   способ заполнить данные, если основное значение не введено.
-promo: 'image/art-art-gallery-art-studio-1931465.jpg'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 8'

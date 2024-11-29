@@ -3,11 +3,11 @@ id: drupal-8-tokens
 language: ru
 title: 'Drupal 8: Tokens'
 created: '2018-09-06T18:26:37'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-29T00:00:00'
 description: >-
   Токен — незаменимый инструмент для создания персонализированного контента. В
   этой статье мы рассмотрим, как объявлять собственные токены и использовать их.
-promo: 'image/pexels-photo-574073.jpeg'
+promo: 'image/poster.png'
 tags:
   - Drupal
   - 'Drupal 8'

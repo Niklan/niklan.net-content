@@ -3,12 +3,12 @@ id: drupal-7-how-to-create-display-suite-field
 language: ru
 title: 'Drupal 7: Программное создание DisplaySuite полей'
 created: '2016-03-29T20:13:28'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-29T00:00:00'
 description: >-
   Научитесь расширять функциональность своих сайтов, используя возможности
   DisplaySuite и Field Group. Узнайте, как упростить вёрстку и повысить её
   эффективность.
-promo: 'image/ds_field_promo.png'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 7'

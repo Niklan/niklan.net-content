@@ -3,9 +3,9 @@ id: hello-world
 language: ru
 title: 'Hello World'
 created: '2012-12-31T22:10:03'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-29T00:00:00'
 description: 'Отсюда всё начинается!'
-promo: 'image/hello-world.jpg'
+promo: 'image/poster.ru.png'
 ---
 
 Всем привет!

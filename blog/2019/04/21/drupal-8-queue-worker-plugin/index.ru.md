@@ -3,12 +3,12 @@ id: drupal-8-queue-worker-plugin
 language: ru
 title: 'Drupal 8: Плагин QueueWorker — выполнение очередей по крону'
 created: '2019-04-21T17:37:33'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-29T00:00:00'
 description: >-
   Плагин QueueWorker — это инструмент для автоматической обработки очередей. Он
   позволяет выполнять задачи в фоновом режиме, обеспечивая бесперебойную работу
   вашего сайта.
-promo: 'image/black-and-white-cogs-gears-159298.jpg'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 8'

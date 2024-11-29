@@ -7,7 +7,7 @@ updated: '2024-07-09T10:00:00'
 description: >-
   Оптимизация импорта больших объёмов данных: разбиение на части для повышения
   производительности.
-promo: 'image/drupal8csvoptimisation_0.png'
+promo: 'image/poster.ru.png'
 tags:
   - 'Drupal 8'
   - Drupal

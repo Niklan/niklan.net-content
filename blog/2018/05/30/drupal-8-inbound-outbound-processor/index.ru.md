@@ -3,11 +3,11 @@ id: drupal-8-inbound-outbound-processor
 language: ru
 title: 'Drupal 8: Inbound и Outbound Processor'
 created: '2018-05-30T17:35:01'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-29T00:00:00'
 description: >-
   Узнайте всё об алиасах. Понимание особенностей работы inbound и outbound
   процессоров поможет вам создавать эффективные решения.
-promo: 'image/pexels-photo-315938.jpeg'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 8'

@@ -3,11 +3,11 @@ id: drupal-8-theme-negotiator
 language: ru
 title: 'Drupal 8: Theme Negotiator — программное переключение тем'
 created: '2016-08-30T17:17:40'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-29T00:00:00'
 description: >-
    В этой статье мы рассмотрим, как легко переключать темы оформления на сайте
    для определённых страниц или разделов.
-promo: 'image/d8themeswitch.png'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 8'

@@ -3,11 +3,11 @@ id: drupal-8-9-sending-emails-using-oop-and-dependency-injection
 language: ru
 title: 'Drupal 8, 9: Отправка писем используя ООП и Dependency Injection'
 created: '2020-05-29T14:47:23'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-29T00:00:00'
 description: >-
   Узнайте, как отправлять письма в Drupal 8 и 9 с использованием ООП и
   Dependency Injection для улучшения структуры кода и удобства разработки.
-promo: 'image/photo-1567473030492-533b30c5494c.jpeg'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 8'

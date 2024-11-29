@@ -3,9 +3,9 @@ id: theming-checkboxes-and-radio-buttons-in-drupal-7
 language: ru
 title: 'Drupal 7: Темизация checkbox и radio кнопок'
 created: '2014-06-09T16:07:39'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-29T00:00:00'
 description: 'Приводим чекбоксы и радио кнопки к единому стилю.'
-promo: 'image/checkboxpromo.png'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 7'

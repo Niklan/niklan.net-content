@@ -3,9 +3,9 @@ id: installing-and-configuring-ckeditor-in-drupal-7
 language: ru
 title: 'Установка и настройка CKEditor в Drupal 7'
 created: '2013-12-07T14:41:11'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-29T00:00:00'
 description: 'Настраиваем CKEditor, чтобы редакторы не пачкали разметку.'
-promo: 'image/write.jpg'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 7'

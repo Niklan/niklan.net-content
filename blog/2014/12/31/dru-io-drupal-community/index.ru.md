@@ -3,9 +3,9 @@ id: dru-io-drupal-community
 language: ru
 title: 'Dru.io — сообщество для Друпалеров'
 created: '2014-12-31T12:53:39'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-29T00:00:00'
 description: 'Представляю вам новый сайт для русскоязычного Drupal сообщества.'
-promo: 'image/newcommunity.png'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - Сообщество

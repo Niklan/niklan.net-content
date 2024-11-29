@@ -3,11 +3,11 @@ id: drupal-8-creating-a-custom-section-on-the-configuration-page
 language: ru
 title: 'Drupal 8: Создание собственного раздела на странице конфигурации'
 created: '2017-03-17T08:52:25'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-29T00:00:00'
 description: >-
   Чтобы избежать путаницы и упростить управление кастомными настройками,
   соберите все настройки в едином разделе на странице конфигурации.
-promo: 'image/drupal8config-menu.png'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 8'

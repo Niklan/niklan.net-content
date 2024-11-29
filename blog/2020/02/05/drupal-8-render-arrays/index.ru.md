@@ -3,11 +3,11 @@ id: drupal-8-render-arrays
 language: ru
 title: 'Drupal 8: Рендер массивы и их рендеринг'
 created: '2020-02-05T16:58:13'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-29T00:00:00'
 description: >-
    Разбираемся, что такое рендер массивы, зачем они нужны, какие проблемы
    решают, и как они превращаются в HTML разметку.
-promo: 'image/assorted-camera-parts-2286953.jpg'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 8'

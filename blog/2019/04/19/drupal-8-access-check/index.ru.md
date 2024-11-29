@@ -3,12 +3,12 @@ id: drupal-8-access-check
 language: ru
 title: 'Drupal 8: Сервис access_check — гибкая и переиспользуемая проверка прав доступа к маршрутам'
 created: '2019-04-19T20:29:18'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-29T00:00:00'
 description: >-
   Сервис access_check — это гибкий и переиспользуемый инструмент для проверки
   прав доступа к маршрутам. Он позволяет настраивать сложные правила доступа,
   делая ваш сайт более безопасным.
-promo: 'image/access-accommodation-card-1332193.jpg'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 8'

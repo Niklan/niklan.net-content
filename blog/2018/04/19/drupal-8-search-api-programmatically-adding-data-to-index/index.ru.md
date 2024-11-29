@@ -3,11 +3,11 @@ id: drupal-8-search-api-programmatically-adding-data-to-index
 language: ru
 title: 'Drupal 8: Search API — программное добавление данных в индекс'
 created: '2018-04-19T19:45:54'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-29T00:00:00'
 description: >-
   В этом материале рассмотрим как добавлять свои собственные данные в поисковый
   индекс, для дальнейшего поиска по ним или фильтрации через фасеты.
-promo: 'image/black-and-white-blank-challenge-262488.jpg'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 8'

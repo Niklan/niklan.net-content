@@ -3,7 +3,7 @@ id: drupal-7-creating-catalog-with-taxonomy-views-and-panels
 language: ru
 title: 'Drupal 7: Создание каталога с применением Taxonomy, Views и Panels'
 created: '2013-03-24T22:41:27'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-29T00:00:00'
 description: >-
   Создайте удобный каталог товаров с помощью Drupal 7, используя Taxonomy, Views
   и Panels.
@@ -16,7 +16,7 @@ attachments:
     path: 'attachment/product.txt'
   - name: 'Panels: Отображение подкатегорий и товаров'
     path: 'attachment/panels_catalog.txt'
-promo: 'image/catalog_promo.png'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 7'

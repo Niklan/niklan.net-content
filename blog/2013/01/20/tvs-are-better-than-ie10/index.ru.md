@@ -3,9 +3,9 @@ id: tvs-are-better-than-internet-explorer-10
 language: ru
 title: 'Телевизоры обрабатывают веб-сайты лучше IE 10, время прошить браузер'
 created: '2013-01-20T19:29:27'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-29T00:00:00'
 description: 'Такие дела.'
-promo: 'image/chromie.jpg'
+promo: 'image/poster.ru.png'
 ---
 
 По состоянию на декабрь 2012 года, Internet Explorer занимает 14.7% среди других

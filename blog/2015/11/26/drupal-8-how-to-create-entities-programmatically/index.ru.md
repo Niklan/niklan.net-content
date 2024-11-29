@@ -3,11 +3,11 @@ id: drupal-8-how-to-create-entities-programmatically
 language: ru
 title: 'Drupal 8: Программное создание сущностей'
 created: '2015-11-26T09:33:08'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-29T00:00:00'
 description: >-
   Как создавать свои сущности программно (не путайте с созданием типов
   сущностей).
-promo: 'image/d8programmaticallyentity.png'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 8'

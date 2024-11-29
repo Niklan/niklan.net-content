@@ -3,11 +3,11 @@ id: how-to-group-content-in-views
 language: ru
 title: 'Drupal - группировка материалов во Views'
 created: '2016-09-02T08:06:03'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-29T00:00:00'
 description: >-
   Узнайте, как объединять элементы по определённому признаку для улучшения
   структуры и навигации вашего сайта.
-promo: 'image/drupalviewsgrouping.png'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 7'

@@ -3,9 +3,9 @@ id: smooth-transition-on-page-change
 language: ru
 title: 'Плавные переходы (с затуханием) на сайте.'
 created: '2013-05-21T14:10:55'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-29T00:00:00'
 description: 'Создаем эффект плавного перехода на сайте.'
-promo: 'image/smooth_promo.png'
+promo: 'image/poster.ru.png'
 tags:
   - JavaScript
 ---

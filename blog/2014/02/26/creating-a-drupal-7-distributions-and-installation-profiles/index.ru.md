@@ -3,9 +3,9 @@ id: creating-a-drupal-7-distributions-and-installation-profiles
 language: ru
 title: 'Как создать сборку Drupal 7: дистрибутивы и установочные профили'
 created: '2014-02-26T00:07:44'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-29T00:00:00'
 description: 'Создание дистрибутивов Drupal 7: руководство для разработчиков.'
-promo: 'image/distro_promo.png'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 7'

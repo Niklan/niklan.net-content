@@ -3,12 +3,12 @@ id: drupal-8-block-plugin
 language: ru
 title: 'Drupal 8: Block Plugin API — программное создание блоков'
 created: '2015-10-19T22:05:19'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-29T00:00:00'
 description: >-
   Drupal 8 предлагает широкие возможности для программного создания блоков,
   позволяя разработчикам адаптировать функционал сайта под конкретные нужды без
   необходимости использования сторонних модулей.
-promo: 'image/drupal8blockapi.png'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 8'

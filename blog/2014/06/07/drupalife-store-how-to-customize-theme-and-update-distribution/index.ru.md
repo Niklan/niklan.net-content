@@ -3,9 +3,9 @@ id: drupalife-store-how-to-customize-theme-and-update-distribution
 language: ru
 title: 'Drupalife Store: как править тему и обновлять сборку'
 created: '2014-06-07T21:20:49'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-29T00:00:00'
 description: 'Небольшие подсказки, чтобы было проще.'
-promo: 'image/paint.png'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 7'

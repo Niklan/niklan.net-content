@@ -3,12 +3,12 @@ id: docker4drupal-ubuntu
 language: ru
 title: 'Установка и настройка Docker4Drupal на Ubuntu'
 created: '2018-04-15T17:57:18'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-29T00:00:00'
 description: >-
   Оптимизация работы Drupal с помощью Docker на Ubuntu: узнайте, как установить
   и настроить Docker4Drupal для ускорения и упрощения разработки и поддержки
   вашего сайта.
-promo: 'image/architecture-bay-boat-326410.jpg'
+promo: 'image/poster.ru.png'
 tags:
   - Веб-сервер
   - Docker
