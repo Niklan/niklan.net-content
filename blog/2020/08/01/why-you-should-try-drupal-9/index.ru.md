@@ -524,8 +524,7 @@ Drupal, тесно интегрировано и предоставляется 
 указывать переходы: «Архивировать» можно только «Опубликованный» контент, а
 публиковать только «Черновики».
 
-:: video [Drupal 8 workspaces preview.mp4] (
-video/Drupal.8.workspaces.preview.mp4)
+:: video [Drupal 8 workspaces preview.mp4] (video/Drupal.8.workspaces.preview.mp4)
 
 Хотите вывести это на новый уровень? Здесь выходит на сцену **Workspaces**,
 который позволяет делать разные «Рабочие области» в пределах сайта, или более

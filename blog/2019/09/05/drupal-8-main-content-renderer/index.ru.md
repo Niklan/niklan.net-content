@@ -876,8 +876,7 @@ class FullMarkupPageSubscriber implements EventSubscriberInterface {
 
 А вот так это выглядит вживую:
 
-:: video [Результаты из примеров подготовки основного содержимого.] (
-video/full-result.mp4)
+:: video [Результаты из примеров подготовки основного содержимого.] (video/full-result.mp4)
 
 ## Ссылки
 
