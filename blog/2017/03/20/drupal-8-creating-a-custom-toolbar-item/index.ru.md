@@ -3,7 +3,7 @@ id: drupal-8-creating-a-custom-toolbar-item
 language: ru
 title: 'Drupal 8: Добавление пункта меню в Toolbar'
 created: '2017-03-20T09:35:39'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   Узнайте, как добавить свой собственный пункт в административный тулбар
   Drupal 8.

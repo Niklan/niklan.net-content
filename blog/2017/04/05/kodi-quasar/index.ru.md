@@ -3,7 +3,7 @@ id: kodi-quasar
 language: ru
 title: 'Установка и настройка Quasar на Kodi'
 created: '2017-04-05T17:22:08'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   Обзор и инструкция по установке и настройке дополнения Quasar для Kodi.
 promo: 'image/poster.ru.png'

@@ -3,7 +3,7 @@ id: drupal-8-temp-store
 language: ru
 title: 'Drupal 8: Temp store — временное хранилище данных'
 created: '2018-07-05T18:46:37'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   Drupal 8: Temp store — временное хранилище данных — узнайте, как использовать
   приватные и общие временные хранилища данных в Drupal 8. Надёжный способ

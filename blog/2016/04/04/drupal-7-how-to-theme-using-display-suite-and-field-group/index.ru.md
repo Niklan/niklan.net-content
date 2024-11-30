@@ -3,7 +3,7 @@ id: drupal-7-how-to-theme-using-display-suite-and-field-group
 language: ru
 title: 'DS + FG proof of concept или как я верстаю в Drupal'
 created: '2016-04-04T19:54:09'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   В этой статье я расскажу о своём подходе к вёрстке на Drupal, основанном на
   использовании связки DisplaySuite и FieldGroup. Я сравню его с другими

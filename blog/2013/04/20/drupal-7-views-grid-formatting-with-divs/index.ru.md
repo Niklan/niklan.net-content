@@ -3,7 +3,7 @@ id: drupal-7-views-grid-formatting-with-divs
 language: ru
 title: 'Форматирование вывода Views в виде сетки на Drupal 7 с использованием div-элементов'
 created: '2013-04-20T18:32:13'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   Узнайте, как использовать div-элементы для вывода сетки Views и обеспечения
   адаптивности дизайна.

@@ -3,7 +3,7 @@ id: drupal-8-render-contact-form
 language: ru
 title: 'Drupal 8: Программный вывод формы Contact'
 created: '2015-11-21T18:22:13'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: 'Узнайте, как легко вывести форму Contact программно в Drupal 8.'
 promo: 'image/poster.ru.png'
 tags:

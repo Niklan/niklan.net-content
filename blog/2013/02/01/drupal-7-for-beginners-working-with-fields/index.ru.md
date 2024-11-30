@@ -3,7 +3,7 @@ id: drupal-7-for-beginners-working-with-fields
 language: ru
 title: 'Drupal 7 для начинающих: Работа с полями'
 created: '2013-02-01T21:44:53'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: 'Что такое поля и зачем они нужны? Учимся ими пользоваться.'
 attachments:
   - name: 'Результат выполнения'

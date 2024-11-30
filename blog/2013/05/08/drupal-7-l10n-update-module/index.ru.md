@@ -3,7 +3,7 @@ id: drupal-7-l10n-update-module
 language: ru
 title: 'Руководство по переводу Drupal 7 и его модулей на русский'
 created: '2013-05-08T20:58:54'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: 'Простой способ русифицировать Drupal и его модули.'
 promo: 'image/poster.ru.png'
 tags:

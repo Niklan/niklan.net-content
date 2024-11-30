@@ -3,7 +3,7 @@ id: preparing-a-project-for-publication-on-drupal-org
 language: ru
 title: 'Как подготовить проект для публикации на drupal.org'
 created: '2013-05-30T21:56:15'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: 'Мой опыт получения прав на публикацию проектов на drupal.org'
 promo: 'image/poster.ru.png'
 tags:

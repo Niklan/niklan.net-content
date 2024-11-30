@@ -3,7 +3,7 @@ id: drupal-8-lazy-builder
 language: ru
 title: 'Drupal 8: #lazy_builder — ленивый билдер'
 created: '2017-07-07T20:27:30'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   Концепция #lazy_builder позволяет отложить генерацию определённых частей
   сайта. Это полезно для оптимизации производительности.

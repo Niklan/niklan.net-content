@@ -3,7 +3,7 @@ id: drupal-8-9-lock-and-lock-persistent
 language: ru
 title: 'Drupal 8, 9: lock и lock.persistent — блокировка состояния'
 created: '2020-04-30T14:13:22'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   Drupal 8, 9: блокировка состояния — узнайте, как обеспечить целостность
   данных, предотвратить конфликты при работе с сайтом и избежать «состояние

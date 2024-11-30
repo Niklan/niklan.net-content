@@ -3,7 +3,7 @@ id: drupal-7-follow-functionality-with-flag
 language: ru
 title: 'Модуль Flag: подписываемся на пользователей в Drupal 7'
 created: '2013-12-03T16:20:19'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: 'Аналог Follow из различных соц. сетей.'
 promo: 'image/poster.ru.png'
 tags:

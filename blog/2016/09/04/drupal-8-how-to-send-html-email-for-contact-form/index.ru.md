@@ -3,7 +3,7 @@ id: drupal-8-how-to-send-html-email-for-contact-form
 language: ru
 title: 'Drupal 8: Отправка HTML писем через Contact'
 created: '2016-09-04T11:40:40'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   В Drupal 8 для отправки HTML писем рекомендуется использовать Swift Mailer.
   Swift Mailer упрощает процесс отправки HTML писем по сравнению с Mime Mail в

@@ -3,7 +3,7 @@ id: drupal-7-for-beginners-creating-custom-content-types
 language: ru
 title: 'Drupal 7 для начинающих: Создание собственных типов материалов'
 created: '2013-01-29T23:19:04'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: 'Руководство по управлению типами содержимого.'
 attachments:
   - name: 'Результат выполнения'

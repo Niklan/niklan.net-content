@@ -3,7 +3,7 @@ id: drupal-8-queue-api
 language: ru
 title: 'Drupal 8: Queue API'
 created: '2015-11-12T20:41:25'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   Drupal 8 Queue API позволяет разработчикам управлять задачами, которые требуют
   много времени или ресурсов, путём их помещения в очередь для выполнения в

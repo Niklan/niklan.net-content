@@ -3,7 +3,7 @@ id: drupal-8-cache-metadata
 language: ru
 title: 'Drupal 8: #cache — cache tags, context и max-age'
 created: '2017-07-15T11:42:18'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   Узнайте, как работает кэширование в Drupal 8 и какие типы существуют. Поймёте,
   как эффективно использовать кэширование для оптимизации вашего сайта.

@@ -3,7 +3,7 @@ id: drupal-8-middleware-api
 language: ru
 title: 'Drupal 8: Middleware API'
 created: '2018-07-05T07:15:54'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   В этом материале рассказываю и показываю что такое Middleware API и как он
   может вам помочь.

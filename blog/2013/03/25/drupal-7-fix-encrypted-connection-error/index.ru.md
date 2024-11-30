@@ -3,7 +3,7 @@ id: drupal-7-fix-encrypted-connection-error
 language: ru
 title: 'Решение проблем с установкой тем и модулей в Drupal 7: настройка прав доступа'
 created: '2013-03-25T11:10:03'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   Исправляем права на папку чтобы модули и темы начали устанавливаться на
   Ubuntu.

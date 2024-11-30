@@ -3,7 +3,7 @@ id: drupal-8-composer
 language: ru
 title: 'Drupal 8: Работа с Composer'
 created: '2016-09-03T10:49:21'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   Начиная с версии Drupal 8.1, использование composer становится неотъемлемой
   частью работы с Drupal. В этой статье мы рассмотрим, как правильно

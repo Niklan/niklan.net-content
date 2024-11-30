@@ -3,7 +3,7 @@ id: drupal-8-how-to-create-a-custom-rest-plugin
 language: ru
 title: 'Drupal 8: Создание REST Resource Plugin'
 created: '2018-01-16T18:13:01'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   Узнайте, как создавать REST Resource Plugin в Drupal 8. Научитесь писать API
   для своего сайта и использовать его в дальнейших целях.

@@ -3,7 +3,7 @@ id: drupal-7-for-beginners-working-with-content
 language: ru
 title: 'Drupal 7 для начинающих: Работа с материалами'
 created: '2013-01-25T18:21:17'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: 'Как добавлять, редактировать и удалять материалы.'
 attachments:
   - name: 'Результаты выполнения'

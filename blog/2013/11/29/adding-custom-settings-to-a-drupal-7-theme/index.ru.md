@@ -3,7 +3,7 @@ id: adding-custom-settings-to-a-drupal-7-theme
 language: ru
 title: 'Добавление собственных настроек в тему Drupal 7'
 created: '2013-11-29T22:55:30'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   Если хотите добавить настройки на страницу своей темы, а затем использовать их
   - эта статья для вас.

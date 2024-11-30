@@ -3,7 +3,7 @@ id: migration-from-drupal-composer-drupal-project-to-drupal-recommended-project
 language: ru
 title: 'Миграция с drupal-composer/drupal-project на drupal/recommended-project'
 created: '2020-01-15T17:08:24'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   Миграция с drupal-composer/drupal-project на drupal/recommended-project:
   обновите свой проект Drupal до официальной версии.

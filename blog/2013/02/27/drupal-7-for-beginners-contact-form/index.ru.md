@@ -3,7 +3,7 @@ id: drupal-7-for-beginners-contact-form
 language: ru
 title: 'Drupal 7 для начинающих: Форма обратной связи'
 created: '2013-02-27T21:21:13'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: 'Создаём форму обратной связи в Drupal 7: просто и удобно!'
 attachments:
   - name: 'Результат выполнения'

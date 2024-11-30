@@ -3,7 +3,7 @@ id: drupal-8-api-changes
 language: ru
 title: 'Drupal 8: Изменения API'
 created: '2014-10-07T17:30:27'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: 'Подборка изменения в API Drupal 7 > Drupal 8'
 promo: 'image/poster.ru.png'
 tags:

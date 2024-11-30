@@ -3,7 +3,7 @@ id: drupal-7-8-optimizing-images-using-imagemagick
 language: ru
 title: 'Drupal: Оптимизация сжатия и загрузки изображений'
 created: '2017-03-30T17:29:28'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   Научитесь оптимизировать изображения с помощью ImageMagick, чтобы улучшить
   производительность сайта и SEO. Узнайте, как эффективно сжимать картинки,

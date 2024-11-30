@@ -3,7 +3,7 @@ id: drupal-8-how-to-create-a-custom-views-field-handler
 language: ru
 title: 'Drupal 8 Views Field Handler Plugin — собственные поля для Views'
 created: '2017-07-26T18:51:00'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: 'Руководство по добавлению собственных полей в модуль Views.'
 promo: 'image/poster.ru.png'
 tags:

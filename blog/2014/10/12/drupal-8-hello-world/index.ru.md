@@ -3,7 +3,7 @@ id: drupal-8-hello-world
 language: ru
 title: 'Drupal 8 Hello World: Пишем свой первый модуль'
 created: '2014-10-12T15:29:46'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
    Создание своего первого модуля в Drupal 8 — это отличный способ начать
    изучение разработки на этой платформе.

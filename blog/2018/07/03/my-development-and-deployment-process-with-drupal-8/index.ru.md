@@ -3,7 +3,7 @@ id: my-development-and-deployment-process-with-drupal-8
 language: ru
 title: 'Drupal 8: Мой процесс разработки и деплоя на июнь 2018'
 created: '2018-07-03T07:32:46'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   Советы и рекомендации по эффективной разработке и деплою проектов на Drupal 8.
 promo: 'image/poster.ru.png'

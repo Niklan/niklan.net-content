@@ -3,7 +3,7 @@ id: drupal-8-overriding-taxonomy-term-page
 language: ru
 title: 'Drupal 8: Переопределение страницы термина таксономии'
 created: '2018-04-18T19:07:44'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   Оптимизация отображения терминов таксономии в Drupal 8: научитесь настраивать
   страницы терминов таксономии с использованием Route Subscriber и hook_theme(),

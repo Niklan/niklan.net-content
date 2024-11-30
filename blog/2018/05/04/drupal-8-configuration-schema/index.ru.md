@@ -3,7 +3,7 @@ id: drupal-8-configuration-schema
 language: ru
 title: 'Drupal 8: Configuration Schema'
 created: '2018-05-04T17:57:03'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   Узнайте, как создавать схемы для конфигурационных файлов в Drupal 8.
 promo: 'image/poster.png'

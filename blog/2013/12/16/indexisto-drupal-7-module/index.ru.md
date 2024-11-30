@@ -3,7 +3,7 @@ id: indexisto-drupal-7-module
 language: ru
 title: 'Indexisto - поиск для Drupal'
 created: '2013-12-16T17:30:40'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: 'Интеграция Indexisto с Drupal.'
 promo: 'image/poster.ru.png'
 tags:

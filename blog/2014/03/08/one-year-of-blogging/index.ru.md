@@ -3,7 +3,7 @@ id: one-year-of-blogging
 language: ru
 title: 'Блогу 1 год'
 created: '2014-03-08T14:50:32'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: 'Happy Birthday!'
 promo: 'image/poster.ru.png'
 tags:

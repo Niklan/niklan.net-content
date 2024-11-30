@@ -3,7 +3,7 @@ id: drupal-8-entity-autocomplete-form-element
 language: ru
 title: 'Drupal 8: Добавление автодополнения (autocomplete) в форму'
 created: '2015-10-27T19:52:35'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   Drupal 8 предоставляет возможность интеграции функции автодополнения в формы,
   что значительно упрощает процесс ввода данных и повышает удобство

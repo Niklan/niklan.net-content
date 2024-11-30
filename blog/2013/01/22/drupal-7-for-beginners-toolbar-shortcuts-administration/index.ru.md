@@ -3,7 +3,7 @@ id: drupal-7-for-beginners-toolbar-shortcuts-administration
 language: ru
 title: 'Drupal 7 для начинающих: Панель инструментов, ярлыки и администрирование'
 created: '2013-01-22T19:37:21'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: 'Знакомимся с панелью инструментов администратора.'
 promo: 'image/poster.ru.png'
 tags:

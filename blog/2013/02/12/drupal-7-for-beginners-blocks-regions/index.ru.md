@@ -3,7 +3,7 @@ id: drupal-7-for-beginners-blocks-regions
 language: ru
 title: 'Drupal 7 для начинающих: работа с блоками и регионами'
 created: '2013-02-12T21:29:43'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   В этом руководстве мы рассмотрим, что такое блоки и регионы в Drupal 7.
 promo: 'image/poster.ru.png'

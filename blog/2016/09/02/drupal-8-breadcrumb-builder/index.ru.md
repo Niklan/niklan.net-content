@@ -3,7 +3,7 @@ id: drupal-8-breadcrumb-builder
 language: ru
 title: 'Drupal 8: Программное создание хлебных крошек'
 created: '2016-09-02T18:12:55'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   Узнайте, как использовать встроенный функционал Drupal 8 для создания хлебных
   крошек.

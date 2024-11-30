@@ -3,7 +3,7 @@ id: drupal-7-boost-performance
 language: ru
 title: 'Как ускорить работу сайта на Drupal 7 с модулем Boost'
 created: '2013-05-22T23:13:03'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   Ускорьте свой сайт с Drupal 7! Настройте Boost для статичного кеширования
   страниц.

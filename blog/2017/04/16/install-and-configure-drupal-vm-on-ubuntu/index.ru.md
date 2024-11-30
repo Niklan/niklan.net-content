@@ -3,7 +3,7 @@ id: install-and-configure-drupal-vm-on-ubuntu
 language: ru
 title: 'Установка и настройка Drupal VM на Ubuntu'
 created: '2017-04-16T09:50:31'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   Узнайте, как установить и настроить Drupal VM на Ubuntu для локальной
   разработки.

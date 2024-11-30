@@ -3,7 +3,7 @@ id: drupal-8-entity-reference-selection-plugin
 language: ru
 title: 'Drupal 8: @EntityReferenceSelection — плагин автодополнения для сущностей'
 created: '2019-08-30T18:30:50'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   В Drupal 8 появился новый плагин автодополнения для сущностей —
   @EntityReferenceSelection. Он позволяет удобно выбирать сущности, используя

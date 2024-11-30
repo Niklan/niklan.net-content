@@ -3,7 +3,7 @@ id: drupal-8-authentication-api
 language: ru
 title: 'Drupal 8: Authentication API — создание Authentication Provider'
 created: '2018-01-19T19:17:14'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   Узнайте, как создавать собственные сервисы аутентификации в Drupal 8.
   Научитесь добавлять новые способы авторизации, такие как авторизация через API

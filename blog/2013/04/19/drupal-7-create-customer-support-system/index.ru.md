@@ -3,7 +3,7 @@ id: drupal-7-create-customer-support-system
 language: ru
 title: 'Drupal 7: Создание технической поддержки (тикеты)'
 created: '2013-04-19T20:37:16'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   Создаём систему техподдержки на Drupal 7: организуем работу с тикетами.
 attachments:

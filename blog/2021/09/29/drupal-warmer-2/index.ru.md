@@ -3,7 +3,7 @@ id: drupal-warmer-2
 language: ru
 title: 'Drupal Warmer 2: Кеш нужно подавать горячим!'
 created: '2021-09-29T15:31:57'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   Узнайте, как ускорить работу сайта на Drupal с Drupal Warmer 2: прогрейте кеш
   и наслаждайтесь быстрой загрузкой страниц!

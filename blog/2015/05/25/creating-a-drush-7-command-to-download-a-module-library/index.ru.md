@@ -3,7 +3,7 @@ id: creating-a-drush-7-command-to-download-a-module-library
 language: ru
 title: 'Создаём команду Drush 7 для загрузки библиотеки модуля'
 created: '2015-05-25T14:41:38'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   Создание собственной команды для Drush 7 — это эффективный способ упростить
   процесс загрузки библиотеки модуля и сэкономить время.

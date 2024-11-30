@@ -3,7 +3,7 @@ id: drupal-8-creating-your-own-blog-from-scratch
 language: ru
 title: 'Drupal 8: Создание собственного блога с нуля'
 created: '2018-09-03T08:26:39'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   Серия видеороликов о разработке собственного блога на Drupal 8 с нуля.
 promo: 'image/poster.ru.png'

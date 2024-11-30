@@ -3,7 +3,7 @@ id: drupal-8-migrate-api
 language: ru
 title: 'Drupal 8: Migrate API — Source, Process, Destination'
 created: '2017-10-22T10:21:29'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   Узнайте, как использовать Migrate API в Drupal 8 для упрощения процесса
   миграции данных. Научитесь писать миграции из различных источников и применять

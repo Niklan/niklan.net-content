@@ -3,7 +3,7 @@ id: ubuntu-12-web-server
 language: ru
 title: 'Установка веб-сервера на Ubuntu 12.x'
 created: '2012-12-31T22:39:23'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   Подготавливаем локальный веб-сервер для разработки на Ubuntu 12.x.
 attachments:

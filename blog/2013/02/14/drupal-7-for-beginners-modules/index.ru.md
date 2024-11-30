@@ -3,7 +3,7 @@ id: drupal-7-for-beginners-modules
 language: ru
 title: 'Drupal 7 для начинающих: Модули'
 created: '2013-02-14T12:00:30'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: 'Разбираемся с модулями в Drupal 7.'
 attachments:
   - name: 'Результаты выполнения'

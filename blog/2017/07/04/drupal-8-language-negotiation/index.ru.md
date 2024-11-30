@@ -3,7 +3,7 @@ id: drupal-8-language-negotiation
 language: ru
 title: 'Drupal 8: LanguageNegotiaton — программное определение языка'
 created: '2017-07-04T17:39:09'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   В этом материале рассмотрим, как добавить на сайт возможность программного
   определения языка с помощью плагина LanguageNegotiator.

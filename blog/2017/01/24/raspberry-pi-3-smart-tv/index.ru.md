@@ -3,7 +3,7 @@ id: raspberry-pi-3-smart-tv
 language: ru
 title: 'Как я делал медиацентр из Raspberry для замены смарт тв'
 created: '2017-01-24T10:53:41'
-updated: '2024-11-29T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   Узнайте, как создать медиацентр на базе Raspberry Pi и превратить любое
   устройство в центр развлечений.
