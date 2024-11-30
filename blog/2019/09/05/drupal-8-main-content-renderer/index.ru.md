@@ -7,7 +7,7 @@ updated: '2024-11-29T00:00:00'
 description: >-
   Узнайте как происходит определение, как «собирать» страницу, как это можно
   использовать для себя и влиять на результат.
-promo: 'image/arts-build-close-up-273230.jpg'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 8'
