@@ -3,12 +3,12 @@ id: drupal-8-batch-api
 language: ru
 title: 'Drupal 8: Batch API'
 created: '2018-09-11T17:24:14'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   Batch API — это API для пакетной обработки данных. Оно позволяет выполнять
   длительные операции, разбивая их на части. В этом материале мы рассмотрим, как
   использовать Batch API.
-promo: 'image/pexels-photo-247701.jpeg'
+promo: 'image/poster.png'
 tags:
   - Drupal
   - 'Drupal 8'

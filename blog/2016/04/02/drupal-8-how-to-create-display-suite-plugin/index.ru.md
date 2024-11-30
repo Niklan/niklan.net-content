@@ -3,13 +3,13 @@ id: drupal-8-how-to-create-display-suite-plugin
 language: ru
 title: 'Drupal 8: Пишем плагин Display Suite поля'
 created: '2016-04-02T20:19:03'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   В этой статье я расскажу, как создавать собственные DisplaySuite поля в Drupal
   8. Мы разберём изменения в подходе по сравнению с Drupal 7 и рассмотрим, как
   работает система плагинов. Вы узнаете, где хранятся поля и как они должны быть
   реализованы.
-promo: 'image/ds_field_promo_d8.png'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 8'

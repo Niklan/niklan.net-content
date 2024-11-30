@@ -3,7 +3,7 @@ id: drupal-7-advanced-contact-page
 language: ru
 title: 'Создание продвинутой страницы обратной связи в Drupal 7'
 created: '2013-05-21T23:34:03'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   Создайте продвинутую страницу контактов, чтобы облегчить связь с клиентами.
 attachments:
@@ -19,7 +19,7 @@ attachments:
     path: 'image/5.jpg'
   - name: 6.jpg
     path: 'image/6.jpg'
-promo: 'image/map_promo.png'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 7'

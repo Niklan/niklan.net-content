@@ -3,11 +3,11 @@ id: drupal-8-how-to-validate-and-submit-form-with-ajax
 language: ru
 title: 'Drupal 8: AJAX отправка и валидация формы'
 created: '2016-08-31T10:05:54'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   Из этого материала вы узнаете, как создавать собственные и другие формы с
   валидацией и отправкой данных с помощью AJAX.
-promo: 'image/d8ajaxforms.png'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 8'

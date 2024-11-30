@@ -3,10 +3,10 @@ id: drupal-7-code-style-check-ubuntu
 language: ru
 title: 'Проверка на стандарты кодирования Drupal в Ubuntu'
 created: '2013-03-09T12:52:13'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   Узнайте, как проверить код на соответствие стандартам Drupal в Ubuntu.
-promo: 'image/drupalcodecheck.png'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 7'

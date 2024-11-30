@@ -3,7 +3,7 @@ id: drupal-8-how-to-create-custom-plugin-type
 language: ru
 title: 'Drupal 8: Plugin API — создание собственных типов плагинов'
 created: '2016-09-17T13:39:21'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   Узнайте, как создавать собственные типы плагинов в Drupal 8. Это позволит вам
   расширить функциональность вашего сайта и добавить новые возможности.
@@ -12,7 +12,7 @@ attachments:
     path: 'attachment/custom_csv_import_article.csv'
   - name: 'Заготовка для теста импорта страниц.'
     path: 'attachment/custom_csv_import_page.csv'
-promo: 'image/drupal8customplugin.png'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 8'

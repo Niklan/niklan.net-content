@@ -3,11 +3,11 @@ id: oh-my-zsh
 language: ru
 title: 'Oh My Zsh!'
 created: '2017-06-19T17:17:22'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   Обзор и инструкция по установке оболочки для терминала Zsh и её модификаций.
   Сделайте работу в терминале приятнее и эффективнее!
-promo: 'image/linux_terminal_wallpaper.png'
+promo: 'image/poster.png'
 tags:
   - Linux
   - Ubuntu

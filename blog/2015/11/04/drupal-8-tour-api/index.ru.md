@@ -3,11 +3,11 @@ id: drupal-8-tour-api
 language: ru
 title: 'Drupal 8: Tour API'
 created: '2015-11-04T12:05:27'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   Drupal 8 Tour API позволяет создавать интерактивные туры по административным
   страницам, предоставляя редакторам наглядные обучающие подсказки.
-promo: 'image/d8tourapi.png'
+promo: 'image/poster.png'
 tags:
   - 'Drupal 8'
   - Drupal

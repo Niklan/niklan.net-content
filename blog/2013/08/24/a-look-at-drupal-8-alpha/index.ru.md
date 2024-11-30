@@ -3,9 +3,9 @@ id: a-look-at-drupal-8-alpha
 language: ru
 title: 'Взгляд на альфа-версию Drupal 8'
 created: '2013-08-24T15:13:42'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: 'Смотрю, что нас ожидает в Drupal 8.'
-promo: 'image/d8.png'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 8'

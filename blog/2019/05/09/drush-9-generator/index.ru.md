@@ -3,11 +3,11 @@ id: drush-9-generator
 language: ru
 title: 'Drush 9: Создание собственного генератора'
 created: '2019-05-09T21:45:09'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   Drush 9 позволяет разработчикам создавать собственные генераторы для
   автоматизации рутинных задач в Drupal, повышая эффективность работы.
-promo: 'image/circuits-connection-cyborg-1476321.jpg'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - Drush

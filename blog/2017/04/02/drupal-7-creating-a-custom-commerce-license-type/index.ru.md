@@ -3,11 +3,11 @@ id: drupal-7-creating-a-custom-commerce-license-type
 language: ru
 title: 'Drupal 7: Создание собственного типа Commerce License'
 created: '2017-04-02T12:00:00'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   Подробное руководство по созданию и продаже лицензий в Drupal Commerce с
   использованием модуля Commerce License.
-promo: 'image/commerce-license.jpg'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 7'

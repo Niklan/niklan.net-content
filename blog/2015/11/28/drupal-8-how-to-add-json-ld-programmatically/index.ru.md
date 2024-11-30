@@ -3,9 +3,9 @@ id: drupal-8-how-to-add-json-ld-programmatically
 language: ru
 title: 'Drupal 8: Добавление JSON-LD'
 created: '2015-11-28T14:11:07'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: 'Программное добавление JSON-LD разметки на сайт.'
-promo: 'image/d8json-ld.png'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 8'

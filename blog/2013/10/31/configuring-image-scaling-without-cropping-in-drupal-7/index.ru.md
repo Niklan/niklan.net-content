@@ -3,9 +3,9 @@ id: configuring-image-scaling-without-cropping-in-drupal-7
 language: ru
 title: 'Настраиваем масштабирование картинок без обрезаний в Drupal 7'
 created: '2013-10-31T22:02:42'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: 'Настраиваем корректную обрезку картинок в Drupal 7.'
-promo: 'image/resize.png'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 7'

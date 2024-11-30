@@ -3,9 +3,9 @@ id: mappy-7.x-1.3
 language: ru
 title: 'Mappy 7.x-1.3. Новые возможности и фиксы'
 created: '2013-11-03T16:03:59'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: 'Список изменений.'
-promo: 'image/mappy.png'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 7'

@@ -3,13 +3,13 @@ id: drupal-8-how-to-create-a-custom-twig-extension
 language: ru
 title: 'Drupal 8: Создание расширений Twig'
 created: '2017-08-08T17:06:45'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   В этом материале мы рассмотрим создание расширений Twig в Drupal 8. Вы
   узнаете, как расширить возможности шаблонизатора, добавив собственные функции
   и фильтры. Это позволит упростить разработку тем и улучшить их
   функциональность.
-promo: 'image/twigondrugs.png'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 8'

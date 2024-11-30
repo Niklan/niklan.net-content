@@ -3,9 +3,9 @@ id: drupal-7-for-beginners-taxonomy
 language: ru
 title: 'Drupal 7 для начинающих: Таксономия'
 created: '2013-02-04T23:11:39'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: 'Разбираемся со словарями.'
-promo: 'image/dfbeginners.jpg'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 7'

@@ -3,9 +3,9 @@ id: drupal-7-hierarchical-path-aliases-and-breadcrumbs
 language: ru
 title: 'Использование Pathauto и Path Breadcrumbs для создания хлебных крошек и ЧПУ с иерархией в Drupal 7'
 created: '2013-10-29T19:33:04'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: 'Настраиваем все, для максимальной пользы в SEO.'
-promo: 'image/paths.png'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 7'

@@ -3,12 +3,12 @@ id: drupal-8-modal-api
 language: ru
 title: 'Drupal 8: Modal API или как работать с модальными/диалоговыми окнами'
 created: '2016-08-30T17:10:04'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   В этом материале я расскажу вам, как с помощью встроенного в Drupal 8 API
   можно легко создавать модальные окна. Это позволит вам размещать формы,
   контент и любую другую информацию в модальном окне в любом месте.
-promo: 'image/d8modal.png'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 8'

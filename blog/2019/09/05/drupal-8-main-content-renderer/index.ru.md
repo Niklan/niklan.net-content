@@ -3,11 +3,11 @@ id: drupal-8-main-content-renderer
 language: ru
 title: 'Drupal 8: Подготовка ответа для основного содержимого'
 created: '2019-09-05T17:46:14'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   Узнайте как происходит определение, как «собирать» страницу, как это можно
   использовать для себя и влиять на результат.
-promo: 'image/arts-build-close-up-273230.jpg'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 8'

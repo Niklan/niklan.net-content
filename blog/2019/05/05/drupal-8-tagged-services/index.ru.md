@@ -3,11 +3,11 @@ id: drupal-8-tagged-services
 language: ru
 title: 'Drupal 8: Сервисы с метками'
 created: '2019-05-05T12:40:01'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   Сервисы с метками — удобный инструмент для организации сервисов. Узнайте, чем
   они отличаются от плагинов и как их использовать.
-promo: 'image/blank-card-cardboard-998501.jpg'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 8'

@@ -3,11 +3,11 @@ id: programmatically-controlling-access-to-content-in-drupal-7
 language: ru
 title: 'Drupal 7: Программно контролируем доступ к материалам'
 created: '2014-06-22T08:56:28'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
    Научитесь контролировать доступ к материалам в Drupal 7: создавайте скрытые
    материалы и ограничивайте доступ к ним на основе различных критериев.
-promo: 'image/nodeaccesspromo.png'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 7'

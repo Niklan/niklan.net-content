@@ -3,9 +3,9 @@ id: drupalife-store-lightweight-and-easy-ecommerce-distribution
 language: ru
 title: 'Drupalife Store - легковесный и простой дистрибутив интернет-магазина'
 created: '2014-02-24T18:12:44'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: 'Дистрибутив магазина для Drupal Commerce 1.'
-promo: 'image/dsstore_promo.png'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 7'

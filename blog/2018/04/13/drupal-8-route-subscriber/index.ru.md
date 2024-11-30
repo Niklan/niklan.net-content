@@ -3,12 +3,12 @@ id: drupal-8-route-subscriber
 language: ru
 title: 'Drupal 8: Route Subscriber — альтерим роуты'
 created: '2018-04-13T14:27:29'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   Расширенные возможности маршрутизации в Drupal 8: освойте подписчик события
   Route Subscriber для детальной настройки маршрутов вашего сайта, что позволит
   сделать его более удобным и функциональным.
-promo: 'image/camera-destination-finger-7979.jpg'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 8'

@@ -3,11 +3,11 @@ id: ubuntu-13.04-fix-bash-scripts
 language: ru
 title: 'Устранение проблемы с bash-скриптами в Ubuntu 13.04'
 created: '2013-04-28T15:23:33'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   В Ubuntu 13.04 bash скрипты открываются через gedit. Но есть решение! Узнайте,
   как исправить проблему и снова запускать скрипты.
-promo: 'image/ubuntu_promo.png'
+promo: 'image/poster.ru.png'
 tags:
   - Ubuntu
   - Linux

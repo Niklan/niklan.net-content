@@ -3,9 +3,9 @@ id: phpstorm-7-and-drupal
 language: ru
 title: 'PhpStorm 7 + Drupal = DrupalStorm'
 created: '2013-10-26T16:30:54'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: 'Возможности PhpStorm 7 для интеграции с Drupal.'
-promo: 'image/phpstormdrupal.png'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - PhpStorm

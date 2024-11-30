@@ -3,9 +3,9 @@ id: drupal-7-create-feature
 language: ru
 title: 'Drupal 7: Создаем Feature'
 created: '2013-04-28T22:06:30'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: 'Добавьте функционал на сайт легко и просто!'
-promo: 'image/features_promo.png'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 7'

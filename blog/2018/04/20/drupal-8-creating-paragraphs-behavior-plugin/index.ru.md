@@ -3,12 +3,12 @@ id: drupal-8-creating-paragraphs-behavior-plugin
 language: ru
 title: 'Drupal 8: Создание Paragraphs Behavior Plugin'
 created: '2018-04-20T20:03:45'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   Улучшение функциональности параграфов с помощью плагина Paragraphs Behavior:
   предоставьте возможность создания индивидуальных настроек для параграфов и
   контролируйте их отображение.
-promo: 'image/computer-content-control-270700.jpg'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 8'

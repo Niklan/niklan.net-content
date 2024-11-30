@@ -3,7 +3,7 @@ id: drupal-8-composer
 language: ru
 title: 'Drupal 8: Работа с Composer'
 created: '2016-09-03T10:49:21'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   Начиная с версии Drupal 8.1, использование composer становится неотъемлемой
   частью работы с Drupal. В этой статье мы рассмотрим, как правильно
@@ -11,7 +11,7 @@ description: >-
 attachments:
   - name: 'Первая версия статьи с файлами и контентом.'
     path: 'attachment/article-v1.tar.gz'
-promo: 'image/pexels-photo-258847.jpeg'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 8'

@@ -3,9 +3,9 @@ id: drupal-8-how-to-create-a-custom-condition-plugin
 language: ru
 title: 'Drupal 8: Condition Plugin'
 created: '2018-05-25T16:45:28'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: 'Узнайте, как создавать собственные плагины для проверки условий.'
-promo: 'image/pexels-photo-356043.jpeg'
+promo: 'image/poster.png'
 tags:
   - Drupal
   - 'Drupal 8'

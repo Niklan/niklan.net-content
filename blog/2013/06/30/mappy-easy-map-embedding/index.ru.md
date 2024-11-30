@@ -3,7 +3,7 @@ id: mappy-easy-map-embedding-on-website
 language: ru
 title: 'Mappy - простая вставка карт на сайт'
 created: '2013-06-30T14:39:36'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: 'Простенький модуль для вставки карт на сайт.'
 attachments:
   - name: 1.jpg
@@ -16,7 +16,7 @@ attachments:
     path: 'image/4.jpg'
   - name: 5.jpg
     path: 'image/5.jpg'
-promo: 'image/mappy.png'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 7'

@@ -3,12 +3,12 @@ id: drupal-7-attach-javascript
 language: ru
 title: 'Три метода добавления JavaScript на страницы Drupal 7'
 created: '2013-05-29T00:10:28'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   Узнайте, как легко подключить JavaScript в Drupal 7: через кастом-модуль с
   помощью drupal_add_js(), через тему сайта, добавляя скрипты в .info файл, и
   используя hook_library для управления библиотеками JS.
-promo: 'image/js_promo.png'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 7'

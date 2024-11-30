@@ -3,11 +3,11 @@ id: drupal-8-creating-previous-and-next-content-buttons
 language: ru
 title: 'Drupal 8: Создание кнопок на предыдущий и следующий материал'
 created: '2018-04-27T18:00:06'
-updated: '2024-05-25T00:00:00'
+updated: '2024-11-30T00:00:00'
 description: >-
   Создаём кнопки «предыдущий» и «следующий» в Drupal 8: туториал научит вас
   делать навигационные кнопки для перехода между материалами.
-promo: 'image/book-book-pages-chapter-5834_0.jpg'
+promo: 'image/poster.ru.png'
 tags:
   - Drupal
   - 'Drupal 8'
