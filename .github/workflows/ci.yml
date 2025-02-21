@@ -1,0 +1,21 @@
+name: CI
+
+on:
+  workflow_dispatch:
+  pull_request:
+    types:
+      - labeled
+      - opened
+      - synchronize
+      - reopened
+
+jobs:
+  validate:
+    name: Validate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Schema Validation
+        run: find ./blog -name "article.xml" -type f -exec xmllint --noout --schema ./blog/article.xsd {} \;
