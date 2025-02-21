@@ -1,23 +1,3 @@
----
-id: ubuntu-12-web-server
-language: ru
-title: 'Установка веб-сервера на Ubuntu 12.x'
-created: '2012-12-31T22:39:23'
-updated: '2024-11-30T00:00:00'
-description: >-
-  Подготавливаем локальный веб-сервер для разработки на Ubuntu 12.x.
-attachments:
-  - name: 'Скрипт добавления алиасов'
-    path: 'attachment/add_alias.sh.zip'
-  - name: 'Скрипт добавления алиасов Ubuntu 13.10'
-    path: 'attachment/add_alias_indomain13-10.sh.zip'
-promo: 'image/poster.ru.png'
-tags:
-  - Ubuntu
-  - Linux
-  - Веб-сервер
----
-
 В данной записи я расскажу как поставить веб-сервер на абсолютно чистую Ubuntu.
 
 ## I. Устанавливаем веб-сервер
