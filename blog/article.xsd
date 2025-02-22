@@ -16,7 +16,7 @@
 
   <xs:simpleType name="tagType">
     <xs:restriction base="xs:string">
-      <xs:pattern value="[a-z0-9_]+"/>
+      <xs:pattern value="[a-z0-9-]+"/>
     </xs:restriction>
   </xs:simpleType>
 

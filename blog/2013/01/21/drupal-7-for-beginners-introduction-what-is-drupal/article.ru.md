@@ -1,16 +1,3 @@
----
-id: drupal-7-for-beginners-introduction-what-is-drupal
-language: ru
-title: 'Drupal 7 для начинающих: Введение. Что такое Drupal'
-created: '2013-01-21T21:56:59'
-updated: '2024-11-30T00:00:00'
-description: 'Знакомимся с Drupal.'
-promo: 'image/poster.ru.png'
-tags:
-  - Drupal
-  - 'Drupal 7'
----
-
 Когда я потихоньку начал обучаться друпалу (конец 2010 – начало 2011), меня
 удивило отсутствие обучающей информации (если сравнивать с другими CMS).
 Конечно, она была, но её было очень мало, а подавляющее большинство было на

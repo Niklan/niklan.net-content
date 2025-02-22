@@ -1,20 +1,3 @@
----
-id: drupal-7-for-beginners-translating-drupal
-language: ru
-title: 'Drupal 7 для начинающих: Переводим Drupal'
-created: '2013-01-24T23:14:45'
-updated: '2024-11-30T00:00:00'
-description: 'Переводим Drupal на русский.'
-attachments:
-  - name: 'Результат выполнения (сайт + база)'
-    path: 'attachment/translate_drupal.zip'
-promo: 'image/poster.ru.png'
-tags:
-  - Drupal
-  - 'Drupal 7'
-  - Мультиязычность
----
-
 Чтобы продолжить изучение друпала, нам надо перевести его на русский язык. Так
 как я буду писать гайд именно для русского интерфейса. Если у вас хорошее знание
 английского, то почитайте данные гайды, а затем начинайте делать на английском.

@@ -1,19 +1,3 @@
----
-id: drupal-7-for-beginners-creating-custom-content-types
-language: ru
-title: 'Drupal 7 для начинающих: Создание собственных типов материалов'
-created: '2013-01-29T23:19:04'
-updated: '2024-11-30T00:00:00'
-description: 'Руководство по управлению типами содержимого.'
-attachments:
-  - name: 'Результат выполнения'
-    path: 'attachment/dfbeginners_contenttypes.zip'
-promo: 'image/poster.ru.png'
-tags:
-  - Drupal
-  - 'Drupal 7'
----
-
 Нам уже довелось поработать с типом материала «Basic page» (страница), также
 стандартно идет Article (статья). Оба они являются типами содержимого, которые
 изначально предустановлены в друпале. Но они не подходят для сайтов, разве что

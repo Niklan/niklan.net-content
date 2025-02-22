@@ -1,20 +1,3 @@
----
-id: drupal-7-windows-setup
-language: ru
-title: 'Самый простой и быстрый способ начать работать с Drupal на Windows'
-created: '2013-01-09T16:18:18'
-updated: '2024-11-30T00:00:00'
-description: >-
-  Acquia Dev Desktop – это инструмент для быстрой и удобной разработки на Drupal
-  под операционную систему Windows.
-promo: 'image/poster.ru.png'
-tags:
-  - Drupal
-  - Windows
-  - Веб-сервер
-  - 'Acquia Dev Desktop'
----
-
 Те, кто начинает работать с Drupal впервые, ставят систему на Denver и ему
 подобные сервера. А затем возникают такие вопросы: «Почему Drupal лагает, жумла
 же не лагала?» - и подобный бред. Как правило, проблема в 99% случаев решается
