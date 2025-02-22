@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:noNamespaceSchemaLocation="../../../../article.xsd"
-  id="drupal-7-for-beginners-working-with-content"
-  created="2013-01-25T18:21:17"
+  id="drupal-7-for-beginners-views"
+  created="2013-02-16T01:16:17"
   updated="2024-11-30T00:00:00">
   <translations>
     <translation language="ru" primary="true" src="./article.ru.md">
-      <title>Drupal 7 для начинающих: Работа с материалами</title>
-      <description>Как добавлять, редактировать и удалять материалы.</description>
+      <title>Drupal 7 для начинающих: Группировка материалов с помощью Views</title>
+      <description>Drupal 7 и группировка материалов с помощью Views. Объединяем материалы в группы.</description>
       <poster src="./image/poster.ru.png"/>
       <attachments>
-        <attachment src="./attachment/materials.zip"
+        <attachment src="./attachment/dfbeginners.tar.gz"
           title="Результат выполнения"/>
       </attachments>
     </translation>
@@ -18,5 +18,6 @@
   <tags>
     <tag>drupal</tag>
     <tag>drupal-7</tag>
+    <tag>views</tag>
   </tags>
 </article>

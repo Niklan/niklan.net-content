@@ -1,19 +1,3 @@
----
-id: drupal-7-for-beginners-modules
-language: ru
-title: 'Drupal 7 для начинающих: Модули'
-created: '2013-02-14T12:00:30'
-updated: '2024-11-30T00:00:00'
-description: 'Разбираемся с модулями в Drupal 7.'
-attachments:
-  - name: 'Результаты выполнения'
-    path: 'attachment/dfbeginners.tar.gz'
-promo: 'image/poster.ru.png'
-tags:
-  - Drupal
-  - 'Drupal 7'
----
-
 В ядре друпала по умолчанию идет набор модулей, которые пригодны для начальных
 этапов сайтов, затем, всем приходится расширять уже существующий функционал
 дополнительными модулями. Кто-то пишет их сам, а многие просто качают уже

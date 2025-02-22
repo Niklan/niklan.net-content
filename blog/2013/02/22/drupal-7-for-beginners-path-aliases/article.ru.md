@@ -1,21 +1,3 @@
----
-id: drupal-7-for-beginners-path-aliases
-language: ru
-title: 'Drupal 7 для начинающих: ЧПУ (синонимы)'
-created: '2013-02-22T23:33:39'
-updated: '2024-11-30T00:00:00'
-description: >-
-  ЧПУ в Drupal делает сайт удобным для пользователей и помогает в SEO.
-attachments:
-  - name: 'Результат выполнения'
-    path: 'attachment/dfbeginners.dev.tar.gz'
-promo: 'image/poster.ru.png'
-tags:
-  - Drupal
-  - 'Drupal 7'
-  - Pathauto
----
-
 Базовый функционал для сайта сделан, все приведено к более-менее подобающему
 виду. Но осталась одна нерешенная проблема — адреса страниц.
 

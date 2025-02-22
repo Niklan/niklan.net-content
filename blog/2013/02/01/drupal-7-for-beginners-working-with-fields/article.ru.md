@@ -1,19 +1,3 @@
----
-id: drupal-7-for-beginners-working-with-fields
-language: ru
-title: 'Drupal 7 для начинающих: Работа с полями'
-created: '2013-02-01T21:44:53'
-updated: '2024-11-30T00:00:00'
-description: 'Что такое поля и зачем они нужны? Учимся ими пользоваться.'
-attachments:
-  - name: 'Результат выполнения'
-    path: 'attachment/dfbeginners_fields.zip'
-promo: 'image/poster.ru.png'
-tags:
-  - Drupal
-  - 'Drupal 7'
----
-
 Я начинал изучать Drupal, когда была шестая версия. И добавленные типы
 материалов не отличались ничем, как сейчас у нас: новости, услуги и отзывы. На
 тот момент в топе модулей был CCK, который я поставил и после чего я уже

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:noNamespaceSchemaLocation="../../../../article.xsd"
-  id="drupal-7-for-beginners-working-with-content"
-  created="2013-01-25T18:21:17"
+  id="drupal-7-for-beginners-updating-drupal-core"
+  created="2013-02-27T23:41:49"
   updated="2024-11-30T00:00:00">
   <translations>
     <translation language="ru" primary="true" src="./article.ru.md">
-      <title>Drupal 7 для начинающих: Работа с материалами</title>
-      <description>Как добавлять, редактировать и удалять материалы.</description>
+      <title>Drupal 7 для начинающих: Обновления ядра Drupal</title>
+      <description>Узнайте, как легко обновлять ядро Drupal 7, чтобы улучшить безопасность и функциональность вашего сайта.</description>
       <poster src="./image/poster.ru.png"/>
       <attachments>
-        <attachment src="./attachment/materials.zip"
+        <attachment src="./attachment/dfbeginners.tar.gz"
           title="Результат выполнения"/>
       </attachments>
     </translation>

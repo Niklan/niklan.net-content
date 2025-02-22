@@ -1,19 +1,3 @@
----
-id: drupal-coding-standards-netbeans
-language: ru
-title: 'Настройка NetBeans в соответствии с Drupal Coding Standards'
-created: '2013-01-01T02:21:21'
-updated: '2024-11-30T00:00:00'
-description: >-
-  Руководство по настройке NetBeans в соответствии со стандартами кодирования
-  Drupal.
-promo: 'image/poster.ru.png'
-tags:
-  - Drupal
-  - NetBeans
-  - IDE
----
-
 При разработке я использую NetBeans, но как оказалась, код написанный в нем, не
 проходит проверку на соответствие стандартам кодирования Drupal. Все эти
 проблемы решаются достаточно быстро, простой настройкой среды и быстрой

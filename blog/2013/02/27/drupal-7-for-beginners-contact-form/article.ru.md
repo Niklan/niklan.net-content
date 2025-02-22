@@ -1,20 +1,3 @@
----
-id: drupal-7-for-beginners-contact-form
-language: ru
-title: 'Drupal 7 для начинающих: Форма обратной связи'
-created: '2013-02-27T21:21:13'
-updated: '2024-11-30T00:00:00'
-description: 'Создаём форму обратной связи в Drupal 7: просто и удобно!'
-attachments:
-  - name: 'Результат выполнения'
-    path: 'attachment/dfbeginners.tar.gz'
-promo: 'image/poster.ru.png'
-tags:
-  - Drupal
-  - 'Drupal 7'
-  - Webform
----
-
 На тестовом сайте мы сделали почти весь запланированный фукнционал, и затронули
 все основные возможности Drupal'a, и даже чутка сверху.
 

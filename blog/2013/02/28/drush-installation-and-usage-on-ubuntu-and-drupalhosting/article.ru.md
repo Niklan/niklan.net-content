@@ -1,19 +1,3 @@
----
-id: drush-installation-and-usage-on-ubuntu-and-drupalhosting
-language: ru
-title: 'Drush на Ubuntu и Drupalhosting: как установить и использовать'
-created: '2013-02-28T19:33:11'
-updated: '2024-11-30T00:00:00'
-description: >-
-  Ускорьте работу с Drupal на Ubuntu с Drush! Эффективные команды для управления
-  сайтом.
-promo: 'image/poster.ru.png'
-tags:
-  - Drush
-  - Linux
-  - Ubuntu
----
-
 Drush — системная утилита позволяющая управлять Drupal сайтом из терминала. По
 сути она позволяет выполнять все те же действия, что и административный
 интерфейс, но внутри консоли.

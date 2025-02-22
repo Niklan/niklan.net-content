@@ -1,20 +1,3 @@
----
-id: drupal-7-for-beginners-display-management-and-image-handling
-language: ru
-title: 'Drupal 7 для начинающих: управление отображением и работа с картинками'
-created: '2013-02-04T14:19:38'
-updated: '2024-11-30T00:00:00'
-description: >-
-  Управление отображением материала и работа с картинками в Drupal 7.
-attachments:
-  - name: 'Результат выполнения'
-    path: 'attachment/dfbeginers_display.zip'
-promo: 'image/poster.ru.png'
-tags:
-  - Drupal
-  - 'Drupal 7'
----
-
 После того как мы создали собственные типы материалов и добавили для каждого из
 них поля, нам необходимо настроить отображение этих самых полей. Ведь
 изначально, все выводится друг за другом без каких-либо форматирований, и нам
