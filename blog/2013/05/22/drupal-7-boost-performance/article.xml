@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-7-boost-performance"
+  created="2013-05-22T23:13:03"
+  updated="2024-11-30T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Как ускорить работу сайта на Drupal 7 с модулем Boost</title>
+      <description>Ускорьте свой сайт с Drupal 7! Настройте Boost для статичного кеширования страниц.</description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-7</tag>
+    <tag>performance</tag>
+  </tags>
+</article>

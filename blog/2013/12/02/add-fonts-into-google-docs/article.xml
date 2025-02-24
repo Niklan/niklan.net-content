@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="add-fonts-into-google-docs"
+  created="2013-12-02T19:01:49"
+  updated="2024-11-30T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Как в Google Docs добавлять шрифты</title>
+      <description>Больше шрифтов и разных!</description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+</article>

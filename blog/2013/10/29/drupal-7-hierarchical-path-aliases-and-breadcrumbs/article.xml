@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-7-hierarchical-path-aliases-and-breadcrumbs"
+  created="2013-10-29T19:33:04"
+  updated="2024-11-30T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Использование Pathauto и Path Breadcrumbs для создания хлебных крошек и ЧПУ с иерархией
+        в Drupal 7</title>
+      <description>Настраиваем все, для максимальной пользы в SEO.</description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-7</tag>
+    <tag>seo</tag>
+  </tags>
+</article>

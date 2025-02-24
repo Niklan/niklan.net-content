@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-7-l10n-update-module"
+  created="2013-05-08T20:58:54"
+  updated="2024-11-30T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Руководство по переводу Drupal 7 и его модулей на русский</title>
+      <description>Простой способ русифицировать Drupal и его модули.</description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-7</tag>
+    <tag>i18n</tag>
+  </tags>
+</article>

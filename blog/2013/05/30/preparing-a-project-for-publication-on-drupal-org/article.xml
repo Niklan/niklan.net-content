@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="preparing-a-project-for-publication-on-drupal-org"
+  created="2013-05-30T21:56:15"
+  updated="2024-11-30T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Как подготовить проект для публикации на drupal.org</title>
+      <description>Мой опыт получения прав на публикацию проектов на drupal.org</description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+  </tags>
+</article>

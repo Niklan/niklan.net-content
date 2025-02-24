@@ -3,7 +3,7 @@
   <!-- Custom types -->
   <xs:simpleType name="articleIdType">
     <xs:restriction base="xs:string">
-      <xs:pattern value="[a-z0-9-]+"/>
+      <xs:pattern value="[a-z0-9.-]+"/>
     </xs:restriction>
   </xs:simpleType>
 

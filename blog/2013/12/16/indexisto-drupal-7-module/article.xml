@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="indexisto-drupal-7-module"
+  created="2013-12-16T17:30:40"
+  updated="2024-11-30T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Indexisto - поиск для Drupal</title>
+      <description>Интеграция Indexisto с Drupal.</description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-7</tag>
+    <tag>search</tag>
+  </tags>
+</article>

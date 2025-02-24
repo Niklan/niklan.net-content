@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-7-access-control-rules"
+  created="2013-05-06T11:22:13"
+  updated="2024-11-30T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Настройка правил для блокировки доступа к материалам в Drupal 7</title>
+      <description>Советы по защите данных и ограничению нежелательного доступа к важному содержимому с помощью Rules.</description>
+      <poster src="./image/poster.ru.png"/>
+      <attachments>
+        <attachment src="./attachment/block_node_rule.txt"
+          title="Экспорт правила"/>
+      </attachments>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-7</tag>
+  </tags>
+</article>

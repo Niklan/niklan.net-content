@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-7-follow-functionality-with-flag"
+  created="2013-12-03T16:20:19"
+  updated="2024-11-30T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Модуль Flag: подписываемся на пользователей в Drupal 7</title>
+      <description>Аналог Follow из различных социальных сетей.</description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-7</tag>
+  </tags>
+</article>
