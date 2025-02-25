@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-7-8-optimizing-images-using-imagemagick"
+  created="2017-03-30T17:29:28"
+  updated="2024-11-30T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Drupal: Оптимизация сжатия и загрузки изображений</title>
+      <description>
+        Научитесь оптимизировать изображения с помощью ImageMagick, чтобы
+        улучшить производительность сайта и SEO. Узнайте, как эффективно сжимать
+        картинки, сохраняя при этом их высокое качество.
+      </description>
+      <poster src="./image/poster.ru.png"/>
+      <attachments>
+        <attachment src="Сравнения качества сжатия" title="./image/comparsion.png"/>
+      </attachments>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-8</tag>
+    <tag>performance</tag>
+    <tag>seo</tag>
+  </tags>
+</article>

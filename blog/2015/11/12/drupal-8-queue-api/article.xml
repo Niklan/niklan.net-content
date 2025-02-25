@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-8-queue-api"
+  created="2015-11-12T20:41:25"
+  updated="2024-11-30T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Drupal 8: Queue API</title>
+      <description>
+        Drupal 8 Queue API позволяет разработчикам управлять задачами, которые
+        требуют много времени или ресурсов, путём их помещения в очередь для
+        выполнения в фоновом режиме.
+      </description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-8</tag>
+  </tags>
+</article>

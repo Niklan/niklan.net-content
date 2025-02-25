@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-8-custom-csv-import"
+  created="2016-09-11T10:05:15"
+  updated="2024-11-30T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Drupal 8: Пишем собственный импорт из CSV файла</title>
+      <description>
+        Узнайте, как создать собственный модуль импорта содержимого на сайт из
+        CSV файла, используя Form API, File API, Entity API и Batch operations.
+        Разберём процесс создания формы для загрузки CSV файла и настройку
+        импорта данных.
+      </description>
+      <poster src="./image/poster.ru.png"/>
+      <attachments>
+        <attachment src="./attachment/custom_csv_import_1.csv" title="Импорт с 1 материалом"/>
+        <attachment src="./attachment/custom_csv_import_1000.csv" title="Импорт с 1000 материалами"/>
+      </attachments>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-8</tag>
+  </tags>
+</article>

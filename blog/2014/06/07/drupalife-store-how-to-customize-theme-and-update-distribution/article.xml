@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupalife-store-how-to-customize-theme-and-update-distribution"
+  created="2014-06-07T21:20:49"
+  updated="2024-11-30T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Drupalife Store: как править тему и обновлять сборку</title>
+      <description>Небольшие подсказки, чтобы было проще.</description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-7</tag>
+    <tag>e-commerce</tag>
+  </tags>
+</article>

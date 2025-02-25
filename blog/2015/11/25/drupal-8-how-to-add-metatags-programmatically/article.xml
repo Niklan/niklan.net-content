@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-8-how-to-add-metatags-programmatically"
+  created="2015-11-25T08:36:04"
+  updated="2024-11-30T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Drupal 8: Программное добавление метатегов</title>
+      <description>
+        Узнайте, как легко добавлять, изменять и удалять метатеги в Drupal 8 без
+        использования сторонних модулей.
+      </description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-8</tag>
+    <tag>seo</tag>
+  </tags>
+</article>

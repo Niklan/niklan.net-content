@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="theming-checkboxes-and-radio-buttons-in-drupal-7"
+  created="2014-06-09T16:07:39"
+  updated="2024-11-30T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Drupal 7: Темизация checkbox и radio кнопок</title>
+      <description>Приводим чекбоксы и радио кнопки к единому стилю.</description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-7</tag>
+    <tag>theming</tag>
+  </tags>
+</article>

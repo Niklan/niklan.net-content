@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-8-custom-csv-import-optimization"
+  created="2017-03-16T10:25:00"
+  updated="2024-11-30T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Drupal 8: Импорт из CSV — оптимизация при больших объемах данных</title>
+      <description>
+        Оптимизация импорта больших объёмов данных: разбиение на части для
+        повышения производительности.
+      </description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-8</tag>
+    <tag>performance</tag>
+  </tags>
+</article>

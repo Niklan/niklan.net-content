@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-7-how-to-theme-using-display-suite-and-field-group"
+  created="2016-04-04T19:54:09"
+  updated="2024-11-30T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>DS + FG proof of concept или как я верстаю в Drupal</title>
+      <description>
+        В этой статье я расскажу о своём подходе к вёрстке на Drupal, основанном
+        на использовании связки DisplaySuite и FieldGroup. Я сравню его с
+        другими методами и объясню, почему выбрал именно этот способ, а также
+        опишу его преимущества и недостатки.
+      </description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-7</tag>
+    <tag>theming</tag>
+  </tags>
+</article>

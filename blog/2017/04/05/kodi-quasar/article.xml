@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="kodi-quasar"
+  created="2017-04-05T17:22:08"
+  updated="2024-11-30T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Установка и настройка Quasar на Kodi</title>
+      <description>
+        Обзор и инструкция по установке и настройке дополнения Quasar для Kodi.
+      </description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+</article>

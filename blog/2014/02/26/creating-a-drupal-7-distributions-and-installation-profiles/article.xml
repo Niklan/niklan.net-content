@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="creating-a-drupal-7-distributions-and-installation-profiles"
+  created="2014-02-26T00:07:44"
+  updated="2024-11-30T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Как создать сборку Drupal 7: дистрибутивы и установочные профили</title>
+      <description>Создание дистрибутивов Drupal 7: руководство для разработчиков.</description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-7</tag>
+  </tags>
+</article>

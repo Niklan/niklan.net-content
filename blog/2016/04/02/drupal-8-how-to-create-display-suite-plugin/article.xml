@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-8-how-to-create-display-suite-plugin"
+  created="2016-04-02T20:19:03"
+  updated="2024-11-30T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Drupal 8: Пишем плагин Display Suite поля</title>
+      <description>
+        В этой статье я расскажу, как создавать собственные DisplaySuite поля в
+        Drupal 8. Мы разберём изменения в подходе по сравнению с Drupal 7 и
+        рассмотрим, как работает система плагинов. Вы узнаете, где хранятся поля
+        и как они должны быть реализованы.
+      </description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-8</tag>
+  </tags>
+</article>

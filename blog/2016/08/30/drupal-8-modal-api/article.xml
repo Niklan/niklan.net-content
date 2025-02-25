@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-8-modal-api"
+  created="2016-08-30T17:10:04"
+  updated="2024-11-30T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Drupal 8: Modal API или как работать с модальными/диалоговыми окнами</title>
+      <description>
+        В этом материале я расскажу вам, как с помощью встроенного в Drupal 8
+        API можно легко создавать модальные окна. Это позволит вам размещать
+        формы, контент и любую другую информацию в модальном окне в любом месте.
+      </description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-8</tag>
+    <tag>javascript</tag>
+  </tags>
+</article>
