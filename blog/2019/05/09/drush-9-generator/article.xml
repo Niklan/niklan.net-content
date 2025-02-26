@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drush-9-generator"
+  created="2019-05-09T21:45:09"
+  updated="2024-11-30T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Drush 9: Создание собственного генератора</title>
+      <description>
+        Drush 9 позволяет разработчикам создавать собственные генераторы для
+        автоматизации рутинных задач в Drupal, повышая эффективность работы.
+      </description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drush</tag>
+  </tags>
+</article>

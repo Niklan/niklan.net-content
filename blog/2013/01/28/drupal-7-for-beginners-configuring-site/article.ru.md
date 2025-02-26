@@ -1,19 +1,3 @@
----
-id: drupal-7-for-beginners-configuring-site
-language: ru
-title: 'Drupal 7 для начинающих: Настраиваем сайт'
-created: '2013-01-28T22:59:34'
-updated: '2024-11-30T00:00:00'
-description: 'В этом уроке мы рассмотрим базовые настройки Drupal 7.'
-attachments:
-  - name: 'Результат выполнения'
-    path: 'attachment/dfbeginners_site.zip'
-promo: 'image/poster.ru.png'
-tags:
-  - Drupal
-  - 'Drupal 7'
----
-
 Мы уже познакомились с панелью инструментов, с добавлением материалов и даже
 добавили парочку, но мы так и не настроили информацию о сайте. Время сделать
 это.

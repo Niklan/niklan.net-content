@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-commerce-2-workflows"
+  created="2018-07-10T17:47:07"
+  updated="2024-11-30T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Drupal Commerce 2: Собственные этапы (статусы) выполнения заказа</title>
+      <description>
+        Подробная инструкция по настройке уникальных статусов и этапов
+        оформления заказов в Drupal Commerce 2.
+      </description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-8</tag>
+    <tag>e-commerce</tag>
+  </tags>
+</article>

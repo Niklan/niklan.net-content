@@ -1,20 +1,3 @@
----
-id: drupal-7-create-like-button-with-rate-module
-language: ru
-title: 'Rate: как создать кнопку «Мне нравится» в Drupal 7'
-created: '2013-05-19T16:01:48'
-updated: '2024-11-30T00:00:00'
-description: >-
-  Создайте кнопку «Мне нравится» на своём сайте с помощью Rate. Это простой
-  способ улучшить взаимодействие с пользователями.
-promo: 'image/poster.ru.png'
-tags:
-  - Drupal
-  - 'Drupal 7'
-  - Rate
-  - 'Voting API'
----
-
 Кнопка «Мне нравится», встречается почти на каждом сайте, и в этой статье я
 расскажу как её создать на Drupal сайте при помощи модуля Rate.
 

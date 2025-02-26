@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-8-9-placeholder-strategy"
+  created="2020-05-15T10:51:12"
+  updated="2024-11-30T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Drupal 8, 9: Placeholder Strategy</title>
+      <description>
+        Drupal 8, 9: Placeholder Strategy — узнайте, как оптимизировать рендер
+        страниц с помощью плейсхолдеров и асинхронной обработки данных.
+      </description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-8</tag>
+    <tag>drupal-9</tag>
+  </tags>
+</article>

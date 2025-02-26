@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-8-creating-paragraphs-behavior-plugin"
+  created="2018-04-20T20:03:45"
+  updated="2024-11-30T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Drupal 8: Создание Paragraphs Behavior Plugin</title>
+      <description>
+        Улучшение функциональности параграфов с помощью плагина Paragraphs
+        Behavior: предоставьте возможность создания индивидуальных настроек для
+        параграфов и контролируйте их отображение.
+      </description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-8</tag>
+  </tags>
+</article>

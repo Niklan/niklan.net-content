@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-8-migrate-api"
+  created="2017-10-22T10:21:29"
+  updated="2024-11-30T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Drupal 8: Migrate API — Source, Process, Destination</title>
+      <description>
+        Узнайте, как использовать Migrate API в Drupal 8 для упрощения процесса
+        миграции данных. Научитесь писать миграции из различных источников и
+        применять систему плагинов для более сложных задач.
+      </description>
+      <poster src="./image/poster.ru.png"/>
+      <attachments>
+        <attachment src="./attachment/users.csv" title="Пользователи для финального примера"/>
+        <attachment src="./attachment/articles.csv" title="Статьи для финального примера"/>
+      </attachments>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-8</tag>
+  </tags>
+</article>

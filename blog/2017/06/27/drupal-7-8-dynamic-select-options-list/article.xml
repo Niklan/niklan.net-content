@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-7-8-dynamic-select-options-list"
+  created="2017-06-27T18:45:08"
+  updated="2024-11-30T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Drupal: Динамические опции для поля-списка</title>
+      <description>
+        Узнайте, как создавать динамические списки опций в Drupal, чтобы
+        избежать ручного ввода данных. Изучите настройку
+        allowed_values_function, которая позволяет получать актуальные данные
+        для #options в различных частях сайта.
+      </description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-7</tag>
+    <tag>drupal-8</tag>
+  </tags>
+</article>

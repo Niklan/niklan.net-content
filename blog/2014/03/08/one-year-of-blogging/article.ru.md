@@ -1,15 +1,3 @@
----
-id: one-year-of-blogging
-language: ru
-title: 'Блогу 1 год'
-created: '2014-03-08T14:50:32'
-updated: '2024-11-30T00:00:00'
-description: 'Happy Birthday!'
-promo: 'image/poster.ru.png'
-tags:
-  - Блог
----
-
 Прежде всего хочу поздравить друпалерш и просто всех девушек с 8 марта! Удачи,
 здоровья, красоты и счастья.
 

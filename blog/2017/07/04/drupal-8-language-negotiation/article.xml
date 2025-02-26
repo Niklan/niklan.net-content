@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-8-language-negotiation"
+  created="2017-07-04T17:39:09"
+  updated="2024-11-30T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Drupal 8: LanguageNegotiaton — программное определение языка</title>
+      <description>
+        В этом материале рассмотрим, как добавить на сайт возможность
+        программного определения языка с помощью плагина LanguageNegotiator.
+      </description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-8</tag>
+    <tag>i18n</tag>
+  </tags>
+</article>

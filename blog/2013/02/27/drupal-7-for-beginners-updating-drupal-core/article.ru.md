@@ -1,18 +1,3 @@
----
-id: drupal-7-for-beginners-updating-drupal-core
-language: ru
-title: 'Drupal 7 для начинающих: Обновления ядра Drupal'
-created: '2013-02-27T23:41:49'
-updated: '2024-11-30T00:00:00'
-description: >-
-   Узнайте, как легко обновлять ядро Drupal 7, чтобы улучшить безопасность и
-   функциональность вашего сайта.
-promo: 'image/poster.ru.png'
-tags:
-  - Drupal
-  - 'Drupal 7'
----
-
 За то время пока я писал гайды, ядро Drupal было обновлено.
 
 Было бы глупо не добавить ко всем гайдам еще и информацию по обновлению ядра

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="two-ways-of-installing-drupal-8"
+  created="2018-06-29T17:11:50"
+  updated="2024-11-30T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Drupal 8: Два варианта установки ядра</title>
+      <description>
+        Узнайте, как установить ядро Drupal 8 двумя способами: стандартным с
+        drupal.org и через Composer Drupal Project. Сравните плюсы и минусы
+        каждого метода, а также научитесь мигрировать между ними.
+      </description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-8</tag>
+  </tags>
+</article>

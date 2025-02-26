@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-8-user-data-service"
+  created="2019-05-02T19:44:51"
+  updated="2024-11-30T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Drupal 8: Сервис user.data — хранилище данных пользователей</title>
+      <description>
+        Сервис user.data — это инструмент, который позволяет хранить
+        пользовательские данные в виде пар «ключ-значение». Это удобно для
+        хранения дополнительной информации о пользователе, такой как
+        предпочтения или настройки.
+      </description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-8</tag>
+  </tags>
+</article>
