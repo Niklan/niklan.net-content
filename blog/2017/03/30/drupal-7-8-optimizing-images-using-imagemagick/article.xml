@@ -14,7 +14,7 @@
       </description>
       <poster src="./image/poster.ru.png"/>
       <attachments>
-        <attachment src="Сравнения качества сжатия" title="./image/comparsion.png"/>
+        <attachment src="./image/comparsion.png" title="Сравнения качества сжатия"/>
       </attachments>
     </translation>
   </translations>
