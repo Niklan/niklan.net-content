@@ -12,7 +12,7 @@
         миграции данных. Научитесь писать миграции из различных источников и
         применять систему плагинов для более сложных задач.
       </description>
-      <poster src="./image/poster.ru.png"/>
+      <poster src="./image/poster.png"/>
       <attachments>
         <attachment src="./attachment/users.csv" title="Пользователи для финального примера"/>
         <attachment src="./attachment/articles.csv" title="Статьи для финального примера"/>

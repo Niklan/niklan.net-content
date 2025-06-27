@@ -11,7 +11,7 @@
         Всё, что нужно знать о хуках в Drupal 8. Типы, использование и создание
         своих хуков. Научитесь понимать код модулей и работать с ним.
       </description>
-      <poster src="./image/poster.ru.png"/>
+      <poster src="./image/poster.png"/>
     </translation>
   </translations>
   <tags>

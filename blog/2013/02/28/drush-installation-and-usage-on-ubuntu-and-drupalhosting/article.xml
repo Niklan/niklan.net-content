@@ -9,10 +9,6 @@
       <title>Drush на Ubuntu и Drupalhosting: как установить и использовать</title>
       <description>Ускорьте работу с Drupal на Ubuntu с Drush! Эффективные команды для управления сайтом.</description>
       <poster src="./image/poster.ru.png"/>
-      <attachments>
-        <attachment src="./attachment/dfbeginners.tar.gz"
-          title="Результат выполнения"/>
-      </attachments>
     </translation>
   </translations>
   <tags>

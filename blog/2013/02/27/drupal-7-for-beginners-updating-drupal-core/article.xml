@@ -9,10 +9,6 @@
       <title>Drupal 7 для начинающих: Обновления ядра Drupal</title>
       <description>Узнайте, как легко обновлять ядро Drupal 7, чтобы улучшить безопасность и функциональность вашего сайта.</description>
       <poster src="./image/poster.ru.png"/>
-      <attachments>
-        <attachment src="./attachment/dfbeginners.tar.gz"
-          title="Результат выполнения"/>
-      </attachments>
     </translation>
   </translations>
   <tags>

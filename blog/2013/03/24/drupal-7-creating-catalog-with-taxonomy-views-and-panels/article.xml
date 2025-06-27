@@ -16,7 +16,7 @@
           title="Представление: Каталог (главная страница)"/>
         <attachment src="./attachment/product.txt"
           title="Представление: Вывод продукции в каталоге"/>
-        <attachment src="./ttachment/panels_catalog.txt"
+        <attachment src="./attachment/panels_catalog.txt"
           title="Panels: Отображение подкатегорий и товаров"/>
       </attachments>
     </translation>
