@@ -1793,7 +1793,7 @@ $ curl http://video-examples.localhost/node/13184 -s -o /dev/null -w %{time_star
 * [Модуль Warmer](https://www.drupal.org/project/warmer), drupal.org
 * [Исходный код модуля с примером](example)
 
-[drupal-8-how-to-create-custom-plugin-type]: ../../../../2016/09/17/drupal-8-how-to-create-custom-plugin-type/index.ru.md
-[drupal-8-queue-api]: ../../../../2015/11/12/drupal-8-queue-api/index.ru.md
-[drupal-8-batch-api]: ../../../../2018/09/11/drupal-8-batch-api/index.ru.md
-[drupal-8-queue-worker-plugin]: ../../../../2019/04/21/drupal-8-queue-worker-plugin/index.ru.md
+[drupal-8-how-to-create-custom-plugin-type]: ../../../../2016/09/17/drupal-8-how-to-create-custom-plugin-type/article.ru.md
+[drupal-8-queue-api]: ../../../../2015/11/12/drupal-8-queue-api/article.ru.md
+[drupal-8-batch-api]: ../../../../2018/09/11/drupal-8-batch-api/article.ru.md
+[drupal-8-queue-worker-plugin]: ../../../../2019/04/21/drupal-8-queue-worker-plugin/article.ru.md

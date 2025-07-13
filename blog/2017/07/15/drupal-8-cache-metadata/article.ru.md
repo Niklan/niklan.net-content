@@ -773,6 +773,6 @@ class CacheContextUtmTest extends BlockBase {
 
 - [Исходный код модуля с примером](example/dummy)
 
-[drupal-8-lazy-builder]: ../../../../2017/07/07/drupal-8-lazy-builder/index.ru.md
-[drupal-8-services]: ../../../../2017/06/21/drupal-8-services/index.ru.md
-[drupal-8-block-plugin]: ../../../../2015/10/19/drupal-8-block-plugin/index.ru.md
+[drupal-8-lazy-builder]: ../../../../2017/07/07/drupal-8-lazy-builder/article.ru.md
+[drupal-8-services]: ../../../../2017/06/21/drupal-8-services/article.ru.md
+[drupal-8-block-plugin]: ../../../../2015/10/19/drupal-8-block-plugin/article.ru.md

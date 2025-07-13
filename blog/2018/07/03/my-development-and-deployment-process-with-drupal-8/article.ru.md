@@ -213,6 +213,6 @@ Bitbucket, понравилось, в принципе и не дергаюсь.
 необычного тут не должно быть, всё очень даже стандартно, как по мне. Да я даже
 блог так веду, на продакшене только контент, всё изменения на локалке.
 
-[drupal-8-composer]: ../../../../2016/09/03/drupal-8-composer/index.ru.md
-[two-ways-of-installing-drupal-8]: ../../../../2018/06/29/two-ways-of-installing-drupal-8/index.ru.md
-[docker4drupal-ubuntu]: ../../../../2018/04/15/docker4drupal-ubuntu/index.ru.md
+[drupal-8-composer]: ../../../../2016/09/03/drupal-8-composer/article.ru.md
+[two-ways-of-installing-drupal-8]: ../../../../2018/06/29/two-ways-of-installing-drupal-8/article.ru.md
+[docker4drupal-ubuntu]: ../../../../2018/04/15/docker4drupal-ubuntu/article.ru.md

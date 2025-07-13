@@ -226,5 +226,5 @@ Mailer, что это изображение должно быть вставл�
 С таким подходом, например, Gmail не запрашивает разрешение на подгрузку
 изображений из внешних источников, прежде чем отобразить их, а сразу показывает.
 
-[drupal-8-composer]: ../../../../2016/09/03/drupal-8-composer/index.ru.md
-[drupal-7-how-to-theme-using-display-suite-and-field-group]: ../../../../2016/04/04/drupal-7-how-to-theme-using-display-suite-and-field-group/index.ru.md
+[drupal-8-composer]: ../../../../2016/09/03/drupal-8-composer/article.ru.md
+[drupal-7-how-to-theme-using-display-suite-and-field-group]: ../../../../2016/04/04/drupal-7-how-to-theme-using-display-suite-and-field-group/article.ru.md

@@ -288,4 +288,4 @@ Queue наследуюясь от QueueInterface.
 
 - [Исходный код модуля с примером](example/helloworld)
 
-[drupal-8-batch-api]: ../../../../2018/09/11/drupal-8-batch-api/index.ru.md
+[drupal-8-batch-api]: ../../../../2018/09/11/drupal-8-batch-api/article.ru.md

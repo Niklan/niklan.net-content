@@ -1418,4 +1418,4 @@ public function get() {
 
 - [Исходный код модуля с примером](example/dummy)
 
-[d8-cache-metadata]: ../../../../2017/07/15/drupal-8-cache-metadata/index.ru.md
+[d8-cache-metadata]: ../../../../2017/07/15/drupal-8-cache-metadata/article.ru.md

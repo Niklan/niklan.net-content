@@ -3279,4 +3279,4 @@ process. Это как раз данные из `fields()` если не пол�
 
 - [Исходный код модуля с примером](example/dummy)
 
-[drupal-8-how-to-create-entities-programmatically]: ../../../../2015/11/26/drupal-8-how-to-create-entities-programmatically/index.ru.md
+[drupal-8-how-to-create-entities-programmatically]: ../../../../2015/11/26/drupal-8-how-to-create-entities-programmatically/article.ru.md

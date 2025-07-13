@@ -293,7 +293,7 @@ function dummy_form_user_form_alter(array &$form, FormStateInterface $form_state
 
 - [Исходный код модуля с примером](example/dummy)
 
-[drupal-8-queue-api]: ../../../../2015/11/12/drupal-8-queue-api/index.ru.md
-[drupal-8-state-api]: ../../../../2015/10/16/drupal-8-state-api/index.ru.md
-[drupal-8-authentication-api]: ../../../../2018/01/19/drupal-8-authentication-api/index.ru.md
-[drupal-8-queue-worker-plugin]: ../../../../2019/04/21/drupal-8-queue-worker-plugin/index.ru.md
+[drupal-8-queue-api]: ../../../../2015/11/12/drupal-8-queue-api/article.ru.md
+[drupal-8-state-api]: ../../../../2015/10/16/drupal-8-state-api/article.ru.md
+[drupal-8-authentication-api]: ../../../../2018/01/19/drupal-8-authentication-api/article.ru.md
+[drupal-8-queue-worker-plugin]: ../../../../2019/04/21/drupal-8-queue-worker-plugin/article.ru.md

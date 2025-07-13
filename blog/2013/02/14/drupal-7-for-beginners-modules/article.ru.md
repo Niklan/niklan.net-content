@@ -130,4 +130,4 @@ ctools (Chaos Tools) для работоспособности. И на выбо
 английском. Как это делать я писал [тут][drupal-7-for-beginners-translating-drupal]. Вам нужно скачать
 перевод для views и ctools.
 
-[drupal-7-for-beginners-translating-drupal]: ../../../../2013/01/24/drupal-7-for-beginners-translating-drupal/index.ru.md
+[drupal-7-for-beginners-translating-drupal]: ../../../../2013/01/24/drupal-7-for-beginners-translating-drupal/article.ru.md

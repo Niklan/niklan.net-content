@@ -204,4 +204,4 @@ PHP кода, сразу вставляем HTML код:
 Подумал, может такой модуль запилить. В реализации не сложный, а по сути
 полезный.
 
-[drupal-7-for-beginners-contact-form]: ../../../../2013/02/27/drupal-7-for-beginners-contact-form/index.ru.md
+[drupal-7-for-beginners-contact-form]: ../../../../2013/02/27/drupal-7-for-beginners-contact-form/article.ru.md

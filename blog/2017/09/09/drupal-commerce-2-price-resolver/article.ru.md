@@ -271,4 +271,4 @@ return $entity->getPrice()->divide('0.5');
 
 - [Исходный код модуля с примером](example/dummy)
 
-[drupal-8-services]: ../../../../2017/06/21/drupal-8-services/index.ru.md
+[drupal-8-services]: ../../../../2017/06/21/drupal-8-services/article.ru.md

@@ -225,6 +225,6 @@ P.s. В Drupal 7 всё работает аналогично.
 
 - [Исходный код модуля с примером](example/custom_csv_import)
 
-[drupal-8-custom-csv-import]: ../../../../2016/09/11/drupal-8-custom-csv-import/index.ru.md
-[drupal-8-queue-api]: ../../../../2015/11/12/drupal-8-queue-api/index.ru.md
-[drupal-8-how-to-create-custom-plugin-type]: ../../../../2016/09/17/drupal-8-how-to-create-custom-plugin-type/index.ru.md
+[drupal-8-custom-csv-import]: ../../../../2016/09/11/drupal-8-custom-csv-import/article.ru.md
+[drupal-8-queue-api]: ../../../../2015/11/12/drupal-8-queue-api/article.ru.md
+[drupal-8-how-to-create-custom-plugin-type]: ../../../../2016/09/17/drupal-8-how-to-create-custom-plugin-type/article.ru.md

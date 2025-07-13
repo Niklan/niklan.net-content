@@ -430,4 +430,4 @@ drupal-composer/drupal-project._
 Если всё сделали правильно, ваш проект будет обновлён. Протестируйте его
 работоспособность и пуште на прод. Всё готово!
 
-[two-ways-of-installing-drupal-8]: ../../../../2018/06/29/two-ways-of-installing-drupal-8/index.ru.md
+[two-ways-of-installing-drupal-8]: ../../../../2018/06/29/two-ways-of-installing-drupal-8/article.ru.md

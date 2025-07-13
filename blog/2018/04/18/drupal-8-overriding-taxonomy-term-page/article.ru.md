@@ -451,7 +451,7 @@ TVI также полезен в таком подходе тем, что для
 
 - [Исходный код модуля с примером](example/dummy)
 
-[d8-cache-metadata]: ../../../../2017/07/15/drupal-8-cache-metadata/index.ru.md
-[drupal-8-route-subscriber]: ../../../../2018/04/13/drupal-8-route-subscriber/index.ru.md
-[drupal-8-hook-theme]: ../../../../2017/06/26/drupal-8-hook-theme/index.ru.md
-[drupal-7-8-dynamic-select-options-list]: ../../../../2017/06/27/drupal-7-8-dynamic-select-options-list/index.ru.md
+[d8-cache-metadata]: ../../../../2017/07/15/drupal-8-cache-metadata/article.ru.md
+[drupal-8-route-subscriber]: ../../../../2018/04/13/drupal-8-route-subscriber/article.ru.md
+[drupal-8-hook-theme]: ../../../../2017/06/26/drupal-8-hook-theme/article.ru.md
+[drupal-7-8-dynamic-select-options-list]: ../../../../2017/06/27/drupal-7-8-dynamic-select-options-list/article.ru.md

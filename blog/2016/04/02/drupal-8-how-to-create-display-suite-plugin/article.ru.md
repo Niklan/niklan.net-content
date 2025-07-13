@@ -347,4 +347,4 @@ class CallUsForMore extends DsFieldBase {
 
 - [Исходный код модуля с примером](example/dummy)
 
-[drupal-7-how-to-create-display-suite-field]: ../../../../2016/03/29/drupal-7-how-to-create-display-suite-field/index.ru.md
+[drupal-7-how-to-create-display-suite-field]: ../../../../2016/03/29/drupal-7-how-to-create-display-suite-field/article.ru.md

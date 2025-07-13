@@ -628,5 +628,5 @@ hash для нашего ресурса, и так же мы его провер
 
 - [Исходный код модуля с примером](example/dummy)
 
-[drupal-8-services]: ../../../../2017/06/21/drupal-8-services/index.ru.md
-[drupal-8-how-to-create-a-custom-rest-plugin]: ../../16/drupal-8-how-to-create-a-custom-rest-plugin/index.ru.md
+[drupal-8-services]: ../../../../2017/06/21/drupal-8-services/article.ru.md
+[drupal-8-how-to-create-a-custom-rest-plugin]: ../../16/drupal-8-how-to-create-a-custom-rest-plugin/article.ru.md

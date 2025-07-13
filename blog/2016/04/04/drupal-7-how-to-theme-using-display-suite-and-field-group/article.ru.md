@@ -321,5 +321,5 @@ field_collection.
 
 Приятной вёрстки. :)
 
-[drupal-7-how-to-create-display-suite-field]: ../../../../2016/03/29/drupal-7-how-to-create-display-suite-field/index.ru.md
-[drupal-8-how-to-create-display-suite-plugin]: ../../../../2016/04/02/drupal-8-how-to-create-display-suite-plugin/index.ru.md
+[drupal-7-how-to-create-display-suite-field]: ../../../../2016/03/29/drupal-7-how-to-create-display-suite-field/article.ru.md
+[drupal-8-how-to-create-display-suite-plugin]: ../../../../2016/04/02/drupal-8-how-to-create-display-suite-plugin/article.ru.md

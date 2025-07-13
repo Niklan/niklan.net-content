@@ -193,6 +193,6 @@ custom_csv_import.admin_settings:
 - [Исходный код helloworld модуля с примером](example/helloworld)
 - [Исходный код custom_csv_import модуля с примером](example/custom_csv_import)
 
-[drupal-8-form-api]: ../../../../2015/10/16/drupal-8-form-api/index.ru.md
-[drupal-8-custom-csv-import]: ../../../../2016/09/11/drupal-8-custom-csv-import/index.ru.md
-[drupal-8-custom-csv-import-optimization]: ../../../../2017/03/16/drupal-8-custom-csv-import-optimization/index.ru.md
+[drupal-8-form-api]: ../../../../2015/10/16/drupal-8-form-api/article.ru.md
+[drupal-8-custom-csv-import]: ../../../../2016/09/11/drupal-8-custom-csv-import/article.ru.md
+[drupal-8-custom-csv-import-optimization]: ../../../../2017/03/16/drupal-8-custom-csv-import-optimization/article.ru.md

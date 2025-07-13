@@ -542,4 +542,4 @@ _Например, если сделать пример 3 через поле с
 
 - [Исходный код модуля с примером](example/dummy)
 
-[drupal-7-8-dynamic-select-options-list]: ../../../../2017/06/27/drupal-7-8-dynamic-select-options-list/index.ru.md
+[drupal-7-8-dynamic-select-options-list]: ../../../../2017/06/27/drupal-7-8-dynamic-select-options-list/article.ru.md

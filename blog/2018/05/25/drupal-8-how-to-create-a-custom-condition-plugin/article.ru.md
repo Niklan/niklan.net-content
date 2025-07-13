@@ -614,5 +614,5 @@ if ($user_has_node_type_content_check->execute()) {
 
 - [Исходный код модуля с примером](example/dummy)
 
-[drupal-8-how-to-create-custom-plugin-type]: ../../../../2016/09/17/drupal-8-how-to-create-custom-plugin-type/index.ru.md
-[drupal-8-configuration-schema]: ../../../../2018/05/04/drupal-8-configuration-schema/index.ru.md
+[drupal-8-how-to-create-custom-plugin-type]: ../../../../2016/09/17/drupal-8-how-to-create-custom-plugin-type/article.ru.md
+[drupal-8-configuration-schema]: ../../../../2018/05/04/drupal-8-configuration-schema/article.ru.md

@@ -389,5 +389,5 @@ _На момент публикации, поиск по блогу работа
 
 - [Исходный код модуля с примером](example/dummy)
 
-[d8-cache-metadata]: ../../../../2017/07/15/drupal-8-cache-metadata/index.ru.md
-[drupal-8-how-to-create-a-custom-rest-plugin]: ../../../01/16/drupal-8-how-to-create-a-custom-rest-plugin/index.ru.md
+[d8-cache-metadata]: ../../../../2017/07/15/drupal-8-cache-metadata/article.ru.md
+[drupal-8-how-to-create-a-custom-rest-plugin]: ../../../01/16/drupal-8-how-to-create-a-custom-rest-plugin/article.ru.md

@@ -918,5 +918,5 @@ public function startImport(array &$form, FormStateInterface $form_state) {
 - [Исходный код модуля custom_csv_import с примером](example/custom_csv_import)
 - [Исходный код модуля plugin_messages с примером](example/plugin_messages)
 
-[drupal-8-hello-world]: ../../../../2014/10/12/drupal-8-hello-world/index.ru.md
-[drupal-8-custom-csv-import]: ../../../../2016/09/11/drupal-8-custom-csv-import/index.ru.md
+[drupal-8-hello-world]: ../../../../2014/10/12/drupal-8-hello-world/article.ru.md
+[drupal-8-custom-csv-import]: ../../../../2016/09/11/drupal-8-custom-csv-import/article.ru.md

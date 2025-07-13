@@ -239,5 +239,5 @@ uninstall_oh_my_zsh
 sudo apt uninstall zsh
 ```
 
-[install-and-configure-drupal-vm-on-ubuntu]: ../../../../2017/04/16/install-and-configure-drupal-vm-on-ubuntu/index.ru.md
-[drupal-8-composer]: ../../../../2016/09/03/drupal-8-composer/index.ru.md
+[install-and-configure-drupal-vm-on-ubuntu]: ../../../../2017/04/16/install-and-configure-drupal-vm-on-ubuntu/article.ru.md
+[drupal-8-composer]: ../../../../2016/09/03/drupal-8-composer/article.ru.md

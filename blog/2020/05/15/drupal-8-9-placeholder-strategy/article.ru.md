@@ -1404,9 +1404,9 @@ final class SlowBlock extends BlockBase {
 - [Drupal 8: #cache — cache tags, context и max-age][d8-cache-metadata]
 - [Drupal 8: Libraries API (Добавление CSS/JS на страницы)][drupal-8-libraries-api]
 
-[drupal-8-services]: ../../../../2017/06/21/drupal-8-services/index.ru.md
-[d8-cache-metadata]: ../../../../2017/07/15/drupal-8-cache-metadata/index.ru.md
-[drupal-8-lazy-builder]: ../../../../2017/07/07/drupal-8-lazy-builder/index.ru.md
-[drupal-8-tagged-services]: ../../../../2019/05/05/drupal-8-tagged-services/index.ru.md
-[drupal-8-render-arrays]: ../../../../2020/02/05/drupal-8-render-arrays/index.ru.md
-[drupal-8-libraries-api]: ../../../../2015/10/15/drupal-8-libraries-api/index.ru.md
+[drupal-8-services]: ../../../../2017/06/21/drupal-8-services/article.ru.md
+[d8-cache-metadata]: ../../../../2017/07/15/drupal-8-cache-metadata/article.ru.md
+[drupal-8-lazy-builder]: ../../../../2017/07/07/drupal-8-lazy-builder/article.ru.md
+[drupal-8-tagged-services]: ../../../../2019/05/05/drupal-8-tagged-services/article.ru.md
+[drupal-8-render-arrays]: ../../../../2020/02/05/drupal-8-render-arrays/article.ru.md
+[drupal-8-libraries-api]: ../../../../2015/10/15/drupal-8-libraries-api/article.ru.md

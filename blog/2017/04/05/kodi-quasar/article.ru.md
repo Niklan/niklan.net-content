@@ -287,4 +287,4 @@ overrides = {
 Перезапускаете KODI если он был запущен, включаете данные провайдеры, если они
 ещё не включены, и все опять работает.
 
-[raspberry-pi-3-smart-tv]: ../../../../2017/01/24/raspberry-pi-3-smart-tv/index.ru.md
+[raspberry-pi-3-smart-tv]: ../../../../2017/01/24/raspberry-pi-3-smart-tv/article.ru.md

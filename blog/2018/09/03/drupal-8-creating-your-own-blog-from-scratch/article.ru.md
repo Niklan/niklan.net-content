@@ -558,21 +558,21 @@ Resrouce, который программно ищет в Search API, и под�
 
 :: youtube {vid=axklsJ1439o}
 
-[drupal-8-services]: ../../../../2017/06/21/drupal-8-services/index.ru.md
-[d8-cache-metadata]: ../../../../2017/07/15/drupal-8-cache-metadata/index.ru.md
-[drupal-8-how-to-create-a-custom-rest-plugin]: ../../../01/16/drupal-8-how-to-create-a-custom-rest-plugin/index.ru.md
-[drupal-8-hook-theme]: ../../../../2017/06/26/drupal-8-hook-theme/index.ru.md
-[drupal-8-creating-extra-fields]: ../../../../2018/04/26/drupal-8-creating-extra-fields/index.ru.md
-[drupal-8-how-to-create-custom-plugin-type]: ../../../../2016/09/17/drupal-8-how-to-create-custom-plugin-type/index.ru.md
-[drupal-8-composer]: ../../../../2016/09/03/drupal-8-composer/index.ru.md
-[two-ways-of-installing-drupal-8]: ../../../../2018/06/29/two-ways-of-installing-drupal-8/index.ru.md
-[docker4drupal-ubuntu]: ../../../../2018/04/15/docker4drupal-ubuntu/index.ru.md
-[my-development-and-deployment-process-with-drupal-8]: ../../../../2018/07/03/my-development-and-deployment-process-with-drupal-8/index.ru.md
-[drupal-8-tokens]: ../../../../2018/09/06/drupal-8-tokens/index.ru.md
-[drupal-8-creating-paragraphs-behavior-plugin]: ../../../../2018/04/20/drupal-8-creating-paragraphs-behavior-plugin/index.ru.md
-[drupal-8-creating-previous-and-next-content-buttons]: ../../../../2018/04/27/drupal-8-creating-previous-and-next-content-buttons/index.ru.md
-[drupal-8-hooks]: ../../../../2018/06/28/drupal-8-hooks/index.ru.md
-[drupal-7-8-optimizing-images-using-imagemagick]: ../../../../2017/03/30/drupal-7-8-optimizing-images-using-imagemagick/index.ru.md
-[drupal-8-lazy-builder]: ../../../../2017/07/07/drupal-8-lazy-builder/index.ru.md
-[drupal-8-how-to-create-a-custom-condition-plugin]: ../../../../2018/05/25/drupal-8-how-to-create-a-custom-condition-plugin/index.ru.md
-[drupal-8-search-api-programmatic-site-search]: ../../../../2018/04/24/drupal-8-search-api-programmatic-site-search/index.ru.md
+[drupal-8-services]: ../../../../2017/06/21/drupal-8-services/article.ru.md
+[d8-cache-metadata]: ../../../../2017/07/15/drupal-8-cache-metadata/article.ru.md
+[drupal-8-how-to-create-a-custom-rest-plugin]: ../../../01/16/drupal-8-how-to-create-a-custom-rest-plugin/article.ru.md
+[drupal-8-hook-theme]: ../../../../2017/06/26/drupal-8-hook-theme/article.ru.md
+[drupal-8-creating-extra-fields]: ../../../../2018/04/26/drupal-8-creating-extra-fields/article.ru.md
+[drupal-8-how-to-create-custom-plugin-type]: ../../../../2016/09/17/drupal-8-how-to-create-custom-plugin-type/article.ru.md
+[drupal-8-composer]: ../../../../2016/09/03/drupal-8-composer/article.ru.md
+[two-ways-of-installing-drupal-8]: ../../../../2018/06/29/two-ways-of-installing-drupal-8/article.ru.md
+[docker4drupal-ubuntu]: ../../../../2018/04/15/docker4drupal-ubuntu/article.ru.md
+[my-development-and-deployment-process-with-drupal-8]: ../../../../2018/07/03/my-development-and-deployment-process-with-drupal-8/article.ru.md
+[drupal-8-tokens]: ../../../../2018/09/06/drupal-8-tokens/article.ru.md
+[drupal-8-creating-paragraphs-behavior-plugin]: ../../../../2018/04/20/drupal-8-creating-paragraphs-behavior-plugin/article.ru.md
+[drupal-8-creating-previous-and-next-content-buttons]: ../../../../2018/04/27/drupal-8-creating-previous-and-next-content-buttons/article.ru.md
+[drupal-8-hooks]: ../../../../2018/06/28/drupal-8-hooks/article.ru.md
+[drupal-7-8-optimizing-images-using-imagemagick]: ../../../../2017/03/30/drupal-7-8-optimizing-images-using-imagemagick/article.ru.md
+[drupal-8-lazy-builder]: ../../../../2017/07/07/drupal-8-lazy-builder/article.ru.md
+[drupal-8-how-to-create-a-custom-condition-plugin]: ../../../../2018/05/25/drupal-8-how-to-create-a-custom-condition-plugin/article.ru.md
+[drupal-8-search-api-programmatic-site-search]: ../../../../2018/04/24/drupal-8-search-api-programmatic-site-search/article.ru.md

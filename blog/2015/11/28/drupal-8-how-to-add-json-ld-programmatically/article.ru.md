@@ -115,4 +115,4 @@ function MYMODULE_entity_view(array &$build, \Drupal\Core\Entity\EntityInterface
 Вот так вот просто добавляются семантические данные, без возни с тегами, без
 возни с оберткой. Просто и понятно в одном хуке.
 
-[drupal-8-how-to-add-metatags-programmatically]: ../../../../2015/11/25/drupal-8-how-to-add-metatags-programmatically/index.ru.md
+[drupal-8-how-to-add-metatags-programmatically]: ../../../../2015/11/25/drupal-8-how-to-add-metatags-programmatically/article.ru.md

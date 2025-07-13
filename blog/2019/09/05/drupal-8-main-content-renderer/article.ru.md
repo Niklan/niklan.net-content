@@ -867,9 +867,9 @@ class FullMarkupPageSubscriber implements EventSubscriberInterface {
 
 - [Исходный код модуля с примером](example)
 
-[d8-cache-metadata]: ../../../../2017/07/15/drupal-8-cache-metadata/index.ru.md
-[drupal-8-how-to-create-a-custom-rest-plugin]: ../../../../2018/01/16/drupal-8-how-to-create-a-custom-rest-plugin/index.ru.md
-[drupal-8-events]: ../../../../2018/04/10/drupal-8-events/index.ru.md
-[drupal-8-hook-theme]: ../../../../2017/06/26/drupal-8-hook-theme/index.ru.md
-[drupal-8-tagged-services]: ../../../../2019/05/05/drupal-8-tagged-services/index.ru.md
-[drupal-8-modal-api]: ../../../../2016/08/30/drupal-8-modal-api/index.ru.md
+[d8-cache-metadata]: ../../../../2017/07/15/drupal-8-cache-metadata/article.ru.md
+[drupal-8-how-to-create-a-custom-rest-plugin]: ../../../../2018/01/16/drupal-8-how-to-create-a-custom-rest-plugin/article.ru.md
+[drupal-8-events]: ../../../../2018/04/10/drupal-8-events/article.ru.md
+[drupal-8-hook-theme]: ../../../../2017/06/26/drupal-8-hook-theme/article.ru.md
+[drupal-8-tagged-services]: ../../../../2019/05/05/drupal-8-tagged-services/article.ru.md
+[drupal-8-modal-api]: ../../../../2016/08/30/drupal-8-modal-api/article.ru.md

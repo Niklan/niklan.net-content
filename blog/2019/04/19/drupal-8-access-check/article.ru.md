@@ -666,6 +666,6 @@ class CsrfRequestHeaderAccessCheck implements AccessCheckInterface {
 что все они разные и комплексные, вы сможете понять как работают другие access
 check не только от ядра, но и от сторонних модулей.
 
-[drupal-8-services]: ../../../../2017/06/21/drupal-8-services/index.ru.md
-[d8-cache-metadata]: ../../../../2017/07/15/drupal-8-cache-metadata/index.ru.md
-[drupal-8-state-api]: ../../../../2015/10/16/drupal-8-state-api/index.ru.md
+[drupal-8-services]: ../../../../2017/06/21/drupal-8-services/article.ru.md
+[d8-cache-metadata]: ../../../../2017/07/15/drupal-8-cache-metadata/article.ru.md
+[drupal-8-state-api]: ../../../../2015/10/16/drupal-8-state-api/article.ru.md

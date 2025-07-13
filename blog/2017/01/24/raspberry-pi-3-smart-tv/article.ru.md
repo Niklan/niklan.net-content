@@ -976,5 +976,5 @@ apt-get update
 apt-get -y dist-upgrade && reboot
 ```
 
-[pushbullet-api-width-drupal-7]: ../../../../2015/01/31/pushbullet-api-width-drupal-7/index.ru.md
-[kodi-quasar]: ../../../../2017/04/05/kodi-quasar/index.ru.md
+[pushbullet-api-width-drupal-7]: ../../../../2015/01/31/pushbullet-api-width-drupal-7/article.ru.md
+[kodi-quasar]: ../../../../2017/04/05/kodi-quasar/article.ru.md

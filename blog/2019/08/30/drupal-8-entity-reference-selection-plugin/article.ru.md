@@ -382,6 +382,6 @@ class ProductVariationWithSkuSelection extends DefaultSelection {
 
 - [Исходный код модуля с примером](example/dummy)
 
-[drupal-8-route-subscriber]: ../../../../2018/04/13/drupal-8-route-subscriber/index.ru.md
-[drupal-8-derivatives]: ../../../../2019/05/04/drupal-8-derivatives/index.ru.md
-[drupal-8-entity-autocomplete-form-element]: ../../../../2015/10/27/drupal-8-entity-autocomplete-form-element/index.ru.md
+[drupal-8-route-subscriber]: ../../../../2018/04/13/drupal-8-route-subscriber/article.ru.md
+[drupal-8-derivatives]: ../../../../2019/05/04/drupal-8-derivatives/article.ru.md
+[drupal-8-entity-autocomplete-form-element]: ../../../../2015/10/27/drupal-8-entity-autocomplete-form-element/article.ru.md

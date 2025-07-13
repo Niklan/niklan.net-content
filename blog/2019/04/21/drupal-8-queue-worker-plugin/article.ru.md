@@ -273,6 +273,6 @@ class ThumbnailDownloader extends QueueWorkerBase implements ContainerFactoryPlu
 плагин поможет вам поставить всё на автоматическую обработку при помощи
 стандартных инструментов.
 
-[drupal-8-services]: ../../../../2017/06/21/drupal-8-services/index.ru.md
-[drupal-8-queue-api]: ../../../../2015/11/12/drupal-8-queue-api/index.ru.md
-[drupal-8-batch-api]: ../../../../2018/09/11/drupal-8-batch-api/index.ru.md
+[drupal-8-services]: ../../../../2017/06/21/drupal-8-services/article.ru.md
+[drupal-8-queue-api]: ../../../../2015/11/12/drupal-8-queue-api/article.ru.md
+[drupal-8-batch-api]: ../../../../2018/09/11/drupal-8-batch-api/article.ru.md

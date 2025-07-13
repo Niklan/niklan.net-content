@@ -162,4 +162,4 @@ Pattern:     <td class="views-field views-field-title">\s*<a href="/node/({id}.+
 Вообще это очень круто они обратили внимание на Drupal, раньше такой поддержкой
 обладали лишь чистые фреймворки.
 
-[ubuntu-drupal-cs]: ../../../../2013/03/09/drupal-7-code-style-check-ubuntu/index.ru.md
+[ubuntu-drupal-cs]: ../../../../2013/03/09/drupal-7-code-style-check-ubuntu/article.ru.md

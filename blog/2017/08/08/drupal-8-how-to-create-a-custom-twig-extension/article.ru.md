@@ -355,6 +355,6 @@ public function tel(string $phone) {
 
 - [Исходный код модуля с примером](example/dummy)
 
-[drupal-7-how-to-theme-using-display-suite-and-field-group]: ../../../../2016/04/04/drupal-7-how-to-theme-using-display-suite-and-field-group/index.ru.md
-[drupal-8-services]: ../../../../2017/06/21/drupal-8-services/index.ru.md
-[drupal-8-modal-api]: ../../../../2016/08/30/drupal-8-modal-api/index.ru.md
+[drupal-7-how-to-theme-using-display-suite-and-field-group]: ../../../../2016/04/04/drupal-7-how-to-theme-using-display-suite-and-field-group/article.ru.md
+[drupal-8-services]: ../../../../2017/06/21/drupal-8-services/article.ru.md
+[drupal-8-modal-api]: ../../../../2016/08/30/drupal-8-modal-api/article.ru.md

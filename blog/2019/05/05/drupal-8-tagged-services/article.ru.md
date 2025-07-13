@@ -604,9 +604,9 @@ function dummy_preprocess_page(&$variables) {
 
 - [Исходный код модуля с примером](example/dummy)
 
-[drupal-8-services]: ../../../../2017/06/21/drupal-8-services/index.ru.md
-[drupal-8-how-to-create-custom-plugin-type]: ../../../../2016/09/17/drupal-8-how-to-create-custom-plugin-type/index.ru.md
-[drupal-8-queue-worker-plugin]: ../../../../2019/04/21/drupal-8-queue-worker-plugin/index.ru.md
-[drupal-8-breadcrumb-builder]: ../../../../2016/09/02/drupal-8-breadcrumb-builder/index.ru.md
-[drupal-8-derivatives]: ../../../../2019/05/04/drupal-8-derivatives/index.ru.md
-[drupal-8-theme-negotiator]: ../../../../2016/08/30/drupal-8-theme-negotiator/index.ru.md
+[drupal-8-services]: ../../../../2017/06/21/drupal-8-services/article.ru.md
+[drupal-8-how-to-create-custom-plugin-type]: ../../../../2016/09/17/drupal-8-how-to-create-custom-plugin-type/article.ru.md
+[drupal-8-queue-worker-plugin]: ../../../../2019/04/21/drupal-8-queue-worker-plugin/article.ru.md
+[drupal-8-breadcrumb-builder]: ../../../../2016/09/02/drupal-8-breadcrumb-builder/article.ru.md
+[drupal-8-derivatives]: ../../../../2019/05/04/drupal-8-derivatives/article.ru.md
+[drupal-8-theme-negotiator]: ../../../../2016/08/30/drupal-8-theme-negotiator/article.ru.md

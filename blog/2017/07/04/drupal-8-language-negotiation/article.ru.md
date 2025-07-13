@@ -287,4 +287,4 @@ ips: ''
 
 - [Исходный код модуля с примером](example/dummy)
 
-[drupal-8-form-api]: ../../../../2015/10/16/drupal-8-form-api/index.ru.md
+[drupal-8-form-api]: ../../../../2015/10/16/drupal-8-form-api/article.ru.md

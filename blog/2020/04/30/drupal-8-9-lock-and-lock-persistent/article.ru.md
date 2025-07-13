@@ -670,5 +670,5 @@ example.form:
 
 - [Исходный код модуля с примером](example)
 
-[drupal-8-services]: ../../../../2017/06/21/drupal-8-services/index.ru.md
-[drupal-8-composer]: ../../../../2016/09/03/drupal-8-composer/index.ru.md
+[drupal-8-services]: ../../../../2017/06/21/drupal-8-services/article.ru.md
+[drupal-8-composer]: ../../../../2016/09/03/drupal-8-composer/article.ru.md

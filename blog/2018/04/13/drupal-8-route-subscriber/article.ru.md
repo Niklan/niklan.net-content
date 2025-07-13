@@ -184,4 +184,4 @@ Symfony, и их использование в ядре я не нашел._
 
 - [Исходный код модуля с примером](example/dummy)
 
-[drupal-8-events]: ../../../../2018/04/10/drupal-8-events/index.ru.md
+[drupal-8-events]: ../../../../2018/04/10/drupal-8-events/article.ru.md

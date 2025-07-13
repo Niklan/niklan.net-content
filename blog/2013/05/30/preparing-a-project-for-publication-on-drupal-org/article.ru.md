@@ -130,5 +130,5 @@ geo_block. Ввиду того что модуль не большой, то п�
 
 Ну и удачи вам с публикацией первых модулей.
 
-[netbeans-drupal-cs]: ../../../../2013/01/01/drupal-coding-standards-netbeans/index.ru.md
-[ubuntu-drupal-cs]: ../../../../2013/03/09/drupal-7-code-style-check-ubuntu/index.ru.md
+[netbeans-drupal-cs]: ../../../../2013/01/01/drupal-coding-standards-netbeans/article.ru.md
+[ubuntu-drupal-cs]: ../../../../2013/03/09/drupal-7-code-style-check-ubuntu/article.ru.md

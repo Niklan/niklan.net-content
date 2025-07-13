@@ -88,4 +88,4 @@ Mappy — по сути, просто небольшой JS файл, котор
 Приятного использования. Отзывы, предложения и пожелания можете писать как в
 комментариях к этой записи, так и к записи на drupal.ru.
 
-[drupal-7-advanced-contact-page]: ../../../../2013/05/21/drupal-7-advanced-contact-page/index.ru.md
+[drupal-7-advanced-contact-page]: ../../../../2013/05/21/drupal-7-advanced-contact-page/article.ru.md

@@ -690,5 +690,5 @@ $ openssl req -new -x509 -key example.localhost.key -out example.localhost.cert 
 сайт будет открываться по любому поддомену, например moscow.example.localhost.
 На этом, пожалуй всё. Если что интересного узнаю, напишу отдельно или дополню.
 
-[install-and-configure-drupal-vm-on-ubuntu]: ../../../../2017/04/16/install-and-configure-drupal-vm-on-ubuntu/index.ru.md
-[oh-my-zsh]: ../../../../2017/06/19/oh-my-zsh/index.ru.md
+[install-and-configure-drupal-vm-on-ubuntu]: ../../../../2017/04/16/install-and-configure-drupal-vm-on-ubuntu/article.ru.md
+[oh-my-zsh]: ../../../../2017/06/19/oh-my-zsh/article.ru.md

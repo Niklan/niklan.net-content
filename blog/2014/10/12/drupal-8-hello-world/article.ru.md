@@ -197,4 +197,4 @@ BINGO!
 
 - [Исходный код модуля с примером](example/helloworld)
 
-[drupal-8-api-changes]: ../../../../2014/10/07/drupal-8-api-changes/index.ru.md
+[drupal-8-api-changes]: ../../../../2014/10/07/drupal-8-api-changes/article.ru.md

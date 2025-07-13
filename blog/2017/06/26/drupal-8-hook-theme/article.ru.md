@@ -1212,6 +1212,6 @@ actions, если не появилась, то без этой приставк
 - [Исходный код модуля-заготовки для примеров](example/start/dummy)
 - [Исходный код модуля с примерами](example/result/dummy)
 
-[drupal-8-services]: ../../../../2017/06/21/drupal-8-services/index.ru.md
-[drupal-8-form-api]: ../../../../2015/10/16/drupal-8-form-api/index.ru.md
-[drupal-8-libraries-api]: ../../../../2015/10/15/drupal-8-libraries-api/index.ru.md
+[drupal-8-services]: ../../../../2017/06/21/drupal-8-services/article.ru.md
+[drupal-8-form-api]: ../../../../2015/10/16/drupal-8-form-api/article.ru.md
+[drupal-8-libraries-api]: ../../../../2015/10/15/drupal-8-libraries-api/article.ru.md

@@ -138,5 +138,5 @@ function helloworld_preprocess_toolbar(&$variables) {
 
 - [Исходный код модуля с примером](example/helloworld)
 
-[drupal-8-creating-a-custom-section-on-the-configuration-page]: ../../../../2017/03/17/drupal-8-creating-a-custom-section-on-the-configuration-page/index.ru.md
-[drupal-8-libraries-api]: ../../../../2015/10/15/drupal-8-libraries-api/index.ru.md
+[drupal-8-creating-a-custom-section-on-the-configuration-page]: ../../../../2017/03/17/drupal-8-creating-a-custom-section-on-the-configuration-page/article.ru.md
+[drupal-8-libraries-api]: ../../../../2015/10/15/drupal-8-libraries-api/article.ru.md

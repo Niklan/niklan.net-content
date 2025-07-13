@@ -102,4 +102,4 @@ P.s. В Drupal 8, получается, что задавать хлебные �
 
 - [Исходный код модуля с примером](example/dummy)
 
-[drupal-8-theme-negotiator]: ../../../../2016/08/30/drupal-8-theme-negotiator/index.ru.md
+[drupal-8-theme-negotiator]: ../../../../2016/08/30/drupal-8-theme-negotiator/article.ru.md

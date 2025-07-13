@@ -581,4 +581,4 @@ function hook_dummy_page_messages_alter(array &$messages) {
 
 - [Исходный код модуля с примером](example/dummy)
 
-[drupal-8-events]: ../../../../2018/04/10/drupal-8-events/index.ru.md
+[drupal-8-events]: ../../../../2018/04/10/drupal-8-events/article.ru.md

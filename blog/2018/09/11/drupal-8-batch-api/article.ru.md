@@ -671,6 +671,6 @@ dummy.batch:
 
 - [Исходный код модуля с примером](example/dummy)
 
-[drupal-8-queue-api]: ../../../../2015/11/12/drupal-8-queue-api/index.ru.md
-[drupal-8-custom-csv-import]: ../../../../2016/09/11/drupal-8-custom-csv-import/index.ru.md
-[drupal-8-custom-csv-import-optimization]: ../../../../2017/03/16/drupal-8-custom-csv-import-optimization/index.ru.md
+[drupal-8-queue-api]: ../../../../2015/11/12/drupal-8-queue-api/article.ru.md
+[drupal-8-custom-csv-import]: ../../../../2016/09/11/drupal-8-custom-csv-import/article.ru.md
+[drupal-8-custom-csv-import-optimization]: ../../../../2017/03/16/drupal-8-custom-csv-import-optimization/article.ru.md

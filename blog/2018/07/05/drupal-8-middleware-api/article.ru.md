@@ -488,6 +488,6 @@ function dummy_preprocess_page(&$variables) {
 
 - [Исходный код модуля с примером](example/dummy)
 
-[drupal-8-services]: ../../../../2017/06/21/drupal-8-services/index.ru.md
-[drupal-8-events]: ../../../../2018/04/10/drupal-8-events/index.ru.md
-[drupal-8-composer]: ../../../../2016/09/03/drupal-8-composer/index.ru.md
+[drupal-8-services]: ../../../../2017/06/21/drupal-8-services/article.ru.md
+[drupal-8-events]: ../../../../2018/04/10/drupal-8-events/article.ru.md
+[drupal-8-composer]: ../../../../2016/09/03/drupal-8-composer/article.ru.md

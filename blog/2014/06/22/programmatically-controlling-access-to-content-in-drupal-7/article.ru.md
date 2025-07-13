@@ -218,4 +218,4 @@ function mymodule_node_access_records($node) {
 
 - [Исходный код модуля с примером](example/result/mymodule)
 
-[drupal-7-access-control-rules]: ../../../../2013/05/06/drupal-7-access-control-rules/index.ru.md
+[drupal-7-access-control-rules]: ../../../../2013/05/06/drupal-7-access-control-rules/article.ru.md

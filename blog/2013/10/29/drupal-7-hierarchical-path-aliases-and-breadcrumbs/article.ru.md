@@ -133,4 +133,4 @@ drush dl entity path_breadcrumbs token pathauto && drush en path_breadcrumbs_ui 
 Вот и все. Если у кого есть опыт с адресами огромной вложенности, поделитесь
 своим опытом.
 
-[drupal-7-creating-catalog-with-taxonomy-views-and-panels]: ../../../../2013/03/24/drupal-7-creating-catalog-with-taxonomy-views-and-panels/index.ru.md
+[drupal-7-creating-catalog-with-taxonomy-views-and-panels]: ../../../../2013/03/24/drupal-7-creating-catalog-with-taxonomy-views-and-panels/article.ru.md

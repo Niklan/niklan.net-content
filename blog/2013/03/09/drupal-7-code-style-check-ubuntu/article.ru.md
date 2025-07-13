@@ -50,4 +50,4 @@ Drupal_) [Coder](http://drupal.org/project/coder) ветки 7.x-2.x
 Как правило, он находит огромное количество ошибок. 90% из них исправляются
 правильной [настройкой IDE под стандарты Drupal][drupal-7-for-beginners-translating-drupal].
 
-[drupal-7-for-beginners-translating-drupal]: ../../../../2013/01/24/drupal-7-for-beginners-translating-drupal/index.ru.md
+[drupal-7-for-beginners-translating-drupal]: ../../../../2013/01/24/drupal-7-for-beginners-translating-drupal/article.ru.md

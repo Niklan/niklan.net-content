@@ -654,5 +654,5 @@ function dummy_preprocess_page(&$variables) {
 
 - [Исходный код модуля с примером](example/dummy)
 
-[drupal-8-tour-api]: ../../../../2015/11/04/drupal-8-tour-api/index.ru.md
-[drupal-8-form-api]: ../../../../2015/10/16/drupal-8-form-api/index.ru.md
+[drupal-8-tour-api]: ../../../../2015/11/04/drupal-8-tour-api/article.ru.md
+[drupal-8-form-api]: ../../../../2015/10/16/drupal-8-form-api/article.ru.md

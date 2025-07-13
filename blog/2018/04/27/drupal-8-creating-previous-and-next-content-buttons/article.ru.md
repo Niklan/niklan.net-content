@@ -270,5 +270,5 @@ function dummy_node_view(array &$build, EntityInterface $entity, EntityViewDispl
 
 - [Исходный код модуля с примером](example/dummy)
 
-[drupal-8-hook-theme]: ../../../../2017/06/26/drupal-8-hook-theme/index.ru.md
-[drupal-8-creating-extra-fields]: ../../../../2018/04/26/drupal-8-creating-extra-fields/index.ru.md
+[drupal-8-hook-theme]: ../../../../2017/06/26/drupal-8-hook-theme/article.ru.md
+[drupal-8-creating-extra-fields]: ../../../../2018/04/26/drupal-8-creating-extra-fields/article.ru.md
