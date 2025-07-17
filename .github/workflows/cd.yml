@@ -39,5 +39,5 @@ jobs:
             git fetch
             git checkout
             git pull
-            drush niklan:sync:blog
+            drush niklan:blog:sync
           "

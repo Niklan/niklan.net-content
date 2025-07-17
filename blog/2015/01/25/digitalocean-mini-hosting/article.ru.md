@@ -449,10 +449,12 @@ cd web/example.com/public_html
 drush up -y
 ```
 
-Немного подробнее о Drush можете [прочитать тут](http://niklan.net/blog/22).
+Немного подробнее о Drush можете [прочитать тут][drush-installation-and-usage-on-ubuntu-and-drupalhosting]).
 
 ## Заключение
 
 Всё, ваш сервак готов к труду и обороне. Полностью ваш, делайте с ним что
 хотите. И не забывайте, заходите с root пользователя только в крайних случаях,
 для всех остальных есть admin. Удачи.
+
+[drush-installation-and-usage-on-ubuntu-and-drupalhosting]: ../../../../2013/02/28/drush-installation-and-usage-on-ubuntu-and-drupalhosting/article.ru.md
