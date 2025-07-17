@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-7-create-customer-support-system"
+  created="2013-04-19T20:37:16"
+  updated="2025-07-17T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Drupal 7: Создание технической поддержки (тикеты)</title>
+      <description>Создаём систему техподдержки на Drupal 7: организуем работу с тикетами.</description>
+      <poster src="./image/poster.ru.png"/>
+      <attachments>
+        <attachment src="./attachment/drupaldev.20130419_044448.tar.gz"
+          title="Результат выполнения"/>
+      </attachments>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-7</tag>
+  </tags>
+</article>

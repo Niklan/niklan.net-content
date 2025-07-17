@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-8-access-check"
+  created="2019-04-19T20:29:18"
+  updated="2025-07-17T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Drupal 8: Сервис access_check — гибкая и переиспользуемая проверка прав доступа к маршрутам</title>
+      <description>
+        Сервис access_check — это гибкий и переиспользуемый инструмент для
+        проверки прав доступа к маршрутам. Он позволяет настраивать сложные
+        правила доступа, делая ваш сайт более безопасным.
+      </description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-8</tag>
+    <tag>access</tag>
+  </tags>
+</article>

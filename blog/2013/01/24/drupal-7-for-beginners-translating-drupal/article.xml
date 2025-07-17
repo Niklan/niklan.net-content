@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-7-for-beginners-translating-drupal"
+  created="2013-01-24T23:14:45"
+  updated="2025-07-17T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Drupal 7 для начинающих: Переводим Drupal</title>
+      <description>Переводим Drupal на русский.</description>
+      <poster src="./image/poster.ru.png"/>
+      <attachments>
+        <attachment src="./attachment/translate_drupal.zip"
+          title="Результат выполнения (сайт + база)"/>
+      </attachments>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-7</tag>
+    <tag>i18n</tag>
+  </tags>
+</article>

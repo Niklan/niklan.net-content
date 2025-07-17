@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="ubuntu-13.04-fix-bash-scripts"
+  created="2013-04-28T15:23:33"
+  updated="2025-07-17T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Устранение проблемы с bash-скриптами в Ubuntu 13.04</title>
+      <description>В Ubuntu 13.04 bash скрипты открываются через gedit. Но есть решение! Узнайте, как исправить проблему и снова запускать скрипты.</description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>linux</tag>
+    <tag>ubuntu</tag>
+  </tags>
+</article>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-7-for-beginners-display-management-and-image-handling"
+  created="2013-02-04T14:19:38"
+  updated="2025-07-17T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Drupal 7 для начинающих: управление отображением и работа с картинками</title>
+      <description>Управление отображением материала и работа с картинками в Drupal 7.</description>
+      <poster src="./image/poster.ru.png"/>
+      <attachments>
+        <attachment src="./attachment/dfbeginers_display.zip"
+          title="Результат выполнения"/>
+      </attachments>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-7</tag>
+  </tags>
+</article>

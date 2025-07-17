@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drush-installation-and-usage-on-ubuntu-and-drupalhosting"
+  created="2013-02-28T19:33:11"
+  updated="2025-07-17T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Drush на Ubuntu и Drupalhosting: как установить и использовать</title>
+      <description>Ускорьте работу с Drupal на Ubuntu с Drush! Эффективные команды для управления сайтом.</description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drush</tag>
+    <tag>linux</tag>
+    <tag>ubuntu</tag>
+  </tags>
+</article>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-8-search-api-programmatically-adding-data-to-index"
+  created="2018-04-18T19:07:44"
+  updated="2025-07-17T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Drupal 8: Search API — программное добавление данных в индекс</title>
+      <description>
+        В этом материале рассмотрим как добавлять свои собственные данные в
+        поисковый индекс, для дальнейшего поиска по ним или фильтрации через
+        фасеты.
+      </description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-8</tag>
+    <tag>search</tag>
+  </tags>
+</article>

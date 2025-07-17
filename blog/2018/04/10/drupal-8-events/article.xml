@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-8-events"
+  created="2018-04-10T16:38:00"
+  updated="2025-07-17T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Drupal 8: Events — создание и использование событий</title>
+      <description>
+        Узнайте, как использовать события для расширения функциональности вашего
+        сайта на Drupal 8. Научитесь подписываться на события и создавать свои
+        собственные, чтобы упростить разработку и повысить эффективность работы
+        сайта.
+      </description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-8</tag>
+  </tags>
+</article>

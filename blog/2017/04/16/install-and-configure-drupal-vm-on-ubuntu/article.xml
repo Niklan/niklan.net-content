@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="install-and-configure-drupal-vm-on-ubuntu"
+  created="2017-04-16T09:50:31"
+  updated="2025-07-17T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Установка и настройка Drupal VM на Ubuntu</title>
+      <description>
+        Узнайте, как установить и настроить Drupal VM на Ubuntu для локальной
+        разработки.
+      </description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>linux</tag>
+    <tag>ubuntu</tag>
+    <tag>web-server</tag>
+  </tags>
+</article>

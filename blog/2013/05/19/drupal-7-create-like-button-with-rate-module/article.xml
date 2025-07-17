@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-7-create-like-button-with-rate-module"
+  created="2013-05-19T16:01:48"
+  updated="2025-07-17T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Rate: как создать кнопку «Мне нравится» в Drupal 7</title>
+      <description>Создайте кнопку «Мне нравится» на своём сайте с помощью Rate. Это простой способ улучшить взаимодействие с пользователями.</description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-7</tag>
+  </tags>
+</article>

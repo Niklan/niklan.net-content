@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-8-block-plugin"
+  created="2015-10-19T22:05:19"
+  updated="2025-07-17T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Drupal 8: Block Plugin API — программное создание блоков</title>
+      <description>
+        Drupal 8 предлагает широкие возможности для программного создания
+        блоков, позволяя разработчикам адаптировать функционал сайта под
+        конкретные нужды без необходимости использования сторонних модулей.
+      </description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-8</tag>
+  </tags>
+</article>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-8-hooks"
+  created="2018-06-28T09:28:24"
+  updated="2025-07-17T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Drupal 8: hooks</title>
+      <description>
+        Всё, что нужно знать о хуках в Drupal 8. Типы, использование и создание
+        своих хуков. Научитесь понимать код модулей и работать с ним.
+      </description>
+      <poster src="./image/poster.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-8</tag>
+  </tags>
+</article>

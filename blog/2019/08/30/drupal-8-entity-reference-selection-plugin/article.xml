@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-8-entity-reference-selection-plugin"
+  created="2019-08-30T18:30:50"
+  updated="2025-07-17T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Drupal 8: @EntityReferenceSelection — плагин автодополнения для сущностей</title>
+      <description>
+        В Drupal 8 появился новый плагин автодополнения для сущностей —
+        @EntityReferenceSelection. Он позволяет удобно выбирать сущности,
+        используя механизм автодополнения. Это упрощает работу с контентом и
+        делает процесс выбора более интуитивным.
+      </description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-8</tag>
+  </tags>
+</article>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-8-libraries-api"
+  created="2015-10-15T21:17:05"
+  updated="2025-07-17T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Drupal 8: Libraries API (Добавление CSS/JS на страницы)</title>
+      <description>
+        Drupal 8 предлагает новый подход к добавлению CSS и JS на страницы с
+        помощью Libraries API. Это позволяет загружать библиотеки только на тех
+        страницах, где они необходимы, оптимизируя загрузку ресурсов и повышая
+        производительность сайта.
+      </description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-8</tag>
+  </tags>
+</article>

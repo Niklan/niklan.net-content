@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-7-windows-setup"
+  created="2013-01-09T16:18:18"
+  updated="2025-07-17T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Самый простой и быстрый способ начать работать с Drupal на Windows</title>
+      <description>Acquia Dev Desktop – это инструмент для быстрой и удобной разработки на Drupal под операционную систему Windows.</description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>windows</tag>
+    <tag>web-server</tag>
+  </tags>
+</article>

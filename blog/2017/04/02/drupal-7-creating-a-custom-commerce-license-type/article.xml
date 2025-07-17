@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-7-creating-a-custom-commerce-license-type"
+  created="2017-04-02T12:00:00"
+  updated="2025-07-17T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Drupal 7: Создание собственного типа Commerce License</title>
+      <description>
+        Подробное руководство по созданию и продаже лицензий в Drupal Commerce с
+        использованием модуля Commerce License.
+      </description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-7</tag>
+    <tag>e-commerce</tag>
+  </tags>
+</article>

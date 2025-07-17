@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-8-tokens"
+  created="2018-09-06T18:26:37"
+  updated="2025-07-17T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Drupal 8: Tokens</title>
+      <description>
+        Токен — незаменимый инструмент для создания персонализированного
+        контента. В этой статье мы рассмотрим, как объявлять собственные токены
+        и использовать их.
+      </description>
+      <poster src="./image/poster.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-8</tag>
+  </tags>
+</article>

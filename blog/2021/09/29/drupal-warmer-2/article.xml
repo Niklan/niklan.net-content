@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-warmer-2"
+  created="2021-09-29T15:31:57"
+  updated="2025-07-17T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Drupal Warmer 2: Кеш нужно подавать горячим!</title>
+      <description>
+        Узнайте, как ускорить работу сайта на Drupal с Drupal Warmer 2:
+        прогрейте кеш и наслаждайтесь быстрой загрузкой страниц!
+      </description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-8</tag>
+    <tag>drupal-9</tag>
+    <tag>performance</tag>
+  </tags>
+</article>

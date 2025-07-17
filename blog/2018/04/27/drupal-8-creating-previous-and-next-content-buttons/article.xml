@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-8-creating-previous-and-next-content-buttons"
+  created="2018-04-27T18:00:06"
+  updated="2025-07-17T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Drupal 8: Создание кнопок на предыдущий и следующий материал</title>
+      <description>
+        Создаём кнопки «предыдущий» и «следующий» в Drupal 8: туториал научит
+        вас делать навигационные кнопки для перехода между материалами.
+      </description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-8</tag>
+  </tags>
+</article>

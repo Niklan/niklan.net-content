@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="hello-world"
+  created="2012-12-31T22:10:03"
+  updated="2025-07-17T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Hello World</title>
+      <description>Отсюда всё начинается!</description>
+      <poster src="./image/poster.ru.png" />
+    </translation>
+  </translations>
+</article>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-7-creating-catalog-with-taxonomy-views-and-panels"
+  created="2013-03-24T22:41:27"
+  updated="2025-07-17T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Drupal 7: Создание каталога с применением Taxonomy, Views и Panels</title>
+      <description>Создайте удобный каталог товаров с помощью Drupal 7, используя Taxonomy, Views и Panels.</description>
+      <poster src="./image/poster.ru.png"/>
+      <attachments>
+        <attachment src="./attachment/child_terms.txt"
+          title="Представление: Дочерние термины"/>
+        <attachment src="./attachment/catalog.txt"
+          title="Представление: Каталог (главная страница)"/>
+        <attachment src="./attachment/product.txt"
+          title="Представление: Вывод продукции в каталоге"/>
+        <attachment src="./attachment/panels_catalog.txt"
+          title="Panels: Отображение подкатегорий и товаров"/>
+      </attachments>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-7</tag>
+  </tags>
+</article>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="docker4drupal-ubuntu"
+  created="2018-04-15T17:57:18"
+  updated="2025-07-17T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Установка и настройка Docker4Drupal на Ubuntu</title>
+      <description>
+        Оптимизация работы Drupal с помощью Docker на Ubuntu: узнайте, как
+        установить и настроить Docker4Drupal для ускорения и упрощения
+        разработки и поддержки вашего сайта.
+      </description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-8</tag>
+    <tag>linux</tag>
+    <tag>ubuntu</tag>
+    <tag>docker</tag>
+  </tags>
+</article>

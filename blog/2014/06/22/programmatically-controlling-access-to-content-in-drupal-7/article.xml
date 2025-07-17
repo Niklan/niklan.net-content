@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="programmatically-controlling-access-to-content-in-drupal-7"
+  created="2014-06-22T08:56:28"
+  updated="2025-07-17T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Drupal 7: Программно контролируем доступ к материалам</title>
+      <description>Научитесь контролировать доступ к материалам в Drupal 7: создавайте скрытые материалы и ограничивайте доступ к ним на основе различных критериев.</description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-7</tag>
+    <tag>access</tag>
+  </tags>
+</article>

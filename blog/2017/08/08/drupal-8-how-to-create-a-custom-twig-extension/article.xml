@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-8-how-to-create-a-custom-twig-extension"
+  created="2017-08-08T17:06:45"
+  updated="2025-07-17T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Drupal 8: Создание расширений Twig</title>
+      <description>
+        В этом материале мы рассмотрим создание расширений Twig в Drupal 8. Вы
+        узнаете, как расширить возможности шаблонизатора, добавив собственные
+        функции и фильтры. Это позволит упростить разработку тем и улучшить их
+        функциональность.
+      </description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-8</tag>
+    <tag>twig</tag>
+  </tags>
+</article>

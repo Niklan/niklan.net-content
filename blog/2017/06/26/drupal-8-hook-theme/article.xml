@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-8-hook-theme"
+  created="2017-06-26T19:37:14"
+  updated="2025-07-17T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Drupal 8: hook_theme()</title>
+      <description>
+        Изучите основы работы с одним из ключевых хуков Drupal. Узнайте, как
+        создавать и использовать тем хуки в Drupal 8.
+      </description>
+      <poster src="./image/poster.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-8</tag>
+    <tag>theming</tag>
+  </tags>
+</article>

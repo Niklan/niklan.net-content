@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-7-how-to-create-display-suite-field"
+  created="2016-03-29T20:13:28"
+  updated="2025-07-17T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Drupal 7: Программное создание DisplaySuite полей</title>
+      <description>
+        Научитесь расширять функциональность своих сайтов, используя возможности
+        DisplaySuite и Field Group. Узнайте, как упростить вёрстку и повысить её
+        эффективность.
+      </description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-7</tag>
+  </tags>
+</article>

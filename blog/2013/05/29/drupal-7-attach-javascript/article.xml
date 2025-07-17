@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-7-attach-javascript"
+  created="2013-05-22T23:13:03"
+  updated="2025-07-17T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Три метода добавления JavaScript на страницы Drupal 7</title>
+      <description>Узнайте, как легко подключить JavaScript в Drupal 7: через кастом-модуль с помощью drupal_add_js(), через тему сайта, добавляя скрипты в .info файл, и используя hook_library для управления библиотеками JS.</description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-7</tag>
+    <tag>javascript</tag>
+  </tags>
+</article>

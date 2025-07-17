@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-8-search-api-programmatic-site-search"
+  created="2018-04-24T19:00:26"
+  updated="2025-07-17T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Drupal 8: Search API — программный поиск по сайту</title>
+      <description>
+        Усовершенствуйте поиск на своём сайте с Drupal 8 и Search API: освойте
+        мощный инструмент для точного и гибкого поиска контента.
+      </description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+    <tag>drupal-8</tag>
+    <tag>search</tag>
+  </tags>
+</article>

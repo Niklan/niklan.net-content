@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="fix-adsense-not-loading"
+  created="2013-03-25T19:51:06"
+  updated="2025-07-17T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Решение проблемы с AdSense - Низкая пропускная способность</title>
+      <description>Если AdSense перестал грузиться.</description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+</article>

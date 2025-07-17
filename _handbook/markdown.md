@@ -108,9 +108,9 @@ content.
 ::::::
 ```
 
-### Alerts
+### Callouts
 
-Alerts can be used to highlight specific information in content. Alerts can be
+Callouts can be used to highlight specific information in content. Alerts can be
 added using these container directive names: **note**, **tip**, **important**,
 **warning**, **caution**.
 

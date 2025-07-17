@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="oh-my-zsh"
+  created="2017-06-19T17:17:22"
+  updated="2025-07-17T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Oh My Zsh!</title>
+      <description>
+        Обзор и инструкция по установке оболочки для терминала Zsh и её
+        модификаций. Сделайте работу в терминале приятнее и эффективнее!
+      </description>
+      <poster src="./image/poster.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>linux</tag>
+    <tag>ubuntu</tag>
+  </tags>
+</article>

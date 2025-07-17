@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="digitalocean-mini-hosting"
+  created="2015-01-25T18:25:28"
+  updated="2025-07-17T00:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Свой мини-хостинг (сервер) на DigitalOcean</title>
+      <description>
+        Создание собственного мини-хостинга на DigitalOcean с использованием
+        VestaCP — это эффективный способ получить полный контроль над своими
+        проектами и обеспечить их стабильную работу.
+      </description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>linux</tag>
+    <tag>ubuntu</tag>
+    <tag>web-server</tag>
+  </tags>
+</article>
