@@ -3,7 +3,7 @@
   xsi:noNamespaceSchemaLocation="../../../../article.xsd"
   id="drupal-8-modal-api"
   created="2016-08-30T17:10:04"
-  updated="2024-11-30T00:00:00">
+  updated="2025-07-17T00:00:00">
   <translations>
     <translation language="ru" primary="true" src="./article.ru.md">
       <title>Drupal 8: Modal API или как работать с модальными/диалоговыми окнами</title>

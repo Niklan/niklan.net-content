@@ -3,7 +3,7 @@
   xsi:noNamespaceSchemaLocation="../../../../article.xsd"
   id="raspberry-pi-3-smart-tv"
   created="2017-01-24T10:53:41"
-  updated="2024-11-30T00:00:00">
+  updated="2025-07-17T00:00:00">
   <translations>
     <translation language="ru" primary="true" src="./article.ru.md">
       <title>Как я делал медиацентр из Raspberry для замены смарт тв</title>

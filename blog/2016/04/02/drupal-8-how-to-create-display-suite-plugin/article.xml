@@ -3,7 +3,7 @@
   xsi:noNamespaceSchemaLocation="../../../../article.xsd"
   id="drupal-8-how-to-create-display-suite-plugin"
   created="2016-04-02T20:19:03"
-  updated="2024-11-30T00:00:00">
+  updated="2025-07-17T00:00:00">
   <translations>
     <translation language="ru" primary="true" src="./article.ru.md">
       <title>Drupal 8: Пишем плагин Display Suite поля</title>

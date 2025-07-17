@@ -3,7 +3,7 @@
   xsi:noNamespaceSchemaLocation="../../../../article.xsd"
   id="migration-from-drupal-composer-drupal-project-to-drupal-recommended-project"
   created="2020-01-15T17:08:24"
-  updated="2024-11-30T00:00:00">
+  updated="2025-07-17T00:00:00">
   <translations>
     <translation language="ru" primary="true" src="./article.ru.md">
       <title>Миграция с drupal-composer/drupal-project на drupal/recommended-project</title>

@@ -3,7 +3,7 @@
   xsi:noNamespaceSchemaLocation="../../../../article.xsd"
   id="drupal-8-queue-api"
   created="2015-11-12T20:41:25"
-  updated="2024-11-30T00:00:00">
+  updated="2025-07-17T00:00:00">
   <translations>
     <translation language="ru" primary="true" src="./article.ru.md">
       <title>Drupal 8: Queue API</title>

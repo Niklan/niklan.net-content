@@ -3,7 +3,7 @@
   xsi:noNamespaceSchemaLocation="../../../../article.xsd"
   id="creating-a-drush-7-command-to-download-a-module-library"
   created="2015-05-25T14:41:38"
-  updated="2024-11-30T00:00:00">
+  updated="2025-07-17T00:00:00">
   <translations>
     <translation language="ru" primary="true" src="./article.ru.md">
       <title>Создаём команду Drush 7 для загрузки библиотеки модуля</title>

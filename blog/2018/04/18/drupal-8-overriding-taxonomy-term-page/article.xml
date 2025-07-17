@@ -3,7 +3,7 @@
   xsi:noNamespaceSchemaLocation="../../../../article.xsd"
   id="drupal-8-overriding-taxonomy-term-page"
   created="2018-04-18T19:07:44"
-  updated="2024-11-30T00:00:00">
+  updated="2025-07-17T00:00:00">
   <translations>
     <translation language="ru" primary="true" src="./article.ru.md">
       <title>Drupal 8: Переопределение страницы термина таксономии</title>

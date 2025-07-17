@@ -3,7 +3,7 @@
   xsi:noNamespaceSchemaLocation="../../../../article.xsd"
   id="drupal-8-creating-a-custom-section-on-the-configuration-page"
   created="2017-03-17T08:52:25"
-  updated="2024-11-30T00:00:00">
+  updated="2025-07-17T00:00:00">
   <translations>
     <translation language="ru" primary="true" src="./article.ru.md">
       <title>Drupal 8: Создание собственного раздела на странице конфигурации</title>

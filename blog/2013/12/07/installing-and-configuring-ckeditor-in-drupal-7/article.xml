@@ -3,7 +3,7 @@
   xsi:noNamespaceSchemaLocation="../../../../article.xsd"
   id="installing-and-configuring-ckeditor-in-drupal-7"
   created="2013-12-07T14:41:11"
-  updated="2024-11-30T00:00:00">
+  updated="2025-07-17T00:00:00">
   <translations>
     <translation language="ru" primary="true" src="./article.ru.md">
       <title>Установка и настройка CKEditor в Drupal 7</title>

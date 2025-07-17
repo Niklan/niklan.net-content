@@ -3,7 +3,7 @@
   xsi:noNamespaceSchemaLocation="../../../../article.xsd"
   id="drupal-7-8-optimizing-images-using-imagemagick"
   created="2017-03-30T17:29:28"
-  updated="2024-11-30T00:00:00">
+  updated="2025-07-17T00:00:00">
   <translations>
     <translation language="ru" primary="true" src="./article.ru.md">
       <title>Drupal: Оптимизация сжатия и загрузки изображений</title>

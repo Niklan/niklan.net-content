@@ -3,7 +3,7 @@
   xsi:noNamespaceSchemaLocation="../../../../article.xsd"
   id="configuring-image-scaling-without-cropping-in-drupal-7"
   created="2013-10-31T22:02:42"
-  updated="2024-11-30T00:00:00">
+  updated="2025-07-17T00:00:00">
   <translations>
     <translation language="ru" primary="true" src="./article.ru.md">
       <title>Настраиваем масштабирование картинок без обрезаний в Drupal 7</title>

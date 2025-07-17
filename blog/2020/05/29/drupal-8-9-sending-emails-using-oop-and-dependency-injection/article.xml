@@ -3,7 +3,7 @@
   xsi:noNamespaceSchemaLocation="../../../../article.xsd"
   id="drupal-8-9-sending-emails-using-oop-and-dependency-injection"
   created="2020-05-29T14:47:23"
-  updated="2024-11-30T00:00:00">
+  updated="2025-07-17T00:00:00">
   <translations>
     <translation language="ru" primary="true" src="./article.ru.md">
       <title>Drupal 8, 9: Отправка писем используя ООП и Dependency Injection</title>
