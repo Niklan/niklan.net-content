@@ -57,12 +57,15 @@ Used to embed a local video file that will be loaded on the website and served
 using the `<video>` tag.
 
 ```markdown
-:: video [Video title] (./path/to/video.mp4)
+:: video [Video title] (./path/to/video.mp4) {controls}
 ```
 
 - `[]`: (required) The video title will be used to save the file.
 - `()`: (required) The path to the video file. The path should be local;
   external videos will not be downloaded.
+- `{}`: Supports for default attributes: `autoplay`, `loop`, `muted`,
+  `controls`. By default, adds none of these. Note that `autoplay` requires
+  `muted` to work.
 
 ### YouTube video
 
@@ -136,7 +139,7 @@ The figure container is simply replaced by the `<figure>` HTML tag.
 
 ```markdown
 ::: figure
-  :: video [example] (video.mp4)
+  :: video [example] (video.mp4) {controls}
 :::
 ```
 

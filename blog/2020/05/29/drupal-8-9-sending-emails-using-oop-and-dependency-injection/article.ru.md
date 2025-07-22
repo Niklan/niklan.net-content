@@ -788,7 +788,7 @@ function example_user_login(UserInterface $account) {
 
 После чего, можно пробовать авторизоваться.
 
-:: video [oop-mail.mp4] (video/oop-mail.mp4)
+:: video [oop-mail.mp4] (video/oop-mail.mp4) {controls}
 
 ## Ссылки
 

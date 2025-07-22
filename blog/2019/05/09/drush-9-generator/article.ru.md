@@ -385,7 +385,7 @@ services:
 
 Всё готово!
 
-:: video [drush generate dummy-hello-world] (video/Drush-generator-hello-world.mp4)
+:: video [drush generate dummy-hello-world] (video/Drush-generator-hello-world.mp4) {controls}
 
 ### Пример №2 — Deriver
 
@@ -570,7 +570,7 @@ services:
 
 Сбрасываем кэш, и можно проверять!
 
-:: video [drush generate dummy-deriver] (video/Drush-generator-deriver.mp4)
+:: video [drush generate dummy-deriver] (video/Drush-generator-deriver.mp4) {controls}
 
 Мы также можем написать команду `drush generate` и увидить, что наши команды
 находятся в собственной группе, из-за неймспейса, с указанными нами описаниями
