@@ -1351,7 +1351,7 @@ final class SlowBlock extends BlockBase {
 
 #### Без стратегии (стандартно)
 
-:: video [Ajax Placeholder Strategy (disabled)] (video/without-placeholder-strategy.mp4)
+:: video [Ajax Placeholder Strategy (disabled)] (video/without-placeholder-strategy.mp4) {controls}
 
 Данный пример демонстрирует работу страницы без нашей стратегии. В таком случае
 применяется стандартная, которая откладывает наши блоки на конец обработки
@@ -1366,7 +1366,7 @@ final class SlowBlock extends BlockBase {
 
 #### Со стратегией
 
-:: video [Ajax Placeholder Strategy (enabled)] (video/with-placeholder-strategy.mp4)
+:: video [Ajax Placeholder Strategy (enabled)] (video/with-placeholder-strategy.mp4) {controls}
 
 Со стратегией ситуация резко меняется. Наши тяжелые блоки вместо контента отдают
 только плейсхолдеры и JS для их обработки. После того как страница загружается,
