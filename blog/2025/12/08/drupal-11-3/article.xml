@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-11-3-overview"
+  created="2025-12-08T15:00:00"
+  updated="2025-12-08T15:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Drupal 11.3: Обзор ключевых изменений</title>
+      <description>
+        В новый релиз вошли интеграция HTMX, модуль для Symfony Mailer, частичный перевод рендер-массивов на ООП,
+        поддержка ООП-хуков в темах, YAML-экспорт содержимого, асинхронный драйвер MySQLi и многое другое.
+      </description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+  </tags>
+</article>
