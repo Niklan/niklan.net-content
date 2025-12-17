@@ -1,13 +1,16 @@
-На этой неделе состоится релиз **Drupal 11.3**. Давайте посмотрим, какие новшества он принесёт.
+В этом обзоре я собрал самые интересные для меня изменения в Drupal 11.3. Полный список обновлений вы найдёте на
+странице релиза[^drupal-11-3-release].
 
-В этом обзоре я собрал самые интересные для меня изменения. Полный список обновлений вы найдёте на странице
-релиза[^drupal-11-3-release].
-
-::: note [Drupal 10 выходит на финишную прямую]
-Одновременно с Drupal 11.3 состоится релиз **Drupal 10.6** — это последний минорный релиз для **Drupal 10**.
+::: warning [Drupal 10 выходит на финишную прямую]
+Одновременно с Drupal 11.3 состоялся релиз **Drupal 10.6** — это последний минорный релиз для **Drupal 10**.
 
 Скорее всего, в июне 2026 года (а если не успеют — то в декабре) Drupal 10 будет объявлен устаревшим. В это же время
 Drupal 11 перейдёт на долгосрочную поддержку (LTS), а также состоится релиз Drupal 12.
+:::
+
+::: note [Symfony Mailer]
+Если вы читали эту публикацию до релиза Drupal 11.3, то уже не найдёте раздел про новый экспериментальный модуль
+Symfony Mailer (`mailer`) — он не попал в релиз.[^symfony-mailer] Мы увидим его в Drupal 11.4 или даже в Drupal 12.
 :::
 
 ## Добавлена поддержка ООП-хуков в темах
@@ -114,170 +117,6 @@ IDE: подсказки и автодополнение. Полный отказ
   }
   ```
 :::::
-
-## Добавлен экспериментальный модуль `mailer` для интеграции Symfony Mailer
-
-Добавлен **экспериментальный** модуль `mailer` для интеграции **Symfony Mailer**[^symfony-mailer-docs] в
-Drupal.[^mailer-module] Он позволяет использовать современные транспорты (SMTP, Sendmail и другие), настраивать
-параметры отправки через DSN и перехватывать письма в тестах.
-
-Знакомо, не правда ли? Ещё в 2023 году в **Drupal 10.2**[^drupal-10-2-is-available] добавили зависимость
-`symfony/mailer` и соответствующий `#[Mail]`-плагин.[^symfony-mailer-component] С тех пор компонент можно было
-использовать при необходимости, но его возможности были сильно ограничены.
-
-Новый модуль расширяет возможности, предоставляя сервисы для отправки, модификации сообщений и кастомизации процессов:
-
-- **Основные сервисы для работы с почтой:**
-  - `Symfony\Component\Mailer\MailerInterface` — отправка сообщений.
-  - Сервис `Symfony\Component\Mailer\Transport\TransportInterface` — прямая отправка в обход
-    **Messenger**[^symfony-messenger-docs].
-- **Кастомизация транспортов:**
-  - Фабрика `Drupal\Core\Mailer\TransportServiceFactoryInterface` для замены или модификации транспортов.
-  - Абстрактный сервис `Symfony\Component\Mailer\Transport\AbstractTransportFactory` для создания сторонних транспортов
-    через [сервисы с метками][tagged-services] `mailer.transport_factory`.
-- **События для обработки писем:**
-  - `Symfony\Component\Mailer\Event\MessageEvent`[^symfony-mailer-message-event] — изменение содержимого сообщения перед
-    отправкой.
-  - `Symfony\Component\Mailer\Event\SentMessageEvent`[^symfony-mailer-sent-message-event] — получение данных об успешной
-    отправке: оригинал сообщения, отладочная информация, идентификатор.
-  - `Symfony\Component\Mailer\Event\FailedMessageEvent`[^symfony-mailer-failed-message-event] — обработка ошибок с
-    информацией о сообщении, тексте ошибки и отладочных данных.
-- Новая настройка `mailer_sendmail_commands` ограничивает доступные команды `sendmail`. При попытке использовать
-  неразрешённые команды система выбрасывает исключение о небезопасной отправке сообщения.
-- Для тестирования добавлен модуль `mailer_capture`, который перехватывает отправленные письма.[^mailer-capture]
-
-::::: figure
-::: figcaption
-**Листинг 3.** Пример отправки сообщения с использованием нового сервиса `Symfony\Component\Mailer\MailerInterface`.
-:::
-  ```php
-  use Symfony\Component\Mailer\Exception\TransportExceptionInterface;
-  use Symfony\Component\Mailer\MailerInterface;
-  use Symfony\Component\Mime\Email;
-  
-  final readonly class Foo {
-  
-    public function __construct(
-      private MailerInterface $mailer,
-      private LoggerInterface $logger,
-    ) {}
-  
-    public function doSomething(): void {
-      // Прочая логика…
-      try {
-        $this->sendEmail();
-      }
-      catch (TransportExceptionInterface $exception) {
-        $this->logger->error($exception->getMessage());
-      }
-    }
-  
-    private function sendEmail(): void {
-      $email = new Email();
-      $email->subject('Hello, World!');
-      $email->from('webmaster@example.com');
-      $email->to('you@example.com');
-      $email->text('Hello, World! This is a test email.');
-      $email->attachFromPath('/path/to/file.pdf', 'file.pdf', 'application/pdf');
-  
-      $this->mailer->send($email);
-    }
-  
-  }
-  ```
-:::::
-
-**Листинг 3** демонстрирует, что отправка сообщений существенно отличается от стандартных методов в Drupal. Это вызывает
-закономерные вопросы. Например, как перехватывать письма определённого модуля или типа? Модуль не даёт ответа на этот
-вопрос. Вероятно, нам предлагается рассмотреть подход с созданием собственных типизированных Email-классов. Пример:
-
-```php
-use Drupal\commerce_order\Entity\OrderInterface;
-use Symfony\Component\Mime\Email;
-
-final class CommerceOrderReceiptEmail extends Email {
-
-  public function __construct(
-    public OrderInterface $order,
-  ) {}
-
-}
-```
-
-Однако адаптация всех модулей под такую систему потребует много времени. На какое-то время в контрибах и проектах может
-возникнуть путаница. Но для этого и нужен **экспериментальный** модуль. Возможно, в него добавят промежуточные слои для
-текущей системы. Для собственных проектов это вполне подходящее решение, которое определённо удобнее и проще в
-настройке, чем метод из статьи про [отправку писем с использованием ООП и Dependency Injection][oop-and-di-mail].
-
-К слову о событиях — приведу небольшой пример их использования:
-
-::::: figure
-::: figcaption
-**Листинг 4.** Пример использования событий для обработки электронных писем.
-:::
-  ```php
-  use Composer\EventDispatcher\EventSubscriberInterface;
-  use Drupal\Core\Render\RendererInterface;
-  use Psr\Log\LoggerInterface;
-  use Symfony\Component\Mailer\Event\FailedMessageEvent;
-  use Symfony\Component\Mailer\Event\MessageEvent;
-  use Symfony\Component\Mailer\Event\SentMessageEvent;
-  use Symfony\Component\Mime\Email;
-  
-  final readonly class EmailSubscriber implements EventSubscriberInterface {
-  
-    public function __construct(
-      private RendererInterface $renderer,
-      private LoggerInterface $logger,
-    ) {}
-  
-    public static function getSubscribedEvents(): array {
-      return [
-        MessageEvent::class => 'onMessagePrepare',
-        SentMessageEvent::class => 'onMessageSent',
-        FailedMessageEvent::class => 'onMessageFailed',
-      ];
-    }
-  
-    public function onMessagePrepare(MessageEvent $event): void {
-      $message = $event->getMessage();
-      if (!$message instanceof Email) {
-        return;
-      }
-  
-      $email_wrapper = [
-        '#theme' => 'email_wrapper',
-        '#message' => $message,
-      ];
-      $email_html = $this->renderer->renderInIsolation($email_wrapper);
-      $message->html($email_html);
-    }
-  
-    public function onMessageSent(SentMessageEvent $event): void {
-      if (!$event->getMessage()->getOriginalMessage() instanceof Email) {
-        return;
-      }
-  
-      $this->logger->error('Email was successfully sent.', ['message_id' => $event->getMessage()->getMessageId()]);
-    }
-  
-    public function onMessageFailed(MessageEvent $event): void {
-      if (!$event->getMessage() instanceof Email) {
-        return;
-      }
-  
-      $this->logger->error('Email was not sent.', [
-        'message' => $event->getMessage(),
-        'transport' => $event->getTransport(),
-      ]);
-    }
-  
-  }
-```
-:::::
-
-Пример с HTML-обёрткой в **листинге 4** отправит HTML «как есть» — без инъекции inline-стилей и других преобразований.
-Для этого потребуются сторонние решения и зависимости[^twig-inline-css].[^symfony-mailer-html-css]
 
 ## Добавлена поддержка HTMX
 
@@ -866,8 +705,6 @@ echo Timer::read('mysql-v-mysqli') / $iterations;
   Вместо этого в `settings.php` добавлены новые параметры — `package_manager_composer_path` и
   `package_manager_rsync_path`. Они позволяют явно указывать пути, что повышает
   безопасность.[^composer-rsync-path-settings]
-- Библиотека `justinrainbow/json-schema` теперь считается полноценной зависимостью, а не только зависимостью для
-  разработки.[^justinrainbow-json-schema]
 - Теперь при переключении сайта в режим обслуживания или выходе из него в лог по умолчанию (`default`) записывается
   соответствующее сообщение.[^maintenance-mode-switch-log]
 - Экспортёр стандартного содержимого (default content) теперь по умолчанию пропускает поля типа `created` при генерации
@@ -932,24 +769,6 @@ echo Timer::read('mysql-v-mysqli') / $iterations;
   _История изменений Drupal Core_. 2025-07-30.
 [^content-export-improvements]: [Support exporting content and its dependencies to a folder structure on disk](https://www.drupal.org/project/drupal/issues/3532951).
   _Задача на Drupal.org_.
-[^mailer-module]: [Experimental Symfony Mailer Module](https://www.drupal.org/node/3519253). _История изменений Drupal
-  Core_. 2025-05-13.
-[^symfony-mailer-component]: [Symfony mailer component added as a composer dependency](https://www.drupal.org/node/3369935).
-  _История изменений Drupal Core_. 2023-10-20.
-[^symfony-mailer-docs]: [Sending Emails with Mailer](https://symfony.com/doc/current/mailer.html).
-  _Официальная документация компонента `symfony/mailer`._
-[^symfony-mailer-message-event]: [MessageEvent](https://symfony.com/doc/current/mailer.html#messageevent).
-  _Официальная документация компонента `symfony/mailer`._
-[^symfony-mailer-sent-message-event]: [SentMessageEvent](https://symfony.com/doc/current/mailer.html#sentmessageevent).
-  _Официальная документация компонента `symfony/mailer`._
-[^symfony-mailer-failed-message-event]: [FailedMessageEvent](https://symfony.com/doc/current/mailer.html#failedmessageevent).
- _Официальная документация компонента `symfony/mailer`._
-[^symfony-messenger-docs]: [Messenger: Sync & Queued Message Handling](https://symfony.com/doc/current/messenger.html).
-  _Официальная документация компонента `symfony/messenger`._
-[^drupal-10-2-is-available]: [Drupal 10.2 is now available](https://www.drupal.org/blog/drupal-10-2-0).
-  _Блог разработчиков Drupal_. 2025-12-15.
-[^symfony-mailer-html-css]: [Twig: HTML & CSS](https://symfony.com/doc/current/mailer.html#twig-html-css).
-  _Официальная документация компонента `symfony/mailer`._
 [^theme-hook-suggestions-deprecation]: [Theme suggestions can now be deprecated](https://www.drupal.org/node/3535678).
   _История изменений Drupal Core_. 2025-08-05.
 [^ajax-response-merge-with]: [Add mergeWith() to AjaxResponse for merging with another response](https://www.drupal.org/node/3486330).
@@ -1145,8 +964,6 @@ echo Timer::read('mysql-v-mysqli') / $iterations;
   _История изменений Drupal Core_. 2025-11-17. Дата обращения: 2025-12-02.
 [^field-sync-widget]: [content_translation_field_sync_widget has been deprecated](https://www.drupal.org/node/3548573).
   _История изменений Drupal Core_. 2025-11-27. Дата обращения: 2025-12-02.
-[^mailer-capture]: [Add a way to capture mails sent through the mailer transport service during tests](https://www.drupal.org/project/drupal/issues/3397420).
-  _Задача на Drupal.org_. Дата обращения: 2025-12-02.
 [^fiber-resume-type]: [FiberResumeType enum introduced to allow fiber suspensions to indicate the intent](https://www.drupal.org/node/3556785).
   _История изменений Drupal Core_. 2025-11-28. Дата обращения: 2025-12-02.
 [^block-content-selection]: [Block content entity reference fields now use the BlockContentSelection plugin by default](https://www.drupal.org/node/3521459).
@@ -1165,8 +982,8 @@ echo Timer::read('mysql-v-mysqli') / $iterations;
   _История изменений Drupal Core_. 2025-12-03. Дата обращения: 2025-12-04.
 [^hook-requirements-deprecated]: [hook_requirements deprecated in favor of separate runtime and update hooks and install-time requirements checks](https://www.drupal.org/node/3549685).
   _История изменений Drupal Core_. 2025-12-03. Дата обращения: 2025-12-04.
-[^twig-inline-css]: [inline_css — Filters](https://twig.symfony.com/doc/3.x/filters/inline_css.html).
-  _Документация Twig._
+[^symfony-mailer]: [Revisions for Experimental Symfony Mailer Module](https://www.drupal.org/node/3519253/revisions/view/14133084/14172524)
+  _История изменений Drupal Core_. Дата обращения: 2025-12-17.
 [^php-8-5]: [PHP 8.5](https://www.php.net/releases/8.5/ru.php).
   _Официальный сайт PHP._
 [^php-8-4]: [PHP 8.4](https://www.php.net/releases/8.4/ru.php).
