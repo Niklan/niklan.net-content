@@ -1,0 +1,8 @@
+{
+    "name": "drupal/example",
+    "type": "drupal-custom-module",
+    "version": "1.0.0",
+    "require": {
+        "drupal/commerce": "^3.0"
+    }
+}

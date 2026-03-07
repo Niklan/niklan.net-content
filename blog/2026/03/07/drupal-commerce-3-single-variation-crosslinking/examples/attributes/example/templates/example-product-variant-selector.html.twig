@@ -1,0 +1,36 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a product variant selector.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the main container.
+ * - groups: An array of option groups. Each group contains:
+ *   - label: Group label (e.g., "Color", "Size").
+ *   - variants: Array of available variants in the group:
+ *     - value: Displayed option text or render array (e.g., "Red", "XL").
+ *     - url: URL to select this variant.
+ *     - is_active: (boolean) TRUE if this is the current variant.
+ */
+#}
+{{ attach_library('example/product-variant-selector') }}
+<div{{ attributes.addClass('product-variant-selector') }}>
+  {% for group in groups %}
+    <div class="product-variant-selector__group">
+      <div class="product-variant-selector__label">{{ group.label }}</div>
+      <div class="product-variant-selector__variants">
+        {%- for variant in group.variants -%}
+          {% if variant.is_active %}
+            <div class="product-variant-selector__variant product-variant-selector__variant--selected">
+              {{- variant.value -}}
+            </div>
+          {% else %}
+            <a href="{{ variant.url }}" class="product-variant-selector__variant">
+              {{- variant.value -}}
+            </a>
+          {% endif %}
+        {%- endfor -%}
+      </div>
+    </div>
+  {% endfor %}
+</div>

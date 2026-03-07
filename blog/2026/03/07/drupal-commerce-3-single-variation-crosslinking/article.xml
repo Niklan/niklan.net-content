@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-commerce-3-single-variation-crosslinking"
+  created="2026-03-07T16:30:00"
+  updated="2026-03-07T16:30:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Drupal Commerce 3: перелинковка товаров с одной вариацией</title>
+      <description>
+        У каждой вариации отдельная страница, но нет перелинковки между похожими товарами? Узнайте, как группировать товары и создавать блоки со ссылками без изменения структуры каталога.
+      </description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+  </tags>
+</article>
