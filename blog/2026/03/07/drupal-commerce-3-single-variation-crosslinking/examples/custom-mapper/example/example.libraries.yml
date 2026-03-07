@@ -1,0 +1,4 @@
+product-variant-selector:
+  css:
+    theme:
+      css/product-variant-selector.css: {}

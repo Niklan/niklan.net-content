@@ -1,0 +1,10 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
+  Drupal\example\Repository\ProductVariationRepository: {}
+  Drupal\example\Mapper\ProductVariantParameterMapper: {}
+  Drupal\example\Resolver\ParameterResolverSelector: {}
+  Drupal\example\Resolver\EntityReferenceParameterResolver: {}
+  Drupal\example\Resolver\ListStringParameterResolver: {}

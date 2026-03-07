@@ -1,0 +1,6 @@
+name: Drupal Commerce cross-linking example
+type: module
+core_version_requirement: ^11.2
+dependencies:
+  - commerce:commerce
+  - commerce:commerce_product
