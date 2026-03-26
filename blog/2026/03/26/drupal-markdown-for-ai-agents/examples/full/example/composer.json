@@ -1,0 +1,9 @@
+{
+    "name": "drupal/example",
+    "type": "drupal-custom-module",
+    "version": "1.0.0",
+    "require": {
+        "league/html-to-markdown": "^5.1",
+        "symfony/config": "^6.0|^7.0"
+    }
+}

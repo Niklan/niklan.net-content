@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-markdown-for-ai-agents"
+  created="2026-03-26T16:30:00"
+  updated="2026-03-26T16:30:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Drupal: Markdown-ответы для AI-агентов</title>
+      <description>
+        Когда HTML мешает: готовим Drupal-сайт к прямому чтению AI-агентами через Markdown.
+      </description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <!--
+  <compatibility>
+    <software name="drupal" constraint="^10.3 || ^11"/>
+    <software name="php" constraint="^8.3"/>
+  </compatibility>
+  -->
+  <tags>
+    <tag>drupal</tag>
+    <tag>seo</tag>
+    <tag>ai</tag>
+  </tags>
+</article>
