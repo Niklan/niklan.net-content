@@ -13,6 +13,11 @@
       <poster src="./image/poster.ru.png"/>
     </translation>
   </translations>
+  <compatibility>
+    <software name="drupal" constraint="^10.3 || ^11"/>
+    <software name="drupal/commerce" constraint="^2 || ^3"/>
+    <software name="php" constraint="^8.3"/>
+  </compatibility>
   <tags>
     <tag>drupal</tag>
   </tags>

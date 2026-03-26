@@ -13,12 +13,11 @@
       <poster src="./image/poster.ru.png"/>
     </translation>
   </translations>
-  <!--
   <compatibility>
     <software name="drupal" constraint="^10.3 || ^11"/>
+    <software name="league/html-to-markdown" constraint="^5.1"/>
     <software name="php" constraint="^8.3"/>
   </compatibility>
-  -->
   <tags>
     <tag>drupal</tag>
     <tag>seo</tag>
