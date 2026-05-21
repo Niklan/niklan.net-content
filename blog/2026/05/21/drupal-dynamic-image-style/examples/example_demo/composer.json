@@ -1,0 +1,10 @@
+{
+    "name": "drupal/example_demo",
+    "type": "drupal-custom-module",
+    "version": "1.0.0",
+    "require": {
+        "php": "^8.4",
+        "drupal/example": "^1.0",
+        "drupal/image_effects": "^5.0"
+    }
+}
