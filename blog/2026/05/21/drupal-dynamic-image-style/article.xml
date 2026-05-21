@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-dynamic-image-style"
+  created="2026-05-21T14:00:00"
+  updated="2026-05-21T14:00:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Динамические стили изображений в Drupal</title>
+      <description>
+        Реализуем механизм динамической генерации производных изображений в Drupal: задаём эффекты прямо в PHP-коде и Twig-шаблонах без создания статических стилей в админке.
+      </description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <compatibility>
+    <software name="drupal" constraint="^11"/>
+    <software name="php" constraint="^8.4"/>
+  </compatibility>
+  <tags>
+    <tag>drupal</tag>
+    <tag>twig</tag>
+  </tags>
+</article>

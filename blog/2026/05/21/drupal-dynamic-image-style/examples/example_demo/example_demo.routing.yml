@@ -1,0 +1,7 @@
+example_demo.dynamic_image_style_demo:
+  path: /dynamic-image-style-demo
+  defaults:
+    _controller: Drupal\example_demo\Controller\DynamicImageStyleDemo
+    _title: Dynamic Image Style Demo
+  requirements:
+    _access: 'TRUE'

@@ -1,0 +1,6 @@
+name: Example Demo
+type: module
+core_version_requirement: ^11.3
+dependencies:
+  - example:example
+  - image_effects:image_effects

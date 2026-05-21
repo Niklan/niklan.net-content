@@ -1,0 +1,5 @@
+name: Example
+type: module
+core_version_requirement: ^11.3
+dependencies:
+  - image:image
