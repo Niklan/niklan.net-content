@@ -379,7 +379,7 @@ final readonly class DynamicImageStyleController {
     }
     [, $scheme, $target] = $parts;
 
-    $target = $this->stripDerivativeExtension($target, $compressed);
+    $target = \rawurldecode($this->stripDerivativeExtension($target, $compressed));
 
     return $scheme . '://' . $target;
   }
@@ -441,7 +441,7 @@ final readonly class DynamicImageStyleController {
 
 1. **`__invoke()`** — оркестрирует процесс: валидация → проверка доступа → поиск/генерация → отдача.
 
-2. **`::extractUri()`** и **`::stripDerivativeExtension()`** — извлекают URI оригинала из пути. Первый разбирает путь, пропускает `{hash}`, достаёт схему и путь до оригинала; второй обрабатывает частный случай: если эффекты меняют формат (например, `.jpg → .webp`), путь оканчивается на `image.jpg.webp`, и метод срезает лишнее расширение → `image.jpg`.
+2. **`::extractUri()`** и **`::stripDerivativeExtension()`** — извлекают URI оригинала из пути. Первый разбирает путь, пропускает `{hash}`, достаёт схему и путь до оригинала, а затем применяет `rawurldecode()` — `Request::getPathInfo()` возвращает URL-кодированный PATH_INFO от веб-сервера, поэтому файлы с кириллическими или другими non-ASCII именами придут в виде `%D0%B3...` вместо `г...`; без декодирования HMAC не совпадёт и запрос завершится 404. Второй обрабатывает частный случай: если эффекты меняют формат (например, `.jpg → .webp`), путь оканчивается на `image.jpg.webp`, и метод срезает лишнее расширение → `image.jpg`.
 
 3. **`::tryDecompressEffects()`** — оборачивает декомпрессию в try/catch: невалидный JSON → 404.
 
@@ -840,7 +840,7 @@ final class DynamicImageStyleExtension extends AbstractExtension {
 {{ image_uri|dynamic_image_style([['image_scale', {'width': 200}]]) }}
 {{ image_uri|image_scale(200) }}
 
-{# image_scale (только ширина) #}
+{# image_scale (только высота) #}
 {{ image_uri|dynamic_image_style([['image_scale', {'height': 150}]]) }}
 {{ image_uri|image_scale(null, 150) }}
 

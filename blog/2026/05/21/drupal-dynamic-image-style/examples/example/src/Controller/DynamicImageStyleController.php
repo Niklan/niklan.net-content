@@ -143,7 +143,7 @@ final readonly class DynamicImageStyleController {
     }
     [, $scheme, $target] = $parts;
 
-    $target = $this->stripDerivativeExtension($target, $compressed);
+    $target = \rawurldecode($this->stripDerivativeExtension($target, $compressed));
 
     return $scheme . '://' . $target;
   }
