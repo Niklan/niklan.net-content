@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../article.xsd"
+  id="drupal-11-4-overview"
+  created="2026-06-22T14:20:00"
+  updated="2026-06-22T14:20:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Drupal 11.4: Обзор ключевых изменений</title>
+      <description>Новая административная тема, начальная интеграция с Symfony Mailer, PHP-атрибуты для маршрутов и бандлов сущностей, новый CLI dr и множество других улучшений.</description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <tags>
+    <tag>drupal</tag>
+  </tags>
+</article>
