@@ -839,6 +839,7 @@ Gzip-файлы продолжают генерироваться паралле
 - Устранено избыточное сканирование файловой системы для локальных po-файлов в модуле `locale`.[^avoid-scanning-local-po-files]
 - Устранена загрузка форматов дат из конфигурации при получении информации об элементах (element info), что сокращает два лишних обращения к конфигурационным сущностям и кешу на каждый запрос с холодным кешем.[^avoid-loading-date-formats-element-info]
 - Добавлен новый кеш-бин `cache.file_parsing` для постоянного кеширования результатов разбора файлов. В отличие от стандартных бинов, он не имеет тега `cache.bin` и не очищается при `drush cr` или `drupal_flush_all_caches()`, что сохраняет кеш между деплоями. Добавлен базовый класс `FileParsingCacheCollectorBase` с валидацией по mtime; новый `YamlCacheCollector` уже использует этот бин для разбора `libraries.yml` и `routing.yaml`.[^cache-file-parsing-bin]
+- Удалён класс `RoutePreloader`, который при каждом HTML-запросе загружал все публичные маршруты и потреблял значительный объём памяти. Кеш маршрутов переведён на выделенный bin `routes` с поддержкой APCu через fast-chained механизм.[^route-preloading-caching-changes]
 
 ### Устаревшая функциональность и изменения в обратной совместимости
 
@@ -901,6 +902,7 @@ Gzip-файлы продолжают генерироваться паралле
 - Объявлены устаревшими функции `file_get_file_references()` и `file_field_find_file_reference_column()`. Вместо первой следует использовать сервис `FileReferenceResolver` и его метод `::getReferences()`; вторая не имеет замены.[^file-get-file-references-deprecated]
 - Объявлен устаревшим параметр `$sql_query` метода `Query::getTables()` — объект запроса теперь определяется из самого entity query, и передавать его явно больше не нужно. Кроме того, `Query::condition()` больше не принимает объект `Condition`, созданный в контексте другого entity query; в Drupal 13 это будет явно запрещено.[^entity-query-sql-query-deprecated]
 - Объявлена устаревшей валидация CSRF-токенов по ключу `'rest'` в `CsrfRequestHeaderAccessCheck`. Этот запасной ключ сохранялся с Drupal 8 для совместимости с сессиями, созданными до обновления до Drupal 9, — теперь такие сессии не поддерживаются. В Drupal 12 валидация по ключу `'rest'` удалена полностью.[^csrf-rest-key-deprecated]
+- Метод `RowPluginBase::render()` теперь принимает только экземпляры `\Drupal\views\ResultRow`. Передача любых других аргументов вызывает предупреждение об устаревании — в Drupal 12 метод получит строгую типизацию.[^row-plugin-base-render-result-row]
 
 ### Пользовательский интерфейс и UX
 
@@ -951,6 +953,8 @@ Gzip-файлы продолжают генерироваться паралле
 - В стандартный `robots.txt` добавлены правила блокировки индексации страниц поиска с query-параметрами (`/search?`, `/index.php/search?`), что предотвращает индексацию динамически генерируемых страниц поисковых результатов.[^robots-txt-search-query]
 - Импорт содержимого по умолчанию (default content) теперь поддерживает формат JSON наряду с YAML.[^default-content-json-import]
 - Drupal перешёл на компонент `symfony/runtime` для разделения логики начальной загрузки и обработки запросов. Фронт-контроллеры (`index.php`, `update.php`) обновлены под новый паттерн с классом `DrupalRuntime`. При запуске `composer update` может потребоваться добавить `symfony/runtime` в секцию `allow-plugins` файла `composer.json`.[^symfony-runtime-bootstrap]
+- Стандартный профиль установки и рецепт `standard` больше не включают модуль `comment`. Функционал комментариев теперь необходимо включать явно — сам модуль по-прежнему входит в ядро.[^commenting-not-enabled-by-default]
+- `drupal/core-recommended` больше не закрепляет минорные версии ряда зависимостей (`guzzlehttp/guzzle`, `guzzlehttp/psr7`, `twig/twig`, `symfony/polyfill-*` и других). Теперь сайты смогут применять обновления безопасности этих пакетов сразу после релиза, не дожидаясь нового выпуска Drupal Core — это поведение стало необходимым из-за изменений в [Composer 2.9](https://blog.packagist.com/composer-2-9/).[^core-recommended-minor-updates]
 
 ### Тестирование и качество кода
 
@@ -1217,4 +1221,8 @@ Gzip-файлы продолжают генерироваться паралле
 [^dr-cli]: [dr - Drupal CLI capable of running commands from modules](https://www.drupal.org/node/3584928). _История изменений Drupal Core_. Дата обращения: 2026-06-10.
 [^views-get-handler-deprecated]: [ViewExecutable::getHandler() is deprecated, use ViewExecutable::getHandlerConfiguration() instead](https://www.drupal.org/node/3598241). _История изменений Drupal Core_. Дата обращения: 2026-06-15.
 [^csrf-rest-key-deprecated]: [CSRF token validation with the 'rest' key is deprecated in Drupal 11.4.0 and removed in Drupal 12.0.0](https://www.drupal.org/node/3591939). _История изменений Drupal Core_. Дата обращения: 2026-06-15.
+[^route-preloading-caching-changes]: [Route preloading/caching changes](https://www.drupal.org/node/3589089). _История изменений Drupal Core_. Дата обращения: 2026-06-29.
+[^row-plugin-base-render-result-row]: [RowPluginBase::render() only accepts \Drupal\views\ResultRow](https://www.drupal.org/node/3309958). _История изменений Drupal Core_. Дата обращения: 2026-06-29.
+[^commenting-not-enabled-by-default]: [Commenting is not enabled in Drupal by default anymore](https://www.drupal.org/node/3606437). _История изменений Drupal Core_. Дата обращения: 2026-06-29.
+[^core-recommended-minor-updates]: [drupal/core-recommended allows minor updates of dependencies](https://www.drupal.org/node/3601304). _История изменений Drupal Core_. Дата обращения: 2026-06-29.
 [^drupal-11-4-release]: [Drupal 11.4.0](https://www.drupal.org/project/drupal/releases/11.4.0). _Релизы Drupal._ Не опубликовано на момент выхода материала.
