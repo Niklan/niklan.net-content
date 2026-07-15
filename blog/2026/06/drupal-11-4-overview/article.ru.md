@@ -471,8 +471,24 @@ class HelloController extends ControllerBase {
 ```
 :::::
 
-::: note
-В официальном Change Record[^route-php-attributes] приведён пример, где `#[Route]` размещён только на классе, а `::__invoke()` — без атрибута. Но работать оно не будет из-за бага в `AttributeRouteDiscovery`[^route-discovery-invoke-bug]: условие `$class->hasMethod('__invoke') === 0` всегда `FALSE`, поскольку `hasMethod()` возвращает `bool`, а не `int`. Атрибут на методе обязателен, пока баг не будет исправлен ([раз](https://www.drupal.org/project/drupal/issues/3593939), [два](https://www.drupal.org/project/drupal/issues/3584793#comment-16553783)), впрочем, это уже другая история.
+::: note [Работает начиная с 11.4.3]
+В официальном Change Record[^route-php-attributes] приведён пример, где `#[Route]` размещён только на классе, а `::__invoke()` — без атрибута. До версии 11.4.3 это не работало из-за бага в `AttributeRouteDiscovery`[^route-discovery-invoke-bug]: условие проверки было инвертировано, из-за чего маршруты для контроллеров с `__invoke()` и атрибутом только на классе никогда не регистрировались. Баг исправлен в [#3593939](https://www.drupal.org/project/drupal/issues/3593939). Начиная с 11.4.3, атрибут на методе не обязателен:
+
+```php
+#[Route(
+  path: '/example/hello',
+  name: 'example.hello',
+  requirements: ['_permission' => 'access content'],
+  defaults: ['_title' => 'Hello'],
+)]
+class HelloController extends ControllerBase {
+
+  public function __invoke(): array {
+    return ['#markup' => $this->t('Hello, World!')];
+  }
+
+}
+```
 :::
 
 ## Поддержка предзагрузки шрифтов в библиотеках
@@ -962,7 +978,6 @@ Gzip-файлы продолжают генерироваться паралле
 - Объявлен устаревшим метод `::expectDeprecation()` и трейт `ExpectDeprecationTrait`. Вместо них следует использовать нативные методы PHPUnit `::expectUserDeprecationMessage()` и `::expectUserDeprecationMessageMatches()`.[^expect-deprecation-deprecated]
 - Добавлен кастомный `ErrorFormatter` для PHPStan, позволяющий объединить вывод нескольких форматов (JUnit, GitLab, таблица) в одном запуске вместо многократного выполнения анализа.[^phpstan-error-formatter]
 - Добавлен трейт `HttpKernelUiHelperTrait` с методом `::drupalGet()` для ядерных (kernel) тестов, позволяющий выполнять HTTP-запросы и проверять содержимое ответа с помощью Mink. Это даёт возможность конвертировать многие браузерные тесты в значительно более быстрые kernel-тесты.[^kernel-test-drupal-get]
-- Использование `uniqid()`, `md5()`, `sha1()`, `crc32()` и `hash()` со слабыми алгоритмами теперь запрещено и фиксируется PHPStan как ошибка. Для хеширования данных следует использовать `hash()` с быстрыми алгоритмами (например, `xxh128`), для генерации идентификаторов — `bin2hex(random_bytes())`.[^disallow-weak-hashes]
 - Сокращено количество пересборок контейнера при выполнении функциональных тестов, что значительно ускоряет их прохождение.[^reduce-container-rebuilds-tests]
 - Публичные методы `::testGet()`, `::testPost()`, `::testPatch()` и `::testDelete()` в `EntityResourceTestBase`
   переименованы в защищённые `::doTest*()` и объединены в один публичный метод `::testCrud()`.[^entity-resource-test-base-consolidated]
@@ -1170,7 +1185,6 @@ Gzip-файлы продолжают генерироваться паралле
 [^locale-file-manager]: [New LocaleFile and LocaleFileManager](https://www.drupal.org/node/3577675). _История изменений Drupal Core_. Дата обращения: 2026-04-28.
 [^sdc-form-element]: [SDC components can now be used as form elements](https://www.drupal.org/node/3585881). _История изменений Drupal Core_. Дата обращения: 2026-04-28.
 [^uuid-field-validation]: [UUIDs are now validated](https://www.drupal.org/node/3560109). _История изменений Drupal Core_. Дата обращения: 2026-04-28.
-[^disallow-weak-hashes]: [Use of uniqid(), md5(), sha1(), crc32() and hash() with weak algorithms is disallowed in Drupal code](https://www.drupal.org/node/3581605). _История изменений Drupal Core_. Дата обращения: 2026-04-28.
 [^comment-form-location-enum]: [CommentItemInterface constants FORM_SEPARATE_PAGE and FORM_BELOW are deprecated](https://www.drupal.org/node/3550055). _История изменений Drupal Core_. Дата обращения: 2026-04-28.
 [^views-ui-admin-inc-deprecated]: [The core/modules/views_ui/admin.inc file is deprecated](https://www.drupal.org/node/3040111). _История изменений Drupal Core_. Дата обращения: 2026-04-28.
 [^filesystem-temp-directory-order]: [\Drupal\Component\FileSystem\FileSystem::getOsTemporaryDirectory() checks the directory returned by sys_get_temp_dir() before /tmp and windows specific directories](https://www.drupal.org/node/3586712). _История изменений Drupal Core_. Дата обращения: 2026-04-28.
@@ -1187,7 +1201,7 @@ Gzip-файлы продолжают генерироваться паралле
 [^jsonapi-normalizer-return-types]: [Return types have changed on some JSON:API Normalizer methods](https://www.drupal.org/node/3588046). _История изменений Drupal Core_. Дата обращения: 2026-05-04.
 [^jsonapi-normalizer-return-types-2]: [Return types have changed on some JSON:API Normalizer methods](https://www.drupal.org/node/3588047). _История изменений Drupal Core_. Дата обращения: 2026-05-04.
 [^node-access-grants-deprecated]: [node_access_grants has been deprecated](https://www.drupal.org/node/3578055). _История изменений Drupal Core_. Дата обращения: 2026-05-07.
-[^route-discovery-invoke-bug]: Баг актуален на [11.4.0-rc2](https://git.drupalcode.org/project/drupal/-/blob/7f9478eabb77e89f09de1f85f5f3e1bf2551ad78/core/lib/Drupal/Core/Routing/AttributeRouteDiscovery.php#L122).
+[^route-discovery-invoke-bug]: Баг присутствовал в 11.4.0–11.4.2. Исправлен в [#3593939](https://www.drupal.org/project/drupal/issues/3593939) — коммит попал в 11.4.3.
 [^user-cookie-deprecated]: [user_cookie_save() and user_cookie_delete() are deprecated](https://www.drupal.org/node/3581570). _История изменений Drupal Core_. Дата обращения: 2026-05-07.
 [^update-cron-notify-removed]: [The function _update_cron_notify() has been removed](https://www.drupal.org/node/3552870). _История изменений Drupal Core_. Дата обращения: 2026-05-07.
 [^link-resolvable-uri]: [New 'resolvable_uri' property is added to link field](https://www.drupal.org/node/3143736). _История изменений Drupal Core_. Дата обращения: 2026-05-12.
