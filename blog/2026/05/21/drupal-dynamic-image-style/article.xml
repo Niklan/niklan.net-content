@@ -3,7 +3,7 @@
   xsi:noNamespaceSchemaLocation="../../../../article.xsd"
   id="drupal-dynamic-image-style"
   created="2026-05-21T14:00:00"
-  updated="2026-07-16T07:55:00">
+  updated="2026-07-16T08:00:00">
   <translations>
     <translation language="ru" primary="true" src="./article.ru.md">
       <title>Динамические стили изображений в Drupal</title>
