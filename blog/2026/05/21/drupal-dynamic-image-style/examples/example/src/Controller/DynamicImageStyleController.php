@@ -8,6 +8,7 @@ use Drupal\Component\Utility\Crypt;
 use Drupal\Core\Extension\ModuleHandlerInterface;
 use Drupal\Core\Image\ImageFactory;
 use Drupal\Core\Lock\LockBackendInterface;
+use Drupal\Core\Site\Settings;
 use Drupal\Core\StreamWrapper\LocalStream;
 use Drupal\Core\StreamWrapper\StreamWrapperManager;
 use Drupal\Core\StreamWrapper\StreamWrapperManagerInterface;
@@ -34,7 +35,7 @@ final readonly class DynamicImageStyleController {
   public function __invoke(Request $request): Response {
     [$original_uri, $effects, $compressed] = $this->validateRequest($request);
 
-    $is_public = StreamWrapperManager::getScheme($original_uri) !== 'private';
+    $is_public = $this->isPublicScheme(StreamWrapperManager::getScheme($original_uri));
     $headers = $this->checkFileAccess($original_uri, $is_public);
 
     $derivative_uri = $this->dynamicImageStyle->buildUri($original_uri, $effects);
@@ -81,6 +82,14 @@ final readonly class DynamicImageStyleController {
     catch (\JsonException | \TypeError) {
       throw new NotFoundHttpException();
     }
+  }
+
+  private function isPublicScheme(string $scheme): bool {
+    $additional_public_schemes = \array_diff(
+      Settings::get('file_additional_public_schemes', []),
+      ['public', 'private', 'temporary'],
+    );
+    return \in_array($scheme, ['public', ...$additional_public_schemes], TRUE);
   }
 
   /**

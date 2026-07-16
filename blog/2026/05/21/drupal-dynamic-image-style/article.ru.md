@@ -244,6 +244,7 @@ use Drupal\Component\Utility\Crypt;
 use Drupal\Core\Extension\ModuleHandlerInterface;
 use Drupal\Core\Image\ImageFactory;
 use Drupal\Core\Lock\LockBackendInterface;
+use Drupal\Core\Site\Settings;
 use Drupal\Core\StreamWrapper\LocalStream;
 use Drupal\Core\StreamWrapper\StreamWrapperManager;
 use Drupal\Core\StreamWrapper\StreamWrapperManagerInterface;
@@ -270,7 +271,7 @@ final readonly class DynamicImageStyleController {
   public function __invoke(Request $request): Response {
     [$original_uri, $effects, $compressed] = $this->validateRequest($request);
 
-    $is_public = StreamWrapperManager::getScheme($original_uri) !== 'private';
+    $is_public = $this->isPublicScheme(StreamWrapperManager::getScheme($original_uri));
     $headers = $this->checkFileAccess($original_uri, $is_public);
 
     $derivative_uri = $this->dynamicImageStyle->buildUri($original_uri, $effects);
@@ -317,6 +318,14 @@ final readonly class DynamicImageStyleController {
     catch (\JsonException | \TypeError) {
       throw new NotFoundHttpException();
     }
+  }
+
+  private function isPublicScheme(string $scheme): bool {
+    $additional_public_schemes = \array_diff(
+      Settings::get('file_additional_public_schemes', []),
+      ['public', 'private', 'temporary'],
+    );
+    return \in_array($scheme, ['public', ...$additional_public_schemes], TRUE);
   }
 
   /**
@@ -449,11 +458,13 @@ final readonly class DynamicImageStyleController {
 
 5. **`::detectPrefix()`** — определяет, это запрос для `public://` или `private://`.
 
-6. **`::checkFileAccess()`** — публичные файлы пропускает; для приватных вызывает `hook_file_download`, собирает заголовки или бросает 403.
+6. **`::isPublicScheme()`** — классифицирует схему через `file_additional_public_schemes`[^is-public-scheme], а не голым сравнением со строкой `'private'`.
 
-7. **`::generateDerivative()`** — захватывает [блокировку][Lock API] по хешу запроса; если занят — 503 с `Retry-After: 3`; освобождает через `finally`.
+7. **`::checkFileAccess()`** — публичные файлы пропускает; для приватных вызывает `hook_file_download`, собирает заголовки или бросает 403.
 
-8. **`::deliverFile()`** — возвращает `BinaryFileResponse` с `Content-Type` и `Content-Length`; для приватных файлов добавляет заголовки из хука.
+8. **`::generateDerivative()`** — захватывает [блокировку][Lock API] по хешу запроса; если занят — 503 с `Retry-After: 3`; освобождает через `finally`.
+
+9. **`::deliverFile()`** — возвращает `BinaryFileResponse` с `Content-Type` и `Content-Length`; для приватных файлов добавляет заголовки из хука.
 
 Как видно из методов выше, контроллер следует той же цепочке, что и стандартный `\Drupal\image\Controller\ImageStyleDownloadController`: валидация → проверка доступа → генерация → отдача. Отличия:
 
@@ -954,3 +965,7 @@ final readonly class ExampleServiceProvider implements ServiceProviderInterface 
       Актуально для [Drupal 10+](https://git.drupalcode.org/project/drupal/-/blob/645ffba8cc5ed74e3c1eaa63bfacc2c3a7c6ee92/core/modules/image/src/PathProcessor/PathProcessorImageStyles.php#L62-75).
 
 [^path-processor-files-404]: `PathProcessorFiles` увидит путь с `/system/files/` и отсутствие `file` в query. Он извлечёт `styles/dynamic`, положит в `$request->query->set('file', 'styles/dynamic')` и вернёт `/system/files`. Роутинг матчит `system.files`, который попытается отдать `private://styles/dynamic` — 404.
+
+[^is-public-scheme]: До 15 июля 2026 здесь стояла голая проверка `$scheme !== 'private'` — ровно тот паттерн, который [SA-CORE-2026-010](https://www.drupal.org/sa-core-2026-010) (CVE-2026-15916) признала уязвимостью в ядровом `ImageStyleDownloadController`: любая схема, кроме буквально `private`, тихо классифицировалась как публичная, в обход `hook_file_download`.
+
+    Уязвимость применима только к проектам с кастомной/contrib файловой схемой (например, для S3 или CDN), под которой хранятся приватные производные изображения — на штатных `public://`/`private://`/`temporary://` эксплуатировать нечем. И даже тогда — не перебором: `itok` включает URI (со схемой) в HMAC (см. блок про path traversal выше), подделать токен для чужой схемы без `PrivateKey` нельзя. Нужна именно утечка уже честно выданного валидного URL для конкретного приватного файла. Но и в этом случае вред реален: бывшая проверка обходила повторную валидацию `hook_file_download` на каждый запрос, так что доступ по утёкшей ссылке становился бессрочным и неотзываемым.
