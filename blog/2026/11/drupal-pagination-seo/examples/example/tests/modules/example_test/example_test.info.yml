@@ -1,0 +1,7 @@
+name: 'Example pagination test'
+type: module
+description: 'Test routes and pager fixtures for the example module.'
+package: Testing
+core_version_requirement: ^11
+dependencies:
+  - example:example

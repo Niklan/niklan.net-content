@@ -1,0 +1,5 @@
+name: Example
+type: module
+description: Examples for the article about SEO improvements of Drupal pagination.
+core_version_requirement: ^11
+package: Custom

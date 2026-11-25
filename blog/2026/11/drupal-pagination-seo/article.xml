@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="../../../../article.xsd"
+  id="drupal-pagination-seo"
+  created="2026-11-25T13:40:00"
+  updated="2026-11-25T13:40:00">
+  <translations>
+    <translation language="ru" primary="true" src="./article.ru.md">
+      <title>Пагинация в Drupal для SEO: нумерация с единицы, редиректы и 404</title>
+      <description>
+        Как привести пагинацию Drupal в порядок для поисковиков: нумерация с единицы, склейка дублей редиректом, HTTP 404 для несуществующих страниц, canonical и суффиксы в заголовках.
+      </description>
+      <poster src="./image/poster.ru.png"/>
+    </translation>
+  </translations>
+  <compatibility>
+    <software name="drupal" constraint="^11"/>
+    <software name="php" constraint="^8.4"/>
+  </compatibility>
+  <tags>
+    <tag>drupal</tag>
+  </tags>
+</article>

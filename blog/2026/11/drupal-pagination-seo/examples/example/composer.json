@@ -1,0 +1,7 @@
+{
+    "name": "drupal/example",
+    "type": "drupal-custom-module",
+    "require": {
+        "php": "^8.4"
+    }
+}
