@@ -23,4 +23,29 @@ jobs:
           sudo apt-get -y install libxml2-utils
 
       - name: Schema Validation
-        run: find ./blog -name "article.xml" -type f -exec xmllint --noout --schema ./blog/article.xsd {} +
+        shell: bash
+        run: |
+          set -uo pipefail
+
+          status=0
+          while IFS= read -r -d '' file; do
+            schema="$(xmllint --xpath 'string(/*/@*[local-name()="noNamespaceSchemaLocation"])' "$file")"
+            if [[ -z "$schema" ]]; then
+              echo "::error file=$file::Missing xsi:noNamespaceSchemaLocation"
+              status=1
+              continue
+            fi
+
+            # Resolve the schema exactly as Drupal does at sync time: relative
+            # to the article file, not to the repository or CI working dir.
+            resolved="$(python3 -c 'import os, sys; print(os.path.abspath(os.path.join(sys.argv[1], sys.argv[2])))' "$(dirname "$file")" "$schema")"
+            if [[ ! -f "$resolved" ]]; then
+              echo "::error file=$file::Schema '$schema' resolves to '$resolved', which does not exist"
+              status=1
+              continue
+            fi
+
+            xmllint --noout --schema "$resolved" "$file" || status=1
+          done < <(find ./blog -name article.xml -type f -print0)
+
+          exit "$status"
