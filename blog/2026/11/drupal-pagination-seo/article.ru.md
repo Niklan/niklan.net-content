@@ -1193,16 +1193,16 @@ final readonly class PagedTextPlaceholder {
 [^metatag]: Здесь и далее под Metatag имеется в виду модуль `drupal/metatag`.
 [^php-int-max]: На 32-битных сборках [PHP_INT_MAX](https://www.php.net/manual/ru/reserved.constants.php#constant.php-int-max) равен `2 147 483 647` (10 цифр), на 64-битных — `9 223 372 036 854 775 807` (19 цифр). Десятизначное значение на 32-битной сборке может не поместиться в `int`, поэтому безопаснее сократить длину на один знак. Девять цифр — это максимум `999 999 999`, почти миллиард страниц. Как говорится: «<del>640 КБ</del> 1 млрд страниц хватит всем».
 
-[inbound-outbound-processor]: ../../../../2018/05/30/drupal-8-inbound-outbound-processor/article.ru.md
-[cache-metadata]: ../../../../2017/07/15/drupal-8-cache-metadata/article.ru.md
-[events]: ../../../../2018/04/10/drupal-8-events/article.ru.md
-[services]: ../../../../2017/06/21/drupal-8-services/article.ru.md
-[theme-hooks]: ../../../../2017/06/26/drupal-8-hook-theme/article.ru.md
-[token]: ../../../../2018/09/06/drupal-8-tokens/article.ru.md
-[hooks]: ../../../../2018/06/28/drupal-8-hooks/article.ru.md
-[main-content-renderer]: ../../../../2019/09/05/drupal-8-main-content-renderer/article.ru.md
-[lazy-builder]: ../../../../2017/07/07/drupal-8-lazy-builder/article.ru.md
-[placeholder-strategy]: ../../../../2020/05/15/drupal-8-9-placeholder-strategy/article.ru.md
-[route-subscriber]: ../../../../2018/04/13/drupal-8-route-subscriber/article.ru.md
-[render-arrays]: ../../../../2020/02/05/drupal-8-render-arrays/article.ru.md
-[language-negotiation]: ../../../../2017/07/04/drupal-8-language-negotiation/article.ru.md
+[inbound-outbound-processor]: ../../../2018/05/30/drupal-8-inbound-outbound-processor/article.ru.md
+[cache-metadata]: ../../../2017/07/15/drupal-8-cache-metadata/article.ru.md
+[events]: ../../../2018/04/10/drupal-8-events/article.ru.md
+[services]: ../../../2017/06/21/drupal-8-services/article.ru.md
+[theme-hooks]: ../../../2017/06/26/drupal-8-hook-theme/article.ru.md
+[token]: ../../../2018/09/06/drupal-8-tokens/article.ru.md
+[hooks]: ../../../2018/06/28/drupal-8-hooks/article.ru.md
+[main-content-renderer]: ../../../2019/09/05/drupal-8-main-content-renderer/article.ru.md
+[lazy-builder]: ../../../2017/07/07/drupal-8-lazy-builder/article.ru.md
+[placeholder-strategy]: ../../../2020/05/15/drupal-8-9-placeholder-strategy/article.ru.md
+[route-subscriber]: ../../../2018/04/13/drupal-8-route-subscriber/article.ru.md
+[render-arrays]: ../../../2020/02/05/drupal-8-render-arrays/article.ru.md
+[language-negotiation]: ../../../2017/07/04/drupal-8-language-negotiation/article.ru.md

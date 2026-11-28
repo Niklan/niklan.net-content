@@ -3,7 +3,7 @@
   xsi:noNamespaceSchemaLocation="../../../article.xsd"
   id="drupal-pagination-seo"
   created="2026-11-25T13:40:00"
-  updated="2026-11-25T13:40:00">
+  updated="2026-11-28T15:00:00">
   <translations>
     <translation language="ru" primary="true" src="./article.ru.md">
       <title>Пагинация в Drupal для SEO: нумерация с единицы, редиректы и 404</title>
